@@ -84,18 +84,52 @@ def _extract_json_object(text):
     return {}
 
 
-def predict(markdown_content):
+# A complementary second pass that emphasizes the comparison-group combinatorics
+# the first pass tends to under-produce. Union of the two passes maximizes recall.
+SECOND_PASS_PROMPT = SYSTEM_PROMPT + """
+
+SECOND-PASS FOCUS: assume a first reader already listed the obvious associations.
+Your job is to recover the ones that are easy to MISS:
+  - Every pairwise comparison among the genotype/diplotype groups (and its reciprocal).
+  - Subgroup / stratified findings (by sex, ancestry, disease subtype, dose level).
+  - Associations reported only in tables, figures, or supplementary text.
+  - Both the per-allele (additive) and per-genotype (dominant/recessive) framings.
+  - Null results and trends that did not reach significance ("is not associated").
+Be even more exhaustive than a first reader would be."""
+
+
+def _one_pass(system_prompt, markdown_content):
     resp = litellm.completion(
         model=MODEL,
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": markdown_content},
         ],
         temperature=0,
         response_format={"type": "json_object"},
     )
     data = _extract_json_object(resp.choices[0].message.content or "")
-    return {
-        "variants": data.get("variants", []),
-        "sentences": data.get("sentences", []),
-    }
+    return data.get("variants", []) or [], data.get("sentences", []) or []
+
+
+def predict(markdown_content):
+    v1, s1 = _one_pass(SYSTEM_PROMPT, markdown_content)
+    v2, s2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
+
+    # Union variants (dedup case-insensitively, preserving first-seen casing).
+    variants, seen_v = [], set()
+    for v in list(v1) + list(v2):
+        key = str(v).strip().lower().replace(" ", "")
+        if key and key not in seen_v:
+            seen_v.add(key)
+            variants.append(v)
+
+    # Union sentences (dedup exact, case-insensitive).
+    sentences, seen_s = [], set()
+    for s in list(s1) + list(s2):
+        key = str(s).strip().lower()
+        if key and key not in seen_s:
+            seen_s.add(key)
+            sentences.append(s)
+
+    return {"variants": variants, "sentences": sentences}

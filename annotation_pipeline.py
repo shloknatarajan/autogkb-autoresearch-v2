@@ -46,8 +46,24 @@ Produce two things:
    associated"), direction ("increased" / "decreased"), the phenotype or outcome,
    the drug (when relevant), and the comparison group/allele when stated.
 
-Include every association actually supported by the paper; favor recall. Return
-JSON only: { "variants": ["..."], "sentences": ["..."] }"""
+CRITICAL coverage tactics (PharmGKB annotations are redundant by design -- emit
+every framing, extra sentences are NOT penalized):
+  - RECIPROCAL FRAMINGS: whenever the paper compares two genotype/allele groups,
+    emit BOTH directions. If "CT + TT is associated with decreased X as compared
+    to CC", ALSO emit "CC ... is associated with increased X as compared to CT + TT".
+    The reciprocal of "decreased ... vs B" is "increased ... vs A" (flip direction
+    AND swap the comparison group).
+  - GENOTYPE ENUMERATION: a variant rsID maps to genotypes (e.g. CC/CT/TT) and a
+    star allele maps to diplotypes (e.g. *1/*1, *1/*2, *2/*2). Emit a sentence for
+    every genotype/diplotype group the paper discusses, AND for combined groups
+    (e.g. "Genotypes CT + TT", "*1/*2 + *2/*2", carriers vs non-carriers).
+  - POLARITY: include both significant ("is associated") and null ("is not
+    associated") findings exactly as the paper reports them.
+  - PHENOTYPE/METABOLIZER: also phrase associations via metabolizer status
+    (poor/intermediate/normal/rapid metabolizer) when the gene defines one.
+
+Include every association actually supported by the paper; favor recall maximally.
+Return JSON only: { "variants": ["..."], "sentences": ["..."] }"""
 
 
 def _extract_json_object(text):

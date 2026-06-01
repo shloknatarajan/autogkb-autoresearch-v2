@@ -1,0 +1,50 @@
+=== generate (val) ===
+[92m22:49:13 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m22:49:13 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: 4 variants, 2 sentences
+  PMC10880264: 32 variants, 4 sentences
+  PMC10993165: 12 variants, 9 sentences
+  PMC11430164: 23 variants, 22 sentences
+  PMC11971672: 3 variants, 1 sentences
+  PMC12036300: 3 variants, 2 sentences
+  PMC12319246: 16 variants, 12 sentences
+  PMC2859392: 1 variants, 2 sentences
+  PMC3387531: 4 variants, 4 sentences
+  PMC3584248: 8 variants, 6 sentences
+  PMC384715: 5 variants, 3 sentences
+  PMC4916189: 11 variants, 6 sentences
+  PMC554812: 4 variants, 4 sentences
+  PMC6435416: 100 variants, 1 sentences
+  PMC6714829: 3 variants, 3 sentences
+  PMC8973308: 4 variants, 0 sentences
+wrote 16 generations to results/baseline/
+=== eval ===
+[92m22:54:16 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m22:54:16 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: variants 0/5, sentences matched 0 (pred 2, gold 5)
+  PMC10880264: variants 0/3, sentences matched 3 (pred 4, gold 4)
+  PMC10993165: variants 3/3, sentences matched 3 (pred 9, gold 3)
+  PMC11430164: variants 18/18, sentences matched 1 (pred 22, gold 2)
+  PMC11971672: variants 3/4, sentences matched 0 (pred 1, gold 1)
+  PMC12036300: variants 2/3, sentences matched 0 (pred 2, gold 2)
+  PMC12319246: variants 0/8, sentences matched 0 (pred 12, gold 8)
+  PMC2859392: variants 0/1, sentences matched 0 (pred 2, gold 2)
+  PMC3387531: variants 0/6, sentences matched 3 (pred 4, gold 5)
+  PMC3584248: variants 5/5, sentences matched 1 (pred 6, gold 2)
+  PMC384715: variants 0/1, sentences matched 1 (pred 3, gold 1)
+  PMC4916189: variants 1/7, sentences matched 0 (pred 6, gold 7)
+  PMC554812: variants 0/5, sentences matched 4 (pred 4, gold 5)
+  PMC6435416: variants 12/15, sentences matched 1 (pred 1, gold 1)
+  PMC6714829: variants 2/2, sentences matched 0 (pred 3, gold 2)
+  PMC8973308: variants 2/3, sentences matched 0 (pred 0, gold 2)
+---
+sentence_f1:        0.256
+sentence_precision: 0.210
+sentence_recall:    0.327
+variant_coverage:   0.539
+num_papers:         16
+num_pred_sentences: 81
+num_gold_sentences: 52
+generations:        results/baseline
+judge_model:        gpt-4o-mini
+total_seconds:      22.8

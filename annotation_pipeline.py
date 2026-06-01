@@ -13,7 +13,7 @@ import json
 
 import litellm
 
-MODEL = "gpt-4o-mini"
+MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.

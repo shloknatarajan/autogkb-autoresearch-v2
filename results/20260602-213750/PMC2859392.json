@@ -1,0 +1,19 @@
+{
+  "pmcid": "PMC2859392",
+  "variant_sentences": {
+    "rs3745274": [
+      "CYP2B6 rs3745274 TT is associated with increased plasma efavirenz concentration during efavirenz treatment with rifampicin as compared to CYP2B6 rs3745274 GT or GG.",
+      "CYP2B6 rs3745274 TT is associated with increased plasma nevirapine concentration during nevirapine treatment with rifampicin as compared to CYP2B6 rs3745274 GT or GG.",
+      "CYP2B6 rs3745274 TT is not associated with increased likelihood of achieving HIV-1 RNA levels less than 50 copies/mL at week 12 during efavirenz treatment with rifampicin as compared to CYP2B6 rs3745274 GT or GG.",
+      "CYP2B6 rs3745274 TT is not associated with increased likelihood of achieving HIV-1 RNA levels less than 50 copies/mL at week 12 during nevirapine treatment with rifampicin as compared to CYP2B6 rs3745274 GT or GG.",
+      "CYP2B6 rs3745274 genotype is not associated with CD4 T-cell count response during efavirenz treatment with rifampicin.",
+      "CYP2B6 rs3745274 genotype is not associated with CD4 T-cell count response during nevirapine treatment with rifampicin."
+    ],
+    "rs3211371": [],
+    "rs28399499": [],
+    "rs2279343": [],
+    "rs2740574": [],
+    "rs4986910": [],
+    "rs2242480": []
+  }
+}

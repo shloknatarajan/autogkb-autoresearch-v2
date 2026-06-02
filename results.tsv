@@ -1,1 +1,2 @@
 commit	meaning_capture	variant_coverage	status	description
+6229218	0.425	0.697	keep	baseline: minimal single-shot gpt-5.4 predict()

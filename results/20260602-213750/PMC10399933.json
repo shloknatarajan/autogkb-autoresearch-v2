@@ -1,0 +1,25 @@
+{
+  "pmcid": "PMC10399933",
+  "variant_sentences": {
+    "rs4149056": [
+      "rs4149056 C/C is associated with increased risk of switching from simvastatin to another statin as compared to rs4149056 T/T.",
+      "rs4149056 C/C is associated with increased risk of switching from simvastatin to another statin with a temporally associated creatine kinase measurement as compared to rs4149056 T/T.",
+      "rs4149056 T/C + C/C is associated with increased risk of switching from pravastatin to another statin as compared to rs4149056 T/T.",
+      "rs4149056 is not associated with risk of switching from atorvastatin to another statin.",
+      "rs4149056 is not associated with risk of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement.",
+      "rs4149056 is not associated with risk of switching from rosuvastatin to another statin.",
+      "rs4149056 is not associated with risk of switching from fluvastatin to another statin."
+    ],
+    "rs2231142": [
+      "rs2231142 is not associated with risk of switching from atorvastatin to another statin.",
+      "rs2231142 is not associated with risk of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement.",
+      "rs2231142 is not associated with risk of switching from rosuvastatin to another statin.",
+      "rs2231142 is not associated with risk of switching from fluvastatin to another statin."
+    ],
+    "rs1799853": [],
+    "rs1057910": [],
+    "CYP2C9 poor metabolizer": [
+      "CYP2C9 poor metabolizer + intermediate metabolizer is not associated with risk of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer."
+    ]
+  }
+}

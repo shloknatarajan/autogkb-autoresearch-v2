@@ -1,0 +1,72 @@
+{
+  "pmcid": "PMC12319246",
+  "variant_sentences": {
+    "rs9282564": [
+      "Donor ABCB1 rs9282564 AA is associated with decreased risk of death during 12-year follow-up after kidney transplantation as compared to donor ABCB1 rs9282564 AG.",
+      "Donor ABCB1 rs9282564 AA is associated with decreased risk of tumor occurrence during 12-year follow-up after kidney transplantation.",
+      "Donor ABCB1 rs9282564 AA is associated with increased risk of infections during 12-year follow-up after kidney transplantation."
+    ],
+    "rs2273697": [
+      "Donor ABCC2 rs2273697 GA is associated with increased risk of death during 12-year follow-up after kidney transplantation as compared to donor ABCC2 rs2273697 GG.",
+      "Donor ABCC2 rs2273697 AA is associated with increased risk of tumor occurrence during 12-year follow-up after kidney transplantation as compared to donor ABCC2 rs2273697 GG.",
+      "Donor ABCC2 rs2273697 GG is associated with increased renal clearance during 12-year follow-up after kidney transplantation as compared to donor ABCC2 rs2273697 AA and GA."
+    ],
+    "rs3745274": [
+      "Recipient CYP2B6 rs3745274 GT is associated with decreased risk of death during 12-year follow-up after kidney transplantation.",
+      "Recipient CYP2B6 rs3745274 GT is associated with decreased risk of tumor occurrence during 12-year follow-up after kidney transplantation as compared to recipient CYP2B6 rs3745274 TT.",
+      "Donor CYP2B6 rs3745274 GT is associated with decreased risk of acute rejection during 12-year follow-up after kidney transplantation.",
+      "Recipient CYP2B6 rs3745274 GT is associated with increased renal clearance during 12-year follow-up after kidney transplantation as compared to recipient CYP2B6 rs3745274 TT.",
+      "Donor CYP2B6 rs3745274 TT is associated with decreased renal clearance during 12-year follow-up after kidney transplantation as compared to donor CYP2B6 rs3745274 GT.",
+      "Recipient CYP2B6 rs3745274 GT is associated with decreased risk of de novo diabetes mellitus during 12-year follow-up after kidney transplantation."
+    ],
+    "rs776746": [
+      "Recipient CYP3A5 rs776746 GG is associated with decreased risk of death during 12-year follow-up after kidney transplantation.",
+      "Recipient CYP3A5 rs776746 GG is associated with increased dose-adjusted tacrolimus concentration during follow-up after kidney transplantation as compared to recipient CYP3A5 rs776746 GA.",
+      "Donor CYP3A5 rs776746 GG is associated with increased renal clearance during 12-year follow-up after kidney transplantation as compared to donor CYP3A5 rs776746 GA."
+    ],
+    "rs2235013": [
+      "Donor ABCB1 rs2235013 GA is associated with decreased risk of chronic rejection during 12-year follow-up after kidney transplantation as compared to donor ABCB1 rs2235013 GG.",
+      "Donor ABCB1 rs2235013 GG is associated with decreased dose-adjusted tacrolimus concentration during follow-up after kidney transplantation as compared to donor ABCB1 rs2235013 non-GG genotypes."
+    ],
+    "rs2740574": [
+      "Recipient CYP3A4 rs2740574 AA is associated with decreased risk of acute rejection during 12-year follow-up after kidney transplantation.",
+      "Recipient CYP3A4 rs2740574 AA is associated with increased dose-adjusted tacrolimus concentration when treated with tacrolimus during follow-up after kidney transplantation as compared to recipient CYP3A4 rs2740574 GA.",
+      "Recipient CYP3A4 rs2740574 AA is associated with increased renal clearance during 12-year follow-up after kidney transplantation as compared to recipient CYP3A4 rs2740574 GA."
+    ],
+    "rs4149056": [
+      "Recipient SLCO1B1 rs4149056 TT is associated with decreased risk of acute rejection during 12-year follow-up after kidney transplantation.",
+      "Recipient SLCO1B1 rs4149056 TT is associated with increased dose-adjusted tacrolimus concentration when treated with tacrolimus during follow-up after kidney transplantation as compared to recipient SLCO1B1 rs4149056 TC."
+    ],
+    "rs6714486": [
+      "Donor UGT1A9 rs6714486 TA is associated with increased risk of acute rejection during 12-year follow-up after kidney transplantation."
+    ],
+    "rs2306283": [
+      "Recipient SLCO1B1 rs2306283 AA is associated with decreased risk of nephrotoxicity during tacrolimus treatment after kidney transplantation.",
+      "Recipient SLCO1B1 rs2306283 AG is associated with decreased risk of nephrotoxicity during tacrolimus treatment after kidney transplantation.",
+      "Donor SLCO1B1 rs2306283 AG is associated with decreased risk of nephrotoxicity during tacrolimus treatment after kidney transplantation.",
+      "Donor SLCO1B1 rs2306283 AA is associated with decreased dose-adjusted tacrolimus concentration when treated with tacrolimus during the early post-transplant period as compared to donor SLCO1B1 rs2306283 GG."
+    ],
+    "rs2066844": [
+      "Donor NOD2 rs2066844 CC is associated with decreased risk of nephrotoxicity during tacrolimus treatment after kidney transplantation."
+    ],
+    "rs4244285": [
+      "Donor CYP2C19 rs4244285 AA is associated with increased risk of nephrotoxicity during tacrolimus treatment after kidney transplantation as compared to donor CYP2C19 rs4244285 GG and GA.",
+      "Donor CYP2C19 rs4244285 AA is associated with increased dose-adjusted tacrolimus concentration when treated with tacrolimus during follow-up after kidney transplantation as compared to donor CYP2C19 rs4244285 GG and GA."
+    ],
+    "rs1142345": [
+      "Donor TPMT rs1142345 AA is associated with decreased risk of re-transplantation during 12-year follow-up after kidney transplantation."
+    ],
+    "rs1799853": [
+      "Donor CYP2C9 rs1799853 CC is associated with decreased risk of re-transplantation during 12-year follow-up after kidney transplantation."
+    ],
+    "rs1045642": [
+      "Recipient ABCB1 rs1045642 CC is associated with decreased risk of infections during 12-year follow-up after kidney transplantation.",
+      "Recipient ABCB1 rs1045642 TT is associated with increased dose-adjusted tacrolimus concentration when treated with tacrolimus during follow-up after kidney transplantation as compared to recipient ABCB1 rs1045642 non-TT genotypes.",
+      "Recipient ABCB1 rs1045642 CC is associated with increased renal clearance during 12-year follow-up after kidney transplantation as compared to recipient ABCB1 rs1045642 TC and TT."
+    ],
+    "rs2235033": [
+      "Recipient ABCB1 rs2235033 TT is associated with increased dose-adjusted tacrolimus concentration when treated with tacrolimus during follow-up after kidney transplantation as compared to recipient ABCB1 rs2235033 non-TT genotypes."
+    ],
+    "rs2279343": []
+  }
+}

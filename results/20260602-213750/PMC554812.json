@@ -1,0 +1,37 @@
+{
+  "pmcid": "PMC554812",
+  "variant_sentences": {
+    "rs3117583": [
+      "rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls."
+    ],
+    "rs1150793": [
+      "rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls."
+    ],
+    "rs2855804": [
+      "rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls."
+    ],
+    "rs2268791": [
+      "rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls."
+    ],
+    "rs1594": [
+      "rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls."
+    ],
+    "rs2304224": [],
+    "HLA-B*58:01": [
+      "HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls.",
+      "HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to population controls."
+    ],
+    "HLA-A*33:03": [
+      "HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls.",
+      "HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to population controls."
+    ],
+    "HLA-C*03:02": [
+      "HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls.",
+      "HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to population controls."
+    ],
+    "HLA-DRB1*03:01": [
+      "HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to allopurinol-tolerant controls.",
+      "HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to population controls."
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "pmcid": "PMC6714829",
+  "variant_sentences": {
+    "rs2306283": [
+      "SLCO1B1 rs2306283 AA is associated with increased baseline alanine aminotransferase levels as compared to rs2306283 AG + GG in patients with hyperlipidemia.",
+      "SLCO1B1 rs2306283 AA is associated with increased baseline aspartate transaminase levels as compared to rs2306283 AG + GG in patients with hyperlipidemia.",
+      "SLCO1B1 rs2306283 AA is associated with increased baseline HDL-C levels as compared to rs2306283 AG + GG in patients with hyperlipidemia.",
+      "SLCO1B1 rs2306283 G allele carrier status (AG + GG) is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels as compared to rs2306283 AA in patients with hyperlipidemia.",
+      "SLCO1B1 rs2306283 G allele carrier status (AG + GG) is associated with decreased likelihood of abnormal baseline aspartate transaminase levels as compared to rs2306283 AA in patients with hyperlipidemia."
+    ],
+    "rs4149056": [],
+    "SLCO1B1 388A/521T haplotype": [
+      "SLCO1B1 388A/521T haplotype is associated with increased likelihood of abnormal baseline alanine aminotransferase levels as compared to the normal alanine aminotransferase subgroup in patients with hyperlipidemia.",
+      "SLCO1B1 388A/521T haplotype is associated with increased likelihood of abnormal baseline aspartate transaminase levels as compared to the normal aspartate transaminase subgroup in patients with hyperlipidemia."
+    ],
+    "SLCO1B1 388G/521T haplotype": [
+      "SLCO1B1 388G/521T haplotype is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels as compared to the normal alanine aminotransferase subgroup in patients with hyperlipidemia.",
+      "SLCO1B1 388G/521T haplotype is associated with decreased likelihood of abnormal baseline aspartate transaminase levels as compared to the normal aspartate transaminase subgroup in patients with hyperlipidemia.",
+      "SLCO1B1 388G carrier + rs4149056 TT is associated with increased total cholesterol reduction during simvastatin treatment after 4 weeks as compared to SLCO1B1 388G carrier + rs4149056 C allele carrier in patients with hyperlipidemia.",
+      "SLCO1B1 388G carrier + rs4149056 TT is associated with increased LDL-C reduction during simvastatin treatment after 4 weeks as compared to SLCO1B1 388G carrier + rs4149056 C allele carrier in patients with hyperlipidemia."
+    ],
+    "SLCO1B1 388G/521C haplotype": []
+  }
+}

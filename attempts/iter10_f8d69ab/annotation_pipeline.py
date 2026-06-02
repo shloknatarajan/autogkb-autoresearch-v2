@@ -113,7 +113,9 @@ def _extract_json_object(text):
 
 # A complementary second pass that emphasizes the comparison-group combinatorics
 # the first pass tends to under-produce. Union of the two passes maximizes recall.
-SECOND_PASS_PROMPT = SYSTEM_PROMPT + """
+SECOND_PASS_PROMPT = (
+    SYSTEM_PROMPT
+    + """
 
 SECOND-PASS FOCUS: assume a first reader already listed the obvious associations.
 Your job is to recover the ones that are easy to MISS:
@@ -123,6 +125,7 @@ Your job is to recover the ones that are easy to MISS:
   - Both the per-allele (additive) and per-genotype (dominant/recessive) framings.
   - Null results and trends that did not reach significance ("is not associated").
 Be even more exhaustive than a first reader would be."""
+)
 
 
 def _one_pass(system_prompt, markdown_content):
@@ -139,12 +142,15 @@ def _one_pass(system_prompt, markdown_content):
     return data.get("variants", []) or [], data.get("sentences", []) or []
 
 
-GAPFILL_SYSTEM = SYSTEM_PROMPT + """
+GAPFILL_SYSTEM = (
+    SYSTEM_PROMPT
+    + """
 
 GAP-FILL MODE: a first reader already produced the association sentences listed at
 the end of the user message. Read the paper again and output ONLY associations that
 are MISSING from that list (or stated with a wrong direction/polarity/comparison
 group). Do not repeat ones already correctly covered. Same JSON format and style."""
+)
 
 
 def _gapfill_pass(markdown_content, draft_sentences):

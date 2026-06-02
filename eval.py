@@ -212,7 +212,9 @@ def evaluate(generations_dir, judge_model):
     for pmcid, (pred_variants, pred_sentences) in gens.items():
         gold = gold_by_pmcid.get(pmcid)
         if gold is None:
-            print(f"  {pmcid}: WARNING no gold for this pmcid, skipping", file=sys.stderr)
+            print(
+                f"  {pmcid}: WARNING no gold for this pmcid, skipping", file=sys.stderr
+            )
             continue
         scored += 1
         on_dev += pmcid in dev_ids
@@ -239,8 +241,10 @@ def evaluate(generations_dir, judge_model):
     sent_precision = matched_sent / total_pred if total_pred else 0.0  # informational
 
     if on_dev:
-        print(f"  NOTE: {on_dev}/{scored} scored papers are DEV papers (val is the honest metric)",
-              file=sys.stderr)
+        print(
+            f"  NOTE: {on_dev}/{scored} scored papers are DEV papers (val is the honest metric)",
+            file=sys.stderr,
+        )
 
     print("---")
     print(f"sentence_coverage:  {sentence_coverage:.3f}")
@@ -255,10 +259,18 @@ def evaluate(generations_dir, judge_model):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("generations", help="path to a results folder written by generate.py, e.g. results/baseline")
-    parser.add_argument("--judge-model", default=JUDGE_MODEL_DEFAULT,
-                        help=f"litellm model string for the judge (default: {JUDGE_MODEL_DEFAULT})")
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    parser.add_argument(
+        "generations",
+        help="path to a results folder written by generate.py, e.g. results/baseline",
+    )
+    parser.add_argument(
+        "--judge-model",
+        default=JUDGE_MODEL_DEFAULT,
+        help=f"litellm model string for the judge (default: {JUDGE_MODEL_DEFAULT})",
+    )
     args = parser.parse_args()
     evaluate(args.generations, args.judge_model)
 

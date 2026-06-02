@@ -9,6 +9,7 @@ then compares to gold under eval.normalize_variant, and for each miss classifies
 
 Usage: uv run diag_variants.py results/dev_<ts>
 """
+
 import json
 import re
 import sys
@@ -53,20 +54,30 @@ for f in sorted(gen_dir.glob("*.json")):
         if normalize_variant(g) in pred_norm:
             continue
         tot_missed += 1
-        if loose_key(g) in pred_loose:                # found but normalized differently
+        if loose_key(g) in pred_loose:  # found but normalized differently
             tot_norm += 1
             culprits = [p for p in pred if loose_key(p) == loose_key(g)]
             if len(norm_examples) < 25:
-                norm_examples.append((pmcid, g, normalize_variant(g),
-                                      sorted({(p, normalize_variant(p)) for p in culprits})))
+                norm_examples.append(
+                    (
+                        pmcid,
+                        g,
+                        normalize_variant(g),
+                        sorted({(p, normalize_variant(p)) for p in culprits}),
+                    )
+                )
         else:
             tot_extract += 1
             in_text = g.lower().replace(" ", "") in md.lower().replace(" ", "")
             if len(extract_examples) < 25:
-                extract_examples.append((pmcid, g, "in_text" if in_text else "NOT_in_text"))
+                extract_examples.append(
+                    (pmcid, g, "in_text" if in_text else "NOT_in_text")
+                )
 
-print(f"DEV gold variants: {tot_gold} | missed: {tot_missed} "
-      f"(coverage {1-tot_missed/tot_gold:.3f})")
+print(
+    f"DEV gold variants: {tot_gold} | missed: {tot_missed} "
+    f"(coverage {1 - tot_missed / tot_gold:.3f})"
+)
 print(f"  -> NORMALIZATION misses (predicted but wrong canonical form): {tot_norm}")
 print(f"  -> EXTRACTION   misses (not predicted at all):                {tot_extract}")
 
@@ -76,6 +87,8 @@ for pmcid, g, gn, culprits in norm_examples:
     for raw, rn in culprits:
         print(f"        predicted {raw!r} -> {rn!r}")
 
-print("\n=== EXTRACTION misses: gold variant (and whether the literal token is in the text) ===")
+print(
+    "\n=== EXTRACTION misses: gold variant (and whether the literal token is in the text) ==="
+)
 for pmcid, g, status in extract_examples:
     print(f"  [{pmcid}] {g!r}  [{status}]")

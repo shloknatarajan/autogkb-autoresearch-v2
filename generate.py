@@ -46,8 +46,10 @@ def generate(out_dir, split, limit):
             "sentences": pred.get("sentences", []),
         }
         (out / f"{r['pmcid']}.json").write_text(json.dumps(record, indent=2))
-        print(f"  {r['pmcid']}: {len(record['variants'])} variants, "
-              f"{len(record['sentences'])} sentences")
+        print(
+            f"  {r['pmcid']}: {len(record['variants'])} variants, "
+            f"{len(record['sentences'])} sentences"
+        )
 
     print(f"wrote {len(chosen)} generations to {out}/")
 
@@ -56,11 +58,23 @@ def main():
     parser = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
     )
-    parser.add_argument("--out", required=True, help="results folder to write into, e.g. results/baseline")
-    parser.add_argument("--split", choices=["val", "dev", "all"], default="val",
-                        help="which subset to generate for (default: val)")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="only generate the first N papers (quick smoke test)")
+    parser.add_argument(
+        "--out",
+        required=True,
+        help="results folder to write into, e.g. results/baseline",
+    )
+    parser.add_argument(
+        "--split",
+        choices=["val", "dev", "all"],
+        default="val",
+        help="which subset to generate for (default: val)",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="only generate the first N papers (quick smoke test)",
+    )
     args = parser.parse_args()
     generate(args.out, args.split, args.limit)
 

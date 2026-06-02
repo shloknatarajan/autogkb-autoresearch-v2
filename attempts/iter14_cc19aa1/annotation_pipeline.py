@@ -115,7 +115,9 @@ def _extract_json_object(text):
 
 # A complementary second pass that emphasizes the comparison-group combinatorics
 # the first pass tends to under-produce. Union of the two passes maximizes recall.
-SECOND_PASS_PROMPT = SYSTEM_PROMPT + """
+SECOND_PASS_PROMPT = (
+    SYSTEM_PROMPT
+    + """
 
 SECOND-PASS FOCUS: assume a first reader already listed the obvious associations.
 Your job is to recover the ones that are easy to MISS:
@@ -125,6 +127,7 @@ Your job is to recover the ones that are easy to MISS:
   - Both the per-allele (additive) and per-genotype (dominant/recessive) framings.
   - Null results and trends that did not reach significance ("is not associated").
 Be even more exhaustive than a first reader would be."""
+)
 
 
 def _one_pass(system_prompt, user_content):
@@ -155,7 +158,7 @@ def _build_user_content(markdown_content, regex_variants):
         f"=== VARIANT INVENTORY (deterministic regex scan of THIS paper) ===\n"
         f"The following {len(regex_variants)} variant identifiers were found verbatim "
         f"in the text above. Treat this as a CHECKLIST: every one of these is studied "
-        f"or mentioned in the paper, so include it in \"variants\" and, for each one the "
+        f'or mentioned in the paper, so include it in "variants" and, for each one the '
         f"paper reports an association for, emit the corresponding standardized "
         f"sentence(s). Do not skip alleles from large panels/tables.\n{inv}"
     )

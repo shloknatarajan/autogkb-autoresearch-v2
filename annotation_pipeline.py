@@ -61,6 +61,19 @@ every framing, extra sentences are NOT penalized):
     associated") findings exactly as the paper reports them.
   - PHENOTYPE/METABOLIZER: also phrase associations via metabolizer status
     (poor/intermediate/normal/rapid metabolizer) when the gene defines one.
+  - PANEL / SCREENING STUDIES: when a paper screens MANY alleles or variants
+    against the same outcome (e.g. an HLA association study testing dozens of
+    HLA-A/B/C/DRB1 alleles for a drug hypersensitivity reaction), emit a SEPARATE
+    sentence for EVERY allele/variant tested -- the risk ones, the protective
+    ("decreased risk") ones, AND the ones reported in supplementary tables. Do
+    NOT summarize a table into one sentence; enumerate every row.
+  - POPULATION-FREE DUPLICATE: the reference annotations OFTEN omit the study
+    population/ethnicity. So for EACH association you state with a population
+    qualifier ("in people with X", "in <ethnicity> patients"), ALSO emit an
+    identical sentence with the population qualifier REMOVED. Emit both forms.
+  - ALLELE GROUPING: emit BOTH the individual-allele form (e.g. "*2", "*3", "*8"
+    each vs "*1") AND combined-group forms the paper supports
+    (e.g. "*2 + *3 + *8 ... as compared to *1").
 
 Include every association actually supported by the paper; favor recall maximally.
 Return JSON only: { "variants": ["..."], "sentences": ["..."] }"""

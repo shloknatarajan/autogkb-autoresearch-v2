@@ -1,0 +1,34 @@
+{
+  "pmcid": "PMC11603346",
+  "variants": [
+    "CYP2B6*6",
+    "rs3745274",
+    "rs2279343",
+    "rs28399499"
+  ],
+  "sentences": [
+    "CYP2B6 *1/*6 is associated with increased likelihood of efavirenz-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is associated with decreased likelihood of efavirenz-induced liver injury in people living with HIV treated with efavirenz as compared to CYP2B6 *1/*6.",
+    "CYP2B6 *6/*6 is associated with increased likelihood of efavirenz-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is associated with decreased likelihood of efavirenz-induced liver injury in people living with HIV treated with efavirenz as compared to CYP2B6 *6/*6.",
+    "CYP2B6 *1/*6 + *6/*6 is associated with increased likelihood of efavirenz-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is associated with decreased likelihood of efavirenz-induced liver injury in people living with HIV treated with efavirenz as compared to CYP2B6 *1/*6 + *6/*6.",
+    "CYP2B6 *1/*6 is associated with decreased likelihood of nevirapine-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is associated with increased likelihood of nevirapine-induced liver injury in people living with HIV treated with nevirapine as compared to CYP2B6 *1/*6.",
+    "CYP2B6 *6/*6 is not associated with altered likelihood of nevirapine-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is not associated with altered likelihood of nevirapine-induced liver injury in people living with HIV treated with nevirapine as compared to CYP2B6 *6/*6.",
+    "CYP2B6 *1/*6 + *6/*6 is associated with decreased likelihood of nevirapine-induced liver injury in people living with HIV as compared to CYP2B6 *1/*1.",
+    "CYP2B6 *1/*1 is associated with increased likelihood of nevirapine-induced liver injury in people living with HIV treated with nevirapine as compared to CYP2B6 *1/*6 + *6/*6.",
+    "CYP2B6*6 is associated with decreased CYP2B6 enzyme levels as compared to CYP2B6*1.",
+    "CYP2B6*6 is associated with decreased ability to metabolize drugs as compared to CYP2B6*1.",
+    "CYP2B6 poor metabolizer status is associated with increased likelihood of efavirenz-induced liver injury in people living with HIV as compared to normal metabolizer status.",
+    "CYP2B6 normal metabolizer status is associated with decreased likelihood of efavirenz-induced liver injury in people living with HIV treated with efavirenz as compared to poor metabolizer status.",
+    "CYP2B6 poor metabolizer status is associated with decreased likelihood of nevirapine-induced liver injury in people living with HIV as compared to normal metabolizer status.",
+    "CYP2B6 normal metabolizer status is associated with increased likelihood of nevirapine-induced liver injury in people living with HIV treated with nevirapine as compared to poor metabolizer status.",
+    "CYP2B6 *6 is associated with decreased CYP2B6 enzyme levels as compared to CYP2B6 *1.",
+    "CYP2B6 poor metabolizer status is associated with increased likelihood of efavirenz-induced liver injury in people living with HIV as compared to CYP2B6 normal metabolizer status.",
+    "CYP2B6 normal metabolizer status is associated with decreased likelihood of efavirenz-induced liver injury in people living with HIV treated with efavirenz as compared to CYP2B6 poor metabolizer status.",
+    "CYP2B6 poor metabolizer status is associated with decreased likelihood of nevirapine-induced liver injury in people living with HIV as compared to CYP2B6 normal metabolizer status.",
+    "CYP2B6 normal metabolizer status is associated with increased likelihood of nevirapine-induced liver injury in people living with HIV treated with nevirapine as compared to CYP2B6 poor metabolizer status."
+  ]
+}

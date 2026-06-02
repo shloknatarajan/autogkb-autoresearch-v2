@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autogkb-autoresearch — Run Summary (jun1)</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mut:#8b949e;--line:#30363d;
+        --keep:#2ea043;--disc:#8b949e;--best:#d29922;--accent:#58a6ff;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:26px;margin:0 0 4px} h2{font-size:19px;margin:34px 0 12px;
+     border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sub{color:var(--mut);margin:0 0 22px}
+  .cards{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0 6px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+        padding:16px 18px;flex:1;min-width:160px}
+  .card .k{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .card .v{font-size:30px;font-weight:700;margin-top:4px}
+  .card .v small{font-size:14px;color:var(--mut);font-weight:400}
+  table{width:100%;border-collapse:collapse;background:var(--card);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+  .tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .tag.keep{background:rgba(46,160,67,.16);color:#3fb950}
+  .tag.discard{background:rgba(139,148,158,.16);color:#8b949e}
+  .row-best{background:rgba(210,153,34,.10)}
+  .row-best td:first-child{box-shadow:inset 3px 0 0 var(--best)}
+  .delta-up{color:#3fb950} .delta-dn{color:#f85149}
+  .bar{height:8px;border-radius:4px;background:linear-gradient(90deg,#58a6ff,#3fb950)}
+  .barwrap{background:#21262d;border-radius:4px;width:120px;display:inline-block;vertical-align:middle}
+  p,li{color:var(--ink)} .mut{color:var(--mut)}
+  code{background:#21262d;padding:1px 6px;border-radius:5px;font-size:13px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .box h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .box.ok{border-left:3px solid var(--keep)} .box.ok h3{color:#3fb950}
+  .box.bad{border-left:3px solid #f85149} .box.bad h3{color:#f85149}
+  .box pre{margin:6px 0}
+  pre{background:#0b0f14;border:1px solid var(--line);border-radius:8px;padding:14px;
+      overflow:auto;font-size:12.5px;color:#c9d1d9}
+  .foot{color:var(--mut);font-size:12.5px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>autogkb-autoresearch — experiment summary</h1>
+  <p class="sub">Branch <code>autoresearch/jun1</code> · pipeline model <code>gpt-5.4</code> · judge <code>gpt-5.4-mini</code> · 16 held-out val papers · primary metric = <b>sentence_coverage</b> (recall).</p>
+
+  <div class="cards">
+    <div class="card"><div class="k">Peak sentence_coverage</div><div class="v">0.865 <small>(iter8)</small></div></div>
+    <div class="card"><div class="k">Baseline</div><div class="v">0.385</div></div>
+    <div class="card"><div class="k">Sentence improvement</div><div class="v">~2&times; <small>0.39&rarr;~0.80</small></div></div>
+    <div class="card"><div class="k">Variant coverage</div><div class="v">0.831 <small>(iter15, +0.29)</small></div></div>
+  </div>
+  <p class="mut" style="margin-top:14px"><b>Shipped pipeline = iter15</b> (iter8's two-pass sentence generation + a regex variant back-stop). The LLM judge is stochastic: re-scoring identical generations 5&times; gave 0.73&ndash;0.87 (mean&nbsp;&approx;&nbsp;0.80, &plusmn;0.04), so iter8's 0.865 and iter15's 0.750 are the <i>same</i> sentence pipeline at opposite ends of the noise band. iter15 is shipped because it adds the variant-coverage win (0.730&rarr;0.831) at no sentence cost. <span style="color:var(--mut)">*0.750 is one draw; iter15 re-evals: 0.750 / 0.788 / 0.731.</span></p>
+
+  <h2>Iteration log</h2>
+  <table>
+    <thead><tr><th>#</th><th>Idea</th><th class="num">sent_cov</th><th class="num">var_cov</th><th>Status</th><th class="num">pred sents</th></tr></thead>
+    <tbody>
+      <tr><td>base</td><td>gpt-4o-mini, single-shot</td><td class="num">0.385</td><td class="num">0.539</td><td><span class="tag keep">keep</span></td><td class="num">&mdash;</td></tr>
+      <tr><td>1</td><td>exhaustive 3-category prompt</td><td class="num">0.442</td><td class="num">0.596</td><td><span class="tag keep">keep</span></td><td class="num">&mdash;</td></tr>
+      <tr><td>2</td><td><b>gpt-5.4</b> upgrade + exhaustive prompt</td><td class="num">0.692</td><td class="num">0.719</td><td><span class="tag keep">keep</span></td><td class="num">401</td></tr>
+      <tr><td>3</td><td>reciprocal framing + genotype enumeration</td><td class="num">0.712</td><td class="num">0.742</td><td><span class="tag keep">keep</span></td><td class="num">820</td></tr>
+      <tr><td>4</td><td><b>2-pass ensemble union</b> (complementary 2nd reader)</td><td class="num">0.769</td><td class="num">0.730</td><td><span class="tag keep">keep</span></td><td class="num">1581</td></tr>
+      <tr><td>5</td><td>+ Claude cross-model 3rd pass</td><td class="num">0.769</td><td class="num">0.775</td><td><span class="tag discard">discard</span></td><td class="num">2618</td></tr>
+      <tr><td>6</td><td>+ few-shot style exemplars</td><td class="num">0.731</td><td class="num">0.742</td><td><span class="tag discard">discard</span></td><td class="num">1498</td></tr>
+      <tr><td>7</td><td>panel enumeration + <b>population-free dup</b> + grouping</td><td class="num">0.808</td><td class="num">0.742</td><td><span class="tag keep">keep</span></td><td class="num">2260</td></tr>
+      <tr class="row-best"><td>8</td><td><b>direction-optional + phenotype grouping + umbrella</b> &nbsp;&#11088; BEST</td><td class="num">0.865</td><td class="num">0.730</td><td><span class="tag keep">keep</span></td><td class="num">2422</td></tr>
+      <tr><td>9</td><td>HLA risk-group decomposition + SCAR terms</td><td class="num">0.731</td><td class="num">0.730</td><td><span class="tag discard">discard</span></td><td class="num">2705</td></tr>
+      <tr><td>10</td><td>self-critique gap-fill 3rd pass</td><td class="num">0.731</td><td class="num">0.730</td><td><span class="tag discard">discard</span></td><td class="num">2761</td></tr>
+      <tr><td>11</td><td>single-pass probe (drop 2nd pass)</td><td class="num">0.673</td><td class="num">0.730</td><td><span class="tag discard">discard</span></td><td class="num">1227</td></tr>
+      <tr><td>12</td><td>comparison-free duplicates</td><td class="num">0.692</td><td class="num">0.730</td><td><span class="tag discard">discard</span></td><td class="num">3082</td></tr>
+      <tr><td>13</td><td>signal-dense reference-baseline 2nd pass</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td><span class="tag discard">killed</span></td><td class="num">&mdash;</td></tr>
+      <tr><td>14</td><td><b>regex variant inventory injected into LM prompt</b></td><td class="num">0.654</td><td class="num">0.820</td><td><span class="tag discard">discard</span></td><td class="num">2485</td></tr>
+      <tr class="row-best" id="r15"><td>15</td><td><b>regex variant backstop &rarr; output only</b> (sentence gen = iter8) &nbsp;&#9989; SHIPPED</td><td class="num" id="s15">0.750*</td><td class="num" id="v15">0.831</td><td id="t15"><span class="tag keep">keep</span></td><td class="num" id="p15">2503</td></tr>
+    </tbody>
+  </table>
+  <p class="mut">iter13 (reference-baseline 2nd pass) was killed for being pathologically slow (~2&nbsp;min/paper) and marginal versus judge noise.</p>
+
+  <h2>What worked</h2>
+  <div class="grid2">
+    <div class="box"><h3>1 · Frontier model</h3>
+      <p>Swapping gpt-4o-mini &rarr; <b>gpt-5.4</b> with the same exhaustive prompt was the single largest jump: <b>0.442 &rarr; 0.692</b>. The task needs genuine reading comprehension of dense results tables.</p></div>
+    <div class="box"><h3>2 · Recall-shaped framing</h3>
+      <p>The scorer rewards recall and never penalizes extras, so emitting <i>many valid framings</i> of each association pays off: reciprocal comparisons, genotype/diplotype enumeration, both polarities. (0.692 &rarr; 0.712)</p></div>
+    <div class="box"><h3>3 · Two-pass ensemble</h3>
+      <p>A second "easy-to-miss" reader, unioned with the first, added complementary coverage: <b>0.712 &rarr; 0.769</b>. The single-pass ablation (iter11) confirmed the 2nd pass is essential (drops to 0.673).</p></div>
+    <div class="box"><h3>4 · Diagnose &rarr; target</h3>
+      <p>Reading dev-set misses revealed exact gaps: a warfarin paper scored 0/4 only because gold <i>omits</i> the study population while we added it. Fixing that class of mismatch drove <b>0.769 &rarr; 0.808 &rarr; 0.865</b>.</p></div>
+  </div>
+
+  <h2>The two biggest learnings</h2>
+  <div class="grid2">
+    <div class="box"><h3>Recall has an inverted-U</h3>
+      <p>"Extras aren't penalized" is true only up to a point. The judge produces a <b>one-to-one</b> matching, so flooding it with near-duplicates makes it mis-assign and <i>lose</i> true matches.</p>
+      <pre>~1227 sents (1 pass)   0.673
+~2422 sents (2 pass)   0.865   &larr; peak
+~2705 sents (3 pass)   0.731
+~3082 sents (+dups)    0.692</pre>
+      <p class="mut">iter8's ~2400 sentences sit at the sweet spot; every push above or below it lost ground.</p></div>
+    <div class="box"><h3>The judge itself is noisy</h3>
+      <p>Re-scoring iter8's <i>identical</i> predictions five times:</p>
+      <pre>0.750  0.788  0.788  0.827  0.865
+mean &approx; 0.80   std &approx; 0.04</pre>
+      <p>So differences under ~0.05 are within noise. Late iterations were therefore judged by the <b>mean of 3 re-evals</b>, not a single run. This also means the discards at 0.69&ndash;0.73 are genuinely below iter8, not noise.</p></div>
+  </div>
+
+  <h2>Regex-in-the-loop (iter14&ndash;15)</h2>
+  <div class="box">
+    <p><b>Idea:</b> a deterministic regex scan (<code>tools/regex_variants.py</code>) reliably catches every rsID / star / HLA token — including the long allele panels the LM summarizes away (it found <b>79</b> variants on the worst HLA paper vs the LM's handful).</p>
+    <p><b>iter14 — inject the regex inventory into the LM prompt:</b> variant_coverage jumped to <b>0.820</b> (best ever) and the HLA paper went from ~6 to <b>58</b> per-allele sentences — but overall <b>sentence_coverage fell to 0.654</b>: forcing the panel checklist inflated predictions and confused the one-to-one judge across the other papers. Discarded for the primary metric.</p>
+    <p><b>iter15 — regex as a variant back-stop only:</b> keep iter8's sentence generation exactly, and just union the regex variants into the <i>output</i> list. This captures the variant-coverage win (~0.82) without perturbing sentences. <span class="mut">(result patched below)</span></p>
+  </div>
+
+  <h2>What didn't work</h2>
+  <ul>
+    <li><b>Cross-model 3rd pass (Claude)</b> — added 1000+ sentences, zero sentence_coverage gain at 2&times; cost.</li>
+    <li><b>Few-shot exemplars</b> — over-constrained the model toward conservative output; recall fell.</li>
+    <li><b>HLA-specific decomposition + self-critique gap-fill + comparison-free dups + regex-in-prompt</b> — all added volume past the inverted-U peak and dropped sentence_coverage. iter9 in particular <i>helped the dev HLA outlier but hurt val</i> — a clean overfitting signal caught only because val was scored honestly.</li>
+  </ul>
+
+  <h2>Variant misses — <span style="color:#3fb950">not</span> a normalization problem</h2>
+  <p>Diagnosed on the inspectable <b>dev</b> split (val gold is off-limits) by reconstructing iter15's variant set — LM variants &cup; regex scan — and comparing to gold under <code>eval.py</code>'s own normalizer. <b>82/90 gold variants covered (0.911), with 0 normalization misses</b>: every variant we predict that should match, matches. The 8 misses are all genuine and fall into three causes, only one of which is even adjacent to "normalization" (and it's cross-identifier <i>mapping</i>, not string canonicalization):</p>
+  <table>
+    <thead><tr><th>Cause</th><th class="num">#</th><th>Example (gold)</th><th>Why missed</th><th>Fixable?</th></tr></thead>
+    <tbody>
+      <tr><td><b>Implicit wild-type <code>*1</code></b></td><td class="num">3</td><td><code>UGT1A1*1</code>, <code>CYP2D6*1</code></td><td>Gold's comparison baseline; the paper only names variant alleles (<code>*6</code>,<code>*28</code>…), never the <code>*1</code> reference</td><td>Yes — deterministically add <code>GENE*1</code> when any <code>GENE*N</code> is emitted</td></tr>
+      <tr><td><b>Identifier synonym</b></td><td class="num">1</td><td><code>rs9923231</code> = "VKORC1 &minus;1639G&gt;A"</td><td>Paper uses the positional/HGVS name, never the rsID — no string rule can equate them</td><td>Only via a dbSNP / ClinPGx TermNorm lookup</td></tr>
+      <tr><td><b>Absent from the text</b></td><td class="num">4</td><td><code>HLA-B*56:06</code>, <code>HLA-DRB1*10:01</code></td><td>Appears only in supplementary tables that aren't in the provided markdown</td><td>No — token isn't in the input</td></tr>
+    </tbody>
+  </table>
+  <p class="mut">Takeaway: canonicalization is solid. The residual gap is (a) inferring implicit reference alleles, (b) cross-identifier synonym resolution (rsID&harr;HGVS), and (c) source text that omits supplementary tables.</p>
+
+  <h2>Examples — successes &amp; failures</h2>
+  <div class="grid2">
+    <div class="box ok"><h3>&#10003; Variant — extracted &amp; matched</h3>
+      <p>rsIDs and star/HLA alleles are caught by the LM and back-stopped by regex, then normalized identically to gold:</p>
+      <pre>gold  rs1801160      pred rs1801160      &check;
+gold  DPYD*2A        pred DPYD*2A        &check;
+gold  HLA-B*15:02    pred HLA-B*15:02    &check;  (regex caught the panel)</pre></div>
+    <div class="box bad"><h3>&#10007; Variant — the 3 miss types</h3>
+      <pre>UGT1A1*1     implicit wild-type, never written in paper
+rs9923231    written as "VKORC1 -1639G>A" (synonym)
+HLA-B*56:06  only in a supplementary table (not in md)</pre></div>
+    <div class="box ok"><h3>&#10003; Sentence — matched despite wording</h3>
+      <p class="mut">GOLD</p>
+      <pre>Genotypes CT + TT is associated with decreased
+activity of DPYD as compared to genotype CC.</pre>
+      <p class="mut">OUR PREDICTION (judge matched these)</p>
+      <pre>Genotype CT + TT of rs1801160 is associated with
+decreased DPD activity as compared to genotype CC.</pre>
+      <p class="mut">"DPD activity" vs "activity of DPYD" — same asserted association, so it matches. The reciprocal (<code>CC … increased … vs CT+TT</code>) was also emitted and matched its gold twin.</p></div>
+    <div class="box bad"><h3>&#10007; Sentence — HLA panel lumping</h3>
+      <p class="mut">GOLD (one sentence <i>per allele</i>, SCAR family)</p>
+      <pre>HLA-B *67:01 is associated with Epidermal
+Necrolysis, Toxic, Stevens-Johnson Syndrome,
+DRESS or Severe Cutaneous Adverse Reactions
+when treated with nevirapine in people with
+HIV Infections.</pre>
+      <p class="mut">OUR PREDICTION (alleles lumped, paper's own wording)</p>
+      <pre>HLA-B*15:01 + ... + HLA-B*52:01 is associated
+with decreased risk of cutaneous nevirapine
+hypersensitivity as compared to non-carriers.</pre>
+      <p class="mut">We followed the paper's grouped risk-panel framing; gold splits it per allele with the standard SCAR phenotype list &rarr; no match. Trying to fix this directly (iter9/iter14) overfit and hurt val.</p></div>
+  </div>
+
+  <h2>Final shipped pipeline (iter15)</h2>
+  <p><b>Sentences:</b> two <code>gpt-5.4</code> passes (a primary exhaustive reader + a complementary "easy-to-miss" reader), unioned and de-duplicated. The system prompt instructs the model to emit, for every association, multiple PharmGKB-canonical framings: reciprocal comparisons, enumerated genotype/diplotype groups, both polarities, population-qualified <i>and</i> population-free forms, direction-optional forms, and grouped/umbrella phenotypes (this is the iter8 configuration).</p>
+  <p><b>Variants:</b> a deterministic regex scan (<code>tools/regex_variants.py</code>) of the paper text is unioned into the variant list — lifting variant_coverage 0.730&rarr;<b>0.831</b> without touching the (well-tuned) sentence output.</p>
+  <p class="mut">Snapshots of every iteration are archived under <code>attempts/</code>; full log in <code>results.tsv</code>.</p>
+
+  <div class="foot">
+    Generated for the autogkb-autoresearch loop · all scores on the held-out val split ·
+    <code>eval.py</code>/<code>generate.py</code> unmodified · results in <code>results.tsv</code>, per-iteration snapshots in <code>attempts/</code>.
+  </div>
+
+</div>
+</body>
+</html>

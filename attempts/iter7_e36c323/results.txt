@@ -1,0 +1,14 @@
+iteration: iter7
+commit: e36c323
+timestamp: 20260602-005928
+sentence_coverage: 0.808
+variant_coverage: 0.742
+description: iter4 + panel enumeration, population-free duplicates, allele grouping
+--- eval summary ---
+sentence_coverage:  0.808
+variant_coverage:   0.742
+sentence_precision: 0.019
+num_papers:         16
+num_pred_sentences: 2260
+num_gold_sentences: 52
+total_seconds:      17.7

@@ -1,0 +1,14 @@
+iteration: iter9
+commit: 0c24b07
+timestamp: 20260602-021919
+sentence_coverage: 0.731
+variant_coverage: 0.730
+description: iter8 + per-allele risk-group decomposition + standard SCAR phenotype terms
+--- eval summary ---
+sentence_coverage:  0.731
+variant_coverage:   0.730
+sentence_precision: 0.014
+num_papers:         16
+num_pred_sentences: 2705
+num_gold_sentences: 52
+total_seconds:      20.0

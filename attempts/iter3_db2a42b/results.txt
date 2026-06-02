@@ -1,0 +1,5 @@
+iteration: iter3
+commit: db2a42b
+sentence_coverage: 0.712
+variant_coverage: 0.742
+description: reciprocal-framing + genotype-enumeration tactics

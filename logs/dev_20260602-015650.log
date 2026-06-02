@@ -1,0 +1,48 @@
+[92m01:56:52 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m01:56:52 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10275785: 10 variants, 317 sentences
+  PMC10786722: 80 variants, 109 sentences
+  PMC10946077: 2 variants, 344 sentences
+  PMC11062152: 5 variants, 53 sentences
+  PMC11603346: 4 variants, 77 sentences
+  PMC12035587: 6 variants, 59 sentences
+  PMC12038368: 14 variants, 144 sentences
+  PMC12331468: 19 variants, 182 sentences
+  PMC3113609: 3 variants, 89 sentences
+  PMC3548984: 6 variants, 157 sentences
+  PMC3839910: 5 variants, 145 sentences
+  PMC4706412: 17 variants, 90 sentences
+  PMC5508045: 5 variants, 78 sentences
+  PMC5561238: 84 variants, 217 sentences
+  PMC6465603: 5 variants, 159 sentences
+  PMC8790808: 24 variants, 282 sentences
+wrote 16 generations to results/dev_20260602-015650/
+[92m02:17:23 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m02:17:23 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10275785: variants 2/2, sentences matched 2 (pred 317, gold 2)
+  PMC10786722: variants 3/3, sentences matched 2 (pred 109, gold 2)
+  PMC10946077: variants 2/3, sentences matched 3 (pred 344, gold 3)
+  PMC11062152: variants 2/3, sentences matched 2 (pred 53, gold 2)
+  PMC11603346: variants 1/2, sentences matched 2 (pred 77, gold 2)
+  PMC12035587: variants 1/1, sentences matched 1 (pred 59, gold 1)
+  PMC12038368: variants 2/2, sentences matched 2 (pred 144, gold 2)
+  PMC12331468: variants 4/4, sentences matched 4 (pred 182, gold 5)
+  PMC3113609: variants 1/1, sentences matched 3 (pred 89, gold 3)
+  PMC3548984: variants 5/6, sentences matched 3 (pred 157, gold 3)
+  PMC3839910: variants 2/2, sentences matched 6 (pred 145, gold 6)
+  PMC4706412: variants 5/8, sentences matched 2 (pred 90, gold 4)
+  PMC5508045: variants 4/4, sentences matched 4 (pred 78, gold 4)
+  PMC5561238: variants 38/43, sentences matched 14 (pred 217, gold 43)
+  PMC6465603: variants 2/2, sentences matched 1 (pred 159, gold 2)
+  PMC8790808: variants 4/4, sentences matched 3 (pred 282, gold 4)
+  NOTE: 16/16 scored papers are DEV papers (val is the honest metric)
+---
+sentence_coverage:  0.614
+variant_coverage:   0.867
+sentence_precision: 0.022
+num_papers:         16
+num_pred_sentences: 2502
+num_gold_sentences: 88
+generations:        results/dev_20260602-015650
+judge_model:        gpt-5.4-mini
+total_seconds:      31.4

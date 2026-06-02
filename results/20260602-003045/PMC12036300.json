@@ -1,0 +1,42 @@
+{
+  "pmcid": "PMC12036300",
+  "variants": [
+    "CYP2C19*2",
+    "rs4244285",
+    "CYP2C19*3",
+    "rs4986893",
+    "CYP2C19*10",
+    "rs6413438",
+    "CYP2C19*17",
+    "rs12248560",
+    "CYP2C19*22",
+    "rs140278421",
+    "CYP2C19*26",
+    "rs375781227",
+    "CYP2C19*33",
+    "rs370803989",
+    "CYP2C19*1"
+  ],
+  "sentences": [
+    "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of recurrent ischemic events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+    "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of recurrent ischemic events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*2 + *2/*2.",
+    "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+    "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*2 + *2/*2.",
+    "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+    "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*2 + *2/*2.",
+    "CYP2C19 *1/*17 + *17/*17 is not associated with increased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*1 + *1/*2 + *2/*2.",
+    "CYP2C19 *1/*1 + *1/*2 + *2/*2 is not associated with decreased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*17 + *17/*17.",
+    "CYP2C19 *1/*2 + *2/*2 is not associated with increased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+    "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease as compared to CYP2C19 *1/*2 + *2/*2.",
+    "CYP2C19 *2 carrier status is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 non-carrier status.",
+    "CYP2C19 *2 non-carrier status is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 carrier status.",
+    "CYP2C19 *2 carrier status is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 non-carrier status.",
+    "CYP2C19 *2 non-carrier status is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 carrier status.",
+    "CYP2C19 *17 carrier status is not associated with increased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *17 non-carrier status.",
+    "CYP2C19 *17 non-carrier status is not associated with decreased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *17 carrier status.",
+    "CYP2C19 *2 carrier status is not associated with increased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 non-carrier status.",
+    "CYP2C19 *2 non-carrier status is not associated with decreased risk of bleeding events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 *2 carrier status.",
+    "CYP2C19 intermediate metabolizer phenotype is not associated with increased likelihood of recurrent ischemic events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 normal metabolizer + rapid metabolizer + ultrarapid metabolizer phenotypes.",
+    "CYP2C19 normal metabolizer + rapid metabolizer + ultrarapid metabolizer phenotypes are not associated with decreased likelihood of recurrent ischemic events when treated with clopidogrel in people with Coronary Artery Disease who underwent Percutaneous Coronary Intervention as compared to CYP2C19 intermediate metabolizer phenotype."
+  ]
+}

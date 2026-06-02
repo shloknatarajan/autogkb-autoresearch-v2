@@ -1,0 +1,25 @@
+{
+  "pmcid": "PMC3584248",
+  "variants": [
+    "CYP2D6*1",
+    "CYP2D6*2",
+    "CYP2D6*3",
+    "CYP2D6*4",
+    "CYP2D6*5",
+    "CYP2D6*6",
+    "CYP2D6*10",
+    "CYP2D6*41"
+  ],
+  "sentences": [
+    "CYP2D6 normal metabolizer genotype status is associated with increased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotype status.",
+    "CYP2D6 intermediate metabolizer genotype status is associated with decreased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotype status.",
+    "CYP2D6 normal metabolizer genotype status is associated with increased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotype status.",
+    "CYP2D6 slow metabolizer genotype status is associated with decreased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotype status.",
+    "CYP2D6 intermediate metabolizer genotype status is associated with increased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotype status.",
+    "CYP2D6 slow metabolizer genotype status is associated with decreased plasma concentrations of endoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotype status.",
+    "CYP2D6 slow metabolizer genotype status is associated with decreased plasma concentrations of 4-hydroxytamoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotype status.",
+    "CYP2D6 normal metabolizer genotype status is associated with increased plasma concentrations of 4-hydroxytamoxifen during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotype status.",
+    "CYP2D6 genotype metabolic status is not associated with plasma concentrations of tamoxifen during tamoxifen treatment in women with operable breast cancer.",
+    "CYP2D6 genotype metabolic status is not associated with plasma concentrations of N-desmethyltamoxifen during tamoxifen treatment in women with operable breast cancer."
+  ]
+}

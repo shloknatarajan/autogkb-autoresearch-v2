@@ -1,0 +1,14 @@
+iteration: iter6
+commit: 317b7ee
+timestamp: 20260602-003045
+sentence_coverage: 0.731
+variant_coverage: 0.742
+description: iter4 2-pass ensemble + few-shot real PharmGKB style exemplars
+--- eval summary ---
+sentence_coverage:  0.731
+variant_coverage:   0.742
+sentence_precision: 0.025
+num_papers:         16
+num_pred_sentences: 1498
+num_gold_sentences: 52
+total_seconds:      21.9

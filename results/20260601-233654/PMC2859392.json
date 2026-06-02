@@ -1,0 +1,38 @@
+{
+  "pmcid": "PMC2859392",
+  "variants": [
+    "rs3745274",
+    "rs3211371",
+    "rs2279343",
+    "rs28399499",
+    "rs2740574",
+    "rs4986910",
+    "CYP2B6*6",
+    "CYP2B6*26"
+  ],
+  "sentences": [
+    "Genotype TT is associated with increased plasma efavirenz concentration at week 6 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is associated with increased plasma efavirenz concentration at week 6 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is associated with increased plasma efavirenz concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is associated with increased plasma efavirenz concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is associated with increased plasma efavirenz concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is associated with increased plasma efavirenz concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is associated with increased plasma nevirapine concentration at week 6 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is associated with increased plasma nevirapine concentration at week 6 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is not associated with increased plasma nevirapine concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is not associated with increased plasma nevirapine concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is not associated with increased plasma nevirapine concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is not associated with increased plasma nevirapine concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is not associated with increased likelihood of achieving plasma HIV-1 RNA levels less than 50 copies/mL at week 12 of efavirenz-based antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is not associated with increased likelihood of achieving plasma HIV-1 RNA levels less than 50 copies/mL at week 12 of efavirenz-based antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is not associated with increased likelihood of achieving plasma HIV-1 RNA levels less than 50 copies/mL at week 12 of nevirapine-based antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GT.",
+    "Genotype TT is not associated with increased likelihood of achieving plasma HIV-1 RNA levels less than 50 copies/mL at week 12 of nevirapine-based antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype GG.",
+    "Genotype TT is not associated with CD4 T-cell count during efavirenz-based antiretroviral therapy in HIV/TB co-infected Thai adults as compared to genotype GT or GG.",
+    "Genotype TT is not associated with CD4 T-cell count during nevirapine-based antiretroviral therapy in HIV/TB co-infected Thai adults as compared to genotype GT or GG.",
+    "Genotype TC is associated with increased plasma efavirenz concentration at week 6 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype TT for CYP3A4 T878C.",
+    "Genotype TC is associated with increased plasma efavirenz concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype TT for CYP3A4 T878C.",
+    "Genotype TC is associated with increased plasma efavirenz concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype TT for CYP3A4 T878C.",
+    "Genotype TC is associated with increased plasma nevirapine concentration at week 12 of antiretroviral therapy during rifampicin coadministration in HIV/TB co-infected Thai adults as compared to genotype TT for CYP3A4 T878C.",
+    "Genotype TC is associated with increased plasma nevirapine concentration 1 month after rifampicin discontinuation in HIV/TB co-infected Thai adults as compared to genotype TT for CYP3A4 T878C."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "pmcid": "PMC554812",
+  "variants": [
+    "rs3117583",
+    "rs1150793",
+    "rs2855804",
+    "rs2268791",
+    "rs1594",
+    "rs2304224",
+    "HLA-B*58:01",
+    "HLA-C*03:02",
+    "HLA-A*33:03",
+    "HLA-DRB1*03:01",
+    "HLA-A*33:03-HLA-C*03:02-HLA-B*58:01",
+    "HLA-C*03:02-HLA-B*58:01",
+    "HLA-C*03:02-HLA-B*58:01-HLA-DRB1*03:01",
+    "HLA-A*33:03-HLA-C*03:02-HLA-B*58:01-HLA-DRB1*03:01"
+  ],
+  "sentences": [
+    "HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions in Han Chinese as compared to non-carriers.",
+    "HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-B*58:01 is associated with increased risk of allopurinol-induced hypersensitivity syndrome when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-B*58:01 is associated with increased risk of allopurinol-induced Stevens-Johnson syndrome when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-B*58:01 is associated with increased risk of allopurinol-induced toxic epidermal necrolysis when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers.",
+    "HLA-C*03:02-HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers of the haplotype.",
+    "HLA-A*33:03-HLA-C*03:02-HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers of the haplotype.",
+    "HLA-C*03:02-HLA-B*58:01-HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers of the haplotype.",
+    "HLA-A*33:03-HLA-C*03:02-HLA-B*58:01-HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese as compared to non-carriers of the haplotype.",
+    "rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese.",
+    "rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese.",
+    "rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese.",
+    "rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese.",
+    "rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese.",
+    "rs2304224 is not associated with risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol in Han Chinese."
+  ]
+}

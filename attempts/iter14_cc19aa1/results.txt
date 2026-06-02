@@ -1,0 +1,14 @@
+iteration: iter14
+commit: cc19aa1
+timestamp: 20260602-035643
+sentence_coverage: 0.654
+variant_coverage: 0.820
+description: regex variant inventory injected into both LM passes + unioned into output
+--- eval summary ---
+sentence_coverage:  0.654
+variant_coverage:   0.820
+sentence_precision: 0.014
+num_papers:         16
+num_pred_sentences: 2485
+num_gold_sentences: 52
+total_seconds:      19.0

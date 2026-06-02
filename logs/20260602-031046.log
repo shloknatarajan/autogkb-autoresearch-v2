@@ -1,0 +1,47 @@
+[92m03:10:48 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m03:10:49 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: 6 variants, 65 sentences
+  PMC10880264: 30 variants, 135 sentences
+  PMC10993165: 35 variants, 121 sentences
+  PMC11430164: 26 variants, 140 sentences
+  PMC11971672: 4 variants, 64 sentences
+  PMC12036300: 15 variants, 46 sentences
+  PMC12319246: 19 variants, 94 sentences
+  PMC2859392: 5 variants, 60 sentences
+  PMC3387531: 10 variants, 58 sentences
+  PMC3584248: 19 variants, 44 sentences
+  PMC384715: 5 variants, 61 sentences
+  PMC4916189: 13 variants, 76 sentences
+  PMC554812: 10 variants, 84 sentences
+  PMC6435416: 4 variants, 12 sentences
+  PMC6714829: 3 variants, 59 sentences
+  PMC8973308: 9 variants, 108 sentences
+wrote 16 generations to results/20260602-031046/
+[92m03:19:24 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m03:19:25 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: variants 4/5, sentences matched 2 (pred 65, gold 5)
+  PMC10880264: variants 1/3, sentences matched 3 (pred 135, gold 4)
+  PMC10993165: variants 3/3, sentences matched 2 (pred 121, gold 3)
+  PMC11430164: variants 18/18, sentences matched 2 (pred 140, gold 2)
+  PMC11971672: variants 4/4, sentences matched 1 (pred 64, gold 1)
+  PMC12036300: variants 2/3, sentences matched 2 (pred 46, gold 2)
+  PMC12319246: variants 8/8, sentences matched 4 (pred 94, gold 8)
+  PMC2859392: variants 1/1, sentences matched 1 (pred 60, gold 2)
+  PMC3387531: variants 3/6, sentences matched 3 (pred 58, gold 5)
+  PMC3584248: variants 5/5, sentences matched 2 (pred 44, gold 2)
+  PMC384715: variants 1/1, sentences matched 1 (pred 61, gold 1)
+  PMC4916189: variants 5/7, sentences matched 5 (pred 76, gold 7)
+  PMC554812: variants 5/5, sentences matched 4 (pred 84, gold 5)
+  PMC6435416: variants 0/15, sentences matched 1 (pred 12, gold 1)
+  PMC6714829: variants 2/2, sentences matched 0 (pred 59, gold 2)
+  PMC8973308: variants 3/3, sentences matched 2 (pred 108, gold 2)
+---
+sentence_coverage:  0.673
+variant_coverage:   0.730
+sentence_precision: 0.029
+num_papers:         16
+num_pred_sentences: 1227
+num_gold_sentences: 52
+generations:        results/20260602-031046
+judge_model:        gpt-5.4-mini
+total_seconds:      14.2

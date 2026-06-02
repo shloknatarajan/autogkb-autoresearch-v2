@@ -1,0 +1,14 @@
+iteration: iter15
+commit: e3c614d
+timestamp: 20260602-041638
+sentence_coverage: 0.750
+variant_coverage: 0.831
+description: iter8 + regex variant union into OUTPUT only (no prompt injection)
+--- eval summary ---
+sentence_coverage:  0.750
+variant_coverage:   0.831
+sentence_precision: 0.016
+num_papers:         16
+num_pred_sentences: 2503
+num_gold_sentences: 52
+total_seconds:      35.4

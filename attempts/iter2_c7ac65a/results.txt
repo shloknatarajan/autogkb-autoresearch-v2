@@ -1,0 +1,5 @@
+iteration: iter2
+commit: c7ac65a
+sentence_coverage: 0.692
+variant_coverage: 0.719
+description: gpt-5.4 + exhaustive single-shot recall prompt

@@ -1,0 +1,34 @@
+{
+  "pmcid": "PMC3584248",
+  "variants": [
+    "CYP2D6*1",
+    "CYP2D6*2",
+    "CYP2D6*3",
+    "CYP2D6*4",
+    "CYP2D6*5",
+    "CYP2D6*6",
+    "CYP2D6*10",
+    "CYP2D6*41",
+    "CYP2D6 *1/*1",
+    "CYP2D6 *1/*10",
+    "CYP2D6 *1/*2",
+    "CYP2D6 *1/*41",
+    "CYP2D6 *1/*5",
+    "CYP2D6 *10/*10",
+    "CYP2D6 *10/*41",
+    "CYP2D6 *2/*10",
+    "CYP2D6 *2/*2",
+    "CYP2D6 *2/*5",
+    "CYP2D6 *5/*10"
+  ],
+  "sentences": [
+    "CYP2D6 normal metabolizer genotypes (*1 and *2 alleles) are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+    "CYP2D6 normal metabolizer genotypes (*1 and *2 alleles) are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes.",
+    "CYP2D6 intermediate metabolizer genotypes (heterozygous for *10 or *41) are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+    "CYP2D6 slow metabolizer genotypes (homozygous for *10 or *41 variants or carrying one or more null alleles *3-*6) are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+    "CYP2D6 genotypes with reduced function are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer.",
+    "CYP2D6 genotypes are associated with 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer.",
+    "CYP2D6 genotypes are not associated with tamoxifen concentrations during tamoxifen treatment in women with operable breast cancer.",
+    "CYP2D6 genotypes are not associated with N-desmethyltamoxifen concentrations during tamoxifen treatment in women with operable breast cancer."
+  ]
+}

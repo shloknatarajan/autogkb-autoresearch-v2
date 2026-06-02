@@ -74,6 +74,20 @@ every framing, extra sentences are NOT penalized):
   - ALLELE GROUPING: emit BOTH the individual-allele form (e.g. "*2", "*3", "*8"
     each vs "*1") AND combined-group forms the paper supports
     (e.g. "*2 + *3 + *8 ... as compared to *1").
+  - DIRECTION-OPTIONAL: many curated risk/likelihood associations OMIT the
+    increased/decreased word. So for each "is associated with increased risk of Y"
+    sentence, ALSO emit the direction-free form "is associated with Y" (and, for
+    likelihood/risk phenotypes, "is associated with likelihood of Y"). For HLA
+    hypersensitivity associations especially, the canonical form is often just
+    "HLA-X *NN:NN is associated with <reaction> when treated with <drug> in people
+    with <disease>" with NO increased/decreased.
+  - PHENOTYPE GROUPING + UMBRELLA: when a variant is linked to several related
+    outcomes, emit BOTH the combined form listing them together
+    ("... Stevens-Johnson Syndrome, Toxic Epidermal Necrolysis or Severe Cutaneous
+    Adverse Reactions ...") AND separate single-outcome sentences. Also emit the
+    umbrella category (e.g. "Severe Cutaneous Adverse Reactions", "Drug
+    Hypersensitivity", "Drug Reaction with Eosinophilia and Systemic Symptoms")
+    alongside the specific reaction.
 
 Include every association actually supported by the paper; favor recall maximally.
 Return JSON only: { "variants": ["..."], "sentences": ["..."] }"""

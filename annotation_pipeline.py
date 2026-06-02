@@ -86,11 +86,29 @@ def _extract_json_object(text):
     return {}
 
 
-def predict(markdown_content):
+# A complementary second pass that emphasizes the comparison-group combinatorics
+# the first pass tends to under-produce. Union of the two passes maximizes recall.
+SECOND_PASS_PROMPT = (
+    SYSTEM_PROMPT
+    + """
+
+SECOND-PASS FOCUS: assume a first reader already listed the obvious associations.
+Your job is to recover the ones that are easy to MISS:
+  - Every pairwise comparison among the genotype/diplotype groups (and its reciprocal).
+  - Subgroup / stratified findings (by sex, ancestry, disease subtype, dose level).
+  - Associations reported only in tables, figures, or supplementary text.
+  - Both the per-allele (additive) and per-genotype (dominant/recessive) framings.
+  - Null results and trends that did not reach significance ("is not associated").
+Be even more exhaustive than a first reader would be."""
+)
+
+
+def _one_pass(system_prompt, markdown_content):
+    """Return one pass's {variant -> [sentences]} mapping (raw, un-merged)."""
     resp = litellm.completion(
         model=MODEL,
         messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": system_prompt},
             {"role": "user", "content": markdown_content},
         ],
         temperature=0,
@@ -99,6 +117,35 @@ def predict(markdown_content):
     data = _extract_json_object(resp.choices[0].message.content or "")
     vs = data.get("variant_sentences", {})
     if not isinstance(vs, dict):
-        vs = {}
-    variant_sentences = {str(k): (v or []) for k, v in vs.items()}
+        return {}
+    return {str(k): (v or []) for k, v in vs.items()}
+
+
+def _variant_key(v):
+    """Case/space-insensitive key for deduping variant ids across passes."""
+    return str(v).strip().lower().replace(" ", "")
+
+
+def predict(markdown_content):
+    # Two-pass ensemble: union the per-variant sentence groups from both passes to
+    # maximize recall.
+    g1 = _one_pass(SYSTEM_PROMPT, markdown_content)
+    g2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
+
+    variant_sentences = {}
+    key_to_canonical = {}
+    for group in (g1, g2):
+        for variant, sents in group.items():
+            vkey = _variant_key(variant)
+            if not vkey:
+                continue
+            canonical = key_to_canonical.setdefault(vkey, variant)
+            bucket = variant_sentences.setdefault(canonical, [])
+            seen = {s.strip().lower() for s in bucket}
+            for s in sents:
+                s = str(s)
+                if s.strip() and s.strip().lower() not in seen:
+                    seen.add(s.strip().lower())
+                    bucket.append(s)
+
     return {"variant_sentences": variant_sentences}

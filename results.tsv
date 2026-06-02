@@ -1,3 +1,4 @@
 commit	meaning_capture	variant_coverage	status	description
 6229218	0.425	0.697	keep	baseline: minimal single-shot gpt-5.4 predict()
 fc7b0be	0.471	0.730	keep	iter1: exhaustive recall-focused prompt (3 PharmGKB categories)
+4315d91	0.529	0.742	keep	iter2: reciprocal-framing + genotype-enumeration + polarity tactics

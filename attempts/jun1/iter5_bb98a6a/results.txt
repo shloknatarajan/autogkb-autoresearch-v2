@@ -1,0 +1,14 @@
+iteration: iter5
+commit: bb98a6a
+timestamp: 20260602-000645
+sentence_coverage: 0.769
+variant_coverage: 0.775
+description: 3-pass ensemble: 2x gpt-5.4 + claude-sonnet-4-5 cross-model, union
+--- eval summary ---
+sentence_coverage:  0.769
+variant_coverage:   0.775
+sentence_precision: 0.015
+num_papers:         16
+num_pred_sentences: 2618
+num_gold_sentences: 52
+total_seconds:      17.9

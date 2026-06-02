@@ -1,0 +1,39 @@
+{
+  "pmcid": "PMC11971672",
+  "variants": [
+    "CYP2C19*1",
+    "CYP2C19*2",
+    "CYP2C19*3",
+    "CYP2C19*17"
+  ],
+  "sentences": [
+    "CYP2C19 loss-of-function allele carrier status is associated with increased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is associated with decreased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is associated with increased likelihood of recurrent stroke within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is associated with decreased likelihood of recurrent stroke within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of myocardial infarction within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of myocardial infarction within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of cardiovascular death within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of cardiovascular death within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of ischemic stroke within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of ischemic stroke within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of transient ischemic attack within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of transient ischemic attack within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of coronary artery revascularization within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of coronary artery revascularization within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of early neurologic deterioration within 7 days when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of early neurologic deterioration within 7 days when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with decreased likelihood of good functional outcome at 3 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with increased likelihood of good functional outcome at 3 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of major bleeding within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of major bleeding within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is not associated with increased likelihood of all-cause mortality within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status.",
+    "CYP2C19 loss-of-function allele noncarrier status is not associated with decreased likelihood of all-cause mortality within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 intermediate metabolizer status is not associated with decreased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 poor metabolizer status.",
+    "CYP2C19 poor metabolizer status is not associated with increased likelihood of composite cardiovascular events within 6 months when treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 intermediate metabolizer status.",
+    "CYP2C19 intermediate metabolizer status is not associated with decreased likelihood of composite cardiovascular events in patients receiving aspirin plus clopidogrel for acute ischemic stroke as compared to CYP2C19 poor metabolizer status.",
+    "CYP2C19 poor metabolizer status is not associated with increased likelihood of composite cardiovascular events in patients receiving aspirin plus clopidogrel for acute ischemic stroke as compared to CYP2C19 intermediate metabolizer status.",
+    "CYP2C19 loss-of-function allele noncarrier status is associated with decreased likelihood of composite cardiovascular events among smokers treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele carrier status.",
+    "CYP2C19 loss-of-function allele carrier status is associated with increased likelihood of composite cardiovascular events among smokers treated with clopidogrel for acute ischemic stroke as compared to CYP2C19 loss-of-function allele noncarrier status."
+  ]
+}

@@ -1,0 +1,14 @@
+iteration: iter10
+commit: f8d69ab
+timestamp: 20260602-024648
+sentence_coverage: 0.731
+variant_coverage: 0.730
+description: iter8 + self-critique gap-fill 3rd pass (missing-only)
+--- eval summary ---
+sentence_coverage:  0.731
+variant_coverage:   0.730
+sentence_precision: 0.014
+num_papers:         16
+num_pred_sentences: 2761
+num_gold_sentences: 52
+total_seconds:      24.7

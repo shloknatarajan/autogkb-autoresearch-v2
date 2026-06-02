@@ -1,0 +1,23 @@
+{
+  "pmcid": "PMC384715",
+  "variants": [
+    "HLA-B*5701",
+    "C4A6",
+    "HLA-DRB1*0701",
+    "HLA-DQ3",
+    "Hsp70-Hom M493T",
+    "rs2227956"
+  ],
+  "sentences": [
+    "HLA-B*5701 is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying HLA-B*5701.",
+    "C4A6 is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying C4A6.",
+    "HLA-DRB1*0701 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying HLA-DRB1*0701 + HLA-DQ3.",
+    "Hsp70-Hom M493T is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying Hsp70-Hom M493T.",
+    "HLA-B*5701 + C4A6 is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying HLA-B*5701 + C4A6.",
+    "HLA-B*5701 + HLA-DRB1*0701 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying HLA-B*5701 + HLA-DRB1*0701 + HLA-DQ3.",
+    "HLA-B*5701 + Hsp70-Hom M493T is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying HLA-B*5701 + Hsp70-Hom M493T.",
+    "rs2227956 CT is associated with increased likelihood of abacavir hypersensitivity in abacavir-exposed HIV-infected patients as compared to not carrying rs2227956 CT.",
+    "HLA-B*5701-negative status is associated with decreased likelihood of abacavir hypersensitivity when treated with abacavir in prospectively screened HIV-infected patients as compared to carrying HLA-B*5701.",
+    "HLA-B*5701 + Hsp70-Hom M493T is associated with increased monocyte tumor necrosis factor expression in response to ex vivo abacavir stimulation in abacavir-exposed HIV-infected patients as compared to abacavir-tolerant individuals carrying the same variants."
+  ]
+}

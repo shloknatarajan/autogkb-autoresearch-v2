@@ -1,0 +1,27 @@
+{
+  "pmcid": "PMC6435416",
+  "variants": [
+    "CYP2D6 poor metabolizer",
+    "CYP2D6 intermediate metabolizer",
+    "CYP2D6 normal metabolizer",
+    "CYP2D6 ultrarapid metabolizer"
+  ],
+  "sentences": [
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased likelihood of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased risk of adverse events when treated with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with adverse events when treated with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased likelihood of adverse events when treated with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased likelihood of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased risk of adverse events when treated with risperidone as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased likelihood of adverse events when treated with risperidone as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased incidence of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased incidence of adverse events when treated with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased incidence of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased incidence of adverse events when treated with risperidone as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+    "CYP2D6 strong inhibitor use is not associated with adverse events when treated with risperidone in CYP2D6 normal metabolizer + ultrarapid metabolizer children and adolescents as compared to no CYP2D6 strong inhibitor use.",
+    "CYP2D6 strong inhibitor use is not associated with adverse events when treated with risperidone in CYP2D6 normal metabolizer + ultrarapid metabolizer as compared to no CYP2D6 strong inhibitor use."
+  ]
+}

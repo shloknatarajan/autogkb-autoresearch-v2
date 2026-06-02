@@ -50,6 +50,7 @@ All model calls go through **litellm** (`litellm.completion(model=..., messages=
 **What you CAN do:**
 - Modify `annotation_pipeline.py` freely. Change models, prompts, decomposition, post-processing.
 - Add dependencies via `uv add <pkg>` when an idea needs them.
+- Explore online sources/add new packages that might be helpful. Some ideas are listed in IDEAS.md
 
 **What you CANNOT do:**
 - Modify `eval.py` or `generate.py`. They are the ground-truth harness: the dev/val split, the scoring, and the **LLM judge** all live there. You may not tune the judge or peek at val gold to game the score.
@@ -161,7 +162,7 @@ Example:
 
 ```
 commit	sentence_coverage	variant_coverage	status	description
-a1b2c3d	0.327	0.539	keep	baseline: single-shot prompt, gpt-4o-mini
+a1b2c3d	0.385	0.539	keep	baseline: single-shot gpt-4o-mini pipeline, gpt-5.4-mini judge
 b2c3d4e	0.480	0.710	keep	two-stage: extract variants, then draft sentences
 c3d4e5f	0.470	0.720	discard	add few-shot examples from dev set (no gain)
 d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
@@ -171,9 +172,11 @@ d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 
 The experiment runs on a dedicated branch (e.g. `autoresearch/jun1` or `autoresearch/jun1-a`).
 
-LOOP FOREVER:
+**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log → keep/discard). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `sentence_coverage`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
 
-1. Look at the git state: the current branch/commit we're on.
+LOOP until 15 iterations are done:
+
+1. Look at the git state: the current branch/commit we're on, and count non-baseline rows in `results.tsv` — if that count is ≥ 15, stop.
 2. Tune `annotation_pipeline.py` with an experimental idea by directly hacking the code.
 3. `git commit`.
 4. Run the experiment. Use one timestamped run id for both the generations folder and the log, and **redirect everything to a timestamped log file under `logs/`** (do NOT use tee or let output flood your context):
@@ -201,5 +204,5 @@ You are a completely autonomous researcher trying things out. If they work, keep
 
 **Do not overfit the val set**: never inspect or hard-code val gold labels. Develop ideas against the dev set and let val be the honest measure.
 
-**NEVER STOP**: Once the loop has begun (after initial setup), do NOT pause to ask the human whether to continue. Do NOT ask "should I keep going?" or "is this a good stopping point?". The human may be asleep or away and expects you to work *indefinitely* until manually stopped. You are autonomous. If you run out of ideas, think harder — re-read the gold sentences on the dev set for patterns you're missing, study the field definitions in `variantAnnotations/README.pdf`, mine known variants from `variantAnnotations/` tables, try multi-stage decomposition, try a stronger model, combine previous near-misses, or attempt more radical prompting changes. Study field definitions in `base_data/variantAnnotations/README.pdf` and mine known variants from the `base_data/variantAnnotations/` tables. The loop runs until the human interrupts you, period.
+**Don't stall before the cap**: until the 15-iteration cap is reached, do NOT pause to ask the human "should I keep going?" — keep generating and testing ideas autonomously. If you run out of obvious ideas, think harder: re-read the gold sentences on the dev set for patterns you're missing, study field definitions in `base_data/variantAnnotations/README.pdf`, mine known variants from the `base_data/variantAnnotations/` tables, try multi-stage decomposition, try a stronger model, combine previous near-misses, or attempt more radical prompting changes. The human can always interrupt early; otherwise the loop ends at 15 iterations.
 ```

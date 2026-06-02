@@ -1,0 +1,42 @@
+{
+  "pmcid": "PMC6714829",
+  "variants": [
+    "rs2306283",
+    "rs4149056",
+    "SLCO1B1*15"
+  ],
+  "sentences": [
+    "Genotype AA of rs2306283 is associated with increased alanine aminotransferase levels in people with hyperlipidemia as compared to genotypes AG + GG.",
+    "Genotypes AG + GG of rs2306283 are associated with decreased alanine aminotransferase levels in people with hyperlipidemia as compared to genotype AA.",
+    "Genotype AA of rs2306283 is associated with increased aspartate transaminase levels in people with hyperlipidemia as compared to genotypes AG + GG.",
+    "Genotypes AG + GG of rs2306283 are associated with decreased aspartate transaminase levels in people with hyperlipidemia as compared to genotype AA.",
+    "Genotype AA of rs2306283 is associated with increased high-density lipoprotein cholesterol levels in people with hyperlipidemia as compared to genotypes AG + GG.",
+    "Genotypes AG + GG of rs2306283 are associated with decreased high-density lipoprotein cholesterol levels in people with hyperlipidemia as compared to genotype AA.",
+    "Genotypes AG + GG of rs2306283 are associated with decreased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to genotype AA.",
+    "Genotype AA of rs2306283 is associated with increased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to genotypes AG + GG.",
+    "Genotypes AG + GG of rs2306283 are associated with decreased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to genotype AA.",
+    "Genotype AA of rs2306283 is associated with increased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to genotypes AG + GG.",
+    "Genotype AA of rs2306283 and genotype TT of rs4149056 are associated with increased alanine aminotransferase levels in people with hyperlipidemia as compared to carriers of the rs2306283 G allele and rs4149056 C allele.",
+    "Carriers of the rs2306283 G allele and rs4149056 C allele are associated with decreased alanine aminotransferase levels in people with hyperlipidemia as compared to genotype AA of rs2306283 and genotype TT of rs4149056.",
+    "Genotype AA of rs2306283 and genotype TT of rs4149056 are associated with increased aspartate transaminase levels in people with hyperlipidemia as compared to carriers of the rs2306283 G allele and rs4149056 C allele.",
+    "Carriers of the rs2306283 G allele and rs4149056 C allele are associated with decreased aspartate transaminase levels in people with hyperlipidemia as compared to genotype AA of rs2306283 and genotype TT of rs4149056.",
+    "The 388A/521T haplotype is associated with increased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal alanine aminotransferase subgroup.",
+    "The 388G/521T haplotype is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal alanine aminotransferase subgroup.",
+    "The 388A/521T haplotype is associated with increased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal aspartate transaminase subgroup.",
+    "The 388G/521T haplotype is associated with decreased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal aspartate transaminase subgroup.",
+    "The SLCO1B1*15 haplotype is associated with decreased transporter activity.",
+    "Carriers of the rs2306283 G allele and genotype TT of rs4149056 are associated with increased total cholesterol reduction when treated with simvastatin in people with hyperlipidemia after 4 weeks as compared to carriers of the rs2306283 G allele and rs4149056 C allele.",
+    "Carriers of the rs2306283 G allele and rs4149056 C allele are associated with decreased total cholesterol reduction when treated with simvastatin in people with hyperlipidemia after 4 weeks as compared to carriers of the rs2306283 G allele and genotype TT of rs4149056.",
+    "Carriers of the rs2306283 G allele and genotype TT of rs4149056 are associated with increased low-density lipoprotein cholesterol reduction when treated with simvastatin in people with hyperlipidemia after 4 weeks as compared to carriers of the rs2306283 G allele and rs4149056 C allele.",
+    "Carriers of the rs2306283 G allele and rs4149056 C allele are associated with decreased low-density lipoprotein cholesterol reduction when treated with simvastatin in people with hyperlipidemia after 4 weeks as compared to carriers of the rs2306283 G allele and genotype TT of rs4149056.",
+    "rs4149056 is not associated with baseline plasma compounds measuring hepatic function and lipid levels in people with hyperlipidemia.",
+    "rs4149056 is not associated with baseline alanine aminotransferase levels in people with hyperlipidemia.",
+    "rs4149056 is not associated with baseline aspartate transaminase levels in people with hyperlipidemia.",
+    "rs2306283 is not associated with low-density lipoprotein cholesterol levels in people with hyperlipidemia.",
+    "rs2306283 is not associated with triglyceride levels in people with hyperlipidemia.",
+    "rs2306283 is not associated with total cholesterol levels in people with hyperlipidemia.",
+    "rs2306283 and rs4149056 are not associated with the lipid-lowering effects of simvastatin in people with hyperlipidemia after 8 weeks.",
+    "rs2306283 is not associated with creatine kinase elevations when treated with simvastatin in people with hyperlipidemia.",
+    "rs4149056 is not associated with creatine kinase elevations when treated with simvastatin in people with hyperlipidemia."
+  ]
+}

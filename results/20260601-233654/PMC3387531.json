@@ -1,0 +1,43 @@
+{
+  "pmcid": "PMC3387531",
+  "variants": [
+    "rs2054675",
+    "rs3786547",
+    "rs3745274",
+    "rs1045642",
+    "HLA-Cw*04",
+    "HLA-B*35",
+    "HLA-DRB1*01",
+    "HLA-DQB1*05",
+    "HLA-Cw*08",
+    "HLA-Cw*15"
+  ],
+  "sentences": [
+    "CYP2B6 rs3745274 T allele is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine as compared to the G allele.",
+    "CYP2B6 rs3745274 TT genotype is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Black patients as compared to CYP2B6 rs3745274 GG genotype.",
+    "CYP2B6 rs2054675 variant is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine.",
+    "CYP2B6 rs3786547 variant is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine.",
+    "CYP2B6 rs2054675 variant is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients.",
+    "CYP2B6 rs3786547 variant is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients.",
+    "CYP2B6 rs3745274 is not associated with increased likelihood of hepatic adverse events during treatment with nevirapine.",
+    "HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine.",
+    "HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Black patients.",
+    "HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients.",
+    "HLA-B*35 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients.",
+    "HLA-B*35 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Thai patients.",
+    "HLA-B*35 is not associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in non-Thai Asian patients.",
+    "HLA-B*35 is not associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Black patients.",
+    "HLA-B*35 is not associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in White patients.",
+    "HLA-Cw*04 + HLA-B*35 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients as compared to absence of both risk alleles.",
+    "HLA-DRB1*01 is associated with increased likelihood of hepatic adverse events during treatment with nevirapine in White patients.",
+    "HLA-DQB1*05 is associated with increased likelihood of hepatic adverse events during treatment with nevirapine in White patients.",
+    "HLA-DQB1*05 is not associated with increased likelihood of isolated hepatic adverse events during treatment with nevirapine in White patients.",
+    "HLA-Cw*08 is not associated with increased likelihood of cutaneous adverse events during treatment with nevirapine.",
+    "HLA-Cw*08 is not associated with increased likelihood of hepatic adverse events during treatment with nevirapine.",
+    "HLA-Cw*15 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in White patients.",
+    "HLA-Cw*15 is not associated with increased likelihood of isolated cutaneous adverse events during treatment with nevirapine in White patients.",
+    "CYP2B6 rs3745274 TT genotype + HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in the overall population as compared to CYP2B6 rs3745274 GG genotype without HLA-Cw*04.",
+    "CYP2B6 rs3745274 TT genotype + HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Black patients as compared to CYP2B6 rs3745274 GG genotype without HLA-Cw*04.",
+    "CYP2B6 rs3745274 TT genotype + HLA-Cw*04 is associated with increased likelihood of cutaneous adverse events during treatment with nevirapine in Asian patients as compared to CYP2B6 rs3745274 GG genotype without HLA-Cw*04."
+  ]
+}

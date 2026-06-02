@@ -1,0 +1,14 @@
+iteration: iter8
+commit: 36aeb6f
+timestamp: 20260602-013716
+sentence_coverage: 0.865
+variant_coverage: 0.730
+description: iter7 + direction-optional, phenotype grouping, umbrella outcomes
+--- eval summary ---
+sentence_coverage:  0.865
+variant_coverage:   0.730
+sentence_precision: 0.019
+num_papers:         16
+num_pred_sentences: 2422
+num_gold_sentences: 52
+total_seconds:      19.6

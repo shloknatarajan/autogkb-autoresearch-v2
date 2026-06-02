@@ -1,0 +1,14 @@
+iteration: iter12
+commit: ca08e7e
+timestamp: 20260602-032041
+sentence_coverage: 0.692
+variant_coverage: 0.730
+description: iter8 + comparison-free duplicate framing
+--- eval summary ---
+sentence_coverage:  0.692
+variant_coverage:   0.730
+sentence_precision: 0.012
+num_papers:         16
+num_pred_sentences: 3082
+num_gold_sentences: 52
+total_seconds:      17.0

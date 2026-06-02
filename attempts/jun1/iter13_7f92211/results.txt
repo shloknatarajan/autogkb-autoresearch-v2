@@ -1,0 +1,7 @@
+iteration: iter13
+commit: 7f92211
+timestamp: 20260602-034635
+sentence_coverage: CRASH
+variant_coverage: CRASH
+description: iter8 with reference-baseline-canonical 2nd pass
+--- eval summary ---

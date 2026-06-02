@@ -1,0 +1,17 @@
+commit	sentence_coverage	variant_coverage	status	description
+untracked	0.385	0.539	keep	baseline: single-shot gpt-4o-mini pipeline, gpt-5.4-mini judge, val split
+10c1057	0.442	0.596	keep	iter1: exhaustive recall-focused prompt (3 PharmGKB categories)
+c7ac65a	0.692	0.719	keep	iter2: gpt-5.4 + exhaustive single-shot recall prompt (401 pred sent, 52 gold)
+db2a42b	0.712	0.742	keep	iter3: + reciprocal-framing & genotype-enumeration tactics (820 pred sent)
+da02c37	0.769	0.730	keep	iter4: two-pass ensemble union (complementary 2nd reader, 1581 pred sent)
+bb98a6a	0.769	0.775	discard	iter5: +claude cross-model 3rd pass; sentence_cov flat (var up), not worth 2x cost
+317b7ee	0.731	0.742	discard	iter6: +few-shot style exemplars; constrained output, sentence_cov dropped
+e36c323	0.808	0.742	keep	iter7: panel enumeration + population-free duplicate + allele grouping (2260 pred)
+36aeb6f	0.865	0.730	keep	iter8: direction-optional + phenotype grouping + umbrella outcomes (2422 pred)
+0c24b07	0.731	0.730	discard	iter9: HLA risk-group decomposition+SCAR terms; overfit dev, val dropped (judge noise)
+f8d69ab	0.731	0.730	discard	iter10: self-critique gap-fill 3rd pass; added sentences confused judge, val dropped
+efea72f	0.673	0.730	discard	iter11: single-pass probe; 2nd pass IS essential (1227 sent, dropped to 0.673)
+ca08e7e	0.692	0.730	discard	iter12: comparison-free duplicates; over-inflated volume (3082), val dropped
+7f92211	0.000	0.0	discard	iter13: reference-baseline 2nd pass; killed (pathologically slow ~2min/paper, marginal vs judge noise)
+cc19aa1	0.654	0.820	discard	iter14: regex inventory injected into PROMPT; variant_cov jumped to 0.820 but sentence_cov dropped (panel sentences confused judge)
+e3c614d	0.750	0.831	keep	iter15: regex variant backstop (output-only); sentence_cov = iter8 within judge noise (re-evals .750/.788/.731), variant_cov best at 0.831

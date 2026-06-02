@@ -1,0 +1,42 @@
+{
+  "pmcid": "PMC5508045",
+  "variants": [
+    "rs9923231",
+    "CYP2C9*3",
+    "rs1057910",
+    "rs2108622",
+    "rs887829"
+  ],
+  "sentences": [
+    "Genotype GA is associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotype GG.",
+    "Genotype GG is associated with increased stable weekly dose of warfarin in Thai patients as compared to genotype GA.",
+    "Genotype AA is associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotype GG.",
+    "Genotype GG is associated with increased stable weekly dose of warfarin in Thai patients as compared to genotype AA.",
+    "Genotypes GA + AA are associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotype GG.",
+    "Genotype GG is associated with increased stable weekly dose of warfarin in Thai patients as compared to genotypes GA + AA.",
+    "CYP2C9 *1/*3 is associated with decreased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *1/*1.",
+    "CYP2C9 *1/*1 is associated with increased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *1/*3.",
+    "CYP2C9 *3/*3 is associated with decreased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *1/*1.",
+    "CYP2C9 *1/*1 is associated with increased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *3/*3.",
+    "CYP2C9 *1/*3 + *3/*3 is associated with decreased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *1/*1.",
+    "CYP2C9 *1/*1 is associated with increased stable weekly dose of warfarin in Thai patients as compared to CYP2C9 *1/*3 + *3/*3.",
+    "Genotype TT is associated with increased stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotype TT.",
+    "Genotypes CT + TT are not associated with stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with stable weekly dose of warfarin in Thai patients as compared to genotypes CT + TT.",
+    "Genotypes CT + TT are not associated with increased stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotypes CT + TT.",
+    "Genotypes CT + TT are not associated with decreased stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with increased stable weekly dose of warfarin in Thai patients as compared to genotypes CT + TT.",
+    "Genotype CT is not associated with stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with stable weekly dose of warfarin in Thai patients as compared to genotype CT.",
+    "Genotype TT is not associated with stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with stable weekly dose of warfarin in Thai patients as compared to genotype TT.",
+    "Genotype CT + TT is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotypes CT + TT.",
+    "Genotype CT is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotype CT.",
+    "Genotype TT is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotype CC.",
+    "Genotype CC is not associated with altered stable weekly dose of warfarin in Thai patients as compared to genotype TT."
+  ]
+}

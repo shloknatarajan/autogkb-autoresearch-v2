@@ -1,0 +1,47 @@
+[92m00:59:31 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m00:59:31 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: 6 variants, 80 sentences
+  PMC10880264: 30 variants, 172 sentences
+  PMC10993165: 34 variants, 222 sentences
+  PMC11430164: 27 variants, 242 sentences
+  PMC11971672: 14 variants, 132 sentences
+  PMC12036300: 15 variants, 61 sentences
+  PMC12319246: 19 variants, 380 sentences
+  PMC2859392: 15 variants, 148 sentences
+  PMC3387531: 10 variants, 113 sentences
+  PMC3584248: 19 variants, 38 sentences
+  PMC384715: 5 variants, 55 sentences
+  PMC4916189: 14 variants, 124 sentences
+  PMC554812: 14 variants, 118 sentences
+  PMC6435416: 5 variants, 8 sentences
+  PMC6714829: 3 variants, 195 sentences
+  PMC8973308: 9 variants, 172 sentences
+wrote 16 generations to results/20260602-005928/
+[92m01:17:05 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m01:17:05 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: variants 4/5, sentences matched 5 (pred 80, gold 5)
+  PMC10880264: variants 1/3, sentences matched 4 (pred 172, gold 4)
+  PMC10993165: variants 3/3, sentences matched 3 (pred 222, gold 3)
+  PMC11430164: variants 18/18, sentences matched 2 (pred 242, gold 2)
+  PMC11971672: variants 4/4, sentences matched 1 (pred 132, gold 1)
+  PMC12036300: variants 3/3, sentences matched 2 (pred 61, gold 2)
+  PMC12319246: variants 8/8, sentences matched 5 (pred 380, gold 8)
+  PMC2859392: variants 1/1, sentences matched 2 (pred 148, gold 2)
+  PMC3387531: variants 3/6, sentences matched 2 (pred 113, gold 5)
+  PMC3584248: variants 5/5, sentences matched 2 (pred 38, gold 2)
+  PMC384715: variants 1/1, sentences matched 1 (pred 55, gold 1)
+  PMC4916189: variants 5/7, sentences matched 5 (pred 124, gold 7)
+  PMC554812: variants 5/5, sentences matched 3 (pred 118, gold 5)
+  PMC6435416: variants 0/15, sentences matched 1 (pred 8, gold 1)
+  PMC6714829: variants 2/2, sentences matched 2 (pred 195, gold 2)
+  PMC8973308: variants 3/3, sentences matched 2 (pred 172, gold 2)
+---
+sentence_coverage:  0.808
+variant_coverage:   0.742
+sentence_precision: 0.019
+num_papers:         16
+num_pred_sentences: 2260
+num_gold_sentences: 52
+generations:        results/20260602-005928
+judge_model:        gpt-5.4-mini
+total_seconds:      17.7

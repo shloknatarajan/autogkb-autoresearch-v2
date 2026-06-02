@@ -1,0 +1,151 @@
+"""
+Edit ONLY this file (see program.md).
+
+It must expose `predict(markdown_content) -> {"variants": [...], "sentences": [...]}`
+for one paper. All model calls go through litellm so any provider works -- swap
+models by changing `MODEL` (or the model string passed to litellm).
+
+A single litellm call asking for variants + standardized sentences as JSON.
+The autoresearch loop hacks this file to raise sentence_coverage.
+"""
+
+import json
+
+import litellm
+
+MODEL = "gpt-5.4"
+
+SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
+pharmacogenomics paper (in markdown) and extract its variant annotations.
+
+Be EXHAUSTIVE. Your goal is to recover EVERY variant and EVERY variant-outcome
+association the paper reports -- missing one is the costly error, while listing
+an extra plausible one is harmless. Scan the abstract, results, tables, and
+discussion. Consider all three PharmGKB association categories:
+  - drug association   (variant <-> drug response: dose, efficacy, metabolism)
+  - phenotype association (variant <-> clinical phenotype / side effect / outcome)
+  - functional association (variant <-> functional/assay/molecular effect)
+
+Produce two things:
+
+1. "variants": every genetic variant identifier studied or discussed in the paper.
+   Use canonical forms: rsIDs (e.g. "rs9923231") or star/HLA alleles
+   (e.g. "CYP2C19*2", "HLA-B*15:01"). List each distinct variant once. Include
+   every variant you see, even ones mentioned only in tables or in passing.
+
+2. "sentences": one standardized association sentence for EACH distinct
+   variant/genotype-outcome association, across all three categories above.
+   Produce a separate sentence for every genotype group and every outcome the
+   paper links to a variant. Follow the PharmGKB standardized-sentence style
+   exactly, e.g.:
+     "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of Major
+      Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*1."
+     "Genotype CT + TT is associated with decreased dose of warfarin in people with
+      Atrial Fibrillation as compared to genotype CC."
+   Each sentence states: the variant/genotype, polarity ("is" / "is not
+   associated"), direction ("increased" / "decreased"), the phenotype or outcome,
+   the drug (when relevant), and the comparison group/allele when stated.
+
+CRITICAL coverage tactics (PharmGKB annotations are redundant by design -- emit
+every framing, extra sentences are NOT penalized):
+  - RECIPROCAL FRAMINGS: whenever the paper compares two genotype/allele groups,
+    emit BOTH directions. If "CT + TT is associated with decreased X as compared
+    to CC", ALSO emit "CC ... is associated with increased X as compared to CT + TT".
+    The reciprocal of "decreased ... vs B" is "increased ... vs A" (flip direction
+    AND swap the comparison group).
+  - GENOTYPE ENUMERATION: a variant rsID maps to genotypes (e.g. CC/CT/TT) and a
+    star allele maps to diplotypes (e.g. *1/*1, *1/*2, *2/*2). Emit a sentence for
+    every genotype/diplotype group the paper discusses, AND for combined groups
+    (e.g. "Genotypes CT + TT", "*1/*2 + *2/*2", carriers vs non-carriers).
+  - POLARITY: include both significant ("is associated") and null ("is not
+    associated") findings exactly as the paper reports them.
+  - PHENOTYPE/METABOLIZER: also phrase associations via metabolizer status
+    (poor/intermediate/normal/rapid metabolizer) when the gene defines one.
+
+Include every association actually supported by the paper; favor recall maximally.
+Return JSON only: { "variants": ["..."], "sentences": ["..."] }
+
+STYLE EXEMPLARS -- real PharmGKB standardized sentences. Match this exact grammar,
+especially how genotype/diplotype GROUPS and the "as compared to" comparison group
+are written (a comparison group is almost always a baseline genotype/diplotype/allele):
+  - CYP2C9 *3 is associated with decreased dose of warfarin as compared to CYP2C9 *1/*1.
+  - Genotype TT is associated with decreased response to sitagliptin in people with Diabetes Mellitus, Type 2.
+  - Allele T is not associated with dose of heroin in people with Heroin Dependence as compared to allele C.
+  - UGT1A1 *1/*28 + *28/*28 is associated with increased severity of Neutropenia when treated with sacituzumab govitecan in people with Breast Neoplasms as compared to UGT1A1 *1/*1.
+  - HLA-A *31:01 is associated with increased risk of severe cutaneous adverse reactions when treated with carbamazepine.
+  - Genotypes AA + AT are associated with decreased risk of Tobacco Use Disorder due to nicotine as compared to genotype TT.
+  - CYP2D6 *3/*3 + *4/*4 are associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.
+  - CYP2C19 *17/*17 is associated with increased formation of normeperidine as compared to CYP2C19 *1/*1 + *1/*17.
+  - Genotypes CC + CT is associated with increased concentrations of simvastatin acid as compared to genotype TT."""
+
+
+def _extract_json_object(text):
+    start = text.find("{")
+    if start == -1:
+        return {}
+    depth = 0
+    for i in range(start, len(text)):
+        if text[i] == "{":
+            depth += 1
+        elif text[i] == "}":
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start : i + 1])
+                except json.JSONDecodeError:
+                    return {}
+    return {}
+
+
+# A complementary second pass that emphasizes the comparison-group combinatorics
+# the first pass tends to under-produce. Union of the two passes maximizes recall.
+SECOND_PASS_PROMPT = (
+    SYSTEM_PROMPT
+    + """
+
+SECOND-PASS FOCUS: assume a first reader already listed the obvious associations.
+Your job is to recover the ones that are easy to MISS:
+  - Every pairwise comparison among the genotype/diplotype groups (and its reciprocal).
+  - Subgroup / stratified findings (by sex, ancestry, disease subtype, dose level).
+  - Associations reported only in tables, figures, or supplementary text.
+  - Both the per-allele (additive) and per-genotype (dominant/recessive) framings.
+  - Null results and trends that did not reach significance ("is not associated").
+Be even more exhaustive than a first reader would be."""
+)
+
+
+def _one_pass(system_prompt, markdown_content):
+    resp = litellm.completion(
+        model=MODEL,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": markdown_content},
+        ],
+        temperature=0,
+        response_format={"type": "json_object"},
+    )
+    data = _extract_json_object(resp.choices[0].message.content or "")
+    return data.get("variants", []) or [], data.get("sentences", []) or []
+
+
+def predict(markdown_content):
+    v1, s1 = _one_pass(SYSTEM_PROMPT, markdown_content)
+    v2, s2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
+
+    # Union variants (dedup case-insensitively, preserving first-seen casing).
+    variants, seen_v = [], set()
+    for v in list(v1) + list(v2):
+        key = str(v).strip().lower().replace(" ", "")
+        if key and key not in seen_v:
+            seen_v.add(key)
+            variants.append(v)
+
+    # Union sentences (dedup exact, case-insensitive).
+    sentences, seen_s = [], set()
+    for s in list(s1) + list(s2):
+        key = str(s).strip().lower()
+        if key and key not in seen_s:
+            seen_s.add(key)
+            sentences.append(s)
+
+    return {"variants": variants, "sentences": sentences}

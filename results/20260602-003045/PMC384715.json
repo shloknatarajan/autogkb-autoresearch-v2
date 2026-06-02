@@ -1,0 +1,35 @@
+{
+  "pmcid": "PMC384715",
+  "variants": [
+    "HLA-B*57:01",
+    "C4A6",
+    "HLA-DRB1*07:01",
+    "HLA-DQ3",
+    "rs2227956",
+    "Hsp70-Hom M493T"
+  ],
+  "sentences": [
+    "HLA-B *57:01 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-B *57:01.",
+    "Not carrying HLA-B *57:01 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-B *57:01.",
+    "C4A6 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying C4A6.",
+    "Not carrying C4A6 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying C4A6.",
+    "HLA-DRB1 *07:01 + HLA-DQ3 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-DRB1 *07:01 + HLA-DQ3.",
+    "Not carrying HLA-DRB1 *07:01 + HLA-DQ3 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-DRB1 *07:01 + HLA-DQ3.",
+    "Allele C of rs2227956 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to allele T.",
+    "Allele T of rs2227956 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to allele C.",
+    "HLA-B *57:01 + C4A6 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-B *57:01 + C4A6.",
+    "Not carrying HLA-B *57:01 + C4A6 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-B *57:01 + C4A6.",
+    "HLA-B *57:01 + HLA-DRB1 *07:01 + HLA-DQ3 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-B *57:01 + HLA-DRB1 *07:01 + HLA-DQ3.",
+    "Not carrying HLA-B *57:01 + HLA-DRB1 *07:01 + HLA-DQ3 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-B *57:01 + HLA-DRB1 *07:01 + HLA-DQ3.",
+    "HLA-B *57:01 + allele C of rs2227956 is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-B *57:01 + allele C of rs2227956.",
+    "Not carrying HLA-B *57:01 + allele C of rs2227956 is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-B *57:01 + allele C of rs2227956.",
+    "HLA-B *57:01 + allele C of rs2227956 is associated with increased monocyte tumor necrosis factor expression after ex vivo stimulation with abacavir in people with HIV Infections as compared to HLA-B *57:01 + allele C of rs2227956 carriers who are abacavir tolerant.",
+    "Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying Hsp70-Hom M493T.",
+    "Not carrying Hsp70-Hom M493T is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying Hsp70-Hom M493T.",
+    "HLA-B *57:01 + Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to not carrying HLA-B *57:01 + Hsp70-Hom M493T.",
+    "Not carrying HLA-B *57:01 + Hsp70-Hom M493T is associated with decreased risk of abacavir hypersensitivity in people with HIV Infections when treated with abacavir as compared to carrying HLA-B *57:01 + Hsp70-Hom M493T.",
+    "HLA-B *57:01 + Hsp70-Hom M493T is associated with increased intracellular tumor necrosis factor expression in monocytes after ex vivo stimulation with abacavir in people with HIV Infections as compared to abacavir-tolerant individuals.",
+    "HLA-B *57:01 + Hsp70-Hom M493T is associated with increased secreted tumor necrosis factor levels after abacavir stimulation in whole blood cultures in people with HIV Infections with abacavir hypersensitivity as compared to an abacavir-tolerant individual carrying HLA-B *57:01 + Hsp70-Hom M493T.",
+    "Hsp70-Hom M493T is associated with altered peptide binding function of Hsp70-Hom as compared to Hsp70-Hom 493M."
+  ]
+}

@@ -1,0 +1,5 @@
+iteration: iter1
+commit: 10c1057
+sentence_coverage: 0.442
+variant_coverage: 0.596
+description: exhaustive recall-focused prompt (3 PharmGKB categories)

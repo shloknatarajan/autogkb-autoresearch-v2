@@ -1,0 +1,33 @@
+{
+  "pmcid": "PMC10399933",
+  "variants": [
+    "rs4149056",
+    "rs2231142",
+    "rs1799853",
+    "rs1057910",
+    "CYP2C9*2",
+    "CYP2C9*3"
+  ],
+  "sentences": [
+    "Genotype CC is associated with increased likelihood of switching from simvastatin to another statin as compared to genotype TT.",
+    "Genotype CC is associated with increased likelihood of switching from simvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype TT.",
+    "Genotype TC + CC is associated with increased likelihood of switching from pravastatin to another statin as compared to genotype TT.",
+    "Genotype TC is not associated with increased likelihood of switching from simvastatin to another statin as compared to genotype TT.",
+    "Genotype TC is not associated with increased likelihood of switching from simvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype TT.",
+    "Genotype TC is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype TT.",
+    "Genotype CC is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype TT.",
+    "Genotype TC is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype TT.",
+    "Genotype CC is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype TT.",
+    "Genotype TC + CC is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype TT.",
+    "Genotype TC + CC is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype TT.",
+    "Genotype CA + AA is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype CC.",
+    "Genotype CA + AA is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype CC.",
+    "Genotype CA + AA is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype CC.",
+    "Genotype CA + AA is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype CC.",
+    "CYP2C9 intermediate metabolizer + poor metabolizer phenotype is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer phenotype.",
+    "Carriage of 2 to 4 risk alleles in SLCO1B1 and ABCG2 is not associated with increased likelihood of switching from atorvastatin to another statin as compared to carriage of 0 to 1 risk alleles.",
+    "Carriage of 2 to 4 risk alleles in SLCO1B1 and ABCG2 is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to carriage of 0 to 1 risk alleles.",
+    "Carriage of 2 to 4 risk alleles in SLCO1B1 and ABCG2 is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to carriage of 0 to 1 risk alleles.",
+    "Carriage of 2 to 4 risk alleles in SLCO1B1, ABCG2, and CYP2C9 is not associated with increased likelihood of switching from fluvastatin to another statin as compared to carriage of 0 to 1 risk alleles."
+  ]
+}

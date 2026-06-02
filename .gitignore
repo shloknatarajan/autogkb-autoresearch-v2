@@ -31,6 +31,3 @@ Thumbs.db
 .idea/
 
 base_data/
-results/
-results.tsv
-run.log

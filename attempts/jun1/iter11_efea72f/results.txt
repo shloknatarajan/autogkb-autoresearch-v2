@@ -1,0 +1,14 @@
+iteration: iter11
+commit: efea72f
+timestamp: 20260602-031046
+sentence_coverage: 0.673
+variant_coverage: 0.730
+description: single pass with iter8 prompt (no 2nd pass)
+--- eval summary ---
+sentence_coverage:  0.673
+variant_coverage:   0.730
+sentence_precision: 0.029
+num_papers:         16
+num_pred_sentences: 1227
+num_gold_sentences: 52
+total_seconds:      14.2

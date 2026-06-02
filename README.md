@@ -15,11 +15,12 @@ Given one paper's `markdown_content`, predict:
 ## Layout
 
 ```
-annotation_pipeline.py   # EDIT THIS — predict(markdown_content) -> {"variants", "sentences"}
+annotation_pipeline.py   # EDIT THIS — predict(markdown_content) -> {"variant_sentences": {variant: [...]}}
 generate.py              # fixed driver: runs the pipeline over a split -> results/<name>/
-eval.py                  # fixed, read-only harness: scoring + dev/val split + LLM judge
+eval.py                  # fixed harness: scoring + dev/val split + LLM judge
+build_variant_bench.py   # one-time builder: collapsed bench + PharmGKB tables -> by-variant bench
 program.md               # the autonomous experiment-loop manual
-benchmarks/              # sentence_bench_collapsed.jsonl (target), annotation_bench.jsonl (reference)
+benchmarks/              # sentence_bench_by_variant.jsonl (target), annotation_bench.jsonl (reference)
 base_data/               # articles/ (source markdown), annotations/ (full PharmGKB), variantAnnotations/ (raw tables + README.pdf)
 results/                 # generations, one <pmcid>.json per paper per run (gitignored)
 logs/                    # timestamped run logs (gitignored)
@@ -37,10 +38,10 @@ All model calls go through **litellm**, so any provider works — swap models by
 
 ### Scoring
 
-Both metrics are **coverage (recall)**: did the pipeline produce what's in the gold set? Extra predicted items are **not** penalized.
+The benchmark groups gold sentences **by variant** (`{variant -> [sentences]}`). Both metrics are **recall**: did the pipeline produce what's in the gold set? Extra predicted items are **not** penalized.
 
 - **Variant coverage** — fraction of gold variants found, after normalization.
-- **Sentence coverage (LLM judge)** — for each paper, one batch judge call matches predicted ↔ gold sentences one-to-one (strict on direction and polarity: *increased* ≠ *decreased*, *is* ≠ *is not associated*); coverage = matched gold / total gold. **`sentence_coverage` is the primary metric.** (`sentence_precision` is printed for information only.)
+- **Meaning capture per variant (LLM judge)** — for each gold variant, one batch judge call matches its gold sentences ↔ the pipeline's predicted sentences *for that variant* one-to-one (strict on direction and polarity: *increased* ≠ *decreased*, *is* ≠ *is not associated*); capture = matched / that variant's gold sentences. **`meaning_capture`** macro-averages capture across variants (each equal) then across papers, and **is the primary metric**. (A micro `sentence_coverage` and `sentence_precision` are printed for information only.)
 
 The judge model is fixed in `eval.py` (default `gpt-5.4-mini`) and is independent of the pipeline model. With only 32 papers, `eval.py` holds a deterministic **dev/val split**; develop against dev, report on the held-out val.
 
@@ -61,17 +62,21 @@ The autonomous loop (timestamped run id for folder + log) — see `program.md`:
 ```bash
 TS=$(date +%Y%m%d-%H%M%S)
 { uv run generate.py --out results/$TS --split val && uv run eval.py results/$TS; } > logs/$TS.log 2>&1
-grep "^sentence_coverage:" logs/$TS.log
+grep "^meaning_capture:" logs/$TS.log
 ```
 
 ## Baseline
 
-Single-shot `gpt-4o-mini` pipeline, `gpt-5.4-mini` judge, held-out val set (16 papers):
+The baseline must be re-measured under the per-variant `meaning_capture` metric
+(the figures below are pre-refactor `sentence_coverage` numbers, kept only for
+reference): single-shot `gpt-4o-mini` pipeline, `gpt-5.4-mini` judge, held-out val
+set (16 papers).
 
 | metric | value |
 |---|---|
-| sentence_coverage | 0.385 |
+| meaning_capture | _to be measured_ |
 | variant_coverage | 0.539 |
+| sentence_coverage (pre-refactor) | 0.385 |
 | sentence_precision (info) | 0.247 |
 
 See `results.tsv` for the running experiment log.

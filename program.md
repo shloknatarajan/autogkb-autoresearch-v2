@@ -6,15 +6,24 @@ It is modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearc
 
 ## The task
 
-Given a single paper's `markdown_content`, predict:
+Given a single paper's `markdown_content`, predict a mapping from each variant to
+the standardized PharmGKB association sentences asserting an association about it:
 
-- `variants`: a list of variant identifiers discussed in the paper (rsIDs like `rs9923231`, or star/HLA alleles like `CYP2C19*2`, `HLA-B*15:01`).
-- `sentences`: a list of standardized PharmGKB association sentences (e.g. *"CYP2C19 \*1/\*2 + \*2/\*2 is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 \*1/\*1."*).
+- `variant_sentences`: `{ variant -> [sentences] }`, where the keys are variant
+  identifiers discussed in the paper (rsIDs like `rs9923231`, or star/HLA alleles
+  like `CYP2C19*2`, `HLA-B*15:01`) and each value is the list of standardized
+  PharmGKB association sentences about that variant (e.g. *"CYP2C19 \*1/\*2 + \*2/\*2
+  is not associated with increased likelihood of Major Adverse Cardiac Events when
+  treated with clopidogrel as compared to CYP2C19 \*1/\*1."*). A variant with no
+  reported association still appears as a key mapped to `[]`.
 
-The ground truth lives in `benchmarks/sentence_bench_collapsed.jsonl` (32 records). Each record:
+The ground truth lives in `benchmarks/sentence_bench_by_variant.jsonl` (32 records),
+built from the flat `sentence_bench_collapsed.jsonl` by `build_variant_bench.py`
+(which recovers each sentence's variant from the `Variant/Haplotypes` column of the
+raw PharmGKB tables in `base_data/variantAnnotations/`). Each record:
 
 ```
-{ "pmcid", "pmid", "variants": [...], "sentences": [...], "markdown_content": "..." }
+{ "pmcid", "pmid", "variant_sentences": { variant: [...] }, "markdown_content": "..." }
 ```
 
 The richer `benchmarks/annotation_bench.jsonl` and the raw PharmGKB tables in `base_data/variantAnnotations/` (field definitions are in `base_data/variantAnnotations/README.pdf`) are **reference material** — useful for understanding what a "good" sentence looks like — but are **not** the scored target. Only `variants` and `sentences` are scored. (`base_data/articles/` and `base_data/annotations/` hold the source markdown and full PharmGKB annotations per paper.)
@@ -30,7 +39,7 @@ To set up a new experiment, work with the user to:
    - `eval.py` — fixed harness: data loading, the dev/val split, scoring, and the LLM judge. **Do not modify.**
    - `generate.py` — fixed driver: runs the pipeline over a split and writes generations to `results/`. **Do not modify.**
    - `annotation_pipeline.py` — the file you modify. It exposes `predict()` and contains all extraction logic.
-4. **Verify data exists**: Check that `benchmarks/sentence_bench_collapsed.jsonl` is present and that `uv run eval.py --help` runs. Confirm credentials for your provider are set (e.g. `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`, loaded from `.env`) for both the pipeline model and the judge.
+4. **Verify data exists**: Check that `benchmarks/sentence_bench_by_variant.jsonl` is present (rebuild it with `uv run build_variant_bench.py` if needed) and that `uv run eval.py --help` runs. Confirm credentials for your provider are set (e.g. `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`, loaded from `.env`) for both the pipeline model and the judge.
 5. **Initialize results.tsv**: Create `results.tsv` with just the header row. The baseline is recorded after the first run.
 6. **Confirm and go.**
 
@@ -42,7 +51,7 @@ Once you get confirmation, kick off the experimentation.
 
 ```python
 def predict(markdown_content: str) -> dict:
-    """Return {"variants": list[str], "sentences": list[str]} for one paper."""
+    """Return {"variant_sentences": {variant: list[str]}} for one paper."""
 ```
 
 All model calls go through **litellm** (`litellm.completion(model=..., messages=...)`) so any provider works — swap models by changing the `model=` string. Everything is fair game inside this file: prompting strategy, few-shot examples, multi-step decomposition (find variants → draft sentences → refine), regex/dictionary injection of known variants, prompt optimizers (GEPA, DSPy), retrieval from `base_data/variantAnnotations/`, ensembling, etc. (See `IDEAS.md`.)
@@ -54,34 +63,35 @@ All model calls go through **litellm** (`litellm.completion(model=..., messages=
 
 **What you CANNOT do:**
 - Modify `eval.py` or `generate.py`. They are the ground-truth harness: the dev/val split, the scoring, and the **LLM judge** all live there. You may not tune the judge or peek at val gold to game the score.
-- Change the scored target. Only `variants` and `sentences` count.
+- Change the scored target. Only the predicted `variant_sentences` mapping counts.
 
 ## Generation and evaluation
 
 Generation and scoring are **decoupled**:
 
-1. **Generate** — `uv run generate.py --out results/<name> --split val` runs `predict()` over the val papers and writes one file per paper: `results/<name>/<pmcid>.json == {"pmcid", "variants", "sentences"}`.
+1. **Generate** — `uv run generate.py --out results/<name> --split val` runs `predict()` over the val papers and writes one file per paper: `results/<name>/<pmcid>.json == {"pmcid", "variant_sentences": {variant: [...]}}`.
 2. **Evaluate** — `uv run eval.py results/<name>` reads that folder, looks up each paper's gold by `pmcid`, scores, and prints a summary.
 
 This means you can re-score the same generations without paying to regenerate, and inspect any paper's raw output under `results/`. Scoring has two parts.
 
 ### Variant coverage (recall only)
 
-We only care about **coverage**: did the pipeline find the variants that matter? Extra/spurious predicted variants are **not** penalized. Identifiers are normalized before comparison (uppercase gene, canonical `rsID` and `GENE*allele` / `HLA-X*NN:NN` forms).
+We only care about **coverage**: did the pipeline find the variants that matter? Extra/spurious predicted variants are **not** penalized. Identifiers are normalized before comparison (uppercase gene, canonical `rsID` and `GENE*allele` / `HLA-X*NN:NN` forms). The variants are the **keys** of the predicted/gold `variant_sentences` mappings.
 
 ```
 variant_coverage = (# gold variants matched by some predicted variant) / (# gold variants)
 ```
 Reported micro-averaged across the val set.
 
-### Sentence coverage (batch LLM judge)
+### Meaning capture per variant (batch LLM judge)
 
-For each paper we make **one** judge call: the full group of gold sentences and the full group of predicted sentences are handed to the judge together, and it returns a **one-to-one matching** of predicted ↔ gold sentences that assert the *same* association. We score **coverage (recall)** — did the pipeline produce each gold association? Extra/spurious predicted sentences are **not** penalized (same philosophy as variant coverage):
+The benchmark groups gold sentences **by variant**. For each gold variant we make **one** judge call: that variant's gold sentences and the pipeline's predicted sentences *for that same variant* (looked up by normalized id) are handed to the judge together, and it returns a **one-to-one matching** of predicted ↔ gold sentences asserting the *same* association. The per-variant capture is the fraction of that variant's gold meanings recovered. Extra/spurious predicted sentences are **not** penalized (same philosophy as variant coverage):
 
 ```
-sentence_coverage = (# gold sentences matched) / (# gold sentences)
+capture(variant)   = (# of its gold sentences matched) / (# of its gold sentences)
+meaning_capture    = mean over a paper's variants of capture(variant),  then mean over papers
 ```
-Reported micro-averaged across the val set. **`sentence_coverage` is the primary metric (higher is better).** `sentence_precision` (matched / predicted) is printed for information only and does not drive keep/discard.
+Aggregation is **macro** — each variant counts equally regardless of how many sentences it has, and each paper counts equally. Variants with no gold sentences are skipped for capture (they still count toward `variant_coverage`). **`meaning_capture` is the primary metric (higher is better).** A micro-averaged `sentence_coverage` (total gold sentences matched / total gold sentences) and `sentence_precision` (matched / predicted-under-gold-variants) are printed for information only and do not drive keep/discard.
 
 The judge prompt (lives in `eval.py`, not editable):
 
@@ -125,11 +135,11 @@ When `eval.py` finishes it prints a summary block:
 
 ```
 ---
-sentence_coverage:  0.587
+meaning_capture:    0.612
 variant_coverage:   0.810
-sentence_precision: 0.640
+sentence_coverage:  0.587
+sentence_precision: 0.140
 num_papers:         16
-num_pred_sentences: 71
 num_gold_sentences: 78
 generations:        results/<name>
 judge_model:        ...
@@ -139,7 +149,7 @@ total_seconds:      ...
 Extract the key metric from the log:
 
 ```
-grep "^sentence_coverage:" logs/<run-id>.log
+grep "^meaning_capture:" logs/<run-id>.log
 ```
 
 ## Logging results
@@ -149,11 +159,11 @@ When an experiment is done, log it to `results.tsv` (tab-separated, NOT comma �
 Header and 5 columns:
 
 ```
-commit	sentence_coverage	variant_coverage	status	description
+commit	meaning_capture	variant_coverage	status	description
 ```
 
 1. git commit hash (short, 7 chars)
-2. `sentence_coverage` on val (e.g. `0.587`) — use `0.000` for crashes
+2. `meaning_capture` on val (e.g. `0.612`) — use `0.000` for crashes
 3. `variant_coverage` on val (e.g. `0.810`) — use `0.0` for crashes
 4. status: `keep`, `discard`, or `crash`
 5. short text description of what this experiment tried
@@ -161,9 +171,9 @@ commit	sentence_coverage	variant_coverage	status	description
 Example:
 
 ```
-commit	sentence_coverage	variant_coverage	status	description
+commit	meaning_capture	variant_coverage	status	description
 a1b2c3d	0.385	0.539	keep	baseline: single-shot gpt-4o-mini pipeline, gpt-5.4-mini judge
-b2c3d4e	0.480	0.710	keep	two-stage: extract variants, then draft sentences
+b2c3d4e	0.480	0.710	keep	two-stage: extract variants, then draft sentences per variant
 c3d4e5f	0.470	0.720	discard	add few-shot examples from dev set (no gain)
 d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 ```
@@ -172,7 +182,7 @@ d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 
 The experiment runs on a dedicated branch (e.g. `autoresearch/jun1` or `autoresearch/jun1-a`).
 
-**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log → keep/discard). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `sentence_coverage`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
+**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log → keep/discard). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `meaning_capture`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
 
 LOOP until 15 iterations are done:
 
@@ -184,11 +194,11 @@ LOOP until 15 iterations are done:
    TS=$(date +%Y%m%d-%H%M%S)
    { uv run generate.py --out results/$TS --split val && uv run eval.py results/$TS; } > logs/$TS.log 2>&1
    ```
-5. Read out the results: `grep "^sentence_coverage:\|^variant_coverage:" logs/$TS.log`.
+5. Read out the results: `grep "^meaning_capture:\|^variant_coverage:" logs/$TS.log`.
 6. If the grep output is empty, the run crashed. Run `tail -n 50 logs/$TS.log` to read the stack trace and attempt a fix. If you can't get it working after a few attempts, give up on that idea.
 7. Record the results in `results.tsv` (do NOT commit `results.tsv`; leave it untracked).
-8. If `sentence_coverage` improved (higher), you "advance" the branch, keeping the git commit.
-9. If `sentence_coverage` is equal or worse, `git reset` back to where you started.
+8. If `meaning_capture` improved (higher), you "advance" the branch, keeping the git commit.
+9. If `meaning_capture` is equal or worse, `git reset` back to where you started.
 
 You are a completely autonomous researcher trying things out. If they work, keep. If they don't, discard. You advance the branch so you can iterate. If you feel stuck, you can rewind, but do this very sparingly (if ever).
 

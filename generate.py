@@ -4,7 +4,7 @@ Generation driver for the autogkb sentence-bench autoresearch loop.
 Runs `annotation_pipeline.predict()` over the chosen split and writes one
 prediction file per paper into a results folder:
 
-    results/<name>/<pmcid>.json   ==  {"pmcid", "variants": [...], "sentences": [...]}
+    results/<name>/<pmcid>.json   ==  {"pmcid", "variant_sentences": {variant: [...]}}
 
 `eval.py` then scores a results folder by path. Generation (which costs
 pipeline-model calls) is decoupled from scoring (which costs judge calls), so
@@ -40,16 +40,14 @@ def generate(out_dir, split, limit):
 
     for r in chosen:
         pred = annotation_pipeline.predict(r["markdown_content"])
+        variant_sentences = pred.get("variant_sentences", {}) or {}
         record = {
             "pmcid": r["pmcid"],
-            "variants": pred.get("variants", []),
-            "sentences": pred.get("sentences", []),
+            "variant_sentences": variant_sentences,
         }
         (out / f"{r['pmcid']}.json").write_text(json.dumps(record, indent=2))
-        print(
-            f"  {r['pmcid']}: {len(record['variants'])} variants, "
-            f"{len(record['sentences'])} sentences"
-        )
+        n_sent = sum(len(v or []) for v in variant_sentences.values())
+        print(f"  {r['pmcid']}: {len(variant_sentences)} variants, {n_sent} sentences")
 
     print(f"wrote {len(chosen)} generations to {out}/")
 

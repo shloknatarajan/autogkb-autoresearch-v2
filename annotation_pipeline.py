@@ -1,12 +1,13 @@
 """
 Edit ONLY this file (see program.md).
 
-It must expose `predict(markdown_content) -> {"variants": [...], "sentences": [...]}`
-for one paper. All model calls go through litellm so any provider works -- swap
-models by changing `MODEL` (or the model string passed to litellm).
+It must expose `predict(markdown_content) -> {"variant_sentences": {variant: [...]}}`
+for one paper: a mapping from each variant to the standardized association
+sentences asserting an association about that variant. All model calls go through
+litellm so any provider works -- swap models by changing `MODEL`.
 
 A single litellm call asking for variants + standardized sentences as JSON.
-The autoresearch loop hacks this file to raise sentence_coverage.
+The autoresearch loop hacks this file to raise meaning_capture.
 """
 
 import json
@@ -28,18 +29,21 @@ discussion. Consider all three PharmGKB association categories:
   - phenotype association (variant <-> clinical phenotype / side effect / outcome)
   - functional association (variant <-> functional/assay/molecular effect)
 
-Produce two things:
+Produce a JSON object "variant_sentences" mapping EACH variant to the list of
+standardized association sentences that assert an association ABOUT that variant:
 
-1. "variants": every genetic variant identifier studied or discussed in the paper.
-   Use canonical forms: rsIDs (e.g. "rs9923231") or star/HLA alleles
-   (e.g. "CYP2C19*2", "HLA-B*15:01"). List each distinct variant once. Include
-   every variant you see, even ones mentioned only in tables or in passing.
-
-2. "sentences": one standardized association sentence for EACH distinct
-   variant/genotype-outcome association, across all three categories above.
-   Produce a separate sentence for every genotype group and every outcome the
-   paper links to a variant. Follow the PharmGKB standardized-sentence style
-   exactly, e.g.:
+  - Keys: every genetic variant identifier studied or discussed in the paper, in
+    canonical form -- rsIDs (e.g. "rs9923231") or star/HLA alleles (e.g.
+    "CYP2C19*2", "HLA-B*15:01"). Include every variant you see, even ones
+    mentioned only in tables or in passing. A variant with no association still
+    gets a key mapped to an empty list [].
+  - Values: a list of standardized association sentences for that variant -- one
+    for EACH distinct genotype-group / outcome association the paper links to it,
+    across all three categories above. File each sentence under the variant whose
+    genotype/allele it is about (e.g. a sentence about genotypes "CT + TT" of
+    rs9923231 goes under "rs9923231"; if an association is about a diplotype
+    combining alleles, file it under each constituent star-allele variant).
+    Follow the PharmGKB standardized-sentence style exactly, e.g.:
      "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of Major
       Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*1."
      "Genotype CT + TT is associated with decreased dose of warfarin in people with
@@ -92,7 +96,7 @@ every framing, extra sentences are NOT penalized):
     alongside the specific reaction.
 
 Include every association actually supported by the paper; favor recall maximally.
-Return JSON only: { "variants": ["..."], "sentences": ["..."] }"""
+Return JSON only: { "variant_sentences": { "<variant>": ["<sentence>", ...], ... } }"""
 
 
 def _extract_json_object(text):
@@ -131,6 +135,7 @@ Be even more exhaustive than a first reader would be."""
 
 
 def _one_pass(system_prompt, markdown_content):
+    """Return one pass's {variant -> [sentences]} mapping (raw, un-merged)."""
     resp = litellm.completion(
         model=MODEL,
         messages=[
@@ -141,35 +146,50 @@ def _one_pass(system_prompt, markdown_content):
         response_format={"type": "json_object"},
     )
     data = _extract_json_object(resp.choices[0].message.content or "")
-    return data.get("variants", []) or [], data.get("sentences", []) or []
+    vs = data.get("variant_sentences", {})
+    if not isinstance(vs, dict):
+        return {}
+    return {str(k): (v or []) for k, v in vs.items()}
+
+
+def _variant_key(v):
+    """Case/space-insensitive key for deduping variant ids across passes."""
+    return str(v).strip().lower().replace(" ", "")
 
 
 def predict(markdown_content):
-    # Sentence generation is unchanged from the tuned 2-pass ensemble. Regex is used
-    # ONLY to back-stop the variant list: a deterministic scan of the text catches
-    # every rsID/star/HLA token, lifting variant_coverage without perturbing the
-    # well-tuned sentence output (injecting the regex list into the PROMPT was found
-    # to inflate panel sentences and hurt sentence_coverage -- so we don't).
+    # Two-pass ensemble: union the per-variant sentence groups from both passes to
+    # maximize recall. Regex back-stops the variant set -- a deterministic scan
+    # catches every rsID/star/HLA token, lifting variant_coverage. Regex-only
+    # variants are added as empty-list keys (no sentences invented for them).
     regex_variants = extract_all_variants(markdown_content)
 
-    v1, s1 = _one_pass(SYSTEM_PROMPT, markdown_content)
-    v2, s2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
+    g1 = _one_pass(SYSTEM_PROMPT, markdown_content)
+    g2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
 
-    # Union variants (dedup case-insensitively, preserving first-seen casing).
-    # LM-found variants first (canonical casing), then regex hits for coverage.
-    variants, seen_v = [], set()
-    for v in list(v1) + list(v2) + list(regex_variants):
-        key = str(v).strip().lower().replace(" ", "")
-        if key and key not in seen_v:
-            seen_v.add(key)
-            variants.append(v)
+    # Merge per-variant groups. First-seen casing wins as the canonical key; for
+    # each variant, union its sentences (dedup exact, case-insensitive).
+    variant_sentences = {}
+    key_to_canonical = {}
+    for group in (g1, g2):
+        for variant, sents in group.items():
+            vkey = _variant_key(variant)
+            if not vkey:
+                continue
+            canonical = key_to_canonical.setdefault(vkey, variant)
+            bucket = variant_sentences.setdefault(canonical, [])
+            seen = {s.strip().lower() for s in bucket}
+            for s in sents:
+                s = str(s)
+                if s.strip() and s.strip().lower() not in seen:
+                    seen.add(s.strip().lower())
+                    bucket.append(s)
 
-    # Union sentences (dedup exact, case-insensitive).
-    sentences, seen_s = [], set()
-    for s in list(s1) + list(s2):
-        key = str(s).strip().lower()
-        if key and key not in seen_s:
-            seen_s.add(key)
-            sentences.append(s)
+    # Back-stop variants from regex as empty groups if not already present.
+    for v in regex_variants:
+        vkey = _variant_key(v)
+        if vkey and vkey not in key_to_canonical:
+            key_to_canonical[vkey] = v
+            variant_sentences[v] = []
 
-    return {"variants": variants, "sentences": sentences}
+    return {"variant_sentences": variant_sentences}

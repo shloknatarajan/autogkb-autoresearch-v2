@@ -1,0 +1,38 @@
+{
+  "pmcid": "PMC384715",
+  "variant_sentences": {
+    "HLA-B*57:01": [
+      "HLA-B*57:01 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of HLA-B*57:01.",
+      "HLA-B*57:01 + Hsp70-Hom M493T is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + Hsp70-Hom M493T combination.",
+      "HLA-B*57:01 + C4A6 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 combination.",
+      "HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 in combination with Hsp70-Hom M493T is associated with improved discrimination between abacavir-hypersensitive cases and tolerant controls as compared to HLA-B*57:01 alone.",
+      "HLA-B*57:01 is associated with decreased incidence of abacavir hypersensitivity in prospectively screened HIV-infected patients when abacavir is withheld from carriers as compared to unscreened use of abacavir.",
+      "HLA-B*57:01 is associated with increased CD8+ T cell-dependent TNF response to ex vivo abacavir stimulation when present with Hsp70-Hom M493T in an abacavir-hypersensitive patient as compared to an abacavir-tolerant carrier."
+    ],
+    "C4A6": [
+      "C4A6 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of C4A6.",
+      "HLA-B*57:01 + C4A6 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 combination.",
+      "HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 combination."
+    ],
+    "HLA-DRB1*07:01": [
+      "HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 combination."
+    ],
+    "HLA-DQ3": [
+      "HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + HLA-DRB1*07:01 + HLA-DQ3 combination.",
+      "HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + C4A6 + HLA-DRB1*07:01 + HLA-DQ3 combination."
+    ],
+    "rs2227956": [
+      "Allele CT of rs2227956 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of allele CT.",
+      "HLA-B*57:01 + allele CT of rs2227956 is associated with increased likelihood of abacavir hypersensitivity in HIV-infected patients treated with abacavir as compared to absence of the HLA-B*57:01 + allele CT of rs2227956 combination.",
+      "HLA-B*57:01 + allele CT of rs2227956 is associated with improved discrimination between abacavir-hypersensitive cases and tolerant controls as compared to HLA-B*57:01 alone.",
+      "Allele CT of rs2227956 is associated with altered Hsp70-Hom amino acid sequence resulting in M493T as compared to the non-CT allele.",
+      "Residue 493 threonine encoded by rs2227956 is predicted to affect substrate binding of Hsp70-Hom as compared to residue 493 methionine.",
+      "HLA-B*57:01 + allele CT of rs2227956 is associated with increased CD8+ T cell-dependent TNF response to ex vivo abacavir stimulation in an abacavir-hypersensitive patient as compared to an abacavir-tolerant carrier with the same markers."
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "pmcid": "PMC3387531",
+  "variant_sentences": {
+    "rs2054675": [
+      "Allele variant of rs2054675 is associated with increased risk of cutaneous adverse events during treatment with nevirapine."
+    ],
+    "rs3786547": [
+      "Allele variant of rs3786547 is associated with increased risk of cutaneous adverse events during treatment with nevirapine."
+    ],
+    "rs3745274": [
+      "Allele T of rs3745274 is associated with increased risk of cutaneous adverse events during treatment with nevirapine.",
+      "Increasing T-allele count of rs3745274 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Black people.",
+      "Increasing T-allele count of rs3745274 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in White people.",
+      "Increasing T-allele count of rs3745274 is not associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people.",
+      "Genotype TT of rs3745274 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Black people as compared to genotype GG.",
+      "Genotype TT of rs3745274 in the presence of HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine as compared to genotype GG in the absence of HLA-C*04.",
+      "Genotype TT of rs3745274 in the presence of HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Black people as compared to genotype GG in the absence of HLA-C*04.",
+      "Genotype TT of rs3745274 in the presence of HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people as compared to genotype GG in the absence of HLA-C*04.",
+      "Allele T of rs3745274 is not associated with increased risk of hepatic adverse events during treatment with nevirapine."
+    ],
+    "rs1045642": [
+      "rs1045642 is not associated with cutaneous adverse events during treatment with nevirapine.",
+      "rs1045642 is not associated with hepatic adverse events during treatment with nevirapine.",
+      "Allele T of rs1045642 is not associated with decreased risk of hepatic adverse events during treatment with nevirapine in Black people."
+    ],
+    "HLA-C*04": [
+      "HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine.",
+      "HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine among Black people.",
+      "HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine among Asian people.",
+      "HLA-C*04 in the presence of HLA-B*35 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people as compared to absence of both alleles.",
+      "HLA-C*04 in the presence of rs3745274 genotype TT is associated with increased risk of cutaneous adverse events during treatment with nevirapine as compared to absence of HLA-C*04 with rs3745274 genotype GG.",
+      "HLA-C*04 in the presence of rs3745274 genotype TT is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Black people as compared to absence of HLA-C*04 with rs3745274 genotype GG.",
+      "HLA-C*04 in the presence of rs3745274 genotype TT is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people as compared to absence of HLA-C*04 with rs3745274 genotype GG."
+    ],
+    "HLA-B*35": [
+      "HLA-B*35 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people.",
+      "HLA-B*35 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Thai people.",
+      "HLA-B*35 is not associated with increased risk of cutaneous adverse events during treatment with nevirapine in non-Thai Asian people.",
+      "HLA-B*35 is not associated with increased risk of cutaneous adverse events during treatment with nevirapine in Black people.",
+      "HLA-B*35 is not associated with increased risk of cutaneous adverse events during treatment with nevirapine in White people.",
+      "HLA-B*35 in the presence of HLA-C*04 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in Asian people as compared to absence of both alleles."
+    ],
+    "HLA-DRB1*01": [
+      "HLA-DRB1*01 is associated with increased risk of hepatic adverse events during treatment with nevirapine in White people.",
+      "HLA-DRB1*01 is not associated with increased risk of hepatic adverse events during treatment with nevirapine in Black people.",
+      "HLA-DRB1*01 is not associated with increased risk of hepatic adverse events during treatment with nevirapine in Asian people."
+    ],
+    "HLA-DQB1*05": [
+      "HLA-DQB1*05 is associated with increased risk of hepatic adverse events during treatment with nevirapine in White people.",
+      "HLA-DQB1*05 is not associated with increased risk of isolated hepatic adverse events during treatment with nevirapine in White people."
+    ],
+    "HLA-C*08": [
+      "HLA-C*08 is not associated with cutaneous adverse events during treatment with nevirapine.",
+      "HLA-C*08 is not associated with hepatic adverse events during treatment with nevirapine."
+    ],
+    "HLA-C*15": [
+      "HLA-C*15 is associated with increased risk of cutaneous adverse events during treatment with nevirapine in White people.",
+      "HLA-C*15 is not associated with isolated cutaneous adverse events during treatment with nevirapine in White people."
+    ]
+  }
+}

@@ -13,6 +13,8 @@ import json
 
 import litellm
 
+from tools.regex_variants import extract_all_variants
+
 MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
@@ -140,12 +142,20 @@ def _one_pass(system_prompt, markdown_content):
 
 
 def predict(markdown_content):
+    # Sentence generation is unchanged from the tuned 2-pass ensemble. Regex is used
+    # ONLY to back-stop the variant list: a deterministic scan of the text catches
+    # every rsID/star/HLA token, lifting variant_coverage without perturbing the
+    # well-tuned sentence output (injecting the regex list into the PROMPT was found
+    # to inflate panel sentences and hurt sentence_coverage -- so we don't).
+    regex_variants = extract_all_variants(markdown_content)
+
     v1, s1 = _one_pass(SYSTEM_PROMPT, markdown_content)
     v2, s2 = _one_pass(SECOND_PASS_PROMPT, markdown_content)
 
     # Union variants (dedup case-insensitively, preserving first-seen casing).
+    # LM-found variants first (canonical casing), then regex hits for coverage.
     variants, seen_v = [], set()
-    for v in list(v1) + list(v2):
+    for v in list(v1) + list(v2) + list(regex_variants):
         key = str(v).strip().lower().replace(" ", "")
         if key and key not in seen_v:
             seen_v.add(key)

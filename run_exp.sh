@@ -21,6 +21,9 @@ VAR=$(grep -oP '^variant_coverage:\s+\K[0-9.]+' "$L" || echo "")
 DIR="attempts/${LABEL}_${COMMIT}"
 mkdir -p "$DIR"
 cp annotation_pipeline.py "$DIR/annotation_pipeline.py"
+# eval.py is shared across a run's iterations: keep one copy at the run root
+# (e.g. attempts/jun1/eval.py) rather than duplicating it per iteration.
+cp eval.py "$(dirname "$DIR")/eval.py"
 {
   echo "iteration: $LABEL"
   echo "commit: $COMMIT"

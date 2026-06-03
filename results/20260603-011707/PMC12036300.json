@@ -1,0 +1,55 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*2": [
+      "CYP2C19 *2 carriers are not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *1/*2 is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*2 is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*2 is not associated with increased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*2."
+    ],
+    "CYP2C19*3": [],
+    "CYP2C19*17": [
+      "CYP2C19 *17 carriers are not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *17 non-carriers.",
+      "CYP2C19 *17 non-carriers are not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *17 carriers.",
+      "CYP2C19 *1/*17 is not associated with increased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *1/*17."
+    ],
+    "CYP2C19*10": [],
+    "CYP2C19*22": [],
+    "CYP2C19*26": [],
+    "CYP2C19*33": [],
+    "rs4244285": [
+      "Allele A is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel as compared to allele A.",
+      "Allele A is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to allele A.",
+      "Allele A is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to allele A.",
+      "Genotype GA is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GA.",
+      "Genotype GA is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GA.",
+      "Genotype GA is not associated with increased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype GA."
+    ],
+    "rs4986893": [],
+    "rs6413438": [],
+    "rs12248560": [
+      "Allele T is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to allele C.",
+      "Allele C is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to allele T.",
+      "Genotype CT is not associated with increased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype CC.",
+      "Genotype CC is not associated with decreased likelihood of bleeding events when treated with clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to genotype CT."
+    ],
+    "rs140278421": [],
+    "rs375781227": [],
+    "rs370803989": []
+  }
+}

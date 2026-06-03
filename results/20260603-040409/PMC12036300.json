@@ -1,0 +1,101 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*2": [
+      "CYP2C19 *2 carriers are not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19*2 carrier status is not associated with increased refractory angina symptoms when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 non-carriers (P > 0.9999).",
+      "CYP2C19*2 non-carrier status is not associated with decreased refractory angina symptoms when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 carriers (P > 0.9999).",
+      "CYP2C19*2 carrier status is not associated with increased Major Adverse Cardiac Events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 non-carriers (P = 0.2744).",
+      "CYP2C19*2 non-carrier status is not associated with decreased Major Adverse Cardiac Events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 carriers (P = 0.2744).",
+      "CYP2C19*2 carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 non-carriers (P = 0.0952).",
+      "CYP2C19*2 non-carrier status is not associated with decreased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*2 carriers (P = 0.0952).",
+      "CYP2C19*2 allele frequency is 8% in the Syrian population studied.",
+      "CYP2C19 *1/*2 (intermediate metabolizer) genotype is not associated with increased recurrent ischemic events when treated with doubled maintenance dose of clopidogrel (150 mg/day) in Syrian patients with coronary artery disease.",
+      "CYP2C19 *2/*2 (poor metabolizer) genotype was observed in 2% of the Syrian study population.",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased refractory angina symptoms when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P > 0.9999).",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased Major Adverse Cardiac Events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.2744).",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.0952)."
+    ],
+    "CYP2C19*3": [
+      "CYP2C19*3 allele was not detected (frequency 0%) in the Syrian study population.",
+      "CYP2C19*3 allele frequency is 0% in the Syrian population studied.",
+      "rs4986893 (CYP2C19*3) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "CYP2C19*10": [
+      "CYP2C19*10 allele was not detected (frequency 0%) in the Syrian study population.",
+      "rs6413438 (CYP2C19*10) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "CYP2C19*17": [
+      "CYP2C19 *17 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *17 non-carriers.",
+      "CYP2C19 *17 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *17 carriers.",
+      "CYP2C19*17 carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*17 non-carriers (P = 0.567).",
+      "CYP2C19*17 non-carrier status is not associated with decreased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to CYP2C19*17 carriers (P = 0.567).",
+      "CYP2C19*17 allele frequency is 17% in the Syrian population studied.",
+      "CYP2C19 *1/*17 (rapid metabolizer) genotype was observed in 26% of the Syrian study population.",
+      "CYP2C19 *17/*17 (ultra-rapid metabolizer) genotype was observed in 4% of the Syrian study population.",
+      "rs12248560 (CYP2C19*17) carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.567).",
+      "rs12248560 (CYP2C19*17) minor allele (T) frequency is 17% in the Syrian population studied."
+    ],
+    "CYP2C19*22": [
+      "CYP2C19*22 allele was not detected (frequency 0%) in the Syrian study population.",
+      "rs140278421 (CYP2C19*22) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "CYP2C19*26": [
+      "CYP2C19*26 allele was not detected (frequency 0%) in the Syrian study population.",
+      "rs375781227 (CYP2C19*26) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "CYP2C19*33": [
+      "CYP2C19*33 allele was not detected (frequency 0%) in the Syrian study population.",
+      "rs370803989 (CYP2C19*33) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "rs4244285": [
+      "Allele A is not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "Allele A is not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "Allele A is not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased refractory angina symptoms when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P > 0.9999).",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased Major Adverse Cardiac Events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.2744).",
+      "rs4244285 (CYP2C19*2) carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.0952).",
+      "rs4244285 minor allele (A) frequency is 8% in the Syrian population studied."
+    ],
+    "rs4986893": [
+      "rs4986893 (CYP2C19*3) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "rs6413438": [
+      "rs6413438 (CYP2C19*10) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "rs12248560": [
+      "Allele T is not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele C.",
+      "Allele C is not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to allele T.",
+      "rs12248560 (CYP2C19*17) carrier status is not associated with increased bleeding events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease as compared to non-carriers (P = 0.567).",
+      "rs12248560 (CYP2C19*17) minor allele (T) frequency is 17% in the Syrian population studied."
+    ],
+    "rs140278421": [
+      "rs140278421 (CYP2C19*22) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "rs375781227": [
+      "rs375781227 (CYP2C19*26) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "rs370803989": [
+      "rs370803989 (CYP2C19*33) minor allele was not detected (frequency 0%) in the Syrian study population."
+    ],
+    "CYP2C19*1": [
+      "CYP2C19 *1/*1 (normal metabolizer) genotype was observed in 56% of the Syrian study population.",
+      "CYP2C19 *1/*1 (normal metabolizer) genotype is not associated with increased refractory angina symptoms when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease.",
+      "CYP2C19 *1/*1 (normal metabolizer) genotype is not associated with increased Major Adverse Cardiac Events when treated with doubled maintenance dose of clopidogrel in Syrian patients with coronary artery disease.",
+      "CYP2C19 *1/*2 (intermediate metabolizer) genotype is not associated with increased recurrent ischemic events when treated with doubled maintenance dose of clopidogrel (150 mg/day) in Syrian patients with coronary artery disease.",
+      "CYP2C19 *1/*17 (rapid metabolizer) genotype was observed in 26% of the Syrian study population."
+    ],
+    "rs1045642": [
+      "rs1045642 (ABCB1 C3435T) is associated with increased incidence of ischemic cardiac events in patients with acute myocardial infarction treated with clopidogrel, as reported in referenced literature.",
+      "rs1045642 (ABCB1 C3435T) is associated with decreased intestinal absorption of clopidogrel, potentially leading to sub-therapeutic concentrations, as reported in referenced literature."
+    ]
+  }
+}

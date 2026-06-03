@@ -1,0 +1,96 @@
+{
+  "pmcid": "PMC12331468",
+  "variant_sentences": {
+    "rs45445694": [
+      "Genotype 3R/3R is associated with increased risk of skin and subcutaneous tissue disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes 2R/2R + 2R/3R.",
+      "Genotypes 2R/2R + 2R/3R are associated with decreased risk of skin and subcutaneous tissue disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype 3R/3R."
+    ],
+    "rs11280056": [
+      "Genotype DEL/DEL is associated with decreased risk of gastrointestinal disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/INS.",
+      "Genotype INS/INS is associated with increased risk of gastrointestinal disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype DEL/DEL.",
+      "Genotype INS/DEL is associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/INS.",
+      "Genotype INS/INS is associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/DEL.",
+      "Genotype DEL/DEL is associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/INS.",
+      "Genotype INS/INS is associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype DEL/DEL.",
+      "Genotypes INS/DEL + DEL/DEL are associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/INS.",
+      "Genotype INS/INS is associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes INS/DEL + DEL/DEL.",
+      "Genotype DEL/DEL is associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes INS/INS + INS/DEL.",
+      "Genotypes INS/INS + INS/DEL are associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype DEL/DEL.",
+      "Genotypes INS/DEL + DEL/DEL are associated with decreased risk of severe hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype INS/INS.",
+      "Genotype INS/INS is associated with increased risk of severe hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes INS/DEL + DEL/DEL."
+    ],
+    "rs11479": [
+      "Genotypes C/T + T/T are associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype C/C.",
+      "Genotype C/C is associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes C/T + T/T.",
+      "Genotype T/T is associated with increased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes C/C + C/T.",
+      "Genotypes C/C + C/T are associated with decreased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T."
+    ],
+    "rs3918290": [],
+    "DPYD*2": [],
+    "rs55886062": [],
+    "DPYD*13": [],
+    "rs67376798": [],
+    "rs1801265": [
+      "Genotype T/C is associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/C.",
+      "Genotypes T/C + C/C are associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes T/C + C/C."
+    ],
+    "DPYD*9": [
+      "Genotype T/C is associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/C.",
+      "Genotypes T/C + C/C are associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes T/C + C/C."
+    ],
+    "rs1695": [
+      "Genotypes A/G + G/G are associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/G + G/G.",
+      "Genotype G/G is associated with decreased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/A + A/G.",
+      "Genotypes A/A + A/G are associated with increased risk of hematological disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype G/G.",
+      "Genotype G/G is associated with decreased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype G/G.",
+      "Genotype G/G is associated with decreased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/A + A/G.",
+      "Genotypes A/A + A/G are associated with increased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype G/G.",
+      "Carriers of the G allele are associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to non-carriers of the G allele.",
+      "Non-carriers of the G allele are associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to carriers of the G allele.",
+      "Carriers of the G allele are associated with increased risk of mucositis during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to non-carriers of the G allele.",
+      "Non-carriers of the G allele are associated with decreased risk of mucositis during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to carriers of the G allele.",
+      "The G allele is associated with decreased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to the A allele.",
+      "The A allele is associated with increased risk of neuropathy during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to the G allele.",
+      "The G allele is associated with increased risk of mucositis during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to the A allele.",
+      "The A allele is associated with decreased risk of mucositis during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to the G allele."
+    ],
+    "rs1801131": [
+      "Genotype A/C is associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/C.",
+      "Genotypes A/C + C/C are associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/C + C/C.",
+      "Genotypes A/C + C/C are associated with increased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with decreased risk of nervous system disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/C + C/C.",
+      "Genotypes A/C + C/C are associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotypes A/C + C/C."
+    ],
+    "rs1801133": [],
+    "rs13181": [
+      "Genotype C/C is associated with decreased risk of gastrointestinal disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype A/A.",
+      "Genotype A/A is associated with increased risk of gastrointestinal disorders during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype C/C.",
+      "Genotype C/C is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes A/A + A/C.",
+      "Genotypes A/A + A/C are associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype C/C.",
+      "Genotype C/C is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotypes A/A + A/C.",
+      "Genotypes A/A + A/C are associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotype C/C."
+    ],
+    "rs1045642": [
+      "Genotype T/T is associated with decreased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes C/C + C/T.",
+      "Genotypes C/C + C/T are associated with increased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotypes C/C + C/T.",
+      "Genotypes C/C + C/T are associated with increased risk of anemia during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer in a multivariate model as compared to genotype T/T."
+    ],
+    "rs1128503": [
+      "Genotype C/C is associated with increased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotypes T/T + T/C.",
+      "Genotypes T/T + T/C are associated with decreased risk of pain during fluoropyrimidine-based chemotherapy in people with advanced colorectal cancer as compared to genotype C/C."
+    ],
+    "rs717620": [],
+    "rs9561778": [],
+    "rs2231142": []
+  }
+}

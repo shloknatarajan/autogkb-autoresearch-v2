@@ -1,0 +1,119 @@
+{
+  "pmcid": "PMC554812",
+  "variant_sentences": {
+    "rs3117583": [
+      "Allele status of rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "rs3117583 in BAT3 (HLA-B associated transcript 3) is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions in the MHC region (P < 10\u22127)."
+    ],
+    "rs1150793": [
+      "Allele status of rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "rs1150793 in MSH5 (mutS homolog 5) is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions in the MHC region (P < 10\u22127)."
+    ],
+    "rs2855804": [
+      "Allele status of rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "rs2855804 in MICB (MHC class I polypeptide-related sequence B) is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions in the MHC region (P < 10\u22127)."
+    ],
+    "rs2268791": [
+      "Allele status of rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "rs2268791 in CFLAR (CASP8 and FADD-like apoptosis regulator) is associated with allopurinol-induced severe cutaneous adverse reactions (P < 0.01)."
+    ],
+    "rs1594": [
+      "Allele status of rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "rs1594 in CFLAR (CASP8 and FADD-like apoptosis regulator) is associated with allopurinol-induced severe cutaneous adverse reactions (P < 0.01)."
+    ],
+    "rs2304224": [
+      "Allele status of rs2304224 is not associated with risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls in the replication analysis.",
+      "rs2304224 in KIR2DL1 (killer cell Ig-like receptor) is not associated with allopurinol-induced severe cutaneous adverse reactions upon replication."
+    ],
+    "rs1264314": [],
+    "rs1264440": [],
+    "rs1755038": [],
+    "rs589428": [],
+    "HLA-B*58:01": [
+      "Carrier status of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "HLA-B*5801 is associated with increased risk of severe cutaneous adverse reactions (including Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug hypersensitivity syndrome) when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 580.3; 95% CI 34.4\u20139780.9; Pc = 4.7 \u00d7 10\u221224).",
+      "HLA-B*5801 is associated with increased risk of severe cutaneous adverse reactions (including Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug hypersensitivity syndrome) when treated with allopurinol as compared to general population controls (odds ratio 393.5; 95% CI 23.2\u20136665.26; Pc = 8.1 \u00d7 10\u221218).",
+      "HLA-B*5801 is present in 100% of allopurinol-SCAR patients compared to 15% of allopurinol-tolerant controls, indicating a strong association with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-B*5801 is present in 100% of allopurinol-SCAR patients compared to 20% of general population controls, indicating a strong association with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced drug hypersensitivity syndrome in Han Chinese.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced Stevens-Johnson syndrome in Han Chinese.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced toxic epidermal necrolysis in Han Chinese.",
+      "HLA-B*5801 forms an extended haplotype with HLA-A*3303, Cw*0302, and DRB1*0301 in allopurinol-SCAR patients.",
+      "HLA-B*5801 is necessary but not sufficient for allopurinol-induced severe cutaneous adverse reactions, as tolerant patients also carry the allele.",
+      "HLA-B*5801 is not associated with underlying diseases such as gout, renal insufficiency, or autoimmune disease.",
+      "HLA-A*3303 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-Cw*0302 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-DRB1*0301 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "HLA-C*03:02": [
+      "Carrier status of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population."
+    ],
+    "HLA-A*33:03": [
+      "Carrier status of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "HLA-B*5801 forms an extended haplotype with HLA-A*3303, Cw*0302, and DRB1*0301 in allopurinol-SCAR patients.",
+      "HLA-A*3303 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 9.3; Pc = 2.2 \u00d7 10\u22124).",
+      "HLA-A*3303 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to general population controls (odds ratio 7.3; Pc = 4.7 \u00d7 10\u22122).",
+      "HLA-A*3303 is present in 67% of allopurinol-SCAR patients compared to 18% of allopurinol-tolerant controls.",
+      "HLA-A*3303 is present in 67% of allopurinol-SCAR patients compared to 22% of general population controls.",
+      "HLA-A*3303 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-Cw*0302 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-DRB1*0301 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "HLA-DRB1*03:01": [
+      "Carrier status of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "HLA-B*5801 forms an extended haplotype with HLA-A*3303, Cw*0302, and DRB1*0301 in allopurinol-SCAR patients.",
+      "HLA-A*3303 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-Cw*0302 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-DRB1*0301 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 12.7; Pc = 2.8 \u00d7 10\u22126).",
+      "HLA-DRB1*0301 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to general population controls (odds ratio 10.3; Pc = 8.5 \u00d7 10\u22124).",
+      "HLA-DRB1*0301 is present in 65% of allopurinol-SCAR patients compared to 13% of allopurinol-tolerant controls.",
+      "HLA-DRB1*0301 is present in 65% of allopurinol-SCAR patients compared to 15% of general population controls.",
+      "HLA-DRB1*0301 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "HLA-B*5801": [
+      "HLA-B*5801 is associated with increased risk of severe cutaneous adverse reactions (including Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug hypersensitivity syndrome) when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 580.3; 95% CI 34.4\u20139780.9; Pc = 4.7 \u00d7 10\u221224).",
+      "HLA-B*5801 is associated with increased risk of severe cutaneous adverse reactions (including Stevens-Johnson syndrome, toxic epidermal necrolysis, and drug hypersensitivity syndrome) when treated with allopurinol as compared to general population controls (odds ratio 393.5; 95% CI 23.2\u20136665.26; Pc = 8.1 \u00d7 10\u221218).",
+      "HLA-B*5801 is present in 100% of allopurinol-SCAR patients compared to 15% of allopurinol-tolerant controls, indicating a strong association with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-B*5801 is present in 100% of allopurinol-SCAR patients compared to 20% of general population controls, indicating a strong association with allopurinol-induced severe cutaneous adverse reactions.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced drug hypersensitivity syndrome in Han Chinese.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced Stevens-Johnson syndrome in Han Chinese.",
+      "HLA-B*5801 is associated with increased susceptibility to allopurinol-induced toxic epidermal necrolysis in Han Chinese.",
+      "HLA-B*5801 forms an extended haplotype with HLA-A*3303, Cw*0302, and DRB1*0301 in allopurinol-SCAR patients.",
+      "HLA-B*5801 is necessary but not sufficient for allopurinol-induced severe cutaneous adverse reactions, as tolerant patients also carry the allele.",
+      "HLA-B*5801 is not associated with underlying diseases such as gout, renal insufficiency, or autoimmune disease."
+    ],
+    "HLA-A*3303": [
+      "HLA-A*3303 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 9.3; Pc = 2.2 \u00d7 10\u22124).",
+      "HLA-A*3303 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to general population controls (odds ratio 7.3; Pc = 4.7 \u00d7 10\u22122).",
+      "HLA-A*3303 is present in 67% of allopurinol-SCAR patients compared to 18% of allopurinol-tolerant controls.",
+      "HLA-A*3303 is present in 67% of allopurinol-SCAR patients compared to 22% of general population controls.",
+      "HLA-A*3303 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "HLA-C*0302": [
+      "HLA-Cw*0302 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 97.7; Pc = 1.4 \u00d7 10\u221219).",
+      "HLA-Cw*0302 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to general population controls (odds ratio 62.3; Pc = 2.5 \u00d7 10\u221213).",
+      "HLA-Cw*0302 is present in 94% of allopurinol-SCAR patients compared to 14% of allopurinol-tolerant controls.",
+      "HLA-Cw*0302 is present in 94% of allopurinol-SCAR patients compared to 20% of general population controls.",
+      "HLA-Cw*0302 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "HLA-DRB1*0301": [
+      "HLA-DRB1*0301 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to allopurinol-tolerant controls (odds ratio 12.7; Pc = 2.8 \u00d7 10\u22126).",
+      "HLA-DRB1*0301 is associated with increased risk of severe cutaneous adverse reactions when treated with allopurinol as compared to general population controls (odds ratio 10.3; Pc = 8.5 \u00d7 10\u22124).",
+      "HLA-DRB1*0301 is present in 65% of allopurinol-SCAR patients compared to 13% of allopurinol-tolerant controls.",
+      "HLA-DRB1*0301 is present in 65% of allopurinol-SCAR patients compared to 15% of general population controls.",
+      "HLA-DRB1*0301 is in linkage disequilibrium with HLA-B*5801 and forms part of an extended haplotype (HLA-A*3303-Cw*0302-B*5801-DRB1*0301) associated with allopurinol-induced severe cutaneous adverse reactions."
+    ]
+  }
+}

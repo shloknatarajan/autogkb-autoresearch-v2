@@ -1,0 +1,199 @@
+{
+  "pmcid": "PMC10786722",
+  "variant_sentences": {
+    "rs1801160": [
+      "Genotype GA + AA is associated with decreased DPD activity as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as compared to genotype GA + AA.",
+      "Genotype GA + AA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA + AA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G."
+    ],
+    "rs17376848": [],
+    "rs1801159": [],
+    "rs1801158": [],
+    "rs56038477": [
+      "Genotype GA + AA is associated with decreased DPD activity as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as compared to genotype GA + AA.",
+      "Genotype GA + AA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA + AA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G.",
+      "Genotype GA + AA of rs56038477 is associated with decreased DPD activity as compared to genotype GG.",
+      "Genotype GG of rs56038477 is associated with increased DPD activity as compared to genotype GA + AA."
+    ],
+    "rs2297595": [
+      "Genotype AG + GG is associated with decreased DPD activity as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as compared to genotype AG + GG.",
+      "Genotype AG + GG is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AG + GG.",
+      "Allele G is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele A."
+    ],
+    "rs1801265": [],
+    "rs114096998": [],
+    "rs67376798": [
+      "Genotype AT is associated with decreased DPD activity as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as compared to genotype AT.",
+      "Genotype AT is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AT.",
+      "Allele T is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele A."
+    ],
+    "rs3918290": [
+      "Genotype GA is associated with decreased DPD activity as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as compared to genotype GA.",
+      "Genotype GA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G."
+    ],
+    "rs55886062": [
+      "Genotype TG is associated with decreased DPD activity as compared to genotype TT.",
+      "Genotype TT is associated with increased DPD activity as compared to genotype TG.",
+      "Genotype TG is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TT.",
+      "Genotype TT is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TG.",
+      "Allele G is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele T."
+    ],
+    "rs57918000": [],
+    "rs61622928": [],
+    "rs45589337": [],
+    "rs749122978": [],
+    "rs368617815": [],
+    "rs141044036": [],
+    "rs1355754530": [],
+    "rs919596571": [],
+    "rs746991079": [],
+    "rs763174477": [],
+    "rs371313778": [],
+    "c.2355G>A": [],
+    "rs374825099": [],
+    "rs56005131": [],
+    "rs145548112": [],
+    "c.2152G>T": [],
+    "rs375436137": [],
+    "rs202212118": [],
+    "rs367623519": [],
+    "c.1950G>A": [
+      "Genotype GA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA."
+    ],
+    "rs3918289": [],
+    "rs368146607": [
+      "Genotype AC is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AC."
+    ],
+    "c.1828A>G": [],
+    "rs147601618": [
+      "Genotype TC is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TT.",
+      "Genotype TT is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TC."
+    ],
+    "rs138616379": [
+      "Genotype GA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA."
+    ],
+    "c.1751C>T": [],
+    "rs555178721": [
+      "Genotype CT is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CC.",
+      "Genotype CC is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CT."
+    ],
+    "rs148372305": [],
+    "rs140039091": [],
+    "rs142619737": [
+      "Genotype GA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA."
+    ],
+    "rs760853559": [],
+    "rs138391898": [],
+    "c.1498T>C": [],
+    "rs927463053": [
+      "Genotype AG is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AG."
+    ],
+    "rs72975710": [],
+    "rs150759598": [],
+    "c.1112G>A": [],
+    "rs764173823": [
+      "Genotype CT is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CC.",
+      "Genotype CC is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CT."
+    ],
+    "rs573299212": [],
+    "c.987A>G": [],
+    "c.930G>A": [],
+    "c.852T>G": [],
+    "c.844G>A": [],
+    "rs376073289": [
+      "Genotype GT is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GT."
+    ],
+    "rs768519000": [],
+    "rs72549308": [
+      "Genotype AC is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AA.",
+      "Genotype AA is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype AC."
+    ],
+    "rs758927521": [],
+    "rs115232898": [],
+    "rs779728902": [],
+    "rs371792178": [
+      "Genotype CT is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CC.",
+      "Genotype CC is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CT."
+    ],
+    "c.428A>C": [],
+    "rs746368304": [],
+    "rs539032572": [
+      "Genotype deletion carrier is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to non-carriers.",
+      "Non-carrier genotype is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to deletion carriers."
+    ],
+    "rs773159364": [],
+    "c.168_175dup": [
+      "Genotype duplication carrier is not associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to non-carriers.",
+      "Non-carrier genotype is not associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to duplication carriers."
+    ],
+    "c.89C>A": [
+      "Genotype CA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CC.",
+      "Genotype CC is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype CA."
+    ],
+    "c.36C>T": [],
+    "c.32A>C": [],
+    "c.27G>T": [],
+    "rs772950053": [],
+    "DPYD*6": [
+      "DPYD *1/*6 + *6/*6 is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*6 + *6/*6.",
+      "Genotype GA + AA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA + AA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G."
+    ],
+    "DPYD*4": [],
+    "hapB3": [
+      "Genotype GA + AA of rs56038477 is associated with decreased DPD activity as compared to genotype GG.",
+      "Genotype GG of rs56038477 is associated with increased DPD activity as compared to genotype GA + AA.",
+      "Genotype GA + AA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA + AA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G."
+    ],
+    "DPYD*9A": [],
+    "DPYD*2A": [
+      "DPYD *1/*2A is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*2A.",
+      "Genotype GA is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GG.",
+      "Genotype GG is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype GA.",
+      "Allele A is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele G."
+    ],
+    "DPYD*13": [
+      "DPYD *1/*13 is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*13.",
+      "Genotype TG is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TT.",
+      "Genotype TT is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to genotype TG.",
+      "Allele G is associated with increased likelihood of partial DPD deficiency in patients eligible for fluoropyrimidine therapy as compared to allele T."
+    ],
+    "DPYD*7": [
+      "Genotype deletion carrier is associated with decreased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to non-carriers.",
+      "Non-carrier genotype is associated with increased DPD activity as measured by the plasma dihydrouracil to uracil ratio in patients eligible for fluoropyrimidine therapy as compared to deletion carriers."
+    ],
+    "DPYD*5": [],
+    "DPYD*1": [
+      "DPYD *1/*6 + *6/*6 is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*6 + *6/*6.",
+      "DPYD *1/*2A is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*2A.",
+      "DPYD *1/*13 is associated with decreased DPD activity as compared to DPYD *1/*1.",
+      "DPYD *1/*1 is associated with increased DPD activity as compared to DPYD *1/*13."
+    ]
+  }
+}

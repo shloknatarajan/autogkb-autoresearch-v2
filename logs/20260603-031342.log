@@ -1,0 +1,47 @@
+[92m03:13:45 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m03:13:45 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: 6 variants, 34 sentences
+  PMC10880264: 28 variants, 84 sentences
+  PMC10993165: 32 variants, 105 sentences
+  PMC11430164: 26 variants, 284 sentences
+  PMC11971672: 4 variants, 48 sentences
+  PMC12036300: 14 variants, 16 sentences
+  PMC12319246: 20 variants, 128 sentences
+  PMC2859392: 7 variants, 34 sentences
+  PMC3387531: 14 variants, 59 sentences
+  PMC3584248: 8 variants, 50 sentences
+  PMC384715: 9 variants, 55 sentences
+  PMC4916189: 11 variants, 40 sentences
+  PMC554812: 14 variants, 23 sentences
+  PMC6435416: 15 variants, 2 sentences
+  PMC6714829: 2 variants, 100 sentences
+  PMC8973308: 7 variants, 118 sentences
+wrote 16 generations to results/20260603-031342/
+[92m03:21:23 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m03:21:23 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10399933: variants 4/5, meaning_capture 0.733 (sentences matched 5/7 over 5 variants)
+  PMC10880264: variants 1/3, meaning_capture 0.333 (sentences matched 1/4 over 3 variants)
+  PMC10993165: variants 3/3, meaning_capture 1.000 (sentences matched 3/3 over 3 variants)
+  PMC11430164: variants 18/18, meaning_capture 0.667 (sentences matched 13/19 over 18 variants)
+  PMC11971672: variants 4/4, meaning_capture 1.000 (sentences matched 4/4 over 4 variants)
+  PMC12036300: variants 2/3, meaning_capture 0.167 (sentences matched 1/6 over 3 variants)
+  PMC12319246: variants 8/8, meaning_capture 0.375 (sentences matched 3/8 over 8 variants)
+  PMC2859392: variants 1/1, meaning_capture 0.500 (sentences matched 1/2 over 1 variants)
+  PMC3387531: variants 3/6, meaning_capture 0.400 (sentences matched 2/5 over 5 variants)
+  PMC3584248: variants 5/5, meaning_capture 0.500 (sentences matched 5/10 over 5 variants)
+  PMC384715: variants 1/1, meaning_capture 1.000 (sentences matched 1/1 over 1 variants)
+  PMC4916189: variants 5/7, meaning_capture 0.500 (sentences matched 4/8 over 7 variants)
+  PMC554812: variants 5/5, meaning_capture 1.000 (sentences matched 5/5 over 5 variants)
+  PMC6435416: variants 12/15, meaning_capture 0.000 (sentences matched 0/15 over 15 variants)
+  PMC6714829: variants 2/2, meaning_capture 1.000 (sentences matched 2/2 over 2 variants)
+  PMC8973308: variants 3/3, meaning_capture 0.000 (sentences matched 0/2 over 2 variants)
+---
+meaning_capture:    0.573
+variant_coverage:   0.865
+sentence_coverage:  0.495
+sentence_precision: 0.065
+num_papers:         16
+num_gold_sentences: 101
+generations:        results/20260603-031342
+judge_model:        gpt-5.4-mini
+total_seconds:      46.2

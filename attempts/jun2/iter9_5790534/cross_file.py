@@ -38,8 +38,20 @@ _ALLELE_TOK = r"\*\s*(?P<allele>\d+[xX]?[nN]?)\b"
 _STAR_SCAN = re.compile(rf"{_GENE_TOK}|{_ALLELE_TOK}")
 
 # Tokens that look like GENE* but are not pharmacogenes we want to mint keys for.
-_HLA_GENES = {"A", "B", "C", "CW", "DRB1", "DRB3", "DRB4", "DRB5",
-              "DQA1", "DQB1", "DPA1", "DPB1"}
+_HLA_GENES = {
+    "A",
+    "B",
+    "C",
+    "CW",
+    "DRB1",
+    "DRB3",
+    "DRB4",
+    "DRB5",
+    "DQA1",
+    "DQB1",
+    "DPA1",
+    "DPB1",
+}
 
 
 def _star_variants(text):
@@ -59,7 +71,11 @@ def _star_variants(text):
         allele = m.group("allele")
         if not cur:
             continue
-        allele = re.sub(r"[xX][nN]?$", "xN", allele) if re.search(r"[xX]", allele) else allele
+        allele = (
+            re.sub(r"[xX][nN]?$", "xN", allele)
+            if re.search(r"[xX]", allele)
+            else allele
+        )
         out.append(f"{cur}*{allele}")
     return out
 
@@ -86,15 +102,29 @@ def _hla_variants(text):
 # sentence under both recovers the other form with no added noise. Only
 # high-confidence, single-SNP-defined (or canonically interchangeable) pairs.
 _STAR_RS = {
-    "CYP2C19*2": "rs4244285", "CYP2C19*3": "rs4986893", "CYP2C19*17": "rs12248560",
-    "CYP2C9*2": "rs1799853", "CYP2C9*3": "rs1057910", "CYP2C9*8": "rs7900194",
-    "CYP2D6*4": "rs3892097", "CYP2D6*10": "rs1065852", "CYP2D6*41": "rs28371725",
-    "CYP2D6*3": "rs35742686", "CYP2D6*6": "rs5030655", "CYP2D6*17": "rs28371706",
-    "CYP4F2*3": "rs2108622", "CYP2B6*6": "rs3745274",
-    "SLCO1B1*5": "rs4149056", "NUDT15*3": "rs116855232",
-    "UGT1A1*6": "rs4148323", "UGT1A1*28": "rs8175347",
-    "TPMT*3C": "rs1142345", "TPMT*3B": "rs1800460", "TPMT*2": "rs1800462",
-    "DPYD*2A": "rs3918290", "DPYD*13": "rs55886062",
+    "CYP2C19*2": "rs4244285",
+    "CYP2C19*3": "rs4986893",
+    "CYP2C19*17": "rs12248560",
+    "CYP2C9*2": "rs1799853",
+    "CYP2C9*3": "rs1057910",
+    "CYP2C9*8": "rs7900194",
+    "CYP2D6*4": "rs3892097",
+    "CYP2D6*10": "rs1065852",
+    "CYP2D6*41": "rs28371725",
+    "CYP2D6*3": "rs35742686",
+    "CYP2D6*6": "rs5030655",
+    "CYP2D6*17": "rs28371706",
+    "CYP4F2*3": "rs2108622",
+    "CYP2B6*6": "rs3745274",
+    "SLCO1B1*5": "rs4149056",
+    "NUDT15*3": "rs116855232",
+    "UGT1A1*6": "rs4148323",
+    "UGT1A1*28": "rs8175347",
+    "TPMT*3C": "rs1142345",
+    "TPMT*3B": "rs1800460",
+    "TPMT*2": "rs1800462",
+    "DPYD*2A": "rs3918290",
+    "DPYD*13": "rs55886062",
 }
 # bidirectional lookup
 _EQUIV = {}
@@ -163,4 +193,5 @@ if __name__ == "__main__":
         ]
     }
     import json
+
     print(json.dumps(cross_file_sentences(demo), indent=2))

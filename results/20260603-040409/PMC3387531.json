@@ -1,0 +1,155 @@
+{
+  "pmcid": "PMC3387531",
+  "variant_sentences": {
+    "rs2054675": [
+      "T allele is associated with increased risk of cutaneous adverse events with nevirapine as compared to G allele.",
+      "G allele is associated with decreased risk of cutaneous adverse events with nevirapine as compared to T allele.",
+      "T allele is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to G allele.",
+      "G allele is associated with decreased risk of cutaneous adverse events with nevirapine in Asian people as compared to T allele.",
+      "rs2054675 in CYP2B6 is associated with increased risk of cutaneous adverse events when treated with nevirapine in all populations after correcting for multiple comparisons.",
+      "rs2054675 in CYP2B6 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Asians (P=0.041).",
+      "rs2054675 in CYP2B6 is not associated with hepatic adverse events when treated with nevirapine."
+    ],
+    "rs3786547": [
+      "variant allele is associated with increased risk of cutaneous adverse events with nevirapine as compared to the reference allele.",
+      "reference allele is associated with decreased risk of cutaneous adverse events with nevirapine as compared to the variant allele.",
+      "variant allele is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to the reference allele.",
+      "reference allele is associated with decreased risk of cutaneous adverse events with nevirapine in Asian people as compared to the variant allele.",
+      "rs3786547 in CYP2B6 is associated with increased risk of cutaneous adverse events when treated with nevirapine in all populations after correcting for multiple comparisons.",
+      "rs3786547 in CYP2B6 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Asians (P=0.041).",
+      "rs3786547 in CYP2B6 is not associated with hepatic adverse events when treated with nevirapine."
+    ],
+    "rs3745274": [
+      "T allele is associated with increased risk of cutaneous adverse events with nevirapine as compared to G allele.",
+      "G allele is associated with decreased risk of cutaneous adverse events with nevirapine as compared to T allele.",
+      "Increasing T-allele count is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to increasing G-allele count.",
+      "Increasing G-allele count is associated with decreased risk of cutaneous adverse events with nevirapine in Black people as compared to increasing T-allele count.",
+      "Increasing T-allele count is associated with increased risk of cutaneous adverse events with nevirapine in White people as compared to increasing G-allele count.",
+      "Increasing G-allele count is associated with decreased risk of cutaneous adverse events with nevirapine in White people as compared to increasing T-allele count.",
+      "Increasing T-allele count is not associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to increasing G-allele count.",
+      "Genotype TT is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to genotype GG.",
+      "Genotype GG is associated with decreased risk of cutaneous adverse events with nevirapine in Black people as compared to genotype TT.",
+      "CYP2B6 516TT and HLA-Cw*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in the total population as compared to CYP2B6 516GG and absence of HLA-Cw*04.",
+      "CYP2B6 516GG and absence of HLA-Cw*04 is associated with decreased risk of cutaneous adverse events with nevirapine in the total population as compared to CYP2B6 516TT and HLA-Cw*04 carrier status.",
+      "CYP2B6 516TT and HLA-Cw*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to CYP2B6 516GG and absence of HLA-Cw*04.",
+      "CYP2B6 516GG and absence of HLA-Cw*04 is associated with decreased risk of cutaneous adverse events with nevirapine in Black people as compared to CYP2B6 516TT and HLA-Cw*04 carrier status.",
+      "CYP2B6 516TT and HLA-Cw*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to CYP2B6 516GG and absence of HLA-Cw*04.",
+      "CYP2B6 516GG and absence of HLA-Cw*04 is associated with decreased risk of cutaneous adverse events with nevirapine in Asian people as compared to CYP2B6 516TT and HLA-Cw*04 carrier status.",
+      "Genotype TT and HLA-Cw*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to other CYP2B6 516G>T and HLA-Cw*04 groups.",
+      "Genotype TT is not associated with increased risk of hepatic adverse events with nevirapine as compared to genotype GG + GT.",
+      "Genotype GG + GT is not associated with decreased risk of hepatic adverse events with nevirapine as compared to genotype TT.",
+      "CYP2B6 516G\u2192T (rs3745274) T allele is associated with increased risk of cutaneous adverse events when treated with nevirapine in all populations (OR 1.66).",
+      "CYP2B6 516G\u2192T (rs3745274) T allele is associated with increased risk of cutaneous adverse events when treated with nevirapine in Blacks (Cochran-Armitage trend test P=0.0025).",
+      "CYP2B6 516G\u2192T (rs3745274) T allele is associated with increased risk of cutaneous adverse events when treated with nevirapine in Whites (Cochran-Armitage trend test P=0.021).",
+      "CYP2B6 516G\u2192T (rs3745274) T allele is associated with a weak trend toward increased risk of cutaneous adverse events when treated with nevirapine in Asians (Cochran-Armitage trend test P=0.12).",
+      "CYP2B6 516TT (rs3745274) is associated with increased risk of cutaneous adverse events when treated with nevirapine in Blacks as compared to CYP2B6 516GG (OR 5.92, 95% CI 1.53\u201326.8).",
+      "CYP2B6 516GG (rs3745274) is associated with decreased risk of cutaneous adverse events when treated with nevirapine in Blacks as compared to CYP2B6 516TT (OR 5.92, 95% CI 1.53\u201326.8).",
+      "CYP2B6 516G\u2192T (rs3745274) is not associated with hepatic adverse events when treated with nevirapine.",
+      "CYP2B6 516TT (rs3745274) combined with HLA-Cw*04 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in the total population (OR 6.31, 95% CI 2.53\u201315.73) as compared to CYP2B6 516GG without HLA-Cw*04.",
+      "CYP2B6 516TT (rs3745274) combined with HLA-Cw*04 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Blacks (OR 18.90) as compared to CYP2B6 516GG without HLA-Cw*04.",
+      "CYP2B6 516TT (rs3745274) combined with HLA-Cw*04 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Asians as compared to CYP2B6 516GG without HLA-Cw*04.",
+      "CYP2B6 516GG (rs3745274) without HLA-Cw*04 is associated with decreased risk of cutaneous adverse events when treated with nevirapine in Blacks as compared to CYP2B6 516TT with HLA-Cw*04 (OR 18.90).",
+      "CYP2B6 516G\u2192T (rs3745274) increasing T-allele count is associated with progressively increased risk of cutaneous adverse events when treated with nevirapine (additive model)."
+    ],
+    "rs1045642": [
+      "T allele is not associated with decreased risk of hepatic adverse events with nevirapine in Black people as compared to C allele.",
+      "C allele is not associated with increased risk of hepatic adverse events with nevirapine in Black people as compared to T allele.",
+      "T allele is not associated with cutaneous adverse events with nevirapine as compared to C allele.",
+      "T allele is not associated with hepatic adverse events with nevirapine as compared to C allele."
+    ],
+    "HLA-C*04": [
+      "HLA-C*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in the total population as compared to non-carrier status.",
+      "HLA-C*04 non-carrier status is associated with decreased risk of cutaneous adverse events with nevirapine in the total population as compared to carrier status.",
+      "HLA-C*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to non-carrier status.",
+      "HLA-C*04 non-carrier status is associated with decreased risk of cutaneous adverse events with nevirapine in Black people as compared to carrier status.",
+      "HLA-C*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to non-carrier status.",
+      "HLA-C*04 non-carrier status is associated with decreased risk of cutaneous adverse events with nevirapine in Asian people as compared to carrier status.",
+      "HLA-C*04 carrier status is associated with increased risk of isolated cutaneous adverse events with nevirapine in the total population as compared to non-carrier status.",
+      "HLA-C*04 non-carrier status is associated with decreased risk of isolated cutaneous adverse events with nevirapine in the total population as compared to carrier status.",
+      "HLA-C*04 and HLA-B*35 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to lacking one or both risk alleles.",
+      "HLA-C*04 carrier status and CYP2B6 516TT is associated with increased risk of cutaneous adverse events with nevirapine in the total population as compared to CYP2B6 516GG and absence of HLA-C*04.",
+      "HLA-C*04 carrier status and CYP2B6 516TT is associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to CYP2B6 516GG and absence of HLA-C*04.",
+      "HLA-C*04 carrier status and CYP2B6 516TT is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to CYP2B6 516GG and absence of HLA-C*04.",
+      "HLA-B*35 and HLA-C*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to lacking one or both alleles."
+    ],
+    "HLA-B*35": [
+      "HLA-B*35 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to non-carrier status.",
+      "HLA-B*35 non-carrier status is associated with decreased risk of cutaneous adverse events with nevirapine in Asian people as compared to carrier status.",
+      "HLA-B*35 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Thai people as compared to non-carrier status.",
+      "HLA-B*35 non-carrier status is associated with decreased risk of cutaneous adverse events with nevirapine in Thai people as compared to carrier status.",
+      "HLA-B*35 carrier status is not associated with increased risk of cutaneous adverse events with nevirapine in non-Thai Asian people as compared to non-carrier status.",
+      "HLA-B*35 carrier status is not associated with increased risk of cutaneous adverse events with nevirapine in Black people as compared to non-carrier status.",
+      "HLA-B*35 carrier status is not associated with increased risk of cutaneous adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-B*35 carrier status is associated with increased risk of isolated cutaneous adverse events with nevirapine in Thai people as compared to non-carrier status.",
+      "HLA-B*35 and HLA-C*04 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to lacking one or both alleles.",
+      "HLA-B*35 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Asians (OR 3.47).",
+      "HLA-B*35 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Thai participants (OR 5.65).",
+      "HLA-B*35 is associated with increased risk of isolated cutaneous adverse events when treated with nevirapine in Thai participants (OR 7.31 when concomitant hepatic adverse events excluded).",
+      "HLA-B*35 is not associated with cutaneous adverse events when treated with nevirapine in non-Thai Asians (mainly Taiwanese).",
+      "HLA-B*35 is not significantly associated with cutaneous adverse events when treated with nevirapine in Blacks.",
+      "HLA-B*35 is weakly associated with cutaneous adverse events when treated with nevirapine in Whites, but this association did not withstand multiple testing correction.",
+      "HLA-B*35 combined with HLA-Cw*04 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Asians (OR 18.34, 95% CI 5.10\u201365.99).",
+      "HLA-B*35-negative status among Asians with cutaneous adverse events (80% of cases) indicates that HLA-B*35 is insensitive as a screening marker for nevirapine-associated cutaneous adverse events in Asians.",
+      "HLA-C*04 and HLA-B*35 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in Asian people as compared to lacking one or both risk alleles.",
+      "HLA-Cw*04 combined with HLA-B*35 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Asians (OR 18.34, 95% CI 5.10\u201365.99)."
+    ],
+    "HLA-DRB1*01": [
+      "HLA-DRB1*01 carrier status is associated with increased risk of hepatic adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-DRB1*01 non-carrier status is associated with decreased risk of hepatic adverse events with nevirapine in White people as compared to carrier status.",
+      "HLA-DRB1*01 carrier status is associated with increased risk of isolated hepatic adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-DRB1*01 non-carrier status is associated with decreased risk of isolated hepatic adverse events with nevirapine in White people as compared to carrier status.",
+      "HLA-DRB1*01 carrier status is not associated with hepatic adverse events with nevirapine in Black people as compared to non-carrier status.",
+      "HLA-DRB1*01 carrier status is not associated with hepatic adverse events with nevirapine in Asian people as compared to non-carrier status.",
+      "HLA-DRB1*01 is associated with increased risk of hepatic adverse events when treated with nevirapine in Whites (OR 3.02).",
+      "HLA-DRB1*01 is associated with increased risk of isolated hepatic adverse events when treated with nevirapine in Whites (OR 3.63 when concomitant cutaneous adverse events excluded).",
+      "HLA-DRB1*01 is not significantly associated with hepatic adverse events when treated with nevirapine in Blacks.",
+      "HLA-DRB1*01 is not significantly associated with hepatic adverse events when treated with nevirapine in Asians.",
+      "HLA-DRB1*01-negative status among Whites with hepatic adverse events (56% of cases) indicates that HLA-DRB1*01 is insensitive as a screening marker for nevirapine-associated hepatic adverse events in Whites.",
+      "HLA-DRB1*01 is not associated with isolated cutaneous adverse events when treated with nevirapine."
+    ],
+    "HLA-DQB1*05": [
+      "HLA-DQB1*05 carrier status is associated with increased risk of hepatic adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-DQB1*05 non-carrier status is associated with decreased risk of hepatic adverse events with nevirapine in White people as compared to carrier status.",
+      "HLA-DQB1*05 carrier status is not associated with isolated hepatic adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-DQB1*05 is associated with increased risk of hepatic adverse events when treated with nevirapine in Whites.",
+      "HLA-DQB1*05 is not significantly associated with isolated hepatic adverse events when treated with nevirapine in Whites (association lost when concomitant cutaneous adverse events excluded).",
+      "HLA-DQB1*05 is not significantly associated with hepatic adverse events when treated with nevirapine in Asians.",
+      "HLA-DQB1*05 is not significantly associated with hepatic adverse events when treated with nevirapine in Blacks."
+    ],
+    "HLA-C*15": [
+      "HLA-C*15 carrier status is associated with increased risk of cutaneous adverse events with nevirapine in White people as compared to non-carrier status.",
+      "HLA-C*15 carrier status is not associated with isolated cutaneous adverse events with nevirapine in White people as compared to non-carrier status."
+    ],
+    "HLA-C*08": [
+      "HLA-C*08 carrier status is not associated with cutaneous adverse events with nevirapine as compared to non-carrier status.",
+      "HLA-C*08 carrier status is not associated with hepatic adverse events with nevirapine as compared to non-carrier status."
+    ],
+    "HLA-Cw*04": [
+      "HLA-Cw*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in all study participants (OR 2.51).",
+      "HLA-Cw*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Blacks.",
+      "HLA-Cw*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Asians.",
+      "HLA-Cw*04 is associated with increased risk of cutaneous adverse events when treated with nevirapine in Whites.",
+      "HLA-Cw*04 combined with HLA-B*35 is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Asians (OR 18.34, 95% CI 5.10\u201365.99).",
+      "HLA-Cw*04 combined with CYP2B6 516TT is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in the total population (OR 6.31, 95% CI 2.53\u201315.73).",
+      "HLA-Cw*04 combined with CYP2B6 516TT is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Blacks (OR 18.90).",
+      "HLA-Cw*04 combined with CYP2B6 516TT is associated with markedly increased risk of cutaneous adverse events when treated with nevirapine in Asians.",
+      "HLA-Cw*04 carriers with concomitant CYP2B6 516G\u2192T have increased risk of cutaneous adverse events when treated with nevirapine as compared to non-carriers without CYP2B6 516G\u2192T.",
+      "Absence of HLA-Cw*04 (62% of all participants with cutaneous adverse events) indicates that HLA-Cw*04 is insensitive as a screening marker for nevirapine-associated cutaneous adverse events.",
+      "HLA-Cw*04 is associated with increased risk of isolated cutaneous adverse events when treated with nevirapine in all participants (OR increased from 2.51 to 2.98 when concomitant hepatic adverse events excluded)."
+    ],
+    "HLA-Cw*08": [
+      "HLA-Cw*08 is not associated with cutaneous adverse events when treated with nevirapine.",
+      "HLA-Cw*08 is not associated with hepatic adverse events when treated with nevirapine."
+    ],
+    "HLA-Cw*15": [
+      "HLA-Cw*15 is weakly associated with cutaneous adverse events when treated with nevirapine in Whites, but this association was no longer apparent when considering patients with only isolated cutaneous adverse events."
+    ],
+    "ABCB1 3435C\u2192T": [
+      "ABCB1 3435C\u2192T is not significantly associated with cutaneous adverse events when treated with nevirapine.",
+      "ABCB1 3435C\u2192T is not significantly associated with hepatic adverse events when treated with nevirapine (overall).",
+      "ABCB1 3435C\u2192T is not significantly associated with hepatic adverse events when treated with nevirapine in Blacks (OR 0.50, 95% CI 0.14\u20131.76; P=0.27), though the direction is consistent with previous studies.",
+      "ABCB1 3435C\u2192T is not associated with hepatic adverse events when treated with nevirapine in Asians.",
+      "ABCB1 3435C\u2192T is not associated with hepatic adverse events when treated with nevirapine in Whites."
+    ]
+  }
+}

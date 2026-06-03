@@ -43,6 +43,8 @@ def sanitize_text(text):
     text = _LINEBREAKS.sub("\n", text)
     text = _CTRL.sub("", text)
     return text
+
+
 ARTICLES = os.path.join(ROOT, "base_data", "articles")
 BACKUP = os.path.join(ROOT, "base_data", "articles_pre_supplement_backup")
 BENCH = os.path.join(ROOT, "benchmarks")

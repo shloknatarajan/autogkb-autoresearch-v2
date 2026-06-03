@@ -1,0 +1,56 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*2": [
+      "CYP2C19 *2 carriers are not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *2 carriers."
+    ],
+    "CYP2C19*3": [],
+    "CYP2C19*17": [
+      "CYP2C19 *17 carriers are not associated with increased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *17 non-carriers.",
+      "CYP2C19 *17 non-carriers are not associated with decreased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to CYP2C19 *17 carriers.",
+      "CYP2C19 *17 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *17 non-carriers.",
+      "CYP2C19 *17 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to CYP2C19 *17 carriers."
+    ],
+    "rs4244285": [
+      "Allele A is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "Allele A is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "Allele A is not associated with increased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to allele A.",
+      "Allele A is not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele A.",
+      "Allele A is not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele A.",
+      "Allele A is not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele G.",
+      "Allele G is not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele A."
+    ],
+    "rs4986893": [],
+    "rs12248560": [
+      "Allele T is not associated with increased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to allele C.",
+      "Allele C is not associated with decreased likelihood of bleeding events when treated with clopidogrel after percutaneous coronary intervention as compared to allele T.",
+      "Allele T is not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele C.",
+      "Allele C is not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention in people with coronary artery disease as compared to allele T."
+    ],
+    "CYP2C19*10": [],
+    "rs6413438": [],
+    "CYP2C19*22": [],
+    "rs140278421": [],
+    "CYP2C19*26": [],
+    "rs375781227": [],
+    "CYP2C19*33": [],
+    "rs370803989": [],
+    "ABCB1 rs1045642": []
+  }
+}

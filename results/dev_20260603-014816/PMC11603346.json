@@ -1,0 +1,55 @@
+{
+  "pmcid": "PMC11603346",
+  "variant_sentences": {
+    "CYP2B6*6": [
+      "Genotype CYP2B6 *1/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6.",
+      "Genotype CYP2B6 *6/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *6/*6.",
+      "Genotype CYP2B6 *1/*6 + *6/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6 + *6/*6.",
+      "Genotype CYP2B6 *1/*6 is associated with decreased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with increased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6.",
+      "Genotype CYP2B6 *6/*6 is not associated with risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*6 + *6/*6 is associated with decreased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with increased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6 + *6/*6.",
+      "CYP2B6 *6 is associated with decreased CYP2B6 enzyme levels.",
+      "CYP2B6 *6 is associated with decreased ability to metabolize drugs.",
+      "CYP2B6 *6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV.",
+      "CYP2B6 *6 is associated with decreased risk of nevirapine-induced liver injury in people living with HIV.",
+      "CYP2B6 *6 is associated with increased risk of antiretroviral drug-induced liver injury in efavirenz-treated people living with HIV.",
+      "CYP2B6 *6 is associated with decreased risk of antiretroviral drug-induced liver injury in nevirapine-treated people living with HIV."
+    ],
+    "rs3745274": [
+      "rs3745274 is associated with decreased CYP2B6 enzyme levels."
+    ],
+    "rs2279343": [
+      "rs2279343 is associated with decreased CYP2B6 enzyme levels."
+    ],
+    "rs28399499": [],
+    "UGT1A1": [],
+    "ABCB1": [],
+    "HLA-Cw*04": [],
+    "HLA-DRB1": [],
+    "CYP2D6": [],
+    "CYP1A1": [],
+    "CYP3A4": [],
+    "CYP3A5": [],
+    "CYP1A2": [],
+    "CYP2A6": [],
+    "CYP2C9": [],
+    "CYP2B6*1": [
+      "Genotype CYP2B6 *1/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6.",
+      "Genotype CYP2B6 *6/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *6/*6.",
+      "Genotype CYP2B6 *1/*6 + *6/*6 is associated with increased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with decreased risk of efavirenz-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6 + *6/*6.",
+      "Genotype CYP2B6 *1/*6 is associated with decreased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with increased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6.",
+      "Genotype CYP2B6 *6/*6 is not associated with risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*6 + *6/*6 is associated with decreased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*1.",
+      "Genotype CYP2B6 *1/*1 is associated with increased risk of nevirapine-induced liver injury in people living with HIV as compared to genotype CYP2B6 *1/*6 + *6/*6."
+    ]
+  }
+}

@@ -34,8 +34,20 @@ _ALLELE_TOK = r"\*\s*(?P<allele>\d+[xX]?[nN]?)\b"
 _STAR_SCAN = re.compile(rf"{_GENE_TOK}|{_ALLELE_TOK}")
 
 # Tokens that look like GENE* but are not pharmacogenes we want to mint keys for.
-_HLA_GENES = {"A", "B", "C", "CW", "DRB1", "DRB3", "DRB4", "DRB5",
-              "DQA1", "DQB1", "DPA1", "DPB1"}
+_HLA_GENES = {
+    "A",
+    "B",
+    "C",
+    "CW",
+    "DRB1",
+    "DRB3",
+    "DRB4",
+    "DRB5",
+    "DQA1",
+    "DQB1",
+    "DPA1",
+    "DPB1",
+}
 
 
 def _star_variants(text):
@@ -55,7 +67,11 @@ def _star_variants(text):
         allele = m.group("allele")
         if not cur:
             continue
-        allele = re.sub(r"[xX][nN]?$", "xN", allele) if re.search(r"[xX]", allele) else allele
+        allele = (
+            re.sub(r"[xX][nN]?$", "xN", allele)
+            if re.search(r"[xX]", allele)
+            else allele
+        )
         out.append(f"{cur}*{allele}")
     return out
 
@@ -124,4 +140,5 @@ if __name__ == "__main__":
         ]
     }
     import json
+
     print(json.dumps(cross_file_sentences(demo), indent=2))

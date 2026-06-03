@@ -1,0 +1,54 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*1": [
+      "CYP2C19 *1/*2 is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*2 is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*17 + *17/*17 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*2 + *2/*2.",
+      "CYP2C19 *1/*1 + *1/*2 + *2/*2 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*17 + *17/*17.",
+      "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+      "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*2 + *2/*2."
+    ],
+    "CYP2C19*2": [
+      "CYP2C19 *1/*2 is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*2 is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*1.",
+      "CYP2C19 *1/*1 is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*2.",
+      "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+      "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*2 + *2/*2.",
+      "CYP2C19 *1/*17 + *17/*17 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*2 + *2/*2.",
+      "CYP2C19 *1/*1 + *1/*2 + *2/*2 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*17 + *17/*17."
+    ],
+    "CYP2C19*3": [],
+    "CYP2C19*10": [],
+    "CYP2C19*17": [
+      "CYP2C19 *1/*17 + *17/*17 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*2 + *2/*2.",
+      "CYP2C19 *1/*1 + *1/*2 + *2/*2 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*17 + *17/*17.",
+      "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*1 + *1/*17 + *17/*17.",
+      "CYP2C19 *1/*1 + *1/*17 + *17/*17 is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to CYP2C19 *1/*2 + *2/*2."
+    ],
+    "CYP2C19*22": [],
+    "CYP2C19*26": [],
+    "CYP2C19*33": [],
+    "rs4244285": [
+      "Genotype GA + AA is not associated with increased likelihood of refractory angina symptoms when treated with clopidogrel as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of refractory angina symptoms when treated with clopidogrel as compared to genotype GA + AA.",
+      "Genotype GA + AA is not associated with increased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of Major Adverse Cardiac Events when treated with clopidogrel as compared to genotype GA + AA.",
+      "Genotype GA + AA is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to genotype GG.",
+      "Genotype GG is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to genotype GA + AA."
+    ],
+    "rs4986893": [],
+    "rs6413438": [],
+    "rs12248560": [
+      "Genotype CT + TT is not associated with increased likelihood of bleeding events when treated with clopidogrel as compared to genotype CC.",
+      "Genotype CC is not associated with decreased likelihood of bleeding events when treated with clopidogrel as compared to genotype CT + TT."
+    ],
+    "rs140278421": [],
+    "rs375781227": [],
+    "rs370803989": [],
+    "rs1045642": []
+  }
+}

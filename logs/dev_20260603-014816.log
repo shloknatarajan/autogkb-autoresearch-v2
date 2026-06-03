@@ -1,0 +1,19 @@
+[92m01:48:18 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m01:48:18 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+  PMC10275785: 2 variants, 216 sentences
+  PMC10786722: 80 variants, 88 sentences
+  PMC10946077: 2 variants, 156 sentences
+  PMC11062152: 2 variants, 40 sentences
+  PMC11603346: 16 variants, 30 sentences
+  PMC12035587: 8 variants, 48 sentences
+  PMC12038368: 16 variants, 184 sentences
+  PMC12331468: 19 variants, 62 sentences
+  PMC3113609: 3 variants, 33 sentences
+  PMC3548984: 7 variants, 243 sentences
+  PMC3839910: 5 variants, 85 sentences
+  PMC4706412: 28 variants, 93 sentences
+  PMC5508045: 5 variants, 83 sentences
+  PMC5561238: 196 variants, 442 sentences
+  PMC6465603: 4 variants, 71 sentences
+  PMC8790808: 25 variants, 176 sentences
+wrote 16 generations to results/dev_20260603-014816/

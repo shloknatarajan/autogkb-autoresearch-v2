@@ -1,0 +1,71 @@
+{
+  "pmcid": "PMC6435416",
+  "variant_sentences": {
+    "CYP2D6*1": [],
+    "CYP2D6*2": [],
+    "CYP2D6*3": [],
+    "CYP2D6*4": [],
+    "CYP2D6*5": [],
+    "CYP2D6*6": [],
+    "CYP2D6*7": [],
+    "CYP2D6*8": [],
+    "CYP2D6*9": [],
+    "CYP2D6*10": [],
+    "CYP2D6*11": [],
+    "CYP2D6*12": [],
+    "CYP2D6*14A": [],
+    "CYP2D6*14B": [],
+    "CYP2D6*15": [],
+    "CYP2D6*17": [],
+    "CYP2D6*29": [],
+    "CYP2D6*33": [],
+    "CYP2D6*35": [],
+    "CYP2D6*41": [],
+    "CYP2D6*46": [],
+    "rs769258": [],
+    "rs28371696": [],
+    "rs1065852": [],
+    "rs5030862": [],
+    "rs72549357": [],
+    "rs5030863": [],
+    "rs28371706": [],
+    "rs5030655": [],
+    "rs1135824": [],
+    "rs5030865": [],
+    "rs3892097": [],
+    "rs28371717": [],
+    "rs35742686": [],
+    "rs5030656": [],
+    "rs16947": [],
+    "rs5030867": [],
+    "rs28371725": [],
+    "rs59421388": [],
+    "rs1135840": [],
+    "rs774671100": [],
+    "rs201377835": [],
+    "CYP2D6": [
+      "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased risk of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+      "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased risk of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer.",
+      "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased incidence of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+      "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased incidence of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer."
+    ],
+    "CYP2D6 poor metabolizer": [
+      "CYP2D6 poor metabolizer phenotype is associated with increased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer phenotype.",
+      "CYP2D6 poor metabolizer phenotype is associated with increased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 normal metabolizer phenotype."
+    ],
+    "CYP2D6 intermediate metabolizer": [
+      "CYP2D6 intermediate metabolizer phenotype is associated with increased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer phenotype.",
+      "CYP2D6 intermediate metabolizer phenotype is associated with increased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 normal metabolizer phenotype."
+    ],
+    "CYP2D6 normal metabolizer": [
+      "CYP2D6 normal metabolizer phenotype is associated with decreased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 poor metabolizer + intermediate metabolizer phenotype."
+    ],
+    "CYP2D6 ultrarapid metabolizer": [],
+    "CYP2D6 poor metabolizer + intermediate metabolizer phenotype": [
+      "CYP2D6 poor metabolizer + intermediate metabolizer phenotype is associated with increased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6 normal metabolizer + ultrarapid metabolizer phenotype": [
+      "CYP2D6 normal metabolizer + ultrarapid metabolizer phenotype is associated with decreased likelihood of adverse events during treatment with risperidone as compared to CYP2D6 poor metabolizer + intermediate metabolizer phenotype."
+    ]
+  }
+}

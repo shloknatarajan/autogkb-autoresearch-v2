@@ -1,0 +1,215 @@
+{
+  "pmcid": "PMC6435416",
+  "variant_sentences": {
+    "CYP2D6 *1": [],
+    "CYP2D6 *2": [],
+    "CYP2D6 *3": [],
+    "CYP2D6 *4": [],
+    "CYP2D6 *5": [],
+    "CYP2D6 *6": [],
+    "CYP2D6 *7": [],
+    "CYP2D6 *8": [],
+    "CYP2D6 *9": [],
+    "CYP2D6 *10": [],
+    "CYP2D6 *11": [],
+    "CYP2D6 *12": [],
+    "CYP2D6 *14A": [],
+    "CYP2D6 *14B": [],
+    "CYP2D6 *15": [],
+    "CYP2D6 *17": [],
+    "CYP2D6 *29": [],
+    "CYP2D6 *33": [],
+    "CYP2D6 *35": [],
+    "CYP2D6 *41": [],
+    "CYP2D6 *46": [],
+    "rs769258": [],
+    "rs28371696": [],
+    "rs1065852": [],
+    "rs5030862": [],
+    "rs72549357": [],
+    "rs5030863": [],
+    "rs28371706": [],
+    "rs5030655": [],
+    "rs1135824": [],
+    "rs5030865": [],
+    "rs3892097": [],
+    "rs28371717": [],
+    "rs35742686": [],
+    "rs5030656": [],
+    "rs16947": [],
+    "rs5030867": [],
+    "rs28371725": [],
+    "rs59421388": [],
+    "rs1135840": [],
+    "rs774671100": [],
+    "rs201377835": [],
+    "CYP2D6 poor metabolizer": [
+      "CYP2D6 poor metabolizer is associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer.",
+      "CYP2D6 poor metabolizer phenotype is associated with increased incidence of adverse events when treated with risperidone in children and adolescents.",
+      "CYP2D6 poor/intermediate metabolizer is associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer (adjusted OR 2.4, 95% CI 1.1-5.1, P=0.03).",
+      "CYP2D6 poor/intermediate metabolizer is associated with increased frequency of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer (46% vs. 27%, P=0.04)."
+    ],
+    "CYP2D6 intermediate metabolizer": [
+      "CYP2D6 intermediate metabolizer is associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer.",
+      "CYP2D6 intermediate metabolizer phenotype is associated with increased incidence of adverse events when treated with risperidone in children and adolescents.",
+      "CYP2D6 poor/intermediate metabolizer is associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer (adjusted OR 2.4, 95% CI 1.1-5.1, P=0.03).",
+      "CYP2D6 poor/intermediate metabolizer is associated with increased frequency of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer (46% vs. 27%, P=0.04)."
+    ],
+    "CYP2D6 normal metabolizer": [
+      "CYP2D6 normal metabolizer is associated with decreased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor/intermediate metabolizer.",
+      "CYP2D6 normal/ultrarapid metabolizer is associated with decreased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor/intermediate metabolizer (adjusted OR 2.4, 95% CI 1.1-5.1, P=0.03).",
+      "CYP2D6 normal/ultrarapid metabolizer is associated with decreased frequency of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor/intermediate metabolizer (27% vs. 46%, P=0.04).",
+      "CYP2D6 normal/ultrarapid metabolizer with concomitant strong CYP2D6 inhibitor use is not associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer without concomitant strong CYP2D6 inhibitor (adjusted OR 1.2, 95% CI 0.4-3.3, P=0.7)."
+    ],
+    "CYP2D6 ultrarapid metabolizer": [
+      "CYP2D6 ultrarapid metabolizer is not associated with decreased risk of adverse events when treated with risperidone in children and adolescents.",
+      "CYP2D6 normal/ultrarapid metabolizer is associated with decreased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor/intermediate metabolizer (adjusted OR 2.4, 95% CI 1.1-5.1, P=0.03).",
+      "CYP2D6 normal/ultrarapid metabolizer is associated with decreased frequency of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 poor/intermediate metabolizer (27% vs. 46%, P=0.04).",
+      "CYP2D6 normal/ultrarapid metabolizer with concomitant strong CYP2D6 inhibitor use is not associated with increased risk of adverse events when treated with risperidone in children and adolescents as compared to CYP2D6 normal/ultrarapid metabolizer without concomitant strong CYP2D6 inhibitor (adjusted OR 1.2, 95% CI 0.4-3.3, P=0.7)."
+    ],
+    "CYP2D6*14": [],
+    "CYP2D6*1/*1": [],
+    "CYP2D6*1/*2": [],
+    "CYP2D6*1/*3": [],
+    "CYP2D6*1/*4": [],
+    "CYP2D6*1/*5": [],
+    "CYP2D6*1/*6": [],
+    "CYP2D6*1/*9": [],
+    "CYP2D6*1/*10": [],
+    "CYP2D6*1/*17": [],
+    "CYP2D6*1/*29": [],
+    "CYP2D6*1/*33": [],
+    "CYP2D6*1/*35": [],
+    "CYP2D6*1/*41": [],
+    "CYP2D6*1xN/*2": [
+      "CYP2D6 *1xN/*2 diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*1/*2xN": [
+      "CYP2D6 *1/*2xN diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*1/*1xN": [
+      "CYP2D6 *1/*1xN diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*1xN/*4": [],
+    "CYP2D6*2/*2": [],
+    "CYP2D6*2/*3": [],
+    "CYP2D6*2/*4": [],
+    "CYP2D6*2/*5": [],
+    "CYP2D6*2/*6": [],
+    "CYP2D6*2/*9": [],
+    "CYP2D6*2/*10": [],
+    "CYP2D6*2/*17": [],
+    "CYP2D6*2/*29": [],
+    "CYP2D6*2/*35": [],
+    "CYP2D6*2/*41": [],
+    "CYP2D6*3/*4": [
+      "CYP2D6 *3/*4 diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*3/*5": [
+      "CYP2D6 *3/*5 diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*3/*35": [],
+    "CYP2D6*3/*41": [
+      "CYP2D6 *3/*41 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4/*4": [
+      "CYP2D6 *4/*4 diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*4/*4xN": [
+      "CYP2D6 *4/*4xN diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*4/*6": [
+      "CYP2D6 *4/*6 diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*4/*9": [
+      "CYP2D6 *4/*9 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4/*10": [
+      "CYP2D6 *4/*10 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4/*17": [
+      "CYP2D6 *4/*17 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4/*29": [
+      "CYP2D6 *4/*29 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4/*35": [],
+    "CYP2D6*4/*41": [
+      "CYP2D6 *4/*41 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*10/*5": [
+      "CYP2D6 *10/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*10/*35": [],
+    "CYP2D6*10/*46": [],
+    "CYP2D6*17/*5": [
+      "CYP2D6 *17/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*35/*35": [],
+    "CYP2D6*35/*41": [],
+    "CYP2D6*41/*5": [
+      "CYP2D6 *41/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*1xN": [
+      "CYP2D6 *1xN/*2 diplotype is classified as ultrarapid metabolizer phenotype.",
+      "CYP2D6 *1/*1xN diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*2": [
+      "CYP2D6 *1xN/*2 diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*1": [
+      "CYP2D6 *1/*2xN diplotype is classified as ultrarapid metabolizer phenotype.",
+      "CYP2D6 *1/*1xN diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*2xN": [
+      "CYP2D6 *1/*2xN diplotype is classified as ultrarapid metabolizer phenotype."
+    ],
+    "CYP2D6*3": [
+      "CYP2D6 *3/*4 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *3/*5 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *3/*41 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4": [
+      "CYP2D6 *3/*4 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *4/*4 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *4/*4xN diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *4/*6 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *4/*9 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *4/*10 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *4/*17 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *4/*29 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *4/*41 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*5": [
+      "CYP2D6 *3/*5 diplotype is classified as poor metabolizer phenotype.",
+      "CYP2D6 *10/*5 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *17/*5 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *41/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*41": [
+      "CYP2D6 *3/*41 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *4/*41 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *41/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*4xN": [
+      "CYP2D6 *4/*4xN diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*6": [
+      "CYP2D6 *4/*6 diplotype is classified as poor metabolizer phenotype."
+    ],
+    "CYP2D6*9": [
+      "CYP2D6 *4/*9 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*10": [
+      "CYP2D6 *4/*10 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *10/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*17": [
+      "CYP2D6 *4/*17 diplotype is classified as intermediate metabolizer phenotype.",
+      "CYP2D6 *17/*5 diplotype is classified as intermediate metabolizer phenotype."
+    ],
+    "CYP2D6*29": [
+      "CYP2D6 *4/*29 diplotype is classified as intermediate metabolizer phenotype."
+    ]
+  }
+}

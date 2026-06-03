@@ -1,0 +1,6 @@
+iteration: iter13
+commit: 39cb367
+meaning_capture: 0.675
+variant_coverage: 0.899
+status: keep
+description: iter13: cap per-variant candidates at 60 (reduces judge dilution; +0.02 on same gens)

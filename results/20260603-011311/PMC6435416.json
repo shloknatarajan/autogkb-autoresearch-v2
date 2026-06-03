@@ -1,0 +1,33 @@
+{
+  "pmcid": "PMC6435416",
+  "variant_sentences": {
+    "CYP2D6": [
+      "CYP2D6 poor metabolizer + intermediate metabolizer status is associated with increased risk of adverse events during risperidone treatment in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer status.",
+      "CYP2D6 normal metabolizer + ultrarapid metabolizer status is associated with decreased risk of adverse events during risperidone treatment in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer status.",
+      "CYP2D6 poor metabolizer + intermediate metabolizer is associated with increased risk of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer.",
+      "CYP2D6 normal metabolizer + ultrarapid metabolizer is associated with decreased risk of adverse events during treatment with risperidone in children and adolescents as compared to CYP2D6 poor metabolizer + intermediate metabolizer."
+    ],
+    "CYP2D6*1": [],
+    "CYP2D6*2": [],
+    "CYP2D6*3": [],
+    "CYP2D6*4": [],
+    "CYP2D6*5": [],
+    "CYP2D6*6": [],
+    "CYP2D6*9": [],
+    "CYP2D6*10": [],
+    "CYP2D6*17": [],
+    "CYP2D6*29": [],
+    "CYP2D6*33": [],
+    "CYP2D6*35": [],
+    "CYP2D6*41": [],
+    "CYP2D6*46": [],
+    "CYP2D6*3B": [],
+    "CYP2D6*7": [],
+    "CYP2D6*8": [],
+    "CYP2D6*11": [],
+    "CYP2D6*12": [],
+    "CYP2D6*14A": [],
+    "CYP2D6*14B": [],
+    "CYP2D6*15": []
+  }
+}

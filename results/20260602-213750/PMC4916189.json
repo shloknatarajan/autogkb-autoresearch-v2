@@ -1,0 +1,53 @@
+{
+  "pmcid": "PMC4916189",
+  "variant_sentences": {
+    "rs3745274": [
+      "rs3745274 GT is associated with increased risk of overall efavirenz discontinuation as compared to rs3745274 GG.",
+      "rs3745274 TT is associated with increased risk of overall efavirenz discontinuation as compared to rs3745274 GG.",
+      "rs3745274 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment."
+    ],
+    "rs28399499": [
+      "rs28399499 TC/CC is associated with decreased risk of CNS-related adverse events with efavirenz as compared to rs28399499 TT.",
+      "rs28399499 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs28399499 is not associated with overall efavirenz discontinuation."
+    ],
+    "rs4803419": [
+      "rs4803419 CT/TT is associated with increased risk of CNS-related adverse events with efavirenz as compared to rs4803419 CC.",
+      "rs4803419 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs4803419 is not associated with overall efavirenz discontinuation."
+    ],
+    "CYP2A6*9B": [
+      "CYP2A6*9B CA/AA is associated with increased risk of overall efavirenz discontinuation as compared to CYP2A6*9B CC.",
+      "CYP2A6*9B is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment."
+    ],
+    "CYP2A6*17": [
+      "CYP2A6*17 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "CYP2A6*17 is not associated with overall efavirenz discontinuation."
+    ],
+    "CYP3A4*22": [
+      "CYP3A4*22 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "CYP3A4*22 is not associated with overall efavirenz discontinuation."
+    ],
+    "rs2307424": [
+      "rs2307424 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs2307424 is not associated with overall efavirenz discontinuation."
+    ],
+    "rs3003596": [
+      "rs3003596 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs3003596 is not associated with overall efavirenz discontinuation."
+    ],
+    "rs1045642": [
+      "rs1045642 TT is associated with increased risk of CNS-related adverse events with efavirenz as compared to rs1045642 CC.",
+      "rs1045642 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs1045642 is not associated with overall efavirenz discontinuation."
+    ],
+    "rs2472677": [
+      "rs2472677 TT is associated with decreased risk of overall efavirenz discontinuation as compared to rs2472677 CC.",
+      "rs2472677 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment."
+    ],
+    "rs6785049": [
+      "rs6785049 is not associated with achieving plasma HIV-RNA less than 200 copies/mL at 96 weeks with efavirenz treatment.",
+      "rs6785049 is not associated with overall efavirenz discontinuation."
+    ]
+  }
+}

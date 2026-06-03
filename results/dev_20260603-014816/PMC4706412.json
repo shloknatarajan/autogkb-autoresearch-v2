@@ -1,0 +1,144 @@
+{
+  "pmcid": "PMC4706412",
+  "variant_sentences": {
+    "VKORC1 -1639G>A": [
+      "Genotype AA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GG + GA.",
+      "Genotypes GG + GA are associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype AA.",
+      "Genotype GA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GG + AA.",
+      "Genotypes GG + AA are associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype GA.",
+      "Each A allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to each G allele.",
+      "Genotypes GA + AA are associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GG is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GA + AA.",
+      "Genotype GA + AA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GG is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype GA.",
+      "Genotype AA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GG is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype AA.",
+      "Each A allele of VKORC1 -1639G>A is associated with decreased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype AA is associated with decreased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype GA is associated with decreased dose of warfarin in Caribbean Hispanic patients."
+    ],
+    "rs9923231": [
+      "Genotype AA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GG + GA.",
+      "Genotypes GG + GA are associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype AA.",
+      "Genotype GA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GG + AA.",
+      "Genotypes GG + AA are associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype GA.",
+      "Each A allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to each G allele.",
+      "Genotypes GA + AA are associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GG is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GA + AA."
+    ],
+    "rs104894540": [],
+    "CYP2C9*1": [
+      "Each CYP2C9 *2 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5.",
+      "Each CYP2C9 *3 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6.",
+      "Each CYP2C9 *8 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*8 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*8."
+    ],
+    "CYP2C9*2": [
+      "Each CYP2C9 *2 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5.",
+      "Each CYP2C9*2 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6."
+    ],
+    "rs1799853": [
+      "Each T allele of rs1799853 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to the C allele.",
+      "Genotype CT + TT of rs1799853 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype CC."
+    ],
+    "CYP2C9*3": [
+      "Each CYP2C9 *3 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6.",
+      "Each CYP2C9*3 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients.",
+      "CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5."
+    ],
+    "rs1057910": [
+      "Each C allele of rs1057910 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to the A allele.",
+      "Genotype AC + CC of rs1057910 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype AA."
+    ],
+    "CYP2C9*4": [],
+    "rs56165452": [],
+    "CYP2C9*5": [
+      "CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*2 + *2/*2 + *2/*3 + *2/*5.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6."
+    ],
+    "rs28371686": [],
+    "CYP2C9*6": [
+      "CYP2C9 *1/*3 + *2/*3 + *3/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*3 + *2/*3 + *3/*5 + *3/*6."
+    ],
+    "CYP2C9*8": [
+      "Each CYP2C9 *8 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1.",
+      "CYP2C9 *1/*8 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*1.",
+      "CYP2C9 *1/*1 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP2C9 *1/*8.",
+      "Each CYP2C9*8 allele is associated with decreased dose of warfarin in Caribbean Hispanic patients.",
+      "CYP2C9*8 is associated with decreased CYP2C9 enzyme activity for S-warfarin.",
+      "CYP2C9*8 is associated with decreased warfarin clearance."
+    ],
+    "rs7900194": [
+      "Each A allele of rs7900194 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to the G allele.",
+      "Genotype GA is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG."
+    ],
+    "CYP2C9*11": [],
+    "rs28371685": [],
+    "CYP2C9 c.-1188T>C": [],
+    "CYP2C9 c.-1766T>C": [],
+    "rs9332094": [],
+    "CYP4F2*3": [
+      "Each CYP4F2 *3 allele is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1.",
+      "CYP4F2 *1/*3 + *3/*3 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1/*1.",
+      "CYP4F2 *1/*1 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1/*3 + *3/*3.",
+      "Each CYP4F2*3 allele is associated with increased dose of warfarin in Caribbean Hispanic patients."
+    ],
+    "rs2108622": [
+      "Each A allele of rs2108622 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to the G allele.",
+      "Genotype GA + AA of rs2108622 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype GG.",
+      "Genotype GG of rs2108622 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes GA + AA.",
+      "Each A allele of rs2108622 is associated with increased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype GA of rs2108622 is associated with increased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype AA of rs2108622 is associated with increased dose of warfarin in Caribbean Hispanic patients."
+    ],
+    "NQO1*2": [
+      "Each NQO1 *2 allele is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1.",
+      "NQO1 *1/*2 + *2/*2 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1/*1.",
+      "NQO1 *1/*1 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1/*2 + *2/*2.",
+      "Each NQO1*2 allele is associated with increased dose of warfarin in Caribbean Hispanic patients."
+    ],
+    "rs1800566": [
+      "Each T allele of rs1800566 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to the C allele.",
+      "Genotype CT + TT of rs1800566 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to genotype CC.",
+      "Genotype CC of rs1800566 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to genotypes CT + TT.",
+      "Each T allele of rs1800566 is associated with increased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype CT of rs1800566 is associated with increased dose of warfarin in Caribbean Hispanic patients.",
+      "Genotype TT of rs1800566 is associated with increased dose of warfarin in Caribbean Hispanic patients."
+    ],
+    "VKORC1 H7": [
+      "VKORC1 H7 carrier status is associated with warfarin resistance in Caribbean Hispanic patients as compared to non-carriers."
+    ],
+    "EPHX1": [],
+    "CYP4F2*1": [
+      "Each CYP4F2 *3 allele is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1.",
+      "CYP4F2 *1/*3 + *3/*3 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1/*1.",
+      "CYP4F2 *1/*1 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to CYP4F2 *1/*3 + *3/*3."
+    ],
+    "NQO1*1": [
+      "Each NQO1 *2 allele is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1.",
+      "NQO1 *1/*2 + *2/*2 is associated with increased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1/*1.",
+      "NQO1 *1/*1 is associated with decreased dose of warfarin in Caribbean Hispanic patients as compared to NQO1 *1/*2 + *2/*2."
+    ]
+  }
+}

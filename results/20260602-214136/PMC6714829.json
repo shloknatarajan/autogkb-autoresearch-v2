@@ -1,0 +1,30 @@
+{
+  "pmcid": "PMC6714829",
+  "variant_sentences": {
+    "rs2306283": [
+      "Genotype AA is associated with increased alanine aminotransferase levels in people with hyperlipidemia as compared to genotype AG + GG.",
+      "Genotype AA is associated with increased aspartate transaminase levels in people with hyperlipidemia as compared to genotype AG + GG.",
+      "Genotype AA is associated with increased HDL-C levels in people with hyperlipidemia as compared to genotype AG + GG.",
+      "Genotype AG + GG is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to genotype AA.",
+      "Genotype AG + GG is associated with decreased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to genotype AA.",
+      "Genotype AA in the presence of genotype TT of rs4149056 is associated with increased alanine aminotransferase levels in people with hyperlipidemia as compared to carriers of the G allele of rs2306283 and the C allele of rs4149056.",
+      "Genotype AA in the presence of genotype TT of rs4149056 is associated with increased aspartate transaminase levels in people with hyperlipidemia as compared to carriers of the G allele of rs2306283 and the C allele of rs4149056.",
+      "Allele A in the 388A/521T haplotype is associated with increased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele A in the 388A/521T haplotype is associated with increased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele G in the 388G/521T haplotype is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele G in the 388G/521T haplotype is associated with decreased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Carriers of the G allele in the presence of genotype TT of rs4149056 are associated with increased reduction of total cholesterol during simvastatin treatment in people with hyperlipidemia as compared to carriers of the G allele in the presence of the C allele of rs4149056.",
+      "Carriers of the G allele in the presence of genotype TT of rs4149056 are associated with increased reduction of LDL-C during simvastatin treatment in people with hyperlipidemia as compared to carriers of the G allele in the presence of the C allele of rs4149056."
+    ],
+    "rs4149056": [
+      "Genotype TT in the presence of genotype AA of rs2306283 is associated with increased alanine aminotransferase levels in people with hyperlipidemia as compared to carriers of the G allele of rs2306283 and the C allele of rs4149056.",
+      "Genotype TT in the presence of genotype AA of rs2306283 is associated with increased aspartate transaminase levels in people with hyperlipidemia as compared to carriers of the G allele of rs2306283 and the C allele of rs4149056.",
+      "Allele T in the 388A/521T haplotype is associated with increased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele T in the 388A/521T haplotype is associated with increased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele T in the 388G/521T haplotype is associated with decreased likelihood of abnormal baseline alanine aminotransferase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Allele T in the 388G/521T haplotype is associated with decreased likelihood of abnormal baseline aspartate transaminase levels in people with hyperlipidemia as compared to the normal subgroup.",
+      "Genotype TT in carriers of the G allele of rs2306283 is associated with increased reduction of total cholesterol during simvastatin treatment in people with hyperlipidemia as compared to carriers of the C allele of rs4149056.",
+      "Genotype TT in carriers of the G allele of rs2306283 is associated with increased reduction of LDL-C during simvastatin treatment in people with hyperlipidemia as compared to carriers of the C allele of rs4149056."
+    ]
+  }
+}

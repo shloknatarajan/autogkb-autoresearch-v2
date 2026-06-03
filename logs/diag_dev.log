@@ -1,0 +1,145 @@
+[92m02:03:42 - LiteLLM:WARNING[0m: common_utils.py:979 - litellm: could not pre-load bedrock-runtime response stream shape — Bedrock event-stream decoding will be unavailable. Error: No module named 'botocore'
+[92m02:03:43 - LiteLLM:WARNING[0m: common_utils.py:24 - litellm: could not pre-load sagemaker-runtime response stream shape — SageMaker event-stream decoding will be unavailable. Error: No module named 'botocore'
+
+===== PMC10275785 =====
+  [rs2043211] 1/1 (pred has 108)
+  [rs4612666] 1/1 (pred has 108)
+
+===== PMC10786722 =====
+  [rs56038477] 0/1 (pred has 7)
+      MISS: Genotypes CT + TT is associated with decreased activity of DPYD as compared to genotype CC.
+  [rs2297595] 1/1 (pred has 5)
+
+===== PMC10946077 =====
+  [UGT1A1*1] 0/3 (pred has 0)
+      MISS: UGT1A1 *6 + *28 is not associated with decreased likelihood of overall survival or progression-free survival when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.
+      MISS: UGT1A1 *28 is not associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.
+      MISS: UGT1A1 *6 is associated with increased severity of Neutropenia, Leukopenia or Diarrhea when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.
+  [UGT1A1*6] 1/2 (pred has 96)
+      MISS: UGT1A1 *6 + *28 is not associated with decreased likelihood of overall survival or progression-free survival when treated with irinotecan in people with Stomach Neoplasms as compared to UGT1A1 *1.
+  [UGT1A1*28] 2/2 (pred has 60)
+
+===== PMC11062152 =====
+  [UGT1A1*1] 0/2 (pred has 0)
+      MISS: UGT1A1 *6 + *28 is not associated with increased risk of Diarrhea when treated with fluorouracil, irinotecan and leucovorin in people with Pancreatic Neoplasms and Neoplasm Metastasis as compared to UGT1A1 *1/*1.
+      MISS: UGT1A1 *6/*6 + *28/*28 + *6/*28 is associated with increased risk of Neutropenia or Leukopenia when treated with fluorouracil, irinotecan and leucovorin in people with Pancreatic Neoplasms and Neoplasm Metastasis as compared to UGT1A1 *1/*1.
+  [UGT1A1*6] 2/2 (pred has 20)
+  [UGT1A1*28] 2/2 (pred has 20)
+
+===== PMC11603346 =====
+  [CYP2B6*1] 2/2 (pred has 11)
+  [CYP2B6*6] 2/2 (pred has 17)
+
+===== PMC12035587 =====
+  [NUDT15*3] 1/1 (pred has 21)
+
+===== PMC12038368 =====
+  [rs4149056] 1/1 (pred has 14)
+  [rs2306283] 1/1 (pred has 12)
+
+===== PMC12331468 =====
+  [rs1801265] 0/1 (pred has 4)
+      MISS: Genotypes AG + GG is associated with increased likelihood of Peripheral Nervous System Diseases when treated with FOLFOX or XELOX in people with Colorectal Neoplasms as compared to genotype AA.
+  [rs1695] 2/2 (pred has 16)
+  [rs11280056] 0/1 (pred has 12)
+      MISS: Genotypes TTA/TTA + TTA/TTAAAGTTA is associated with decreased likelihood of Peripheral Nervous System Diseases or Myelosuppression when treated with FOLFOX or XELOX in people with Colorectal Neoplasms.
+  [rs45445694] 1/1 (pred has 2)
+
+===== PMC3113609 =====
+  [HLA-A*31:01] 3/3 (pred has 26)
+
+===== PMC3548984 =====
+  [CYP2D6*1] 2/3 (pred has 24)
+      MISS: CYP2D6 *3/*3 + *4/*4 are associated with increased likelihood of Recurrence when treated with tamoxifen in women with Breast Neoplasms as compared to CYP2D6 *1/*1.
+  [CYP2D6*3] 2/2 (pred has 26)
+  [CYP2D6*4] 2/2 (pred has 62)
+  [CYP2D6*6] 1/1 (pred has 55)
+  [CYP2D6*10] 1/1 (pred has 38)
+  [CYP2D6*41] 1/1 (pred has 38)
+
+===== PMC3839910 =====
+  [HLA-B*15:02] 3/3 (pred has 15)
+  [HLA-A*31:01] 2/3 (pred has 41)
+      MISS: HLA-A *31:01 is not associated with increased risk of Stevens-Johnson Syndrome when treated with carbamazepine in children.
+
+===== PMC4706412 =====
+  [CYP4F2*1] 1/1 (pred has 3)
+  [CYP4F2*3] 1/1 (pred has 4)
+  [CYP2C9*1] 1/1 (pred has 10)
+  [CYP2C9*2] 1/1 (pred has 7)
+  [CYP2C9*3] 0/1 (pred has 7)
+      MISS: CYP2C9 *2 + *3 + *8 are associated with decreased dose of warfarin as compared to CYP2C9 *1.
+  [CYP2C9*8] 1/1 (pred has 6)
+  [rs9923231] 1/1 (pred has 7)
+  [rs1800566] 1/1 (pred has 6)
+
+===== PMC5508045 =====
+  [rs9923231] 1/1 (pred has 19)
+  [rs1057910] 0/1 (pred has 0)
+      MISS: Genotypes AC + CC are associated with decreased dose of warfarin in people with Atrial Fibrillation, heart valve replacement, Hypertension, Pulmonary, Pulmonary Embolism and Venous Thrombosis as compared to genotype AA.
+  [rs2108622] 1/1 (pred has 19)
+  [rs887829] 1/1 (pred has 9)
+
+===== PMC5561238 =====
+  [HLA-B*67:01] 1/1 (pred has 4)
+  [HLA-B*78:01] 1/1 (pred has 4)
+  [HLA-B*51:02] 1/1 (pred has 4)
+  [HLA-B*56:06] 0/1 (pred has 0)
+      MISS: HLA-B *56:06 is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Drug Reaction with Eosinophilia and Systemic Symptoms or Severe Cutaneous Adverse Reactions when treated with nevirapine in people with HIV Infections.
+  [HLA-B*39:01] 1/1 (pred has 4)
+  [HLA-C*05:09] 1/1 (pred has 3)
+  [HLA-B*15:32] 1/1 (pred has 3)
+  [HLA-C*05:01] 1/1 (pred has 9)
+  [HLA-B*51:01] 1/1 (pred has 4)
+  [HLA-B*15:35] 1/1 (pred has 6)
+  [HLA-B*15:12] 1/1 (pred has 6)
+  [HLA-DRB1*08:01] 0/1 (pred has 0)
+      MISS: HLA-DRB1 *08:01 is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Drug Reaction with Eosinophilia and Systemic Symptoms or Severe Cutaneous Adverse Reactions when treated with nevirapine in people with HIV Infections.
+  [HLA-B*39:10] 1/1 (pred has 4)
+  [HLA-B*38:02] 1/1 (pred has 4)
+  [HLA-B*38:01] 1/1 (pred has 4)
+  [HLA-DRB1*04:04] 1/1 (pred has 9)
+  [HLA-B*56:01] 1/1 (pred has 4)
+  [HLA-B*35:05] 1/1 (pred has 9)
+  [HLA-DRB1*01:02] 1/1 (pred has 8)
+  [HLA-B*39:09] 1/1 (pred has 4)
+  [HLA-B*15:01] 1/1 (pred has 8)
+  [HLA-B*15:27] 1/1 (pred has 6)
+  [HLA-B*35:10] 0/1 (pred has 0)
+      MISS: HLA-B *35:10 is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Severe Cutaneous Adverse Reactions and Drug Reaction with Eosinophilia and Systemic Symptoms when treated with nevirapine in people with HIV Infections.
+  [HLA-C*04:06] 1/1 (pred has 5)
+  [HLA-B*57:01] 0/1 (pred has 0)
+      MISS: HLA-B *57:01 is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Drug Reaction with Eosinophilia and Systemic Symptoms or Severe Cutaneous Adverse Reactions when treated with nevirapine in people with HIV Infections.
+  [HLA-C*04:07] 1/1 (pred has 3)
+  [HLA-B*55:02] 1/1 (pred has 4)
+  [HLA-DRB1*01:03] 1/1 (pred has 8)
+  [HLA-B*55:01] 1/1 (pred has 4)
+  [HLA-B*13:02] 1/1 (pred has 4)
+  [HLA-B*15:25] 1/1 (pred has 6)
+  [HLA-B*39:06] 1/1 (pred has 4)
+  [HLA-C*04:03] 1/1 (pred has 5)
+  [HLA-B*54:01] 1/1 (pred has 4)
+  [HLA-DRB1*01:01] 1/1 (pred has 15)
+  [HLA-B*52:01] 1/1 (pred has 6)
+  [HLA-DRB1*10:01] 0/1 (pred has 0)
+      MISS: HLA-DRB1 *10:01 is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Drug Reaction with Eosinophilia and Systemic Symptoms and Severe Cutaneous Adverse Reactions when treated with nevirapine in people with HIV Infections.
+  [HLA-C*04:01] 1/1 (pred has 40)
+  [HLA-B*39:05] 1/1 (pred has 4)
+  [HLA-C*18:01] 1/1 (pred has 9)
+  [HLA-B*15:24] 1/1 (pred has 6)
+  [rs28399499] 0/1 (pred has 3)
+      MISS: Allele C is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome, Drug Reaction with Eosinophilia and Systemic Symptoms and Severe Cutaneous Adverse Reactions when treated with nevirapine in people with HIV Infections as compared to allele T.
+  [rs3745274] 0/1 (pred has 3)
+      MISS: Allele T is associated with Epidermal Necrolysis, Toxic, Stevens-Johnson Syndrome and Drug Reaction with Eosinophilia and Systemic Symptoms when treated with nevirapine in people with HIV Infections as compared to allele G.
+
+===== PMC6465603 =====
+  [rs1142345] 1/1 (pred has 9)
+  [rs116855232] 1/1 (pred has 60)
+
+===== PMC8790808 =====
+  [HLA-DQA1*02:01] 1/1 (pred has 18)
+  [HLA-DQB1*02:02] 1/1 (pred has 28)
+  [HLA-DRB1*07:01] 1/1 (pred has 23)
+  [rs9958628] 1/1 (pred has 11)
+
+DEV micro capture: 89/109 = 0.817

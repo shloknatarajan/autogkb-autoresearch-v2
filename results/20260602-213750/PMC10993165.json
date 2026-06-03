@@ -1,0 +1,81 @@
+{
+  "pmcid": "PMC10993165",
+  "variant_sentences": {
+    "HLA-A*02:03": [],
+    "HLA-A*02:07": [],
+    "HLA-A*11:01": [
+      "HLA-A*11:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-A*11:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-A*24:02": [],
+    "HLA-A*24:07": [],
+    "HLA-A*33:03": [],
+    "HLA-A*68:01": [
+      "HLA-A*68:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-A*68:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-B*07:05": [
+      "HLA-B*07:05 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*07:05 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-B*13:01": [
+      "HLA-B*13:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*13:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls.",
+      "HLA-B*13:01 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*13:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*13:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-B*15:02": [
+      "HLA-B*15:02 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*15:02 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls.",
+      "HLA-B*15:02 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*15:02 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-B*38:01": [
+      "HLA-B*38:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*38:01 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*38:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-B*38:02": [
+      "HLA-B*38:02 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*38:02 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls.",
+      "HLA-B*38:02 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*38:02 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-B*38:11": [],
+    "HLA-B*39:01": [
+      "HLA-B*39:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-B*39:01 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls."
+    ],
+    "HLA-B*40:01": [],
+    "HLA-B*46:01": [],
+    "HLA-B*58:01": [],
+    "HLA-C*01:02": [],
+    "HLA-C*03:02": [],
+    "HLA-C*03:04": [
+      "HLA-C*03:04 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-C*03:04 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-C*04:01": [],
+    "HLA-C*04:03": [],
+    "HLA-C*04:06": [
+      "HLA-C*04:06 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-C*04:06 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-C*06:02": [],
+    "HLA-C*07:02": [],
+    "HLA-C*07:27": [
+      "HLA-C*07:27 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-C*07:27 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-C*07:27 is associated with increased risk of drug reaction with eosinophilia and systemic symptoms when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-C*08:01": [
+      "HLA-C*08:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers.",
+      "HLA-C*08:01 is associated with increased risk of severe cutaneous adverse reactions when treated with sulfamethoxazole/cotrimoxazole as compared to sulfamethoxazole/cotrimoxazole-tolerant controls.",
+      "HLA-C*08:01 is associated with increased risk of Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with sulfamethoxazole/cotrimoxazole as compared to noncarriers."
+    ],
+    "HLA-C*14:02": [],
+    "HLA-DQB1*05:01": [],
+    "HLA-DQB1*02:01": []
+  }
+}

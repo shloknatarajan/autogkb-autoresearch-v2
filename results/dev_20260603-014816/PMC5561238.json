@@ -1,0 +1,716 @@
+{
+  "pmcid": "PMC5561238",
+  "variant_sentences": {
+    "HLA-C*04:01": [
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Asians as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Asians as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Africans as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Africans as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Caucasians in multivariable analysis as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Caucasians in multivariable analysis as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Asians in multivariable analysis as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Asians in multivariable analysis as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Africans in multivariable analysis as compared to non-carriers.",
+      "Non-carriers of HLA-C*04:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Africans in multivariable analysis as compared to carriers of HLA-C*04:01.",
+      "HLA-C*04:01 is associated with a preferred nevirapine docking site within the B or F pocket of the HLA-C peptide binding groove.",
+      "HLA-C*04:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status.",
+      "HLA-C*04:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Asians as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Asians as compared to carrier status.",
+      "HLA-C*04:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to carrier status.",
+      "HLA-C*04:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to carrier status.",
+      "HLA-C*04:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as compared to carrier status.",
+      "HLA-C*04:01 is associated with a preferred nevirapine docking site within the F pocket or B pocket of the HLA-C peptide-binding groove.",
+      "HLA-C*04:01 is associated with no independent effect of imputed HLA-C expression on cutaneous nevirapine hypersensitivity after accounting for carriage of a predisposing HLA-C cluster allele.",
+      "HLA-C*05:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*18:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Africans as compared to non-carriers of HLA-C*04:01 and HLA-C*18:01.",
+      "Non-carriers of HLA-C*04:01 and HLA-C*18:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Africans as compared to carriers of HLA-C*18:01.",
+      "HLA-C*18:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:01 + HLA-C*18:01 non-carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to carrier status for HLA-C*04:01 or HLA-C*18:01.",
+      "Carrier status for HLA-C*04:01 or HLA-C*18:01 is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to non-carrier status for HLA-C*04:01 + HLA-C*18:01.",
+      "HLA-C*04:03 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:06 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*05:09 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:07 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-B*35:05 is associated with carriage together with HLA-C*04:01 in most Southeast Asian cutaneous nevirapine hypersensitivity cases, suggesting possible synergistic risk."
+    ],
+    "HLA-C*05:01": [
+      "HLA-C*05:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carriers.",
+      "Non-carriers of HLA-C*05:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of HLA-C*05:01.",
+      "HLA-C*05:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as compared to non-carriers.",
+      "Non-carriers of HLA-C*05:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-C*05:01.",
+      "HLA-C*05:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*05:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*05:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to carrier status.",
+      "HLA-C*05:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the whole cohort as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*05:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the whole cohort as compared to carrier status."
+    ],
+    "HLA-C*18:01": [
+      "HLA-C*18:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Africans as compared to non-carriers.",
+      "Non-carriers of HLA-C*18:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Africans as compared to carriers of HLA-C*18:01.",
+      "HLA-C*18:01 is associated with increased risk of cutaneous nevirapine hypersensitivity in Africans as compared to non-carriers of HLA-C*04:01 and HLA-C*18:01.",
+      "Non-carriers of HLA-C*04:01 and HLA-C*18:01 are associated with decreased risk of cutaneous nevirapine hypersensitivity in Africans as compared to carriers of HLA-C*18:01.",
+      "HLA-C*18:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*18:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*18:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to carrier status.",
+      "HLA-C*04:01 + HLA-C*18:01 non-carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to carrier status for HLA-C*04:01 or HLA-C*18:01.",
+      "Carrier status for HLA-C*04:01 or HLA-C*18:01 is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Africans as compared to non-carrier status for HLA-C*04:01 + HLA-C*18:01."
+    ],
+    "HLA-C*04:03": [
+      "HLA-C*04:03 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:03 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-C risk F pocket cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:03 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-C risk F pocket cluster as compared to carrier status.",
+      "HLA-C*04:03 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:03 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to carrier status."
+    ],
+    "HLA-C*04:06": [
+      "HLA-C*04:06 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:06 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-C risk F pocket cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:06 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-C risk F pocket cluster as compared to carrier status.",
+      "HLA-C*04:06 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:06 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to carrier status."
+    ],
+    "HLA-C*05:09": [
+      "HLA-C*05:09 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*05:09 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*05:09 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to carrier status."
+    ],
+    "HLA-C*04:07": [
+      "HLA-C*04:07 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-C*04:01-like F pocket risk cluster as compared to non-carriers of the cluster.",
+      "HLA-C*04:07 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to non-carrier status.",
+      "Non-carrier status for HLA-C*04:07 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the other risk HLA-C F pocket group as compared to carrier status."
+    ],
+    "HLA-C*17:01": [],
+    "HLA-C*08:02": [],
+    "HLA-C*14:02": [],
+    "HLA-C*07:01": [],
+    "HLA-C*07:02": [],
+    "HLA-C*07:04": [],
+    "HLA-C*06:02": [],
+    "HLA-B*15:01": [
+      "HLA-B*15:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:01 as part of the cluster.",
+      "HLA-B*15:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:01 is associated with a hydrophobic B pocket predicted to bind nevirapine within the HLA-B peptide binding groove.",
+      "HLA-B*15:01 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:01 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:01.",
+      "HLA-B*15:01 is associated with predicted nevirapine binding to the hydrophobic B pocket of the HLA-B peptide-binding groove."
+    ],
+    "HLA-B*15:12": [
+      "HLA-B*15:12 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:12 as part of the cluster.",
+      "HLA-B*15:12 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:12 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:12 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:12."
+    ],
+    "HLA-B*15:24": [
+      "HLA-B*15:24 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:24 as part of the cluster.",
+      "HLA-B*15:24 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:24 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:24 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:24."
+    ],
+    "HLA-B*15:25": [
+      "HLA-B*15:25 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:25 as part of the cluster.",
+      "HLA-B*15:25 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:25 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:25 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:25."
+    ],
+    "HLA-B*15:27": [
+      "HLA-B*15:27 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:27 as part of the cluster.",
+      "HLA-B*15:27 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:27 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:27 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:27."
+    ],
+    "HLA-B*15:32": [
+      "HLA-B*15:32 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "HLA-B*15:32 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:32 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:32."
+    ],
+    "HLA-B*15:35": [
+      "HLA-B*15:35 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15:35 as part of the cluster.",
+      "HLA-B*15:35 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:35 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15:35 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*15:35."
+    ],
+    "HLA-B*52:01": [
+      "HLA-B*52:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B pocket cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the protective HLA-B B pocket cluster are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*52:01 as part of the cluster.",
+      "HLA-B*52:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the protective HLA-B allele group in multivariable analysis as compared to non-carriers of the protective group.",
+      "Non-carriers of the protective HLA-B allele group are associated with increased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*52:01 as part of the group.",
+      "HLA-B*52:01 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the protective HLA-B B62 cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*52:01 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status for HLA-B*52:01."
+    ],
+    "HLA-B*15:02": [],
+    "HLA-B*46:01": [],
+    "HLA-B*35:05": [
+      "HLA-B*35:05 is associated with increased risk of cutaneous nevirapine hypersensitivity as compared to non-carriers.",
+      "Non-carriers of HLA-B*35:05 are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*35:05.",
+      "HLA-B*35:05 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*35:05 as part of the group.",
+      "HLA-B*35:05 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*35:05 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status.",
+      "HLA-B*35:05 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*35:05 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status.",
+      "HLA-B*35:05 is associated with carriage together with HLA-C*04:01 in most Southeast Asian cutaneous nevirapine hypersensitivity cases, suggesting possible synergistic risk."
+    ],
+    "HLA-B*35": [
+      "HLA-B*35 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*35 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to carrier status.",
+      "HLA-B*35 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*35 + B*53 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*35 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity when the HLA-B*35 allelic group is considered as a whole as compared to non-carrier status.",
+      "HLA-B*53 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*53 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to carrier status.",
+      "HLA-B*53 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*35 + B*53 MHCcluster group as compared to non-carrier status."
+    ],
+    "HLA-B*51": [
+      "HLA-B*51 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*51 as part of the group.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*54 as part of the group.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*55 as part of the group.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*56 as part of the group.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*54": [
+      "HLA-B*54 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*54 as part of the group.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*55": [
+      "HLA-B*55 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*55 as part of the group.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*56": [
+      "HLA-B*56 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*51/*54/*55/*56 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*51/*54/*55/*56 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*56 as part of the group.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*56 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*51 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*54 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status.",
+      "HLA-B*55 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*51 + B*54 + B*55 + B*56 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*38": [
+      "HLA-B*38 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*38/*39 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*38/*39 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*38 as part of the group.",
+      "HLA-B*38 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*38 as part of the group.",
+      "HLA-B*38 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*38 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*38 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to carrier status.",
+      "HLA-B*39 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*38/*39 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*38/*39 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*39 as part of the group.",
+      "HLA-B*39 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*39 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*39": [
+      "HLA-B*39 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*38/*39 group after adjustment for HLA-C risk as compared to non-carriers of the group.",
+      "Non-carriers of the HLA-B*38/*39 group are associated with decreased risk of cutaneous nevirapine hypersensitivity after adjustment for HLA-C risk as compared to carriers of HLA-B*39 as part of the group.",
+      "HLA-B*39 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group or risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the respective group.",
+      "HLA-B*39 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*39 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to carrier status.",
+      "HLA-B*38 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity before adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*38 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*38 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*38 + B*39 MHCcluster group as compared to carrier status."
+    ],
+    "HLA-B*39:10": [
+      "HLA-B*39:10 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*39:10 as part of the group.",
+      "HLA-B*39:10 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39:10 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*51:01": [
+      "HLA-B*51:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*51:01 as part of the group.",
+      "HLA-B*51:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*51:02": [
+      "HLA-B*51:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*51:02 as part of the group.",
+      "HLA-B*51:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*54:01": [
+      "HLA-B*54:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*54:01 as part of the group.",
+      "HLA-B*54:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*54:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*55:01": [
+      "HLA-B*55:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*55:01 as part of the group.",
+      "HLA-B*55:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*55:02": [
+      "HLA-B*55:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*55:02 as part of the group.",
+      "HLA-B*55:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*55:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*56:01": [
+      "HLA-B*56:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*56:01 as part of the group.",
+      "HLA-B*56:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*56:04": [
+      "HLA-B*56:04 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*56:04 as part of the group.",
+      "HLA-B*56:04 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*56:04 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*67:01": [
+      "HLA-B*67:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*67:01 as part of the group.",
+      "HLA-B*67:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*67:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*78:01": [
+      "HLA-B*78:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*78:01 as part of the group.",
+      "HLA-B*78:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*78:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*13:02": [
+      "HLA-B*13:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*13:02 as part of the group.",
+      "HLA-B*13:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*13:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*38:01": [
+      "HLA-B*38:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*38:01 as part of the group.",
+      "HLA-B*38:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*38:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*38:02": [
+      "HLA-B*38:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*38:02 as part of the group.",
+      "HLA-B*38:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*38:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*39:01": [
+      "HLA-B*39:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*39:01 as part of the group.",
+      "HLA-B*39:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*39:05": [
+      "HLA-B*39:05 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*39:05 as part of the group.",
+      "HLA-B*39:05 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39:05 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*39:06": [
+      "HLA-B*39:06 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*39:06 as part of the group.",
+      "HLA-B*39:06 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39:06 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*39:09": [
+      "HLA-B*39:09 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*39:09 as part of the group.",
+      "HLA-B*39:09 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*39:09 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*51:07": [
+      "HLA-B*51:07 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk non-B07 HLA-B allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk non-B07 HLA-B allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-B*51:07 as part of the group.",
+      "HLA-B*51:07 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*51:07 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the risk non-B07 HLA-B allele group as compared to carrier status."
+    ],
+    "HLA-B*07": [
+      "HLA-B*07 principal MHCcluster carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status before adjustment for the HLA-C risk cluster.",
+      "HLA-B*07 principal MHCcluster carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*07 supertype carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for the HLA-B*07 supertype is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status."
+    ],
+    "HLA-B*08": [
+      "HLA-B*08 carrier status is not associated with cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*14": [
+      "HLA-B*14 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*18": [
+      "HLA-B*18 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*18 + B*44 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*27": [
+      "HLA-B*27 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "HLA-B*27 supertype carrier status is not associated with cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*37": [
+      "HLA-B*37 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*40 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*45 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*50 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*40": [
+      "HLA-B*40 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*37 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*45 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*50 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*44": [
+      "HLA-B*44 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "HLA-B*44 supertype carrier status is not associated with cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "HLA-B*18 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*18 + B*44 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*45": [
+      "HLA-B*45 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*37 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*40 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*50 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*46": [],
+    "HLA-B*50": [
+      "HLA-B*50 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*37 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*40 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster.",
+      "HLA-B*45 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*37 + B*40 + B*45 + B*50 MHCcluster group as compared to non-carrier status after adjustment for the HLA-C risk cluster."
+    ],
+    "HLA-B*52": [
+      "HLA-B*52 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*57": [
+      "HLA-B*57 + HLA-B*58 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*58": [
+      "HLA-B*58 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "HLA-B*57 + HLA-B*58 carrier status is not associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-B*53": [
+      "HLA-B*53 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*53 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to carrier status.",
+      "HLA-B*53 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*35 + B*53 MHCcluster group as compared to non-carrier status.",
+      "HLA-B*35 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*35 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the B*35 + B*53 MHCcluster group before adjustment for the HLA-C risk cluster as compared to carrier status.",
+      "HLA-B*35 carrier status is not associated with increased likelihood of cutaneous nevirapine hypersensitivity after adjustment for the HLA-C risk cluster as part of the B*35 + B*53 MHCcluster group as compared to non-carrier status."
+    ],
+    "HLA-B*15": [
+      "HLA-B*15 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for HLA-B*15 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status.",
+      "HLA-B*15:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "Non-carriers of HLA-B*15 are associated with increased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-B*15.",
+      "HLA-B*15:12 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "HLA-B*15:24 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "HLA-B*15:25 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "HLA-B*15:27 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15.",
+      "HLA-B*15:35 is associated with decreased risk of cutaneous nevirapine hypersensitivity as part of the HLA-B*15 group as compared to non-carriers of HLA-B*15."
+    ],
+    "HLA-B*13": [
+      "HLA-B*13 carrier status is not associated with cutaneous nevirapine hypersensitivity as compared to non-carrier status."
+    ],
+    "HLA-DRB1*01:01": [
+      "HLA-DRB1*01:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*01:01 as part of the cluster.",
+      "HLA-DRB1*01:01 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*01:01 as part of the group.",
+      "HLA-DRB1*01:01 is not associated with altered peptide binding affinity in the presence of nevirapine as compared to absence of nevirapine.",
+      "HLA-DRB1*01:01 is not associated with a difference in peptide binding to HLA-DRB1*01:01 in the presence of nevirapine as compared to absence of nevirapine.",
+      "HLA-DRB1*01:01 is not associated with direct nevirapine binding within the antigen binding cleft in the presence of peptide.",
+      "HLA-DRB1*01:01 is not associated with a significant effect of nevirapine on the repertoire of peptides presented by HLA-DRB1*01:01.",
+      "HLA-DRB1*01:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*01:01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:01 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*01:01 is not associated with a significant nevirapine-induced change in the repertoire of bound peptides.",
+      "HLA-DRB1*01:01 is associated with weak predicted nevirapine binding and nevirapine is unlikely to bind directly within the antigen-binding cleft in the presence of peptide.",
+      "HLA-DRB1*01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster when restricted to HLA-DRB1*01:01 + *01:02 + *01:03 as compared to non-carrier status."
+    ],
+    "HLA-DRB1*01:02": [
+      "HLA-DRB1*01:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*01:02 as part of the cluster.",
+      "HLA-DRB1*01:02 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*01:02 as part of the group.",
+      "HLA-DRB1*01:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*01:02 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:02 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status."
+    ],
+    "HLA-DRB1*01:03": [
+      "HLA-DRB1*01:03 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*01:03 as part of the cluster.",
+      "HLA-DRB1*01:03 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*01:03 as part of the group.",
+      "HLA-DRB1*01:03 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:03 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*01:03 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*01:03 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status."
+    ],
+    "HLA-DRB1*04:04": [
+      "HLA-DRB1*04:04 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*04:04 as part of the cluster.",
+      "HLA-DRB1*04:04 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*04:04 as part of the group.",
+      "HLA-DRB1*04:04 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:04 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*04:04 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:04 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*04 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster when restricted to HLA-DRB1*04:04 + *04:05 + *04:08 + *04:10 as compared to non-carrier status."
+    ],
+    "HLA-DRB1*04:05": [
+      "HLA-DRB1*04:05 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*04:05 as part of the cluster.",
+      "HLA-DRB1*04:05 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*04:05 as part of the group.",
+      "HLA-DRB1*04:05 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:05 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*04:05 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:05 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status."
+    ],
+    "HLA-DRB1*04:08": [
+      "HLA-DRB1*04:08 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*04:08 as part of the cluster.",
+      "HLA-DRB1*04:08 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*04:08 as part of the group.",
+      "HLA-DRB1*04:08 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:08 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*04:08 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:08 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status."
+    ],
+    "HLA-DRB1*04:10": [
+      "HLA-DRB1*04:10 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 P4 pocket risk cluster as compared to non-carriers of the cluster.",
+      "Non-carriers of the HLA-DRB1 P4 pocket risk cluster are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to carriers of HLA-DRB1*04:10 as part of the cluster.",
+      "HLA-DRB1*04:10 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of the risk HLA-DRB1 allele group in multivariable analysis as compared to non-carriers of the group.",
+      "Non-carriers of the risk HLA-DRB1 allele group are associated with decreased risk of cutaneous nevirapine hypersensitivity in multivariable analysis as compared to carriers of HLA-DRB1*04:10 as part of the group.",
+      "HLA-DRB1*04:10 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:10 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster as compared to carrier status.",
+      "HLA-DRB1*04:10 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:10 is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in the multivariate model as part of the HLA-DRB1 risk cluster as compared to carrier status."
+    ],
+    "HLA-DRB1*04:01": [
+      "HLA-DRB1*04:01 is associated with decreased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of the HLA-DRB1 P4 pocket risk alleles.",
+      "Carriers of the HLA-DRB1 P4 pocket risk alleles are associated with increased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of HLA-DRB1*04:01.",
+      "HLA-DRB1*04:01 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:01 is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to carrier status."
+    ],
+    "HLA-DRB1*04:15": [
+      "HLA-DRB1*04:15 is associated with decreased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of the HLA-DRB1 P4 pocket risk alleles.",
+      "Carriers of the HLA-DRB1 P4 pocket risk alleles are associated with increased risk of cutaneous nevirapine hypersensitivity in Caucasians as compared to carriers of HLA-DRB1*04:15.",
+      "HLA-DRB1*04:15 carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to non-carrier status.",
+      "Non-carrier status for HLA-DRB1*04:15 is associated with increased likelihood of cutaneous nevirapine hypersensitivity in Caucasians as compared to carrier status."
+    ],
+    "HLA-DRB1*04:03": [],
+    "HLA-DRB1*04:06": [],
+    "HLA-DRB1*04:07": [],
+    "HLA-DRB1*04:11": [],
+    "HLA-DRB1*10:01:01": [],
+    "HLA-DRB1*04:34:01": [],
+    "HLA-DRB1*14:02:01": [],
+    "HLA-DRB1*04:02:01": [],
+    "HLA-DRB1*15:01": [],
+    "HLA-DRB1*15:02": [],
+    "HLA-DRB1*15:03": [],
+    "HLA-DRB1*15:04": [],
+    "HLA-DRB1*15:06": [],
+    "HLA-DRB1*14:21:01": [],
+    "HLA-DRB1*09:01:01": [],
+    "HLA-DRB1*07:01:01": [],
+    "HLA-DRB1*07:15:01": [],
+    "HLA-DRB1*08:01": [],
+    "HLA-DRB1*08:02": [],
+    "HLA-DRB1*08:03": [],
+    "HLA-DRB1*08:04": [],
+    "HLA-DRB1*08:07": [],
+    "HLA-DRB1*08:09": [],
+    "HLA-DRB1*11:02": [],
+    "HLA-DRB1*11:03": [],
+    "HLA-DRB1*13:01": [],
+    "HLA-DRB1*13:02": [],
+    "HLA-DRB1*13:04": [],
+    "HLA-DRB1*13:16": [],
+    "HLA-DRB1*11:01": [],
+    "HLA-DRB1*11:04": [],
+    "HLA-DRB1*11:06": [],
+    "HLA-DRB1*13:05": [],
+    "HLA-DRB1*13:12": [],
+    "HLA-DRB1*12:01": [],
+    "HLA-DRB1*12:02": [],
+    "HLA-DRB1*13:03": [],
+    "HLA-DRB1*14:01": [],
+    "HLA-DRB1*14:05": [],
+    "HLA-DRB1*14:04:01": [],
+    "HLA-DRB1*14:10:01": [],
+    "HLA-DRB1*16:01": [],
+    "HLA-DRB1*16:02": [],
+    "HLA-DRB1*03:01": [],
+    "HLA-DRB1*03:02": [],
+    "HLA-DRB1*03:81": [],
+    "rs3745274": [
+      "Genotype TT or carriage of the 516T allele of rs3745274 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of slow CYP2B6 metabolizer genotype as compared to non-slow metabolizer genotypes.",
+      "Non-slow metabolizer genotypes of rs3745274 are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to slow metabolizer genotypes including rs3745274 516T.",
+      "Genotype associated with slow CYP2B6 metabolism due to rs3745274 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to genotypes not associated with slow CYP2B6 metabolism."
+    ],
+    "rs28399499": [
+      "Genotype CC or carriage of the 983C allele of rs28399499 is associated with increased risk of cutaneous nevirapine hypersensitivity as part of slow CYP2B6 metabolizer genotype as compared to non-slow metabolizer genotypes.",
+      "Non-slow metabolizer genotypes of rs28399499 are associated with decreased risk of cutaneous nevirapine hypersensitivity as compared to slow metabolizer genotypes including rs28399499 983C.",
+      "Genotype associated with slow CYP2B6 metabolism due to rs28399499 is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to genotypes not associated with slow CYP2B6 metabolism."
+    ],
+    "CYP3A4": [],
+    "CYP2D6": [],
+    "CYP2C19": [],
+    "CYP2A6": [],
+    "HLA-B*57:01": [],
+    "HLA-B*57:02": [],
+    "HLA-B*57:03": [],
+    "HLA-B*58:01": [],
+    "HLA-B*15:11": [],
+    "HLA-B*15:03": [],
+    "HLA-B*15:18": [],
+    "HLA-B*15:23": [],
+    "HLA-B*15:10": [],
+    "HLA-B*13:01": [],
+    "HLA-B*35:19": [],
+    "HLA-B*35:20": [],
+    "HLA-B*51:04": [],
+    "HLA-B*51:08": [],
+    "HLA-B*35:01": [],
+    "HLA-B*35:02": [],
+    "HLA-B*35:03": [],
+    "HLA-B*35:04": [],
+    "HLA-B*35:08": [],
+    "HLA-B*35:43": [],
+    "HLA-B*57:04": [],
+    "HLA-B*58:02": [],
+    "HLA-B*15:16": [],
+    "HLA-B*15:17": [],
+    "HLA-B*40:01": [],
+    "HLA-B*40:02": [],
+    "HLA-B*40:06": [],
+    "HLA-B*40:16": [],
+    "HLA-B*40:74": [],
+    "HLA-B*41:01": [],
+    "HLA-B*41:02": [],
+    "HLA-B*44:15": [],
+    "HLA-B*49:01": [],
+    "HLA-B*44:02": [],
+    "HLA-B*44:03": [],
+    "HLA-B*44:05": [],
+    "HLA-B*44:07": [],
+    "HLA-B*47:01": [],
+    "HLA-B*27:02": [],
+    "HLA-B*27:03": [],
+    "HLA-B*27:04": [],
+    "HLA-B*27:05": [],
+    "HLA-B*27:06": [],
+    "HLA-B*18:01": [],
+    "HLA-B*18:02": [],
+    "HLA-B*37:01": [],
+    "HLA-B*37:13": [],
+    "HLA-B*48:01": [],
+    "HLA-B*48:03": [],
+    "HLA-B*42:02": [],
+    "HLA-B*07:02": [],
+    "HLA-B*07:05": [],
+    "HLA-B*42:01": [],
+    "HLA-B*81:01": [],
+    "HLA-B*14:01": [],
+    "HLA-B*14:02": [],
+    "HLA-B*14:03": [],
+    "HLA-B*39:14": [],
+    "HLA-B*39:15": [],
+    "HLA-B*08:01": [],
+    "HLA-B*82:02": [],
+    "HLA-B*53:01": [],
+    "HLA-B*62": [
+      "HLA-B*62 supertype carrier status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for the HLA-B*62 supertype is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status."
+    ],
+    "HLA-B*07 supertype": [
+      "HLA-B*07 supertype carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-carrier status.",
+      "Non-carrier status for the HLA-B*07 supertype is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to carrier status."
+    ],
+    "HLA-DRB1*04": [
+      "HLA-DRB1*04 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster when restricted to HLA-DRB1*04:04 + *04:05 + *04:08 + *04:10 as compared to non-carrier status."
+    ],
+    "HLA-DRB1*01": [
+      "HLA-DRB1*01 carrier status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as part of the HLA-DRB1 risk cluster when restricted to HLA-DRB1*01:01 + *01:02 + *01:03 as compared to non-carrier status."
+    ],
+    "HLA-DRB1*13:03:01": [],
+    "CYP2B6": [
+      "Slow CYP2B6 metabolizer status is associated with increased likelihood of cutaneous nevirapine hypersensitivity as compared to non-slow metabolizer status.",
+      "Non-slow CYP2B6 metabolizer status is associated with decreased likelihood of cutaneous nevirapine hypersensitivity as compared to slow metabolizer status."
+    ]
+  }
+}

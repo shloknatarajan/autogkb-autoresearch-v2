@@ -1,0 +1,147 @@
+{
+  "pmcid": "PMC12319246",
+  "variant_sentences": {
+    "rs9282564": [
+      "Genotype AA in donor is associated with decreased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AG in donor is associated with decreased cumulative survival during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AA in donor is associated with increased cumulative survival during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AG.",
+      "Genotype AA in donor is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AA in donor is associated with increased likelihood of infections during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with decreased likelihood of infections during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA."
+    ],
+    "rs2273697": [
+      "Genotype GA in donor is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + AA.",
+      "Genotypes GG + AA in donor are associated with decreased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GA.",
+      "Genotype GG in donor is associated with increased cumulative survival during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AA + GA.",
+      "Genotypes AA + GA in donor are associated with decreased cumulative survival during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GG.",
+      "Genotype AA in donor is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + GA.",
+      "Genotypes GG + GA in donor are associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype GA in donor is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + AA.",
+      "Genotypes GG + AA in donor are associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GA.",
+      "Genotype GG in donor is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GA + AA.",
+      "Genotypes GA + AA in donor are associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GG.",
+      "Genotype GG in donor together with genotype AG in recipient for rs4244285 is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AG in recipient for rs4244285 together with genotype GG in donor is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GG in donor together with genotype AA in recipient for rs4244285 is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AA in recipient for rs4244285 together with genotype GG in donor is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GG in donor together with genotype GA in recipient for rs2279343 is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GA in recipient for rs2279343 together with genotype GG in donor is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs3745274": [
+      "Genotype GT in recipient is associated with decreased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + TT.",
+      "Genotypes GG + TT in recipient are associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype GT in recipient is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + TT.",
+      "Genotypes GG + TT in recipient are associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype GT in donor is associated with decreased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + TT.",
+      "Genotypes GG + TT in donor are associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype GT in recipient is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype TT.",
+      "Genotype TT in recipient is associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype GT in donor is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype TT.",
+      "Genotype TT in donor is associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype GT in recipient is associated with decreased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + TT.",
+      "Genotypes GG + TT in recipient are associated with increased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GT.",
+      "Genotype TT in recipient together with genotype TC in recipient for rs1045642 is associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TC in recipient for rs1045642 together with genotype TT in recipient is associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TT in donor together with genotype TC in recipient for rs2235033 is associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TC in recipient for rs2235033 together with genotype TT in donor is associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TT in donor together with genotype AG in donor for rs2306283 is associated with increased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AG in donor for rs2306283 together with genotype TT in donor is associated with increased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs776746": [
+      "Genotype GG in recipient is associated with decreased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + AA.",
+      "Genotypes AG + AA in recipient are associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GG.",
+      "CYP3A5 *3/*3 in recipient is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to CYP3A5 *1/*3.",
+      "CYP3A5 *1/*3 in recipient is associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to CYP3A5 *3/*3.",
+      "CYP3A5 *3/*3 in donor is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to CYP3A5 *1/*3.",
+      "CYP3A5 *1/*3 in donor is associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to CYP3A5 *3/*3.",
+      "Genotype GA in recipient together with genotype GA in donor for rs2235013 is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GA in donor for rs2235013 together with genotype GA in recipient is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GA in recipient together with genotype AG in donor for rs2306283 is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AG in donor for rs2306283 together with genotype GA in recipient is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs2235013": [
+      "Genotype GA in donor is associated with decreased likelihood of chronic rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GG + AA.",
+      "Genotypes GG + AA in donor are associated with increased likelihood of chronic rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GA.",
+      "Genotype GG in donor is associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GA + AA.",
+      "Genotypes GA + AA in donor are associated with increased dose-adjusted trough concentration of tacrolimus during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GG.",
+      "Genotype GA in donor together with genotype GA in recipient for rs776746 is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GA in recipient for rs776746 together with genotype GA in donor is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs2740574": [
+      "Genotype AA in recipient is associated with decreased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes GA + GG.",
+      "Genotypes GA + GG in recipient are associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AA in recipient is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype GA.",
+      "Genotype GA in recipient is associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype AA.",
+      "Genotype AA in recipient is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype GA.",
+      "Genotype GA in recipient is associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA."
+    ],
+    "rs4149056": [
+      "Genotype TT in recipient is associated with decreased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes TC + CC.",
+      "Genotypes TC + CC in recipient are associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype TT.",
+      "Genotype TT in recipient is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype TC.",
+      "Genotype TC in recipient is associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype TT."
+    ],
+    "rs6714486": [
+      "Genotype TA in donor is associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes TT + AA.",
+      "Genotypes TT + AA in donor are associated with decreased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype TA."
+    ],
+    "rs2306283": [
+      "Genotype AA in recipient is associated with decreased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in recipient are associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AG in recipient is associated with decreased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AA + GG.",
+      "Genotypes AA + GG in recipient are associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AG.",
+      "Genotype AG in donor is associated with decreased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AA + GG.",
+      "Genotypes AA + GG in donor are associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AG.",
+      "Genotype AA in donor is associated with decreased dose-adjusted trough concentration of tacrolimus during the early post-transplantation phase as compared to genotype GG.",
+      "Genotype GG in donor is associated with increased dose-adjusted trough concentration of tacrolimus during the early post-transplantation phase as compared to genotype AA.",
+      "Genotype AG in donor together with genotype GA in recipient for rs776746 is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GA in recipient for rs776746 together with genotype AG in donor is associated with increased likelihood of death during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AG in donor together with genotype TT in donor for rs3745274 is associated with increased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TT in donor for rs3745274 together with genotype AG in donor is associated with increased likelihood of diabetes mellitus during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs2066844": [
+      "Genotype CC in donor is associated with decreased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes CT + TT.",
+      "Genotypes CT + TT in donor are associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype CC."
+    ],
+    "rs4244285": [
+      "Genotype AA in donor is associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with decreased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA.",
+      "Genotype AA in donor is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype AA.",
+      "Genotype AG in recipient together with genotype GG in donor for rs2273697 is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GG in donor for rs2273697 together with genotype AG in recipient is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype AA in recipient together with genotype GG in donor for rs2273697 is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GG in donor for rs2273697 together with genotype AA in recipient is associated with decreased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs1142345": [
+      "Genotype AA in donor is associated with decreased likelihood of re-transplantation during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes AG + GG.",
+      "Genotypes AG + GG in donor are associated with increased likelihood of re-transplantation during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype AA."
+    ],
+    "rs1799853": [
+      "Genotype CC in donor is associated with decreased likelihood of re-transplantation during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes CT + TT.",
+      "Genotypes CT + TT in donor are associated with increased likelihood of re-transplantation during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype CC."
+    ],
+    "rs1045642": [
+      "Genotype CC in recipient is associated with decreased likelihood of infections during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes CT + TT.",
+      "Genotypes CT + TT in recipient are associated with increased likelihood of infections during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype CC.",
+      "Genotype TT in recipient is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotypes CC + CT.",
+      "Genotypes CC + CT in recipient are associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype TT.",
+      "Genotype CC in recipient is associated with increased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotypes TC + TT.",
+      "Genotypes TC + TT in recipient are associated with decreased renal clearance during follow-up in kidney transplant recipients treated with tacrolimus as compared to genotype CC.",
+      "Genotype TC in recipient together with genotype TT in recipient for rs3745274 is associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TT in recipient for rs3745274 together with genotype TC in recipient is associated with increased likelihood of acute rejection during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs2235033": [
+      "Genotype TT in recipient is associated with increased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotypes TC + CC.",
+      "Genotypes TC + CC in recipient are associated with decreased dose-adjusted trough concentration of tacrolimus during follow-up as compared to genotype TT.",
+      "Genotype TC in recipient together with genotype TT in donor for rs3745274 is associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype TT in donor for rs3745274 together with genotype TC in recipient is associated with increased likelihood of nephrotoxicity during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ],
+    "rs2279343": [
+      "Genotype GA in recipient together with genotype GG in donor for rs2273697 is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations.",
+      "Genotype GG in donor for rs2273697 together with genotype GA in recipient is associated with increased likelihood of tumor occurrence during follow-up in kidney transplant recipients treated with tacrolimus as compared to other genotype combinations."
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "pmcid": "PMC3113609",
+  "variant_sentences": {
+    "HLA-A*31:01": [
+      "Presence of HLA-A*31:01 is associated with increased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Presence of HLA-A*31:01 is associated with increased risk of carbamazepine-induced maculopapular exanthema in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced maculopapular exanthema in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Presence of HLA-A*31:01 is associated with increased risk of carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with carbamazepine in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced Stevens-Johnson syndrome/toxic epidermal necrolysis when treated with carbamazepine in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Presence of HLA-A*31:01 is associated with increased risk of carbamazepine-induced hypersensitivity reactions when treated with carbamazepine in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced hypersensitivity reactions when treated with carbamazepine in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Presence of HLA-A*31:01 is associated with increased post-test probability of carbamazepine-induced hypersensitivity reactions in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased post-test probability of carbamazepine-induced hypersensitivity reactions in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Presence of HLA-A*31:01 is associated with increased risk of carbamazepine-induced acute generalized exanthematous pustulosis in a person of European ancestry as compared to absence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased risk of carbamazepine-induced maculopapular exanthema when treated with carbamazepine in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced maculopapular exanthema when treated with carbamazepine in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased risk of carbamazepine-induced Stevens-Johnson syndrome-toxic epidermal necrolysis when treated with carbamazepine in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced Stevens-Johnson syndrome-toxic epidermal necrolysis when treated with carbamazepine in people of European ancestry as compared to presence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased risk of carbamazepine-induced hypersensitivity reactions when treated with carbamazepine in people of Northern European ancestry as compared to absence of HLA-A*31:01.",
+      "Absence of HLA-A*31:01 is associated with decreased risk of carbamazepine-induced hypersensitivity reactions when treated with carbamazepine in people of Northern European ancestry as compared to presence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased post-test probability of carbamazepine-induced hypersensitivity reactions in people of European ancestry as compared to absence of HLA-A*31:01.",
+      "Allele HLA-A*31:01 is associated with increased likelihood of acute generalized exanthematous pustulosis when treated with carbamazepine in a person of European ancestry as compared to absence of HLA-A*31:01.",
+      "Allele tagging HLA-A*31:01 at rs1061235 is associated with increased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the non-tagging allele.",
+      "The non-tagging allele at rs1061235 is associated with decreased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the allele tagging HLA-A*31:01.",
+      "rs1061235 is associated with HLA-A*31:01 status in people of European ancestry.",
+      "rs1061235 is associated with complete linkage disequilibrium with HLA-A*31:01 in people of European ancestry.",
+      "The alternative allele of rs1061235 is associated with decreased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the allele linked to HLA-A*31:01.",
+      "rs1061235 is in complete linkage disequilibrium with HLA-A*31:01 in people of European ancestry."
+    ],
+    "rs1061235": [
+      "Allele tagging HLA-A*31:01 at rs1061235 is associated with increased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the non-tagging allele.",
+      "The non-tagging allele at rs1061235 is associated with decreased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the allele tagging HLA-A*31:01.",
+      "rs1061235 is associated with HLA-A*31:01 status in people of European ancestry.",
+      "rs1061235 is associated with complete linkage disequilibrium with HLA-A*31:01 in people of European ancestry.",
+      "Allele linked to rs1061235 is associated with increased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the alternative allele.",
+      "The alternative allele of rs1061235 is associated with decreased risk of carbamazepine-induced hypersensitivity syndrome in people of European ancestry as compared to the allele linked to HLA-A*31:01.",
+      "rs1061235 is in complete linkage disequilibrium with HLA-A*31:01 in people of European ancestry."
+    ],
+    "HLA-B*15:02": []
+  }
+}

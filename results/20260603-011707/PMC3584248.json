@@ -1,0 +1,59 @@
+{
+  "pmcid": "PMC3584248",
+  "variant_sentences": {
+    "CYP2D6*1": [
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 intermediate metabolizer genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes.",
+      "CYP2D6 slow metabolizer genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 reduced-function and slow metabolizer genotypes."
+    ],
+    "CYP2D6*2": [
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 intermediate metabolizer genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes.",
+      "CYP2D6 slow metabolizer genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 reduced-function and slow metabolizer genotypes."
+    ],
+    "CYP2D6*3": [
+      "CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6."
+    ],
+    "CYP2D6*4": [
+      "CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6."
+    ],
+    "CYP2D6*5": [
+      "CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6."
+    ],
+    "CYP2D6*6": [
+      "CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes containing CYP2D6 *3, *4, *5, or *6."
+    ],
+    "CYP2D6*10": [
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41.",
+      "CYP2D6 slow metabolizer genotypes homozygous for CYP2D6 *10 or *41 or carrying one or more null alleles are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41.",
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes homozygous for CYP2D6 *10 or *41 or carrying one or more null alleles.",
+      "CYP2D6 genotypes with reduced function involving CYP2D6 *10 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer.",
+      "CYP2D6 genotypes with reduced function involving CYP2D6 *10 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer.",
+      "CYP2D6 *10-containing genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 normal genotypes.",
+      "CYP2D6 normal genotypes are associated with increased endoxifen plasma concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 *10-containing genotypes.",
+      "CYP2D6 *10-containing genotypes are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 normal genotypes.",
+      "CYP2D6 normal genotypes are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 *10-containing genotypes."
+    ],
+    "CYP2D6*41": [
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2.",
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *1 or *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41.",
+      "CYP2D6 slow metabolizer genotypes homozygous for CYP2D6 *10 or *41 or carrying one or more null alleles are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41.",
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for CYP2D6 *10 or *41 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes homozygous for CYP2D6 *10 or *41 or carrying one or more null alleles.",
+      "CYP2D6 genotypes with reduced function involving CYP2D6 *41 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer.",
+      "CYP2D6 genotypes with reduced function involving CYP2D6 *41 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer.",
+      "CYP2D6 *41-containing genotypes are associated with decreased endoxifen plasma concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 normal genotypes.",
+      "CYP2D6 normal genotypes are associated with increased endoxifen plasma concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 *41-containing genotypes.",
+      "CYP2D6 *41-containing genotypes are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 normal genotypes.",
+      "CYP2D6 normal genotypes are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment for operable breast cancer as compared to CYP2D6 *41-containing genotypes."
+    ]
+  }
+}

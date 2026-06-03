@@ -1,0 +1,24 @@
+{
+  "pmcid": "PMC384715",
+  "variant_sentences": {
+    "HLA-B*57:01": [
+      "HLA-B*57:01 is associated with increased risk of abacavir hypersensitivity as compared to non-carriers.",
+      "HLA-B*57:01 is associated with decreased incidence of abacavir hypersensitivity when patients negative for HLA-B*57:01 are treated with abacavir as compared to carriers.",
+      "HLA-B*57:01 in combination with Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity as compared to individuals without both markers."
+    ],
+    "rs2227956": [
+      "rs2227956 is associated with increased risk of abacavir hypersensitivity as compared to non-carriers.",
+      "rs2227956 in combination with HLA-B*57:01 is associated with increased risk of abacavir hypersensitivity as compared to individuals without both markers."
+    ],
+    "HLA-DRB1*07:01": [
+      "HLA-DRB1*07:01 in combination with HLA-DQ3 is associated with increased risk of abacavir hypersensitivity as compared to individuals without this marker combination."
+    ],
+    "HLA-DQ3": [
+      "HLA-DQ3 in combination with HLA-DRB1*07:01 is associated with increased risk of abacavir hypersensitivity as compared to individuals without this marker combination."
+    ],
+    "C4A6": [
+      "C4A6 is associated with increased risk of abacavir hypersensitivity as compared to non-carriers.",
+      "C4A6 in combination with HLA-B*57:01 is associated with increased risk of abacavir hypersensitivity as compared to individuals without both markers."
+    ]
+  }
+}

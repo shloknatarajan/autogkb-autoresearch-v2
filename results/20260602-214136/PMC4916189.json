@@ -1,0 +1,51 @@
+{
+  "pmcid": "PMC4916189",
+  "variant_sentences": {
+    "rs3745274": [
+      "Genotype GT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype GG.",
+      "Genotype TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype GG.",
+      "Genotype GT is associated with increased risk of overall discontinuation of efavirenz in people with HIV as compared to genotype GG.",
+      "Genotype TT is associated with increased risk of overall discontinuation of efavirenz in people with HIV as compared to genotype GG."
+    ],
+    "rs28399499": [
+      "Genotype TC + CC is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype TT.",
+      "Genotype TC + CC is associated with decreased risk of CNS-related adverse events during efavirenz treatment in people with HIV as compared to genotype TT."
+    ],
+    "rs4803419": [
+      "Genotype CT + TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype CT + TT is associated with increased risk of CNS-related adverse events during efavirenz treatment in people with HIV as compared to genotype CC."
+    ],
+    "rs8192726": [
+      "Genotype CA + AA is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype CA + AA is associated with increased risk of overall discontinuation of efavirenz in people with HIV as compared to genotype CC."
+    ],
+    "rs28399454": [
+      "Genotype CT + TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC."
+    ],
+    "rs35599367": [
+      "Genotype GA is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype GG."
+    ],
+    "rs2307424": [
+      "Genotype CT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC."
+    ],
+    "rs3003596": [
+      "Genotype TC is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype TT.",
+      "Genotype CC is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype TT."
+    ],
+    "rs1045642": [
+      "Genotype CT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype TT is associated with increased risk of CNS-related adverse events during efavirenz treatment in people with HIV as compared to genotype CC."
+    ],
+    "rs2472677": [
+      "Genotype CT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype TT is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype CC.",
+      "Genotype TT is associated with decreased risk of overall discontinuation of efavirenz in people with HIV as compared to genotype CC."
+    ],
+    "rs6785049": [
+      "Genotype GA is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype GG.",
+      "Genotype AA is not associated with increased likelihood of plasma HIV-RNA greater than or equal to 200 copies/mL at 96 weeks in efavirenz-treated people with HIV as compared to genotype GG."
+    ]
+  }
+}

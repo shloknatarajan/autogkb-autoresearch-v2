@@ -1,0 +1,6 @@
+iteration: iter8
+commit: f305d04
+meaning_capture: 0.573
+variant_coverage: 0.865
+status: discard
+description: iter8: single pass + cross-filing (2nd pass recall worth more than dilution)

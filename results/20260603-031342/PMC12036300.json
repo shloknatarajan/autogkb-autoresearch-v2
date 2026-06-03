@@ -1,0 +1,39 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*2": [
+      "CYP2C19 *2 carriers are not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 carriers.",
+      "CYP2C19 *2 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 non-carriers.",
+      "CYP2C19 *2 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *2 carriers."
+    ],
+    "rs4244285": [
+      "Allele A carriers of rs4244285 are not associated with increased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele G non-carriers.",
+      "Allele G non-carriers of rs4244285 are not associated with decreased likelihood of refractory angina symptoms when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele A carriers.",
+      "Allele A carriers of rs4244285 are not associated with increased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele G non-carriers.",
+      "Allele G non-carriers of rs4244285 are not associated with decreased likelihood of Major Adverse Cardiac Events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele A carriers.",
+      "Allele A carriers of rs4244285 are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele G non-carriers.",
+      "Allele G non-carriers of rs4244285 are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele A carriers."
+    ],
+    "CYP2C19*3": [],
+    "rs4986893": [],
+    "CYP2C19*10": [],
+    "rs6413438": [],
+    "CYP2C19*17": [
+      "CYP2C19 *17 carriers are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *17 non-carriers.",
+      "CYP2C19 *17 non-carriers are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to CYP2C19 *17 carriers."
+    ],
+    "rs12248560": [
+      "Allele T carriers of rs12248560 are not associated with increased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele C non-carriers.",
+      "Allele C non-carriers of rs12248560 are not associated with decreased likelihood of bleeding events when treated with doubled maintenance dose clopidogrel in people with coronary artery disease undergoing percutaneous coronary intervention as compared to allele T carriers."
+    ],
+    "CYP2C19*22": [],
+    "rs140278421": [],
+    "CYP2C19*26": [],
+    "rs375781227": [],
+    "CYP2C19*33": [],
+    "rs370803989": []
+  }
+}

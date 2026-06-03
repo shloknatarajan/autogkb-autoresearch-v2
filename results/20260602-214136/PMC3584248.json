@@ -1,0 +1,43 @@
+{
+  "pmcid": "PMC3584248",
+  "variant_sentences": {
+    "CYP2D6*1": [
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 reduced-function and slow metabolizer genotypes."
+    ],
+    "CYP2D6*2": [
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 slow metabolizer genotypes.",
+      "CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2 are associated with increased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 reduced-function and slow metabolizer genotypes."
+    ],
+    "CYP2D6*3": [
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ],
+    "CYP2D6*4": [
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ],
+    "CYP2D6*5": [
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ],
+    "CYP2D6*6": [
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes including one or more non-functional null alleles *3 to *6 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ],
+    "CYP2D6*10": [
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for reduced-function alleles *10 and *41 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes homozygous for reduced-function alleles *10 or *41 or carrying one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 slow metabolizer genotypes homozygous for reduced-function alleles *10 or *41 or carrying one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 reduced-function genotypes involving *10 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ],
+    "CYP2D6*41": [
+      "CYP2D6 intermediate metabolizer genotypes heterozygous for reduced-function alleles *10 and *41 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 slow metabolizer genotypes homozygous for reduced-function alleles *10 or *41 or carrying one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 intermediate metabolizer genotypes.",
+      "CYP2D6 slow metabolizer genotypes homozygous for reduced-function alleles *10 or *41 or carrying one or more non-functional null alleles *3 to *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2.",
+      "CYP2D6 reduced-function genotypes involving *41 are associated with decreased 4-hydroxytamoxifen concentrations during tamoxifen treatment in women with operable breast cancer as compared to CYP2D6 normal metabolizer genotypes carrying fully functional alleles *1 and *2."
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "pmcid": "PMC8790808",
+  "variant_sentences": {
+    "HLA-DQB1*02:02": [
+      "HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to absence of HLA-DQB1*02:02.",
+      "Absence of HLA-DQB1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to presence of HLA-DQB1*02:02.",
+      "HLA-DQB1*02:02 is not associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to absence of HLA-DQB1*02:02.",
+      "Absence of HLA-DQB1*02:02 is not associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to presence of HLA-DQB1*02:02.",
+      "HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQB1*02:02.",
+      "Absence of HLA-DQB1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQB1*02:02.",
+      "Absence of HLA-DQB1*02:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to absence of HLA-DQB1*02:02.",
+      "Absence of HLA-DQB1*02:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to presence of HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia treated on TXVI of non-European ancestry as compared to absence of HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 without HLA-DQB1*02:02 is not associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 with HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01 with HLA-DQB1*02:02.",
+      "Allele HLA-DRB1*07:01 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry when not accompanied by HLA-DQB1*02:02 as compared to absence of HLA-DRB1*07:01.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry when accompanied by HLA-DQB1*02:02 as compared to absence of HLA-DRB1*07:01 with HLA-DQB1*02:02.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele HLA-DQA1*02:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of African ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of Native American ancestry as compared to the other allele.",
+      "Allele of rs1694129 is associated with HLA-DQB1*02:02 in people with acute lymphoblastic leukemia of primarily European ancestry.",
+      "Allele of rs1694129 is associated with HLA-DQB1*02:02 in people with acute lymphoblastic leukemia of non-European ancestry.",
+      "Minor allele carrier status for rs28383172 in combination with minor allele carrier status for rs7775228 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs28383172 and rs7775228.",
+      "Minor allele carrier status for rs7775228 in combination with minor allele carrier status for rs28383172 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs7775228 and rs28383172."
+    ],
+    "HLA-DRB1*07:01": [
+      "HLA-DRB1*07:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01.",
+      "Absence of HLA-DRB1*07:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*07:01.",
+      "HLA-DRB1*07:01 is not associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to absence of HLA-DRB1*07:01.",
+      "Absence of HLA-DRB1*07:01 is not associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to presence of HLA-DRB1*07:01.",
+      "HLA-DRB1*07:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01.",
+      "Absence of HLA-DRB1*07:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*07:01.",
+      "HLA-DRB1*07:01 without HLA-DQB1*02:02 is not associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 with HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*07:01 with HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DRB1*07:01.",
+      "Absence of HLA-DRB1*07:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DRB1*07:01.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to absence of HLA-DRB1*07:01.",
+      "Absence of HLA-DRB1*07:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to presence of HLA-DRB1*07:01.",
+      "Allele HLA-DRB1*07:01 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia treated on TXVI of non-European ancestry as compared to absence of HLA-DRB1*07:01.",
+      "Allele HLA-DRB1*07:01 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry when not accompanied by HLA-DQB1*02:02 as compared to absence of HLA-DRB1*07:01.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry when accompanied by HLA-DQB1*02:02 as compared to absence of HLA-DRB1*07:01 with HLA-DQB1*02:02.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele HLA-DQA1*02:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele of rs1694129 is associated with HLA-DRB1*07:01 in people with acute lymphoblastic leukemia of non-European ancestry.",
+      "Minor allele carrier status for rs28383172 in combination with minor allele carrier status for rs7775228 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs28383172 and rs7775228.",
+      "Minor allele carrier status for rs7775228 in combination with minor allele carrier status for rs28383172 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs7775228 and rs28383172."
+    ],
+    "HLA-DQA1*02:01": [
+      "HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to absence of HLA-DQA1*02:01.",
+      "Absence of HLA-DQA1*02:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to presence of HLA-DQA1*02:01.",
+      "HLA-DQA1*02:01 is not associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to absence of HLA-DQA1*02:01.",
+      "Absence of HLA-DQA1*02:01 is not associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia treated on TXVI as compared to presence of HLA-DQA1*02:01.",
+      "HLA-DQA1*02:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQA1*02:01.",
+      "Absence of HLA-DQA1*02:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQA1*02:01.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "HLA-DRB1*07:01 + HLA-DQA1*02:01 without HLA-DQB1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to HLA-DRB1*07:01 + HLA-DQA1*02:01 + HLA-DQB1*02:02.",
+      "Allele HLA-DQA1*02:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQA1*02:01.",
+      "Absence of HLA-DQA1*02:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQA1*02:01.",
+      "Allele HLA-DQA1*02:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to absence of HLA-DQA1*02:01.",
+      "Absence of HLA-DQA1*02:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to presence of HLA-DQA1*02:01.",
+      "Allele HLA-DQA1*02:01 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia treated on TXVI of non-European ancestry as compared to absence of HLA-DQA1*02:01.",
+      "Allele HLA-DQA1*02:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Allele HLA-DRB1*07:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia carrying the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype as compared to people carrying HLA-DRB1*07:01-HLA-DQA1*02:01 without HLA-DQB1*02:02.",
+      "Minor allele carrier status for rs28383172 in combination with minor allele carrier status for rs7775228 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs28383172 and rs7775228.",
+      "Minor allele carrier status for rs7775228 in combination with minor allele carrier status for rs28383172 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs7775228 and rs28383172."
+    ],
+    "HLA-DRB1*04:02": [
+      "HLA-DRB1*04:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*04:02.",
+      "Absence of HLA-DRB1*04:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*04:02.",
+      "Allele HLA-DRB1*04:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DRB1*04:02.",
+      "Absence of HLA-DRB1*04:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DRB1*04:02."
+    ],
+    "HLA-DRB1*04:05": [
+      "HLA-DRB1*04:05 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*04:05.",
+      "Absence of HLA-DRB1*04:05 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*04:05.",
+      "Allele HLA-DRB1*04:05 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DRB1*04:05.",
+      "Absence of HLA-DRB1*04:05 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DRB1*04:05."
+    ],
+    "HLA-B*50:01": [
+      "HLA-B*50:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-B*50:01.",
+      "Absence of HLA-B*50:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-B*50:01.",
+      "Allele HLA-B*50:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-B*50:01.",
+      "Absence of HLA-B*50:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-B*50:01."
+    ],
+    "HLA-DQA1*01:03": [
+      "HLA-DQA1*01:03 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQA1*01:03.",
+      "Absence of HLA-DQA1*01:03 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQA1*01:03.",
+      "Allele HLA-DQA1*01:03 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQA1*01:03.",
+      "Absence of HLA-DQA1*01:03 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQA1*01:03."
+    ],
+    "HLA-DQB1*06:02": [
+      "HLA-DQB1*06:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQB1*06:02.",
+      "Absence of HLA-DQB1*06:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQB1*06:02.",
+      "Allele HLA-DQB1*06:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQB1*06:02.",
+      "Absence of HLA-DQB1*06:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQB1*06:02."
+    ],
+    "HLA-A*02:05": [
+      "HLA-A*02:05 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-A*02:05.",
+      "Absence of HLA-A*02:05 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-A*02:05.",
+      "Allele HLA-A*02:05 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-A*02:05.",
+      "Absence of HLA-A*02:05 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-A*02:05."
+    ],
+    "HLA-B*38:01": [
+      "HLA-B*38:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-B*38:01.",
+      "Absence of HLA-B*38:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-B*38:01.",
+      "Allele HLA-B*38:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-B*38:01.",
+      "Absence of HLA-B*38:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-B*38:01."
+    ],
+    "HLA-DQA1*01:01": [
+      "HLA-DQA1*01:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQA1*01:01.",
+      "Absence of HLA-DQA1*01:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQA1*01:01.",
+      "Allele HLA-DQA1*01:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQA1*01:01.",
+      "Absence of HLA-DQA1*01:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQA1*01:01."
+    ],
+    "HLA-DPA1*02:02": [
+      "HLA-DPA1*02:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DPA1*02:02.",
+      "Absence of HLA-DPA1*02:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DPA1*02:02.",
+      "Allele HLA-DPA1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DPA1*02:02.",
+      "Absence of HLA-DPA1*02:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DPA1*02:02."
+    ],
+    "HLA-DRB1*13:01": [
+      "HLA-DRB1*13:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*13:01.",
+      "Absence of HLA-DRB1*13:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*13:01.",
+      "Allele HLA-DRB1*13:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DRB1*13:01.",
+      "Absence of HLA-DRB1*13:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DRB1*13:01."
+    ],
+    "HLA-DRB1*15:01": [
+      "HLA-DRB1*15:01 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DRB1*15:01.",
+      "Absence of HLA-DRB1*15:01 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DRB1*15:01.",
+      "Allele HLA-DRB1*15:01 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DRB1*15:01.",
+      "Absence of HLA-DRB1*15:01 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DRB1*15:01."
+    ],
+    "HLA-DQB1*06:03": [
+      "HLA-DQB1*06:03 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-DQB1*06:03.",
+      "Absence of HLA-DQB1*06:03 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-DQB1*06:03.",
+      "Allele HLA-DQB1*06:03 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-DQB1*06:03.",
+      "Absence of HLA-DQB1*06:03 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-DQB1*06:03."
+    ],
+    "HLA-C*07:02": [
+      "HLA-C*07:02 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to absence of HLA-C*07:02.",
+      "Absence of HLA-C*07:02 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to presence of HLA-C*07:02.",
+      "Allele HLA-C*07:02 is associated with decreased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to absence of HLA-C*07:02.",
+      "Absence of HLA-C*07:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to presence of HLA-C*07:02."
+    ],
+    "rs28383308": [
+      "Allele of rs28383308 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs28383308 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to the allele of rs28383308.",
+      "Allele A of rs28383308 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of all ancestries as compared to the other allele."
+    ],
+    "rs1694129": [
+      "Allele of rs1694129 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs1694129 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs1694129.",
+      "Allele of rs1694129 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs1694129 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs1694129.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of African ancestry as compared to the other allele.",
+      "Allele of rs1694129 tagging HLA-DQB1*02:02 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of Native American ancestry as compared to the other allele.",
+      "Allele of rs1694129 is associated with HLA-DQB1*02:02 in people with acute lymphoblastic leukemia of primarily European ancestry.",
+      "Allele of rs1694129 is associated with HLA-DRB1*07:01 in people with acute lymphoblastic leukemia of non-European ancestry.",
+      "Allele of rs1694129 is associated with HLA-DQB1*02:02 in people with acute lymphoblastic leukemia of non-European ancestry."
+    ],
+    "rs9958628": [
+      "Allele of rs9958628 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs9958628 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs9958628.",
+      "Allele of rs9958628 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs9958628 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia as compared to the allele of rs9958628.",
+      "Allele of rs9958628 is associated with increased risk of hypersensitivity reactions to pegaspargase in African ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs9958628 is associated with decreased risk of hypersensitivity reactions to pegaspargase in African ancestry people with acute lymphoblastic leukemia as compared to the allele of rs9958628.",
+      "Allele of rs9958628 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs9958628 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of all ancestries as compared to the other allele.",
+      "Allele of rs9958628 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of African ancestry as compared to the other allele.",
+      "Allele of rs9958628 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele.",
+      "Allele of rs9958628 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of Native American ancestry as compared to the other allele."
+    ],
+    "rs79377225": [
+      "Allele of rs79377225 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs79377225 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs79377225.",
+      "Allele of rs79377225 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia across ancestries as compared to the other allele.",
+      "Other allele of rs79377225 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia across ancestries as compared to the allele of rs79377225.",
+      "Allele of rs79377225 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs79377225 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia across ancestries as compared to the other allele."
+    ],
+    "rs11739459": [
+      "Allele of rs11739459 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs11739459 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs11739459.",
+      "Allele of rs11739459 is associated with increased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia across ancestries as compared to the other allele.",
+      "Other allele of rs11739459 is associated with decreased risk of hypersensitivity reactions to pegaspargase in people with acute lymphoblastic leukemia across ancestries as compared to the allele of rs11739459.",
+      "Allele of rs11739459 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs11739459 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia across ancestries as compared to the other allele."
+    ],
+    "rs9268670": [
+      "Allele of rs9268670 is associated with increased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs9268670 is associated with decreased risk of hypersensitivity reactions to pegaspargase in non-European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs9268670.",
+      "Allele of rs9268670 is not associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs9268670 is not associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs9268670.",
+      "Allele of rs9268670 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of non-European ancestry as compared to the other allele.",
+      "Allele of rs9268670 is not associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele."
+    ],
+    "rs28383172": [
+      "Allele of rs28383172 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs28383172 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs28383172.",
+      "Allele of rs28383172 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele.",
+      "Minor allele carrier status for rs28383172 in combination with minor allele carrier status for rs7775228 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs28383172 and rs7775228.",
+      "Minor allele carrier status for rs7775228 in combination with minor allele carrier status for rs28383172 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs7775228 and rs28383172."
+    ],
+    "rs7775228": [
+      "Allele of rs7775228 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the other allele.",
+      "Other allele of rs7775228 is associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to the allele of rs7775228.",
+      "Allele of rs7775228 is associated with increased risk of pegaspargase hypersensitivity in people with acute lymphoblastic leukemia of primarily European ancestry as compared to the other allele.",
+      "Minor allele carrier status for rs7775228 in combination with minor allele carrier status for rs28383172 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs7775228 and rs28383172.",
+      "Minor allele carrier status for rs28383172 in combination with minor allele carrier status for rs7775228 is associated with presence of the HLA-DRB1*07:01-HLA-DQA1*02:01-HLA-DQB1*02:02 haplotype in people with acute lymphoblastic leukemia of primarily European ancestry as compared to not carrying minor alleles for both rs28383172 and rs7775228."
+    ],
+    "HLA-DQB1 Gly135": [
+      "HLA-DQB1 glycine at amino acid position 135 is associated with increased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to other amino acids at position 135.",
+      "Other amino acids at HLA-DQB1 position 135 are associated with decreased risk of hypersensitivity reactions to pegaspargase in European ancestry people with acute lymphoblastic leukemia as compared to glycine at position 135."
+    ]
+  }
+}

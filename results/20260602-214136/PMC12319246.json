@@ -1,0 +1,92 @@
+{
+  "pmcid": "PMC12319246",
+  "variant_sentences": {
+    "rs9282564": [
+      "Genotype AA in donor ABCB1 is associated with decreased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AG in donor ABCB1 is associated with decreased cumulative survival during 12-year follow-up in kidney transplant recipients as compared to genotype AA.",
+      "Genotype AA in donor ABCB1 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AA in donor ABCB1 is associated with increased likelihood of infections during 12-year follow-up in kidney transplant recipients as compared to other genotypes."
+    ],
+    "rs2273697": [
+      "Genotype GA in donor ABCC2 is associated with increased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GG in donor ABCC2 is associated with increased cumulative survival during 12-year follow-up in kidney transplant recipients as compared to genotypes AA and GA.",
+      "Genotype AA in donor ABCC2 is associated with increased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GA in donor ABCC2 is associated with increased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GG in donor ABCC2 is associated with increased renal clearance during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GG in donor ABCC2 when combined with genotype AG in recipient CYP2B6 rs2279343 is associated with increased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype GG in donor ABCC2 when combined with genotype AG in donor CYP2C19 rs4244285 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype GG in donor ABCC2 when combined with genotype AA in donor CYP2C19 rs4244285 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs3745274": [
+      "Genotype GT in recipient CYP2B6 is associated with decreased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GT in recipient CYP2B6 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GT in donor CYP2B6 is associated with decreased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GT in recipient CYP2B6 is associated with increased renal clearance during 12-year follow-up in kidney transplant recipients as compared to genotype TT.",
+      "Genotype TT in donor CYP2B6 is associated with decreased renal clearance during 12-year follow-up in kidney transplant recipients as compared to genotype GT.",
+      "Genotype GT in recipient CYP2B6 is associated with decreased likelihood of diabetes mellitus during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype TT in recipient CYP2B6 when combined with genotype TC in recipient ABCB1 rs1045642 is associated with increased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype TT in donor CYP2B6 when combined with genotype TC in recipient ABCB1 rs2235033 is associated with increased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype TT in donor CYP2B6 when combined with genotype AG in donor SLCO1B1 rs2306283 is associated with increased likelihood of diabetes mellitus during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs776746": [
+      "Genotype GG in recipient CYP3A5 is associated with decreased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "CYP3A5 *3/*3 in recipient is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to CYP3A5 *1/*3.",
+      "CYP3A5 *3/*3 in donor is associated with increased renal clearance during 12-year follow-up in kidney transplant recipients as compared to CYP3A5 *1/*3.",
+      "Genotype GA in recipient CYP3A5 when combined with genotype GA in donor ABCB1 rs2235013 is associated with increased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype GA in recipient CYP3A5 when combined with genotype AG in donor SLCO1B1 rs2306283 is associated with increased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs2235013": [
+      "Genotype GA in donor ABCB1 is associated with decreased likelihood of chronic rejection during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GG in donor ABCB1 is associated with decreased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype GA in donor ABCB1 when combined with genotype GA in recipient CYP3A5 rs776746 is associated with increased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs2740574": [
+      "Genotype AA in recipient CYP3A4 is associated with decreased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AA in recipient CYP3A4 is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to genotype GA.",
+      "Genotype AA in recipient CYP3A4 is associated with increased renal clearance during 12-year follow-up in kidney transplant recipients as compared to genotype GA."
+    ],
+    "rs4149056": [
+      "Genotype TT in recipient SLCO1B1 is associated with decreased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype TT in recipient SLCO1B1 is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to genotype TC."
+    ],
+    "rs6714486": [
+      "Genotype TA in donor UGT1A9 is associated with increased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotypes."
+    ],
+    "rs2306283": [
+      "Genotype AA in recipient SLCO1B1 is associated with decreased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AG in recipient SLCO1B1 is associated with decreased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AG in donor SLCO1B1 is associated with decreased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AA in donor SLCO1B1 is associated with decreased dose-adjusted tacrolimus concentration during the early post-transplant period in kidney transplant recipients as compared to genotype GG.",
+      "Genotype AG in donor SLCO1B1 when combined with genotype TT in donor CYP2B6 rs3745274 is associated with increased likelihood of diabetes mellitus during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype AG in donor SLCO1B1 when combined with genotype GA in recipient CYP3A5 rs776746 is associated with increased likelihood of death during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs2066844": [
+      "Genotype CC in donor NOD2 is associated with decreased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotypes."
+    ],
+    "rs4244285": [
+      "Genotype AA in donor CYP2C19 is associated with increased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype AA in donor CYP2C19 is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to genotypes GG and GA.",
+      "Genotype AG in donor CYP2C19 when combined with genotype GG in donor ABCC2 rs2273697 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations.",
+      "Genotype AA in donor CYP2C19 when combined with genotype GG in donor ABCC2 rs2273697 is associated with decreased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs1142345": [
+      "Genotype AA in donor TPMT is associated with decreased likelihood of re-transplantation during 12-year follow-up in kidney transplant recipients as compared to other genotypes."
+    ],
+    "rs1799853": [
+      "Genotype CC in donor CYP2C9 is associated with decreased likelihood of re-transplantation during 12-year follow-up in kidney transplant recipients as compared to other genotypes."
+    ],
+    "rs1045642": [
+      "Genotype CC in recipient ABCB1 is associated with decreased likelihood of infections during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype TT in recipient ABCB1 is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype CC in recipient ABCB1 is associated with increased renal clearance during 12-year follow-up in kidney transplant recipients as compared to genotypes TC and TT.",
+      "Genotype TC in recipient ABCB1 when combined with genotype TT in recipient CYP2B6 rs3745274 is associated with increased likelihood of acute rejection during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs2235033": [
+      "Genotype TT in recipient ABCB1 is associated with increased dose-adjusted tacrolimus concentration during 12-year follow-up in kidney transplant recipients as compared to other genotypes.",
+      "Genotype TC in recipient ABCB1 when combined with genotype TT in donor CYP2B6 rs3745274 is associated with increased likelihood of nephrotoxicity during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ],
+    "rs2279343": [
+      "Genotype AG in recipient CYP2B6 when combined with genotype GG in donor ABCC2 rs2273697 is associated with increased likelihood of tumor occurrence during 12-year follow-up in kidney transplant recipients as compared to other genotype combinations."
+    ]
+  }
+}

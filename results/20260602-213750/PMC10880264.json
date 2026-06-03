@@ -1,0 +1,14 @@
+{
+  "pmcid": "PMC10880264",
+  "variant_sentences": {
+    "CYP2C19": [],
+    "CYP2D6": [
+      "Slower CYP2D6 metabolizer phenotypes are associated with increased TEASAP akathisia, hyperkinesis, and somatic anxiety scores when treated with escitalopram as compared to faster CYP2D6 metabolizer phenotypes.",
+      "CYP2D6 intermediate metabolizer + poor metabolizer phenotypes are associated with increased TEASAP disinhibition and impulsivity scores when treated with escitalopram as compared to CYP2D6 normal metabolizer + ultrarapid metabolizer phenotypes."
+    ],
+    "rs6311": [
+      "HTR2A rs6311 A/A + A/G is associated with increased TEASAP self-injury, suicidality, and harm to others subscale scores when treated with escitalopram as compared to rs6311 G/G."
+    ],
+    "SLC6A4": []
+  }
+}

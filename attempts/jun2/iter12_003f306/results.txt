@@ -1,0 +1,6 @@
+iteration: iter12
+commit: 003f306
+meaning_capture: 0.655
+variant_coverage: 0.899
+status: keep
+description: iter12: gene-context cross-filing + acronym-hijack fix (capture ~tied w/in noise, coverage +0.034, bugfix)

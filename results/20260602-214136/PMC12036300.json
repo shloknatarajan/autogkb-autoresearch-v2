@@ -1,0 +1,31 @@
+{
+  "pmcid": "PMC12036300",
+  "variant_sentences": {
+    "CYP2C19*2": [
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of refractory angina symptoms in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status.",
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of Major Adverse Cardiac Events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status.",
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of bleeding events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status."
+    ],
+    "rs4244285": [
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of refractory angina symptoms in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status.",
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of Major Adverse Cardiac Events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status.",
+      "CYP2C19 *2 carrier status is not associated with increased likelihood of bleeding events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status."
+    ],
+    "CYP2C19*3": [],
+    "rs4986893": [],
+    "CYP2C19*10": [],
+    "rs6413438": [],
+    "CYP2C19*17": [
+      "CYP2C19 *17 carrier status is not associated with increased likelihood of bleeding events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status."
+    ],
+    "rs12248560": [
+      "CYP2C19 *17 carrier status is not associated with increased likelihood of bleeding events in Syrian patients with coronary artery disease treated with doubled maintenance dose clopidogrel after percutaneous coronary intervention as compared to non-carrier status."
+    ],
+    "CYP2C19*22": [],
+    "rs140278421": [],
+    "CYP2C19*26": [],
+    "rs375781227": [],
+    "CYP2C19*33": [],
+    "rs370803989": []
+  }
+}

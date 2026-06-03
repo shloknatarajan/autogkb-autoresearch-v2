@@ -1,0 +1,78 @@
+{
+  "pmcid": "PMC384715",
+  "variant_sentences": {
+    "HLA-B*57:01": [
+      "HLA-B*57:01 is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying HLA-B*57:01.",
+      "Not carrying HLA-B*57:01 is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying HLA-B*57:01.",
+      "HLA-B*57:01 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying HLA-B*57:01.",
+      "Not carrying HLA-B*57:01 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying HLA-B*57:01.",
+      "HLA-B*57:01 is associated with increased likelihood of positive epicutaneous patch test consistent with abacavir hypersensitivity in people with HIV treated with abacavir as compared to not carrying HLA-B*57:01.",
+      "HLA-B*57:01 is associated with increased intracellular TNF expression in response to ex vivo abacavir stimulation in people with HIV as compared to not carrying HLA-B*57:01.",
+      "HLA-B*57:01 is associated with increased secreted TNF levels in abacavir-stimulated whole blood cultures in people with HIV when treated with abacavir as compared to not carrying HLA-B*57:01.",
+      "HLA-B*57:01 and C4A6 in combination are associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and C4A6.",
+      "Not carrying the combination of HLA-B*57:01 and C4A6 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and C4A6.",
+      "The combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3.",
+      "Not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "Not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "Not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased intracellular TNF expression in response to ex vivo abacavir stimulation in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased secreted TNF levels in abacavir-stimulated whole blood cultures in people with HIV when treated with abacavir as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is not associated with abacavir hypersensitivity in one abacavir-tolerant individual with absent immunological response to ex vivo abacavir stimulation as compared to abacavir-hypersensitive carriers of the combination."
+    ],
+    "C4A6": [
+      "C4A6 is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying C4A6.",
+      "Not carrying C4A6 is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying C4A6.",
+      "C4A6 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying C4A6.",
+      "Not carrying C4A6 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying C4A6."
+    ],
+    "HLA-DRB1*07:01": [
+      "HLA-DRB1*07:01 is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying HLA-DRB1*07:01.",
+      "Not carrying HLA-DRB1*07:01 is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying HLA-DRB1*07:01.",
+      "HLA-DRB1*07:01 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying HLA-DRB1*07:01.",
+      "Not carrying HLA-DRB1*07:01 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying HLA-DRB1*07:01.",
+      "The combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3.",
+      "Not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3."
+    ],
+    "HLA-DQ3": [
+      "HLA-DQ3 is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying HLA-DQ3.",
+      "Not carrying HLA-DQ3 is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying HLA-DQ3.",
+      "HLA-DQ3 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying HLA-DQ3.",
+      "Not carrying HLA-DQ3 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying HLA-DQ3."
+    ],
+    "rs2227956": [
+      "Allele C of rs2227956 is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to allele T.",
+      "Allele T of rs2227956 is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to allele C.",
+      "Allele C of rs2227956 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to allele T.",
+      "Allele T of rs2227956 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to allele C.",
+      "Allele C of rs2227956 is associated with increased intracellular TNF expression in response to ex vivo abacavir stimulation in people with HIV as compared to allele T.",
+      "Allele C of rs2227956 is associated with altered Hsp70-Hom amino acid sequence resulting in M493T as compared to allele T."
+    ],
+    "Hsp70-Hom M493T": [
+      "Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying Hsp70-Hom M493T.",
+      "Not carrying Hsp70-Hom M493T is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying Hsp70-Hom M493T.",
+      "Hsp70-Hom M493T is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying Hsp70-Hom M493T.",
+      "Not carrying Hsp70-Hom M493T is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying Hsp70-Hom M493T.",
+      "Hsp70-Hom M493T is associated with increased intracellular TNF expression in response to ex vivo abacavir stimulation in people with HIV as compared to not carrying Hsp70-Hom M493T.",
+      "Hsp70-Hom M493T is associated with altered Hsp70-Hom peptide-binding domain residue 493 from methionine to threonine as compared to not carrying Hsp70-Hom M493T."
+    ],
+    "HLA-B*57:01+C4A6": [
+      "HLA-B*57:01 and C4A6 in combination are associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and C4A6.",
+      "Not carrying the combination of HLA-B*57:01 and C4A6 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and C4A6."
+    ],
+    "HLA-B*57:01+HLA-DRB1*07:01+HLA-DQ3": [
+      "The combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3.",
+      "Not carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3 is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01, HLA-DRB1*07:01, and HLA-DQ3."
+    ],
+    "HLA-B*57:01+Hsp70-Hom M493T": [
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased risk of abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "Not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with decreased risk of abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased likelihood of definite abacavir hypersensitivity in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "Not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with decreased likelihood of definite abacavir hypersensitivity in people with HIV as compared to carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased intracellular TNF expression in response to ex vivo abacavir stimulation in people with HIV as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is associated with increased secreted TNF levels in abacavir-stimulated whole blood cultures in people with HIV when treated with abacavir as compared to not carrying the combination of HLA-B*57:01 and Hsp70-Hom M493T.",
+      "The combination of HLA-B*57:01 and Hsp70-Hom M493T is not associated with abacavir hypersensitivity in one abacavir-tolerant individual with absent immunological response to ex vivo abacavir stimulation as compared to abacavir-hypersensitive carriers of the combination."
+    ]
+  }
+}

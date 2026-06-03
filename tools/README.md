@@ -23,5 +23,6 @@ re-deriving it in every attempt.
 ## Examples of useful tools
 
 - variant normalization / rsID extraction (e.g. `regex_variants.py`)
+- term normalization to canonical ClinPGx/PharmGKB drugs & variants (`term_lookup.py`)
 - markdown section splitting / table extraction
 - JSON repair / schema-coercion for model output

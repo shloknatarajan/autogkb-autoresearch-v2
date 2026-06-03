@@ -1,0 +1,28 @@
+{
+  "pmcid": "PMC3584248",
+  "variant_sentences": {
+    "CYP2D6*2": [
+      "CYP2D6 normal metabolizer genotypes containing CYP2D6 *2 are associated with increased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 intermediate and slow metabolizer genotypes."
+    ],
+    "CYP2D6*3": [
+      "CYP2D6 null alleles including CYP2D6 *3 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 normal metabolizer genotypes."
+    ],
+    "CYP2D6*4": [
+      "CYP2D6 null alleles including CYP2D6 *4 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 normal metabolizer genotypes."
+    ],
+    "CYP2D6*5": [
+      "CYP2D6 null alleles including CYP2D6 *5 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 normal metabolizer genotypes."
+    ],
+    "CYP2D6*6": [
+      "CYP2D6 null alleles including CYP2D6 *6 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 normal metabolizer genotypes."
+    ],
+    "CYP2D6*10": [
+      "CYP2D6 *10 is associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 *1 and *2 alleles.",
+      "CYP2D6 slow metabolizer genotypes homozygous for CYP2D6 *10 are associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 normal metabolizer genotypes."
+    ],
+    "CYP2D6*41": [
+      "CYP2D6 *41 is associated with decreased endoxifen plasma concentrations during tamoxifen treatment as compared to CYP2D6 *1 and *2 alleles."
+    ],
+    "CYP2D6*1": []
+  }
+}

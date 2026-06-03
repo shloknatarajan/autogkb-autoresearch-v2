@@ -1,0 +1,32 @@
+{
+  "pmcid": "PMC10399933",
+  "variant_sentences": {
+    "rs4149056": [
+      "Genotype C/C is associated with increased likelihood of switching from simvastatin to another statin as compared to genotype T/T.",
+      "Genotype C/C is associated with increased likelihood of switching from simvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/C + C/C is associated with increased likelihood of switching from pravastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from simvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from simvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype T/T.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype T/T.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/C + C/C is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C + C/C is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype T/T."
+    ],
+    "rs2231142": [
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally associated creatine kinase measurement as compared to genotype C/C.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype C/C."
+    ],
+    "rs1799853": [],
+    "rs1057910": [],
+    "CYP2C9*2": [
+      "CYP2C9 poor metabolizer + intermediate metabolizer status is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer status."
+    ],
+    "CYP2C9*3": [
+      "CYP2C9 poor metabolizer + intermediate metabolizer status is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer status."
+    ]
+  }
+}

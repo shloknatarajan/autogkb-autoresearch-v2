@@ -1,0 +1,70 @@
+{
+  "pmcid": "PMC10399933",
+  "variant_sentences": {
+    "rs4149056": [
+      "Genotype C/C is associated with increased likelihood of switching from simvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased likelihood of switching from simvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/C is associated with increased likelihood of switching from simvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased likelihood of switching from simvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype C/C.",
+      "Genotype T/C is not associated with increased likelihood of switching from simvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from simvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype T/T.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/C is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype T/T.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype T/T.",
+      "Genotype T/C + C/C is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/T is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype T/C + C/C.",
+      "Genotype T/C + C/C is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype T/T.",
+      "Genotype T/T is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype T/C + C/C.",
+      "Genotype T/C + C/C is associated with increased likelihood of switching from pravastatin to another statin as compared to genotype T/T.",
+      "Genotype T/T is associated with decreased likelihood of switching from pravastatin to another statin as compared to genotype T/C + C/C.",
+      "Genotype C/C (c.521C/C) is associated with increased risk of simvastatin intolerance (statin switching) when treated with simvastatin as compared to genotype T/T (HR 1.88, 95% CI 1.08\u20133.25, P = 0.025).",
+      "Genotype T/T (c.521T/T) is associated with decreased risk of simvastatin intolerance (statin switching) when treated with simvastatin as compared to genotype C/C (HR 1.88, 95% CI 1.08\u20133.25, P = 0.025).",
+      "Genotype C/C (c.521C/C) is associated with increased risk of simvastatin intolerance (statin switching with temporally associated CK measurement) when treated with simvastatin as compared to genotype T/T (HR 5.44, 95% CI 1.49\u201319.9, P = 0.011).",
+      "Genotype T/T (c.521T/T) is associated with decreased risk of simvastatin intolerance (statin switching with temporally associated CK measurement) when treated with simvastatin as compared to genotype C/C (HR 5.44, 95% CI 1.49\u201319.9, P = 0.011).",
+      "Genotype T/C (c.521T/C) is not associated with increased risk of simvastatin intolerance (statin switching) when treated with simvastatin as compared to genotype T/T (HR 0.94, 95% CI 0.70\u20131.24, P = 0.640).",
+      "Genotype T/C (c.521T/C) is not associated with increased risk of simvastatin intolerance (statin switching with temporally associated CK measurement) when treated with simvastatin as compared to genotype T/T (HR 1.75, 95% CI 0.71\u20134.31, P = 0.226).",
+      "Genotype T/C or C/C (c.521T/C or C/C) is associated with increased risk of pravastatin intolerance (statin switching) when treated with pravastatin as compared to genotype T/T (HR 2.11, 95% CI 1.01\u20134.39, P = 0.047).",
+      "Genotype T/T (c.521T/T) is associated with decreased risk of pravastatin intolerance (statin switching) when treated with pravastatin as compared to genotype T/C or C/C (HR 2.11, 95% CI 1.01\u20134.39, P = 0.047).",
+      "Genotype T/C or C/C (c.521T/C or C/C) is not associated with increased risk of atorvastatin intolerance (statin switching) when treated with atorvastatin as compared to genotype T/T (HR 0.82, 95% CI 0.55\u20131.23, P = 0.339).",
+      "Genotype C/C (c.521C/C) is not associated with increased risk of atorvastatin intolerance (statin switching) when treated with atorvastatin as compared to genotype T/T (HR 1.13, 95% CI 0.52\u20132.44, P = 0.759).",
+      "Genotype T/C (c.521T/C) is not associated with increased risk of atorvastatin intolerance (statin switching) when treated with atorvastatin as compared to genotype T/T (HR 0.82, 95% CI 0.55\u20131.23, P = 0.339).",
+      "Genotype T/C (c.521T/C) is not associated with increased risk of atorvastatin intolerance (statin switching with temporally associated CK measurement) when treated with atorvastatin as compared to genotype T/T (HR 1.25, 95% CI 0.46\u20133.38, P = 0.667).",
+      "Genotype C/C (c.521C/C) is not associated with increased risk of atorvastatin intolerance (statin switching with temporally associated CK measurement) when treated with atorvastatin as compared to genotype T/T (HR 1.30, 95% CI 0.17\u201310.1, P = 0.799).",
+      "Genotype T/C or C/C (c.521T/C or C/C) is not associated with increased risk of rosuvastatin intolerance (statin switching) when treated with rosuvastatin as compared to genotype T/T (HR 0.67, 95% CI 0.32\u20131.43, P = 0.301).",
+      "Genotype T/C or C/C (c.521T/C or C/C) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to genotype T/T (HR 1.42, 95% CI 0.67\u20133.01, P = 0.36)."
+    ],
+    "rs2231142": [
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin as compared to genotype C/A + A/A.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype C/C.",
+      "Genotype C/C is not associated with increased likelihood of switching from atorvastatin to another statin with a temporally qualifying creatine kinase measurement as compared to genotype C/A + A/A.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/C is not associated with increased likelihood of switching from rosuvastatin to another statin as compared to genotype C/A + A/A.",
+      "Genotype C/A + A/A is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype C/C.",
+      "Genotype C/C is not associated with increased likelihood of switching from fluvastatin to another statin as compared to genotype C/A + A/A.",
+      "Genotype C/A or A/A (c.421C/A or A/A) is not associated with increased risk of atorvastatin intolerance (statin switching) when treated with atorvastatin as compared to genotype C/C (HR 1.04, 95% CI 0.63\u20131.71, P = 0.877).",
+      "Genotype C/A or A/A (c.421C/A or A/A) is not associated with increased risk of atorvastatin intolerance (statin switching with temporally associated CK measurement) when treated with atorvastatin as compared to genotype C/C (HR 1.27, 95% CI 0.37\u20134.39, P = 0.706).",
+      "Genotype C/A or A/A (c.421C/A or A/A) is not associated with increased risk of rosuvastatin intolerance (statin switching) when treated with rosuvastatin as compared to genotype C/C (HR 0.81, 95% CI 0.31\u20132.10, P = 0.660).",
+      "Genotype C/A or A/A (c.421C/A or A/A) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to genotype C/C (HR 2.06, 95% CI 0.84\u20135.05, P = 0.113)."
+    ],
+    "rs1799853": [
+      "CYP2C9 poor metabolizer or intermediate metabolizer (PM or IM) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to normal metabolizer (NM) (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394).",
+      "CYP2C9 normal metabolizer (NM) is not associated with decreased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to PM or IM (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394)."
+    ],
+    "rs1057910": [
+      "CYP2C9 poor metabolizer or intermediate metabolizer (PM or IM) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to normal metabolizer (NM) (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394).",
+      "CYP2C9 normal metabolizer (NM) is not associated with decreased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to PM or IM (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394)."
+    ],
+    "CYP2C9*2": [
+      "CYP2C9 poor metabolizer or intermediate metabolizer phenotype is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer phenotype.",
+      "CYP2C9 normal metabolizer phenotype is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 poor metabolizer or intermediate metabolizer phenotype.",
+      "CYP2C9 poor metabolizer or intermediate metabolizer (PM or IM, carriers of CYP2C9*2 or *3) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to normal metabolizer (NM) (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394)."
+    ],
+    "CYP2C9*3": [
+      "CYP2C9 poor metabolizer or intermediate metabolizer phenotype is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 normal metabolizer phenotype.",
+      "CYP2C9 normal metabolizer phenotype is not associated with increased likelihood of switching from fluvastatin to another statin as compared to CYP2C9 poor metabolizer or intermediate metabolizer phenotype.",
+      "CYP2C9 poor metabolizer or intermediate metabolizer (PM or IM, carriers of CYP2C9*2 or *3) is not associated with increased risk of fluvastatin intolerance (statin switching) when treated with fluvastatin as compared to normal metabolizer (NM) (HR 1.36, 95% CI 0.67\u20132.78, P = 0.394)."
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+iteration: iter10
+commit: 051fad8
+meaning_capture: 0.550
+variant_coverage: 0.910
+status: discard
+description: iter10: model-diversity ensemble (claude pass2; reworded dups diluted judge, coverage up)

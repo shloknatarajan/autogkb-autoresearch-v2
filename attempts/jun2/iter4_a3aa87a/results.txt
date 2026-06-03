@@ -1,0 +1,6 @@
+iteration: iter4
+commit: a3aa87a
+meaning_capture: 0.578
+variant_coverage: 0.876
+status: keep
+description: iter4: deterministic cross-filing under every allele named in sentence

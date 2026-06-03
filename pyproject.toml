@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "clinpgx-term-lookup>=0.1.0",
     "litellm>=1.86.2",
 ]
 

@@ -1,0 +1,69 @@
+{
+  "pmcid": "PMC554812",
+  "variant_sentences": {
+    "rs3117583": [
+      "Allele status of rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "Allele of rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to the alternative allele."
+    ],
+    "rs1150793": [
+      "Allele status of rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "Allele of rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to the alternative allele."
+    ],
+    "rs2855804": [
+      "Allele status of rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "Allele of rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to the alternative allele."
+    ],
+    "rs2268791": [
+      "Allele status of rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "Allele of rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to the alternative allele."
+    ],
+    "rs1594": [
+      "Allele status of rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls.",
+      "Allele of rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to the alternative allele."
+    ],
+    "rs2304224": [
+      "rs2304224 is not associated with allopurinol-induced severe cutaneous adverse reactions."
+    ],
+    "rs1264314": [],
+    "rs1264440": [],
+    "rs1755038": [],
+    "rs589428": [],
+    "HLA-B*58:01": [
+      "Carrier status of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier of HLA-B*58:01.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier of HLA-B*58:01.",
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol as compared to non-carrier of HLA-B*58:01.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions when treated with allopurinol as compared to carrier of HLA-B*58:01.",
+      "Carrier of HLA-B*58:01 is associated with increased susceptibility to allopurinol-induced hypersensitivity syndrome as compared to non-carrier of HLA-B*58:01.",
+      "Carrier of HLA-B*58:01 is associated with increased susceptibility to allopurinol-induced Stevens-Johnson syndrome as compared to non-carrier of HLA-B*58:01.",
+      "Carrier of HLA-B*58:01 is associated with increased susceptibility to allopurinol-induced toxic epidermal necrolysis as compared to non-carrier of HLA-B*58:01."
+    ],
+    "HLA-C*03:02": [
+      "Carrier status of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "Carrier of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier of HLA-C*03:02.",
+      "Non-carrier of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier of HLA-C*03:02."
+    ],
+    "HLA-A*33:03": [
+      "Carrier status of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "Carrier of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier of HLA-A*33:03.",
+      "Non-carrier of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier of HLA-A*33:03."
+    ],
+    "HLA-DRB1*03:01": [
+      "Carrier status of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in allopurinol-tolerant people.",
+      "Non-carrier status of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in allopurinol-tolerant people.",
+      "Carrier status of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in healthy subjects from the general population.",
+      "Non-carrier status of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier status in healthy subjects from the general population.",
+      "Carrier of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier of HLA-DRB1*03:01.",
+      "Non-carrier of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier of HLA-DRB1*03:01."
+    ]
+  }
+}

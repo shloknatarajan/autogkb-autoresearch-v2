@@ -1,0 +1,49 @@
+{
+  "pmcid": "PMC554812",
+  "variant_sentences": {
+    "rs1264314": [],
+    "rs1264440": [],
+    "rs1755038": [],
+    "rs589428": [],
+    "rs3117583": [
+      "Allele of rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "rs1150793": [
+      "Allele of rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "rs2855804": [
+      "Allele of rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "rs2268791": [
+      "Allele of rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "rs1594": [
+      "Allele of rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "rs2304224": [
+      "Allele of rs2304224 is not associated with risk of allopurinol-induced severe cutaneous adverse reactions as compared to other alleles."
+    ],
+    "HLA-B*58:01": [
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier.",
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced hypersensitivity syndrome when treated with allopurinol as compared to non-carrier.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced hypersensitivity syndrome when treated with allopurinol as compared to carrier.",
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced Stevens-Johnson syndrome when treated with allopurinol as compared to non-carrier.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced Stevens-Johnson syndrome when treated with allopurinol as compared to carrier.",
+      "Carrier of HLA-B*58:01 is associated with increased risk of allopurinol-induced toxic epidermal necrolysis when treated with allopurinol as compared to non-carrier.",
+      "Non-carrier of HLA-B*58:01 is associated with decreased risk of allopurinol-induced toxic epidermal necrolysis when treated with allopurinol as compared to carrier."
+    ],
+    "HLA-C*03:02": [
+      "Carrier of HLA-C*03:02 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier.",
+      "Non-carrier of HLA-C*03:02 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier."
+    ],
+    "HLA-A*33:03": [
+      "Carrier of HLA-A*33:03 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier.",
+      "Non-carrier of HLA-A*33:03 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier."
+    ],
+    "HLA-DRB1*03:01": [
+      "Carrier of HLA-DRB1*03:01 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier.",
+      "Non-carrier of HLA-DRB1*03:01 is associated with decreased risk of allopurinol-induced severe cutaneous adverse reactions as compared to carrier."
+    ]
+  }
+}

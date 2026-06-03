@@ -1,0 +1,36 @@
+{
+  "pmcid": "PMC554812",
+  "variant_sentences": {
+    "rs3117583": [
+      "rs3117583 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls."
+    ],
+    "rs1150793": [
+      "rs1150793 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls."
+    ],
+    "rs2855804": [
+      "rs2855804 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls."
+    ],
+    "rs2268791": [
+      "rs2268791 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls."
+    ],
+    "rs1594": [
+      "rs1594 is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to tolerant controls."
+    ],
+    "rs2304224": [],
+    "HLA-B*58:01": [
+      "HLA-B*58:01 carrier status is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in Han Chinese.",
+      "HLA-B*58:01 carrier status is associated with increased risk of allopurinol-induced hypersensitivity syndrome when treated with allopurinol as compared to non-carrier status in Han Chinese.",
+      "HLA-B*58:01 carrier status is associated with increased risk of Stevens-Johnson syndrome when treated with allopurinol as compared to non-carrier status in Han Chinese.",
+      "HLA-B*58:01 carrier status is associated with increased risk of toxic epidermal necrolysis when treated with allopurinol as compared to non-carrier status in Han Chinese."
+    ],
+    "HLA-C*03:02": [
+      "HLA-C*03:02 carrier status is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in Han Chinese."
+    ],
+    "HLA-A*33:03": [
+      "HLA-A*33:03 carrier status is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in Han Chinese."
+    ],
+    "HLA-DRB1*03:01": [
+      "HLA-DRB1*03:01 carrier status is associated with increased risk of allopurinol-induced severe cutaneous adverse reactions as compared to non-carrier status in Han Chinese."
+    ]
+  }
+}

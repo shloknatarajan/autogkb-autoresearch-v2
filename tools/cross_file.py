@@ -27,6 +27,10 @@ import re
 # HLA alleles: HLA-B*58:01, B*58:01, HLA-A*31:01
 _HLA = re.compile(r"\b(?:HLA-)?([A-Z]+\d*)\s*\*\s*(\d{2,4})(?::(\d{2,3}))?\b")
 _RSID = re.compile(r"\brs\d{3,}\b", re.IGNORECASE)
+# "<GENE> wild-type / wild type / wildtype" comparison group -> the gene's *1
+# reference allele (gold files reference-allele comparisons under "*1"). Gene
+# must be uppercase-as-written so prose words like "to" don't match.
+_WILDTYPE = re.compile(r"\b([A-Z][A-Z0-9]{1,9})\s+(?i:wild[\s-]?type|wildtype)\b")
 
 # A gene token (pharmacogene-style name) or a bare *allele token, in order.
 _GENE_TOK = r"(?P<gene>[A-Z][A-Z0-9]{1,9})\b"
@@ -83,6 +87,11 @@ def variants_in_sentence(text):
     vs += [m.lower() for m in _RSID.findall(text)]
     vs += _hla_variants(text)
     vs += _star_variants(text)
+    # "GENE wild-type" comparison group -> file under the gene's *1 allele too.
+    for gene in _WILDTYPE.findall(text):
+        g = gene.upper()
+        if g != "HLA" and g not in _HLA_GENES:
+            vs.append(f"{g}*1")
     # dedup, preserve order
     seen, out = set(), []
     for v in vs:

@@ -14,6 +14,8 @@ import json
 
 import litellm
 
+from tools.cross_file import cross_file_sentences
+
 MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
@@ -147,5 +149,11 @@ def predict(markdown_content):
                 if s.strip() and s.strip().lower() not in seen:
                     seen.add(s.strip().lower())
                     bucket.append(s)
+
+    # Cross-file: PharmGKB gold files each association under EVERY variant it
+    # names (constituent + comparison alleles). meaning_capture is macro per
+    # variant, so replicate each star/HLA sentence under every allele in its
+    # text. Deterministic, no extra model calls; extra keys are not penalized.
+    variant_sentences = cross_file_sentences(variant_sentences)
 
     return {"variant_sentences": variant_sentences}

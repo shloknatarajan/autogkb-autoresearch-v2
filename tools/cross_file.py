@@ -32,8 +32,9 @@ _RSID = re.compile(r"\brs\d{3,}\b", re.IGNORECASE)
 # must be uppercase-as-written so prose words like "to" don't match.
 _WILDTYPE = re.compile(r"\b([A-Z][A-Z0-9]{1,9})\s+(?i:wild[\s-]?type|wildtype)\b")
 
-# A gene token (pharmacogene-style name) or a bare *allele token, in order.
-_GENE_TOK = r"(?P<gene>[A-Z][A-Z0-9]{1,9})\b"
+# A gene token (only when immediately followed by '*', so prose acronyms like
+# MACE or genotype letters don't hijack the running gene) or a bare *allele.
+_GENE_TOK = r"(?P<gene>[A-Z][A-Z0-9]{1,9})(?=\s*\*)"
 _ALLELE_TOK = r"\*\s*(?P<allele>\d+[xX]?[nN]?)\b"
 _STAR_SCAN = re.compile(rf"{_GENE_TOK}|{_ALLELE_TOK}")
 
@@ -42,14 +43,16 @@ _HLA_GENES = {"A", "B", "C", "CW", "DRB1", "DRB3", "DRB4", "DRB5",
               "DQA1", "DQB1", "DPA1", "DPB1"}
 
 
-def _star_variants(text):
+def _star_variants(text, context_gene=None):
     """Star alleles, carrying the current gene across runs like '*3/*3 + *4/*4'.
 
     A gene token sets the active gene; every subsequent bare ``*N`` is filed
-    under it until the next gene token appears.
+    under it until the next gene token appears. ``context_gene`` seeds the active
+    gene so a sentence that omits the gene (e.g. "*1/*2 vs *2/*2") still resolves
+    when we know the gene from the variant key it was filed under.
     """
     out = []
-    cur = None
+    cur = context_gene
     for m in _STAR_SCAN.finditer(text):
         gene = m.group("gene")
         if gene:
@@ -81,12 +84,21 @@ def _hla_variants(text):
     return out
 
 
-def variants_in_sentence(text):
+def _key_gene(key):
+    """Gene of a star-allele key like 'CYP2C19*2' (None for rsID/HLA/other)."""
+    m = re.fullmatch(r"([A-Z][A-Z0-9]{1,9})\*\d+[xXnN]*", str(key).strip().upper())
+    if not m:
+        return None
+    g = m.group(1)
+    return None if (g == "HLA" or g in _HLA_GENES) else g
+
+
+def variants_in_sentence(text, context_gene=None):
     """All variant identifiers explicitly named in one sentence."""
     vs = []
     vs += [m.lower() for m in _RSID.findall(text)]
     vs += _hla_variants(text)
-    vs += _star_variants(text)
+    vs += _star_variants(text, context_gene=context_gene)
     # "GENE wild-type" comparison group -> file under the gene's *1 allele too.
     for gene in _WILDTYPE.findall(text):
         g = gene.upper()
@@ -111,12 +123,13 @@ def cross_file_sentences(variant_sentences):
     # index existing sentences per key for dedup
     norm = {k: {s.strip().lower() for s in v} for k, v in out.items()}
 
-    for sents in list(variant_sentences.values()):
+    for src_key, sents in list(variant_sentences.items()):
+        ctx = _key_gene(src_key)
         for s in sents or []:
             s = str(s)
             if not s.strip():
                 continue
-            for v in variants_in_sentence(s):
+            for v in variants_in_sentence(s, context_gene=ctx):
                 bucket = out.setdefault(v, [])
                 seen = norm.setdefault(v, {t.strip().lower() for t in bucket})
                 if s.strip().lower() not in seen:

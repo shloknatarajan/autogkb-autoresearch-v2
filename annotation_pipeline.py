@@ -156,4 +156,11 @@ def predict(markdown_content):
     # text. Deterministic, no extra model calls; extra keys are not penalized.
     variant_sentences = cross_file_sentences(variant_sentences)
 
+    # Cap per-variant candidates: the LLM judge is diluted by very long lists
+    # (reciprocal + every-genotype framings explode a few variants to 150+).
+    # Keep insertion order (primary-pass sentences first) so the canonical
+    # matching sentence is retained while the long non-matching tail is trimmed.
+    CAP = 60
+    variant_sentences = {k: v[:CAP] for k, v in variant_sentences.items()}
+
     return {"variant_sentences": variant_sentences}

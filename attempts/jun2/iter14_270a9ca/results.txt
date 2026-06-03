@@ -1,0 +1,6 @@
+iteration: iter14
+commit: 270a9ca
+meaning_capture: 0.000
+variant_coverage: 0.0
+status: discard
+description: iter14: 3 passes + cap=60 (CANCELLED by user before eval; over-generation direction, gold has <=3 sents/variant)

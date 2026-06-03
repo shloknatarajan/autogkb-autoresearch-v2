@@ -1,0 +1,6 @@
+iteration: iter6
+commit: 9993004
+meaning_capture: 0.674
+variant_coverage: 0.865
+status: keep
+description: iter6: additive wild-type->*1 cross-filing (recovers *1 reference-allele variants)

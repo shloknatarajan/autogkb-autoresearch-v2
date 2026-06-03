@@ -1,0 +1,6 @@
+iteration: iter3
+commit: 8e79276
+meaning_capture: 0.563
+variant_coverage: 0.865
+status: keep
+description: iter3: two-pass ensemble union + supplements in input (bench re-encode fixed)

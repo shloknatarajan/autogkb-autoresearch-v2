@@ -1,0 +1,6 @@
+iteration: baseline
+commit: 6229218
+meaning_capture: 0.425
+variant_coverage: 0.697
+status: keep
+description: baseline: minimal single-shot gpt-5.4 predict()

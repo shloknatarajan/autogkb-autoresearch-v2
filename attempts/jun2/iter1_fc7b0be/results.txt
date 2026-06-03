@@ -1,0 +1,6 @@
+iteration: iter1
+commit: fc7b0be
+meaning_capture: 0.471
+variant_coverage: 0.730
+status: keep
+description: iter1: exhaustive recall-focused prompt (3 PharmGKB categories)

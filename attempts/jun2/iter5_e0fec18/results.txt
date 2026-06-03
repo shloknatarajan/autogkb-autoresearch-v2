@@ -1,0 +1,6 @@
+iteration: iter5
+commit: e0fec18
+meaning_capture: 0.522
+variant_coverage: 0.888
+status: discard
+description: iter5: enforce *1 reference nomenclature + wild-type cross-filing (hurt capture)

@@ -1,0 +1,6 @@
+iteration: iter7
+commit: bf66036
+meaning_capture: 0.611
+variant_coverage: 0.876
+status: discard
+description: iter7: third reader pass (extra noisy candidates diluted the LLM judge)

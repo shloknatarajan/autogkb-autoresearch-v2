@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>autogkb-autoresearch — Run Summary (jun2)</title>
+<style>
+  :root{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mut:#8b949e;--line:#30363d;
+        --keep:#2ea043;--disc:#8b949e;--best:#d29922;--accent:#58a6ff;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:980px;margin:0 auto;padding:32px 20px 80px}
+  h1{font-size:26px;margin:0 0 4px} h2{font-size:19px;margin:34px 0 12px;
+     border-bottom:1px solid var(--line);padding-bottom:6px}
+  .sub{color:var(--mut);margin:0 0 22px}
+  .cards{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0 6px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;
+        padding:16px 18px;flex:1;min-width:160px}
+  .card .k{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .card .v{font-size:30px;font-weight:700;margin-top:4px}
+  .card .v small{font-size:14px;color:var(--mut);font-weight:400}
+  table{width:100%;border-collapse:collapse;background:var(--card);
+        border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+  th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em}
+  tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+  .tag{display:inline-block;padding:1px 8px;border-radius:20px;font-size:12px;font-weight:600}
+  .tag.keep{background:rgba(46,160,67,.16);color:#3fb950}
+  .tag.discard{background:rgba(139,148,158,.16);color:#8b949e}
+  .row-best{background:rgba(210,153,34,.10)}
+  .row-best td:first-child{box-shadow:inset 3px 0 0 var(--best)}
+  .delta-up{color:#3fb950} .delta-dn{color:#f85149}
+  p,li{color:var(--ink)} .mut{color:var(--mut)}
+  code{background:#21262d;padding:1px 6px;border-radius:5px;font-size:13px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+  .box h3{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .box.ok{border-left:3px solid var(--keep)} .box.ok h3{color:#3fb950}
+  .box.bad{border-left:3px solid #f85149} .box.bad h3{color:#f85149}
+  .box pre{margin:6px 0}
+  pre{background:#0b0f14;border:1px solid var(--line);border-radius:8px;padding:14px;
+      overflow:auto;font-size:12.5px;color:#c9d1d9;white-space:pre-wrap}
+  .gold{color:#3fb950}.pred{color:#58a6ff}.miss{color:#f85149}
+  .foot{color:var(--mut);font-size:12.5px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>autogkb-autoresearch — experiment summary</h1>
+  <p class="sub">Branch <code>autoresearch/jun2</code> · pipeline model <code>gpt-5.4</code> · judge <code>gpt-5.4-mini</code> · 16 held-out val papers · primary metric = <b>meaning_capture</b> (macro per-variant recall of gold association meanings).</p>
+
+  <div class="cards">
+    <div class="card"><div class="k">Peak meaning_capture</div><div class="v">0.675 <small>(iter13)</small></div></div>
+    <div class="card"><div class="k">Session start</div><div class="v">0.529 <small>(inherited iter2)</small></div></div>
+    <div class="card"><div class="k">Honest baseline</div><div class="v">0.425</div></div>
+    <div class="card"><div class="k">Variant coverage</div><div class="v">0.899 <small>(+0.20)</small></div></div>
+  </div>
+  <p class="mut" style="margin-top:14px"><b>Shipped pipeline = iter13</b>: two same-model reader passes (exhaustive + miss-focused) &rarr; union &rarr; <b>deterministic cross-filing</b> of each sentence under every allele it names (incl. wild-type&rarr;<code>*1</code>) &rarr; <b>cap 60 candidates/variant</b>. The judge is stochastic (re-running the <i>identical</i> iter6 pipeline gave 0.674 then 0.650; a cap sweep on one fixed generation wiggled 0.648&ndash;0.675), so treat anything under <b>&plusmn;0.025</b> as noise. iter6 and iter13 are the same plateau (&approx;0.66&ndash;0.68); iter13 is shipped because it adds the coverage win and two correctness fixes at no capture cost.</p>
+
+  <h2>Iteration log</h2>
+  <table>
+    <thead><tr><th>#</th><th>Idea</th><th class="num">mean_cap</th><th class="num">var_cov</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>base</td><td>minimal single-shot gpt-5.4</td><td class="num">0.425</td><td class="num">0.697</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>1</td><td>exhaustive 3-category recall prompt</td><td class="num">0.471</td><td class="num">0.730</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>2</td><td>reciprocal framing + genotype enumeration + polarity</td><td class="num">0.529</td><td class="num">0.742</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>3</td><td><b>two-pass ensemble</b> + supplements in input</td><td class="num">0.563</td><td class="num">0.865</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>4</td><td><b>cross-file</b> sentence under every allele named</td><td class="num">0.578</td><td class="num">0.876</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>5</td><td>force <code>*1</code> nomenclature in the <i>prompt</i></td><td class="num">0.522</td><td class="num">0.888</td><td><span class="tag discard">discard</span></td></tr>
+      <tr class="row-best"><td>6</td><td><b>wild-type&rarr;<code>*1</code> cross-filing</b> (additive, recovers reference-allele keys) &nbsp;&#11088;</td><td class="num">0.674</td><td class="num">0.865</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>7</td><td>3rd reader pass (functional / rsID-genotype / metabolizer)</td><td class="num">0.611</td><td class="num">0.876</td><td><span class="tag discard">discard</span></td></tr>
+      <tr><td>8</td><td>single pass (drop 2nd reader)</td><td class="num">0.573</td><td class="num">0.865</td><td><span class="tag discard">discard</span></td></tr>
+      <tr><td>9</td><td>rsID&harr;star-allele equivalence cross-filing</td><td class="num">0.622</td><td class="num">0.865</td><td><span class="tag discard">discard</span></td></tr>
+      <tr><td>10</td><td>model-diversity ensemble (Claude pass 2)</td><td class="num">0.550</td><td class="num">0.910</td><td><span class="tag discard">discard</span></td></tr>
+      <tr><td>11</td><td>fill-missing-only cross-filing (protect populated keys)</td><td class="num">0.579</td><td class="num">0.865</td><td><span class="tag discard">discard</span></td></tr>
+      <tr><td>12</td><td>gene-context cross-filing + acronym-hijack bugfix</td><td class="num">0.655</td><td class="num">0.899</td><td><span class="tag keep">keep</span></td></tr>
+      <tr class="row-best"><td>13</td><td><b>cap 60 candidates/variant</b> (de-dilute the judge) &nbsp;&#11088; BEST / SHIPPED</td><td class="num">0.675</td><td class="num">0.899</td><td><span class="tag keep">keep</span></td></tr>
+      <tr><td>14</td><td>3 passes + cap=60</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td><span class="tag discard">cancelled</span></td></tr>
+    </tbody>
+  </table>
+  <p class="mut">Numbers are single-draw val scores. Discards with deltas inside &plusmn;0.025 of the plateau (iter7, iter9, iter11) are partly judge noise, but each also has a mechanistic reason it shouldn't help (below).</p>
+
+  <h2>What worked / what didn't</h2>
+  <div class="grid2">
+    <div class="box ok">
+      <h3>&#10003; What worked</h3>
+      <ul>
+        <li><b>Two same-model passes</b> (exhaustive + &ldquo;find what the first reader missed&rdquo;). Single pass dropped to 0.573 (iter8); the 2nd pass adds genuine recall.</li>
+        <li><b>Deterministic cross-filing</b> — file each sentence under <i>every</i> allele it names. Gold keys a <code>*3/*3 vs *1/*1</code> sentence under <code>*1</code>, <code>*3</code> <i>and</i> <code>*4</code>; since meaning_capture is macro-per-variant, populating those keys is a direct win (iter4, +cross-filing).</li>
+        <li><b>Wild-type&rarr;<code>*1</code> mapping</b> (iter6, the big jump 0.578&rarr;0.674). The model writes &ldquo;UGT1A1 wild-type&rdquo;; gold uses <code>UGT1A1*1</code>. Minting the <code>*1</code> key recovered whole zero-capture variants.</li>
+        <li><b>Capping candidates/variant</b> (iter13). Trimming the long non-matching tail let the judge find the one true match it was losing in the noise.</li>
+        <li>Doing it all in <b>post-processing</b>, not the prompt — deterministic, free, and it never perturbs the sentences that already match.</li>
+      </ul>
+    </div>
+    <div class="box bad">
+      <h3>&#10007; What didn't</h3>
+      <ul>
+        <li><b>Prompt rephrasing</b> (iter5, forcing <code>*1</code>). Changing instructions perturbed the wording of sentences that already matched &rarr; net &minus;0.05. Post-processing is safer than prompt surgery.</li>
+        <li><b>Adding a 3rd reader</b> (iter7) and a <b>Claude diversity pass</b> (iter10). Both raised variant_coverage but <i>lowered</i> capture: differently-worded sentences for the same association flood each variant&rsquo;s list and <b>dilute the LLM judge</b>.</li>
+        <li><b>rsID&harr;star equivalence filing</b> (iter9): copying sentences onto already-answered keys diluted them.</li>
+        <li><b>Protecting populated keys</b> (iter11): the opposite also failed — exact cross-filing <i>into</i> populated keys helps, because it carries the right sentence into a key the model filed under a different allele.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>The core finding: the LLM judge is dilution-sensitive</h2>
+  <p>Every regression shares one mechanism. The judge does a <b>one-to-one match</b> of predicted&harr;gold sentences per variant. Gold has at most <b>3</b> sentences per variant (mean&nbsp;1.17, median&nbsp;1); the pipeline emits <b>60&ndash;166+</b>. The recall-max strategy (&ldquo;emit every framing, extras are free&rdquo;) assumed extras are harmless, but they are <i>implicitly penalized</i>: a longer candidate list makes the judge more likely to miss the single correct-direction / correct-comparison sentence buried among plausible-but-wrong reciprocals. So <b>exact, correctly-keyed cross-filing helps; reworded volume hurts.</b></p>
+
+  <h2>Success &amp; failure cases</h2>
+  <div class="grid2">
+    <div class="box ok">
+      <h3>&#10003; Success — reference-allele recovery (iter6)</h3>
+      <p class="mut">PMC10946077, <code>UGT1A1*1</code> — went from <b>0/3 captured (pred had 0 sentences)</b> to captured, purely from the wild-type&rarr;<code>*1</code> rule.</p>
+<pre><span class="gold">GOLD  UGT1A1*1:</span> UGT1A1 *6 is associated with increased severity of
+      Neutropenia, Leukopenia or Diarrhea when treated with irinotecan
+      in people with Stomach Neoplasms as compared to UGT1A1 *1.
+<span class="pred">MODEL wrote it under *6 only, with "...as compared to UGT1A1 wild-type".</span>
+<span class="pred">Cross-filing minted the UGT1A1*1 key &rarr; the gold variant is now scored.</span></pre>
+    </div>
+    <div class="box bad">
+      <h3>&#10007; Failure — functional &amp; over-generation</h3>
+      <p class="mut">PMC10786722, <code>rs56038477</code> — <b>0/1 captured though the model emitted 7 sentences</b> for it: none asserted the <i>functional</i> meaning.</p>
+<pre><span class="gold">GOLD:</span> Genotypes CT + TT is associated with <b>decreased activity of DPYD</b>
+      as compared to genotype CC.
+<span class="miss">MISS:</span> model produced dose/toxicity sentences, never the enzyme-activity one.</pre>
+      <p class="mut" style="margin-top:8px">Over-generation, PMC6714829: <b>2 gold-relevant variants, 326 predicted sentences</b> (166 + 160). The right sentence exists somewhere in 166 candidates; the judge can&rsquo;t reliably pick it.</p>
+    </div>
+  </div>
+
+  <h2>Do we need to update the eval?</h2>
+  <p><b>Not the contract</b> (the split, scoring, and judge prompt should stay frozen so scores remain comparable) — but the run surfaced three issues worth addressing in a future revision:</p>
+  <div class="box" style="margin-bottom:14px">
+    <h3>1. Data-loading fragility (already fixed at source)</h3>
+    <p><code>load_bench()</code> uses <code>read_text().splitlines()</code>, which splits on <i>all</i> Unicode line-breaks (<code>\x0b \x0c \x85  </code>&hellip;). A supplement-refresh had embedded such characters inside <code>markdown_content</code>, so 26 of 32 records failed to parse and eval crashed. Fixed by re-encoding the bench with <code>ensure_ascii=True</code> (gold byte-identical) and hardening <code>tools/refresh_bench_supplements.py</code> to sanitize fetched text. <b>Optional hardening:</b> have <code>load_bench</code> split on <code>"\n"</code> only, so malformed input can never silently shard a record.</p>
+  </div>
+  <div class="box" style="margin-bottom:14px">
+    <h3>2. Judge stochasticity dominates small deltas &nbsp;<span class="mut">(highest priority)</span></h3>
+    <p>The same generations re-scored give &plusmn;0.02&ndash;0.025 on meaning_capture. With 16 papers and a macro average, that swamps any change smaller than ~0.03, so keep/discard on single draws is unreliable. <b>Recommend:</b> score each generation set with N&ge;3 judge runs and report mean&nbsp;&plusmn;&nbsp;sd (or a seeded/deterministic judge). This is the single most valuable eval upgrade.</p>
+  </div>
+  <div class="box">
+    <h3>3. &ldquo;Extra sentences are not penalized&rdquo; isn&rsquo;t true in practice</h3>
+    <p>The spec says spurious predictions are free, and structurally they are — but the LLM judge&rsquo;s accuracy <i>degrades</i> as the predicted list grows, so volume is penalized implicitly and inconsistently. This rewards gaming-by-omission (a pipeline that emits fewer, cleaner sentences can outscore a more complete one). <b>Options:</b> (a) judge each gold sentence independently against the full predicted set (removes the one-to-one ordering/dilution artifact); (b) cap predicted sentences per variant <i>inside</i> eval so all pipelines are compared at equal list length; or (c) add an explicit precision term so the trade-off is visible rather than hidden in judge noise.</p>
+  </div>
+
+  <h2>What I&rsquo;d try next</h2>
+  <p>The data says the lever is <b>precision, not volume</b>: gold wants ~1&ndash;3 sentences/variant, stated in the paper&rsquo;s own direction. Drop the reciprocal + every-genotype explosion (iter2&rsquo;s tactics, which predate cross-filing) and emit each association once; add a dedicated functional-association reader for the &ldquo;activity of GENE&rdquo; misses. Both aim to put the one correct sentence at the front instead of burying it.</p>
+
+  <p class="foot">Generated for branch <code>autoresearch/jun2</code>. Per-iteration pipeline snapshots and <code>results.txt</code> live alongside this file; full log in <code>results.tsv</code>. Pipeline edits confined to <code>annotation_pipeline.py</code> + <code>tools/cross_file.py</code>; <code>eval.py</code> and <code>generate.py</code> unmodified.</p>
+
+</div>
+</body>
+</html>

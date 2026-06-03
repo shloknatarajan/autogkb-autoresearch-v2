@@ -1,0 +1,6 @@
+iteration: iter2
+commit: 4315d91
+meaning_capture: 0.529
+variant_coverage: 0.742
+status: keep
+description: iter2: reciprocal-framing + genotype-enumeration + polarity tactics

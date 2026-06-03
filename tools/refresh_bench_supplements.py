@@ -16,9 +16,33 @@ Usage:
 
 import json
 import os
+import re
 import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Unicode line-break / control characters that str.splitlines() treats as line
+# boundaries but a plain "\n".split() does not. If any of these survive into a
+# JSONL value, eval.py's `read_text().splitlines()` splits records mid-string
+# and the whole bench fails to parse. Normalize them at the source.
+_LINEBREAKS = re.compile("[\r\x0b\x0c\x1c\x1d\x1e\x85\u2028\u2029]")
+# Other C0/C1 control chars (except tab \x09 and newline \x0a) that are illegal
+# raw inside a strict-JSON string and add no content.
+_CTRL = re.compile(r"[\x00-\x08\x0e-\x1f\x7f-\x9f]")
+
+
+def sanitize_text(text):
+    """Make fetched markdown safe to embed as one JSONL record.
+
+    Converts every unicode line-break variant to a plain newline and strips
+    other control characters, so each bench record stays a single
+    splitlines()-line and parses under strict JSON.
+    """
+    if not text:
+        return text
+    text = _LINEBREAKS.sub("\n", text)
+    text = _CTRL.sub("", text)
+    return text
 ARTICLES = os.path.join(ROOT, "base_data", "articles")
 BACKUP = os.path.join(ROOT, "base_data", "articles_pre_supplement_backup")
 BENCH = os.path.join(ROOT, "benchmarks")
@@ -85,6 +109,10 @@ def main():
                     )
         time.sleep(SLEEP)
 
+        # Strip embedded line-break/control chars so the markdown stays a single
+        # JSONL record when written into the bench (see eval.py splitlines).
+        new = sanitize_text(new)
+
         path = os.path.join(ARTICLES, pmcid + ".md")
         old = open(path, encoding="utf-8").read() if os.path.exists(path) else ""
         reason = None
@@ -124,7 +152,9 @@ def main():
         tmp = p + ".tmp"
         with open(tmp, "w") as fh:
             for r in rows:
-                fh.write(json.dumps(r, ensure_ascii=False) + "\n")
+                # ensure_ascii=True guarantees no raw line-break/control char
+                # survives into a record, keeping the bench splitlines-safe.
+                fh.write(json.dumps(r, ensure_ascii=True) + "\n")
         os.replace(tmp, p)
         print(f"  {fn}: updated markdown_content in {changed} rows", flush=True)
 

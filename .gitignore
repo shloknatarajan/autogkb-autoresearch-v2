@@ -32,3 +32,5 @@ Thumbs.db
 
 base_data/
 results.tsv
+logs/
+results/

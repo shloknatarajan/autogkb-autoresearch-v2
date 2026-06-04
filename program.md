@@ -85,42 +85,48 @@ Reported micro-averaged across the val set.
 
 ### Meaning capture per variant (batch LLM judge)
 
-The benchmark groups gold sentences **by variant**. For each gold variant we make **one** judge call: that variant's gold sentences and the pipeline's predicted sentences *for that same variant* (looked up by normalized id) are handed to the judge together, and it returns a **one-to-one matching** of predicted ↔ gold sentences asserting the *same* association. The per-variant capture is the fraction of that variant's gold meanings recovered. Extra/spurious predicted sentences are **not** penalized (same philosophy as variant coverage):
+The benchmark groups gold sentences **by variant**. For each gold variant we make **one** judge call: that variant's gold sentences and the pipeline's predicted sentences *for that same variant* (looked up by normalized id) are handed to the judge together, and it returns a single `capture` score in 0–1 — the fraction of that variant's gold meaning recovered by the predictions (paraphrase, merge, and split are allowed; partial credit applies). Extra/spurious predicted sentences are **not** penalized (same philosophy as variant coverage):
 
 ```
-capture(variant)   = (# of its gold sentences matched) / (# of its gold sentences)
+capture(variant)   = fraction of that variant's gold meaning captured by its predictions (0..1)
 meaning_capture    = mean over a paper's variants of capture(variant),  then mean over papers
 ```
-Aggregation is **macro** — each variant counts equally regardless of how many sentences it has, and each paper counts equally. Variants with no gold sentences are skipped for capture (they still count toward `variant_coverage`). **`meaning_capture` is the primary metric (higher is better).** A micro-averaged `sentence_coverage` (total gold sentences matched / total gold sentences) and `sentence_precision` (matched / predicted-under-gold-variants) are printed for information only and do not drive keep/discard.
+Aggregation is **macro** — each variant counts equally regardless of how many sentences it has, and each paper counts equally. Variants with no gold sentences are skipped for capture (they still count toward `variant_coverage`). **`meaning_capture` is the primary metric (higher is better).** A micro-averaged `sentence_coverage` (gold-equivalent meaning captured / total gold sentences) is printed for information only and does not drive keep/discard.
 
 The judge prompt (lives in `eval.py`, not editable):
 
 ```
 You are grading a pharmacogenomics information-extraction system. You are given
-two lists of "standardized association sentences" about the SAME paper:
+two lists of "standardized association sentences" about the SAME paper and the
+SAME genetic variant:
 
 GOLD sentences (the reference) and PREDICTED sentences (the system output).
 
-Each sentence asserts a single association between a genetic variant/genotype and
-an outcome. Match a PREDICTED sentence to a GOLD sentence ONLY IF they assert the
-same association. They must agree on ALL of:
-  - the variant(s)/genotype(s) (e.g. rs9923231, CYP2C19*2, *1/*2)
-  - the drug(s) or substance involved (if any)
+Each sentence asserts an association between a genetic variant/genotype and an
+outcome. Evaluate what fraction of the meaning in the GOLD sentences is captured
+by the PREDICTED sentences.
+
+Score only recall of the gold meanings. Extra predicted associations are not
+penalized unless they make it unclear whether a gold meaning is actually captured.
+
+Be critical, but allow multiple phrasings of the same association. A prediction can
+capture a gold meaning even when it combines, splits, reorders, or paraphrases the
+gold sentence. It must still agree on the substantive association:
+  - the variant(s)/genotype(s), including alleles or diplotypes when relevant
+  - the drug(s) or substance involved, if any
   - the phenotype / outcome (e.g. dose, MACE, toxicity, metabolizer status)
-  - the DIRECTION of effect (increased vs decreased / higher vs lower)
-  - the POLARITY ("is associated" vs "is NOT associated")
+  - the direction of effect (increased vs decreased / higher vs lower)
+  - the polarity ("is associated" vs "is NOT associated")
   - the comparison group / comparison allele, when stated
 
-Differences in wording, order, or formatting do NOT matter — only the asserted
-meaning. Be strict about direction and polarity: "is associated with increased"
-and "is not associated" (or "decreased") describe DIFFERENT associations and MUST
-NOT be matched.
-
-Each gold sentence matches at most one predicted sentence and vice versa (one-to-one).
+Do NOT give credit when direction or polarity is reversed, when a different
+phenotype or drug is substituted, or when a genotype-specific finding is
+generalized in a way that loses the gold meaning. Give partial credit for partially
+captured gold meaning, such as the right association but missing an important
+qualifier, population, comparison, or genotype detail.
 
 Return JSON only:
-{ "matches": [ { "gold_index": <int>, "pred_index": <int> }, ... ] }
-Include only true matches. Omit anything unmatched.
+{ "meaning_capture": <number from 0.0 to 1.0> }
 ```
 
 The judge model is fixed in `eval.py` and is independent of whatever model your pipeline uses.
@@ -138,7 +144,6 @@ When `eval.py` finishes it prints a summary block:
 meaning_capture:    0.612
 variant_coverage:   0.810
 sentence_coverage:  0.587
-sentence_precision: 0.140
 num_papers:         16
 num_gold_sentences: 78
 generations:        results/<name>

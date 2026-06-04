@@ -36,30 +36,64 @@ BENCH_PATH = Path(__file__).parent / "benchmarks" / "sentence_bench_by_variant.j
 JUDGE_MODEL_DEFAULT = "gpt-5.4-mini"
 
 JUDGE_PROMPT = """You are grading a pharmacogenomics information-extraction system. You are given \
-two lists of "standardized association sentences" about the SAME paper:
+two lists of "standardized association sentences" about the SAME paper and the SAME genetic variant:
 
 GOLD sentences (the reference) and PREDICTED sentences (the system output).
 
-Each sentence asserts a single association between a genetic variant/genotype and \
-an outcome. Match a PREDICTED sentence to a GOLD sentence ONLY IF they assert the \
-same association. They must agree on ALL of:
-  - the variant(s)/genotype(s) (e.g. rs9923231, CYP2C19*2, *1/*2)
-  - the drug(s) or substance involved (if any)
+Each sentence asserts an association between a genetic variant/genotype and \
+an outcome. Evaluate what fraction of the meaning in the GOLD sentences is captured \
+by the PREDICTED sentences.
+
+Score only recall of the gold meanings. Extra predicted associations are not penalized \
+unless they make it unclear whether a gold meaning is actually captured.
+
+Be critical, but allow multiple phrasings of the same association. A prediction can \
+capture a gold meaning even when it combines, splits, reorders, or paraphrases the \
+gold sentence. It must still agree on the substantive association:
+  - the variant(s)/genotype(s), including alleles or diplotypes when relevant
+  - the drug(s) or substance involved, if any
   - the phenotype / outcome (e.g. dose, MACE, toxicity, metabolizer status)
-  - the DIRECTION of effect (increased vs decreased / higher vs lower)
-  - the POLARITY ("is associated" vs "is NOT associated")
+  - the direction of effect (increased vs decreased / higher vs lower)
+  - the polarity ("is associated" vs "is NOT associated")
   - the comparison group / comparison allele, when stated
 
-Differences in wording, order, or formatting do NOT matter -- only the asserted \
-meaning. Be strict about direction and polarity: "is associated with increased" \
-and "is not associated" (or "decreased") describe DIFFERENT associations and MUST \
-NOT be matched.
-
-Each gold sentence matches at most one predicted sentence and vice versa (one-to-one).
+Do NOT give credit when direction or polarity is reversed, when a different phenotype \
+or drug is substituted, or when a genotype-specific finding is generalized in a way \
+that loses the gold meaning. Give partial credit for partially captured gold meaning, \
+such as the right association but missing an important qualifier, population, comparison, \
+or genotype detail.
 
 Return JSON only:
-{ "matches": [ { "gold_index": <int>, "pred_index": <int> }, ... ] }
-Include only true matches. Omit anything unmatched."""
+{ "meaning_capture": <number from 0.0 to 1.0> }
+
+"""
+
+# Diagnostic-only judge: same rubric, but scores EACH gold sentence individually
+# so tooling can show which gold meanings were missed. NOT used for the metric.
+JUDGE_DIAG_PROMPT = """You are grading a pharmacogenomics information-extraction system. You are given \
+two lists of "standardized association sentences" about the SAME paper and the SAME genetic variant:
+
+GOLD sentences (the reference) and PREDICTED sentences (the system output).
+
+For EACH gold sentence, judge how much of its meaning is captured by the PREDICTED \
+sentences taken together (recall). Allow multiple phrasings of the same association: a \
+prediction can capture a gold meaning even when it combines, splits, reorders, or \
+paraphrases the gold sentence, as long as it agrees on the substantive association:
+  - the variant(s)/genotype(s), including alleles or diplotypes when relevant
+  - the drug(s) or substance involved, if any
+  - the phenotype / outcome (e.g. dose, MACE, toxicity, metabolizer status)
+  - the direction of effect (increased vs decreased / higher vs lower)
+  - the polarity ("is associated" vs "is NOT associated")
+  - the comparison group / comparison allele, when stated
+
+Give 0.0 when direction or polarity is reversed, a different phenotype or drug is \
+substituted, or the gold meaning is otherwise absent. Give partial credit (between 0.0 \
+and 1.0) when the core association is captured but an important qualifier, population, \
+comparison, or genotype detail is missing.
+
+Return JSON only, with exactly one entry per gold sentence:
+{ "per_gold": [ { "gold_index": <int>, "capture": <number from 0.0 to 1.0> }, ... ] }
+"""
 
 
 # --------------------------------------------------------------------------- #
@@ -124,15 +158,18 @@ def normalize_groups(groups):
 
 
 # --------------------------------------------------------------------------- #
-# Sentence F1 via batch LLM judge
+# Meaning capture via batch LLM judge
 # --------------------------------------------------------------------------- #
-def build_judge_messages(gold, pred):
+def _judge_user_block(gold, pred):
     gold_block = "\n".join(f"[{i}] {s}" for i, s in enumerate(gold)) or "(none)"
     pred_block = "\n".join(f"[{i}] {s}" for i, s in enumerate(pred)) or "(none)"
-    user = f"GOLD sentences:\n{gold_block}\n\nPREDICTED sentences:\n{pred_block}"
+    return f"GOLD sentences:\n{gold_block}\n\nPREDICTED sentences:\n{pred_block}"
+
+
+def build_judge_messages(gold, pred):
     return [
         {"role": "system", "content": JUDGE_PROMPT},
-        {"role": "user", "content": user},
+        {"role": "user", "content": _judge_user_block(gold, pred)},
     ]
 
 
@@ -155,31 +192,49 @@ def _extract_json_object(text):
     return {}
 
 
-def parse_judge_matches(text, n_gold, n_pred):
-    """Parse judge output into validated one-to-one (gold_index, pred_index) pairs."""
+def parse_judge_capture(text):
+    """Parse judge output into a clamped 0..1 meaning-capture score."""
     data = _extract_json_object(text)
-    raw = data.get("matches", []) if isinstance(data, dict) else []
-    seen_gold, seen_pred, pairs = set(), set(), []
-    for m in raw:
+    if not isinstance(data, dict):
+        return 0.0
+    raw = data.get("meaning_capture", data.get("capture", data.get("score", 0.0)))
+    try:
+        score = float(raw)
+    except (TypeError, ValueError):
+        return 0.0
+    if score > 10.0 and score <= 100.0:
+        score /= 100.0
+    return max(0.0, min(1.0, score))
+
+
+def parse_judge_per_gold(text, n_gold):
+    """Parse the diagnostic judge into a list of n_gold capture floats (0..1).
+
+    Gold sentences with no entry (or an out-of-range / unparseable one) default to 0.0.
+    """
+    data = _extract_json_object(text)
+    out = [0.0] * n_gold
+    raw = data.get("per_gold", []) if isinstance(data, dict) else []
+    for m in raw if isinstance(raw, list) else []:
         if not isinstance(m, dict):
             continue
-        g, p = m.get("gold_index"), m.get("pred_index")
-        if not isinstance(g, int) or not isinstance(p, int):
+        g = m.get("gold_index")
+        if not isinstance(g, int) or not (0 <= g < n_gold):
             continue
-        if not (0 <= g < n_gold) or not (0 <= p < n_pred):
+        try:
+            score = float(m.get("capture", 0.0))
+        except (TypeError, ValueError):
             continue
-        if g in seen_gold or p in seen_pred:  # enforce one-to-one
-            continue
-        seen_gold.add(g)
-        seen_pred.add(p)
-        pairs.append((g, p))
-    return pairs
+        if score > 10.0 and score <= 100.0:
+            score /= 100.0
+        out[g] = max(0.0, min(1.0, score))
+    return out
 
 
 def judge_sentences(gold, pred, model):
-    """Return the number of matched (gold, pred) sentence pairs for one paper."""
+    """Return 0..1 fraction of gold sentence meaning captured for one variant."""
     if not gold or not pred:
-        return 0
+        return 0.0
     import litellm
 
     resp = litellm.completion(
@@ -189,7 +244,32 @@ def judge_sentences(gold, pred, model):
         response_format={"type": "json_object"},
     )
     text = resp.choices[0].message.content or ""
-    return len(parse_judge_matches(text, len(gold), len(pred)))
+    return parse_judge_capture(text)
+
+
+def judge_per_gold(gold, pred, model):
+    """Per-gold-sentence capture (0..1) for one variant -- for diagnostics only.
+
+    The metric uses judge_sentences (one aggregate score); this gives a per-sentence
+    breakdown so diag tools can show which gold meanings were missed.
+    """
+    if not gold:
+        return []
+    if not pred:
+        return [0.0] * len(gold)
+    import litellm
+
+    resp = litellm.completion(
+        model=model,
+        messages=[
+            {"role": "system", "content": JUDGE_DIAG_PROMPT},
+            {"role": "user", "content": _judge_user_block(gold, pred)},
+        ],
+        temperature=0,
+        response_format={"type": "json_object"},
+    )
+    text = resp.choices[0].message.content or ""
+    return parse_judge_per_gold(text, len(gold))
 
 
 # --------------------------------------------------------------------------- #
@@ -237,7 +317,7 @@ def evaluate(generations_dir, judge_model):
     gens = load_generations(generations_dir)
 
     matched_var = total_var = 0
-    matched_sent = total_gold = total_pred_considered = 0
+    captured_gold_equiv = total_gold = 0
     paper_macros = []
     scored = on_dev = 0
 
@@ -271,19 +351,18 @@ def evaluate(generations_dir, judge_model):
             ):  # declared-but-sentence-less variant: only counts for coverage
                 continue
             pred_sents = pred_norm.get(normalize_variant(v), [])
-            ms = judge_sentences(gold_sents, pred_sents, judge_model)
-            captures.append(ms / len(gold_sents))
-            matched_sent += ms
+            capture = judge_sentences(gold_sents, pred_sents, judge_model)
+            captures.append(capture)
+            captured_gold_equiv += capture * len(gold_sents)
             total_gold += len(gold_sents)
-            total_pred_considered += len(pred_sents)
-            paper_matched += ms
+            paper_matched += capture * len(gold_sents)
             paper_gold += len(gold_sents)
         paper_macro = sum(captures) / len(captures) if captures else 0.0
         paper_macros.append(paper_macro)
 
         print(
             f"  {pmcid}: variants {mv}/{tv}, meaning_capture {paper_macro:.3f} "
-            f"(sentences matched {paper_matched}/{paper_gold} over {len(captures)} variants)",
+            f"(gold-equivalent captured {paper_matched:.1f}/{paper_gold} over {len(captures)} variants)",
             file=sys.stderr,
         )
 
@@ -291,10 +370,7 @@ def evaluate(generations_dir, judge_model):
     meaning_capture = sum(paper_macros) / len(paper_macros) if paper_macros else 0.0
     variant_coverage = matched_var / total_var if total_var else 0.0
     # Micro coverage (per gold variant-sentence, not per variant) -- informational.
-    sentence_coverage = matched_sent / total_gold if total_gold else 0.0
-    sent_precision = (
-        matched_sent / total_pred_considered if total_pred_considered else 0.0
-    )  # informational
+    sentence_coverage = captured_gold_equiv / total_gold if total_gold else 0.0
 
     if on_dev:
         print(
@@ -306,7 +382,6 @@ def evaluate(generations_dir, judge_model):
     print(f"meaning_capture:    {meaning_capture:.3f}")  # PRIMARY (macro per variant)
     print(f"variant_coverage:   {variant_coverage:.3f}")
     print(f"sentence_coverage:  {sentence_coverage:.3f}")  # micro, informational
-    print(f"sentence_precision: {sent_precision:.3f}")
     print(f"num_papers:         {scored}")
     print(f"num_gold_sentences: {total_gold}")
     print(f"generations:        {generations_dir}")

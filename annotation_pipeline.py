@@ -14,7 +14,11 @@ import json
 
 import litellm
 
-MODEL = "gpt-5.4"
+# Anthropic doesn't take OpenAI's response_format=json_object verbatim; drop unsupported
+# params so the same predict() body works across providers (we parse JSON from the text).
+litellm.drop_params = True
+
+MODEL = "anthropic/claude-opus-4-8"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.

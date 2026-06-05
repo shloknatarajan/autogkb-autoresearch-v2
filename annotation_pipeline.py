@@ -54,12 +54,17 @@ VALUES -- follow PharmGKB conventions EXACTLY (this is how the gold is written):
     phenotype or clinical outcome (the paper's terms), the drug (when relevant),
     and the comparison group ("as compared to ...") when stated.
 
-Example style:
-   "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of Major
-    Adverse Cardiac Events when treated with clopidogrel as compared to CYP2C19 *1/*1."
-   "UGT1A1 *6 is associated with increased severity of Neutropenia, Leukopenia or
-    Diarrhea when treated with irinotecan in people with Stomach Neoplasms as
-    compared to UGT1A1 *1."
+Example output illustrating the conventions (for a DIFFERENT paper -- copy the
+STYLE, not the content): note the diplotype sentence cross-filed identically under
+*1/*6/*28, the rsID genotype framing with an explicit comparison genotype, and the
+studied-but-null variant mapped to []:
+{ "variant_sentences": {
+   "UGT1A1*1":  ["UGT1A1 *6/*6 + *28/*28 + *6/*28 is associated with increased risk of Neutropenia or Leukopenia when treated with irinotecan in people with Pancreatic Neoplasms as compared to UGT1A1 *1/*1."],
+   "UGT1A1*6":  ["UGT1A1 *6/*6 + *28/*28 + *6/*28 is associated with increased risk of Neutropenia or Leukopenia when treated with irinotecan in people with Pancreatic Neoplasms as compared to UGT1A1 *1/*1."],
+   "UGT1A1*28": ["UGT1A1 *6/*6 + *28/*28 + *6/*28 is associated with increased risk of Neutropenia or Leukopenia when treated with irinotecan in people with Pancreatic Neoplasms as compared to UGT1A1 *1/*1."],
+   "rs56038477": ["Genotypes CT + TT is associated with decreased activity of DPYD as compared to genotype CC."],
+   "rs1801160": []
+} }
 
 Return JSON only: { "variant_sentences": { "<variant>": ["<sentence>", ...], ... } }"""
 

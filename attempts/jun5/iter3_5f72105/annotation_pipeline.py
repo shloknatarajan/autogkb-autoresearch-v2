@@ -18,7 +18,7 @@ import litellm
 # params so the same predict() body works across providers (we parse JSON from the text).
 litellm.drop_params = True
 
-MODEL = "anthropic/claude-opus-4-8"
+MODEL = "gemini/gemini-2.5-pro"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.

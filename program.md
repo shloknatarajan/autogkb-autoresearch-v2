@@ -231,7 +231,7 @@ and as rows in `results.tsv`; nothing is thrown away.
 
 LOOP until `N` iterations are done:
 
-1. **Review the memory.** Read `attempts/<tag>/LEARNINGS.md` end to end (and, on the first iterations, the earlier runs' `attempts/*/LEARNINGS.md`). Open the `notes.md` of the most relevant past attempts. The point: pick the next idea informed by what already worked and what already failed — do not repeat a known failure, and prefer building on a known success. Then count non-baseline rows in `results.tsv`; if ≥ `N`, stop.
+1. **Review the memory.** Read `attempts/<tag>/LEARNINGS.md` end to end (and, on the first iterations, the earlier runs' `attempts/*/LEARNINGS.md`). Open the `notes.md` of the most relevant past attempts. The point: pick the next idea informed by what already worked and what already failed — do not repeat a known failure, and prefer building on a known success. Then count non-baseline rows in `results.tsv`; if ≥ `N`, stop. Note that previous attempts use different eval.py functions so previously attempted solutions and results are not directly applicable to this autoresearch run.
 2. Tune `annotation_pipeline.py` with an experimental idea by directly hacking the code (build on the best-so-far version of the file).
 3. `git commit`.
 4. Run the experiment. Use one timestamped run id for both the generations folder and the log, and **redirect everything to a timestamped log file under `logs/`** (do NOT use tee or let output flood your context):

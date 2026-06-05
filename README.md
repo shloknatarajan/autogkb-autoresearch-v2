@@ -2,7 +2,7 @@
 
 An autonomous-research pipeline that reads the **markdown of a pharmacogenomics paper** and produces its **PharmGKB-style sentence-bench output**: the list of **variants** discussed and the list of **standardized association sentences**.
 
-Modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): an agent repeatedly hacks one file (`annotation_pipeline.py`), runs a fixed evaluation, and keeps changes that improve the score. The full operating manual for that loop is in [`program.md`](program.md).
+Modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): an agent repeatedly hacks one file (`annotation_pipeline.py`), runs a fixed evaluation, and records the result. Every experiment is committed and kept — successes and regressions alike — so the branch and `results.tsv` are a durable record of what worked and what didn't. The full operating manual for that loop is in [`program.md`](program.md).
 
 ## Task
 
@@ -41,7 +41,7 @@ All model calls go through **litellm**, so any provider works — swap models by
 The benchmark groups gold sentences **by variant** (`{variant -> [sentences]}`). Both metrics are **recall**: did the pipeline produce what's in the gold set? Extra predicted items are **not** penalized.
 
 - **Variant coverage** — fraction of gold variants found, after normalization.
-- **Meaning capture per variant (LLM judge)** — for each gold variant, one batch judge call matches its gold sentences ↔ the pipeline's predicted sentences *for that variant* one-to-one (strict on direction and polarity: *increased* ≠ *decreased*, *is* ≠ *is not associated*); capture = matched / that variant's gold sentences. **`meaning_capture`** macro-averages capture across variants (each equal) then across papers, and **is the primary metric**. (A micro `sentence_coverage` and `sentence_precision` are printed for information only.)
+- **Meaning capture per variant (LLM judge)** — for each gold variant, one batch judge call sees its gold sentences and the pipeline's predicted sentences *for that variant* and returns a single `meaning_capture` score in 0–1: what fraction of the gold meaning is recovered (paraphrase / merge / split allowed; strict on direction and polarity — *increased* ≠ *decreased*, *is* ≠ *is not associated*; partial credit for the right association missing a qualifier). **`meaning_capture`** macro-averages that score across variants (each equal) then across papers, and **is the primary metric**. (A micro `sentence_coverage` is printed for information only.)
 
 The judge model is fixed in `eval.py` (default `gpt-5.4-mini`) and is independent of the pipeline model. With only 32 papers, `eval.py` holds a deterministic **dev/val split**; develop against dev, report on the held-out val.
 
@@ -77,6 +77,5 @@ set (16 papers).
 | meaning_capture | _to be measured_ |
 | variant_coverage | 0.539 |
 | sentence_coverage (pre-refactor) | 0.385 |
-| sentence_precision (info) | 0.247 |
 
 See `results.tsv` for the running experiment log.

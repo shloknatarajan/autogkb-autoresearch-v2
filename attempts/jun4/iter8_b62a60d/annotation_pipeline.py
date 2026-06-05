@@ -14,6 +14,8 @@ import json
 
 import litellm
 
+from tools.cross_file import cross_file_sentences
+
 MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
@@ -93,4 +95,16 @@ def predict(markdown_content):
     if not isinstance(vs, dict):
         vs = {}
     variant_sentences = {str(k): (v or []) for k, v in vs.items()}
+
+    # Belt-and-suspenders: the prompt already asks the model to cross-file under
+    # every constituent allele, but it occasionally leaves an allele/<GENE>*1 key
+    # empty or absent. Deterministically fill ONLY those empty/missing keys from
+    # the regex cross-filer; never add to a key the model already populated (that
+    # would dilute the per-variant judge on the many single-sentence variants).
+    populated = {k for k, v in variant_sentences.items() if v}
+    crossed = cross_file_sentences(variant_sentences)
+    for k, sents in crossed.items():
+        if k not in populated:
+            variant_sentences[k] = sents
+
     return {"variant_sentences": variant_sentences}

@@ -14,10 +14,13 @@ import json
 
 import litellm
 
+from tools.cross_file import cross_file_sentences
+
 MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
-pharmacogenomics paper (in markdown) and extract its variant annotations.
+pharmacogenomics paper (in markdown) and extract its variant annotations into the
+exact PharmGKB standardized-sentence conventions.
 
 Produce a JSON object "variant_sentences" mapping each genetic variant discussed
 in the paper to the list of standardized PharmGKB association sentences that
@@ -29,26 +32,28 @@ alleles (e.g. "CYP2C19*2", "HLA-B*15:01"). For star-allele genes also include th
 wild-type reference allele "<GENE>*1" as a key. A variant with no reported
 association still appears as a key mapped to an empty list [].
 
-VALUES -- follow PharmGKB conventions EXACTLY (this is how the gold is written):
-  - ALLELE/DIPLOTYPE FRAMING for star-allele genes -- use star alleles and
-    diplotypes (e.g. "CYP2D6 *3/*3 + *4/*4", "UGT1A1 *6 + *28"), NOT nucleotide
-    genotypes ("AA"/"GA") and NOT metabolizer labels ("PM/IM", "poor
-    metabolizer"); translate to the underlying alleles/diplotypes when the paper
-    reports by genotype letters or metabolizer status.
+VALUES -- follow PharmGKB conventions EXACTLY. These conventions are how the gold
+is written; matching them is what counts:
+  - ALLELE/DIPLOTYPE FRAMING, not genotype letters or metabolizer labels. For a
+    star-allele gene, phrase the association with star alleles and diplotypes
+    (e.g. "CYP2D6 *3/*3 + *4/*4", "UGT1A1 *6 + *28"), NOT nucleotide genotypes
+    ("AA"/"GA") and NOT metabolizer phenotypes ("PM/IM", "poor metabolizer"). If
+    the paper reports by metabolizer status or genotype letters, translate to the
+    underlying alleles/diplotypes.
   - FILE UNDER EVERY CONSTITUENT ALLELE. An association about a diplotype or an
     allele comparison is filed under EACH star allele it names AND under the
-    comparison allele, including the "<GENE>*1" reference -- the identical
-    sentence appears under each of those keys. (Only star/HLA-allele sentences are
-    cross-filed this way; an rsID-genotype association is filed only under its
-    rsID.)
+    comparison allele, including the "<GENE>*1" reference. e.g. an association
+    "CYP2D6 *3/*3 + *4/*4 ... as compared to CYP2D6 *1/*1" is filed under
+    CYP2D6*3, CYP2D6*4 AND CYP2D6*1 -- the identical sentence under each key.
   - COMBINE co-reported outcomes the way the paper groups them into ONE sentence
     (e.g. "Neutropenia, Leukopenia or Diarrhea"); do not split one finding into
-    near-duplicates, and do not invent reciprocal restatements or genotype groups
-    the paper never discusses.
+    many near-duplicate sentences.
   - Each sentence states the allele/diplotype, polarity ("is" / "is not
     associated"), direction ("increased"/"decreased") when applicable, the
-    phenotype or clinical outcome (the paper's terms), the drug (when relevant),
-    and the comparison group ("as compared to ...") when stated.
+    phenotype or clinical outcome (use the paper's outcome terms), the drug (when
+    relevant), and the comparison group ("as compared to ...") when stated.
+  - List ONLY associations the paper actually asserts. Do NOT invent reciprocal
+    restatements or enumerate genotype groups the paper never discusses.
 
 Example style:
    "CYP2C19 *1/*2 + *2/*2 is not associated with increased likelihood of Major
@@ -93,4 +98,11 @@ def predict(markdown_content):
     if not isinstance(vs, dict):
         vs = {}
     variant_sentences = {str(k): (v or []) for k, v in vs.items()}
+
+    # Cross-file: PharmGKB gold files each association under EVERY variant it
+    # names (constituent + comparison alleles, incl. <GENE>*1). meaning_capture
+    # is macro per variant, so replicate each star/HLA sentence under every
+    # allele in its text. Deterministic, no extra model calls.
+    variant_sentences = cross_file_sentences(variant_sentences)
+
     return {"variant_sentences": variant_sentences}

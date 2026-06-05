@@ -93,4 +93,11 @@ def predict(markdown_content):
     if not isinstance(vs, dict):
         vs = {}
     variant_sentences = {str(k): (v or []) for k, v in vs.items()}
+
+    # Cap per variant: gold variants carry at most ~3 association sentences, and
+    # the per-variant judge is diluted by longer lists. Trim the few over-produced
+    # keys to their first CAP sentences (the model's most salient come first).
+    CAP = 3
+    variant_sentences = {k: v[:CAP] for k, v in variant_sentences.items()}
+
     return {"variant_sentences": variant_sentences}

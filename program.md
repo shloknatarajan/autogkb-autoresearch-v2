@@ -41,7 +41,8 @@ To set up a new experiment, work with the user to:
    - `annotation_pipeline.py` — the file you modify. It exposes `predict()` and contains all extraction logic.
 4. **Verify data exists**: Check that `benchmarks/sentence_bench_by_variant.jsonl` is present (rebuild it with `uv run build_variant_bench.py` if needed) and that `uv run eval.py --help` runs. Confirm credentials for your provider are set (e.g. `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`, loaded from `.env`) for both the pipeline model and the judge.
 5. **Initialize results.tsv**: Create `results.tsv` with just the header row. The baseline is recorded after the first run.
-6. **Confirm and go.**
+6. **Initialize the attempts memory**: Create `attempts/<tag>/` with an empty `LEARNINGS.md` (header only). This folder is your lab notebook — you write to it after every experiment and read it before every new idea (see "Learning from past attempts"). Skim the earlier runs' `attempts/*/LEARNINGS.md` now for prior lessons.
+7. **Confirm and go.**
 
 Once you get confirmation, kick off the experimentation.
 
@@ -187,6 +188,32 @@ c3d4e5f	0.470	0.720	similar	add few-shot examples from dev set (no gain; within 
 d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 ```
 
+## Learning from past attempts — the `attempts/` memory
+
+`attempts/<tag>/` is your durable lab notebook and the loop's learning substrate.
+The git history is not the point; **this folder is**. After every experiment you
+SAVE the attempt here; before every new idea you READ it (and earlier runs'
+`attempts/*/`) so you build on what worked and never re-run a known failure.
+
+Layout:
+
+```
+attempts/<tag>/
+  LEARNINGS.md                 # running digest: one line per attempt — effect + the lesson
+  SUMMARY.md                   # written once at the end of the run
+  <label>_<hash>/              # one dir per experiment, e.g. baseline_0cfeeb6, iter7_d5528b7
+    annotation_pipeline.py     # the exact code for this attempt
+    <helper>.py                # any module annotation_pipeline.py imports (e.g. cross_file.py)
+    results.txt                # the eval summary block (the `---` block eval.py prints)
+    notes.md                   # hypothesis · what changed vs best-so-far · numbers · effect · LESSON
+```
+
+`notes.md` is the important part. Write the **LESSON** in plain words: what this
+experiment tried, whether it helped, and **why** (the mechanism) — so a future
+iteration can act on it. `LEARNINGS.md` is the cheap-to-scan digest: append one
+line per experiment (`<label> <meaning_capture>/<coverage> <effect> — <lesson>`),
+so you can re-read the whole history in one glance before choosing the next idea.
+
 ## The experiment loop
 
 The experiment runs on a dedicated branch (e.g. `autoresearch/jun1` or `autoresearch/jun1-a`).
@@ -204,8 +231,8 @@ and as rows in `results.tsv`; nothing is thrown away.
 
 LOOP until 15 iterations are done:
 
-1. Look at the git state: the current branch/commit we're on, and count non-baseline rows in `results.tsv` — if that count is ≥ 15, stop.
-2. Tune `annotation_pipeline.py` with an experimental idea by directly hacking the code.
+1. **Review the memory.** Read `attempts/<tag>/LEARNINGS.md` end to end (and, on the first iterations, the earlier runs' `attempts/*/LEARNINGS.md`). Open the `notes.md` of the most relevant past attempts. The point: pick the next idea informed by what already worked and what already failed — do not repeat a known failure, and prefer building on a known success. Then count non-baseline rows in `results.tsv`; if ≥ 15, stop.
+2. Tune `annotation_pipeline.py` with an experimental idea by directly hacking the code (build on the best-so-far version of the file).
 3. `git commit`.
 4. Run the experiment. Use one timestamped run id for both the generations folder and the log, and **redirect everything to a timestamped log file under `logs/`** (do NOT use tee or let output flood your context):
    ```
@@ -213,11 +240,12 @@ LOOP until 15 iterations are done:
    { uv run generate.py --out results/$TS --split val && uv run eval.py results/$TS; } > logs/$TS.log 2>&1
    ```
 5. Read out the results: `grep "^meaning_capture:\|^variant_coverage:" logs/$TS.log`.
-6. If the grep output is empty, the run crashed. Run `tail -n 50 logs/$TS.log` to read the stack trace and attempt a fix. If you can't get it working after a few attempts, give up on that idea.
+6. If the grep output is empty, the run crashed. Run `tail -n 50 logs/$TS.log` to read the stack trace and attempt a fix. If you can't get it working after a few attempts, give up on that idea (still save it — a crash is a lesson too).
 7. Record the results in `results.tsv` (do NOT commit `results.tsv`; leave it untracked). Tag the `effect` (`better`/`worse`/`similar`/`crash`) vs the best so far — informational only.
-8. Keep the commit no matter the outcome. For the next idea, build on whichever commit is best so far (restore its `annotation_pipeline.py`, then apply the new change) — but do **not** delete or reset the others; they stay in the history.
+8. **Save the attempt to memory.** Create `attempts/<tag>/<label>_<short-hash>/` and write into it: `annotation_pipeline.py` (and any helper modules it imports), `results.txt` (the `---` summary block from the log), and `notes.md` (hypothesis · what changed vs best-so-far · the numbers · effect · the **lesson** — what worked/didn't and why). Then append the one-line digest entry to `attempts/<tag>/LEARNINGS.md`. This save is what the *next* iteration learns from, so do it every time, including the baseline and crashes.
+9. Keep the commit no matter the outcome. For the next idea, build on whichever attempt is best so far (restore its `annotation_pipeline.py`) — but do **not** delete or reset the others; they stay in the history and, more importantly, in `attempts/`.
 
-You are a completely autonomous researcher trying things out. Keep every experiment — the failures are evidence too. Track which commit is currently best (it's the one the final summary and the branch's end state should reflect), and build forward from it, but leave the rejected attempts committed so the record shows what didn't work and why.
+You are a completely autonomous researcher trying things out. Keep every experiment — the failures are evidence too. Each experiment is saved to `attempts/<tag>/` with its lesson, and each new idea starts by reading that memory: this read→experiment→save→read loop is how you compound learning across iterations instead of rediscovering the same dead ends. Track which attempt is currently best (the final summary and the branch's end state should reflect it), build forward from it, and leave the rejected attempts in `attempts/` so the record shows what didn't work and why. When the cap is reached, write `attempts/<tag>/SUMMARY.md` (best `meaning_capture`, what worked, what didn't) drawing on `LEARNINGS.md`.
 
 **Logs**: every run writes a timestamped log to `logs/<run-id>.log` and its generations to `results/<run-id>/`. Both `logs/` and `results/` are untracked by git.
 

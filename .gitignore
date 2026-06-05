@@ -30,6 +30,8 @@ Thumbs.db
 .vscode/
 .idea/
 
+.claude/scheduled_tasks.lock
+
 base_data/
 results.tsv
 logs/

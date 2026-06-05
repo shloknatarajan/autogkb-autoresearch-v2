@@ -227,11 +227,11 @@ commit so far: restore that version of `annotation_pipeline.py` (e.g.
 idea on top, committing forward. The rejected attempts remain as ancestor commits
 and as rows in `results.tsv`; nothing is thrown away.
 
-**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `meaning_capture`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
+**Exit policy**: run a fixed number of **experiment iterations** `N` (each iteration = one pass through the steps below: edit → generate → eval → log). `N` is provided by the human before triggering the loop; **if no count is given, default to 10**. The baseline run does not count toward `N`. The iteration counter is the number of non-baseline rows in `results.tsv`. After the `N`th iteration completes, **stop** and write a short final summary (best `meaning_capture`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
 
-LOOP until 15 iterations are done:
+LOOP until `N` iterations are done:
 
-1. **Review the memory.** Read `attempts/<tag>/LEARNINGS.md` end to end (and, on the first iterations, the earlier runs' `attempts/*/LEARNINGS.md`). Open the `notes.md` of the most relevant past attempts. The point: pick the next idea informed by what already worked and what already failed — do not repeat a known failure, and prefer building on a known success. Then count non-baseline rows in `results.tsv`; if ≥ 15, stop.
+1. **Review the memory.** Read `attempts/<tag>/LEARNINGS.md` end to end (and, on the first iterations, the earlier runs' `attempts/*/LEARNINGS.md`). Open the `notes.md` of the most relevant past attempts. The point: pick the next idea informed by what already worked and what already failed — do not repeat a known failure, and prefer building on a known success. Then count non-baseline rows in `results.tsv`; if ≥ `N`, stop.
 2. Tune `annotation_pipeline.py` with an experimental idea by directly hacking the code (build on the best-so-far version of the file).
 3. `git commit`.
 4. Run the experiment. Use one timestamped run id for both the generations folder and the log, and **redirect everything to a timestamped log file under `logs/`** (do NOT use tee or let output flood your context):
@@ -259,5 +259,5 @@ You are a completely autonomous researcher trying things out. Keep every experim
 
 **Do not overfit the val set**: never inspect or hard-code val gold labels. Develop ideas against the dev set and let val be the honest measure.
 
-**Don't stall before the cap**: until the 15-iteration cap is reached, do NOT pause to ask the human "should I keep going?" — keep generating and testing ideas autonomously. If you run out of obvious ideas, think harder: re-read the gold sentences on the dev set for patterns you're missing, study field definitions in `base_data/variantAnnotations/README.pdf`, mine known variants from the `base_data/variantAnnotations/` tables, try multi-stage decomposition, try a stronger model, combine previous near-misses, or attempt more radical prompting changes. The human can always interrupt early; otherwise the loop ends at 15 iterations.
+**Don't stall before the cap**: until the iteration cap is reached, do NOT pause to ask the human "should I keep going?" — keep generating and testing ideas autonomously. If you run out of obvious ideas, think harder: re-read the gold sentences on the dev set for patterns you're missing, study field definitions in `base_data/variantAnnotations/README.pdf`, mine known variants from the `base_data/variantAnnotations/` tables, try multi-stage decomposition, try a stronger model, combine previous near-misses, or attempt more radical prompting changes. The human can always interrupt early; otherwise the loop ends at `N` iterations.
 ```

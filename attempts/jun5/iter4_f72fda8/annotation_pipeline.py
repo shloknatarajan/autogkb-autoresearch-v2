@@ -94,6 +94,10 @@ def predict(markdown_content):
     # claude-opus-4-8 deprecates the `temperature` param; only send it where supported.
     if "opus-4-8" not in MODEL:
         kwargs["temperature"] = 0
+    else:
+        # Extended thinking: let opus reason through direction/polarity/comparison
+        # framing before emitting the per-variant sentences (capture-quality axis).
+        kwargs["reasoning_effort"] = "high"
     resp = litellm.completion(**kwargs)
     data = _extract_json_object(resp.choices[0].message.content or "")
     vs = data.get("variant_sentences", {})

@@ -2,7 +2,7 @@
 
 This is an experiment to have the LLM autonomously build and improve a pipeline that reads the **markdown content of a pharmacogenomics paper** and produces the **PharmGKB-style sentence-bench output** for that paper: the list of **variants** discussed and the list of **standardized association sentences**.
 
-It is modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): you are an autonomous researcher who repeatedly hacks one file, runs a fixed evaluation, and keeps changes that improve the score.
+It is modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): you are an autonomous researcher who repeatedly hacks one file, runs a fixed evaluation, and records the result. Every experiment is committed and kept — successes and regressions alike — so the branch is a durable record of what worked and what didn't.
 
 ## The task
 
@@ -91,7 +91,7 @@ The benchmark groups gold sentences **by variant**. For each gold variant we mak
 capture(variant)   = fraction of that variant's gold meaning captured by its predictions (0..1)
 meaning_capture    = mean over a paper's variants of capture(variant),  then mean over papers
 ```
-Aggregation is **macro** — each variant counts equally regardless of how many sentences it has, and each paper counts equally. Variants with no gold sentences are skipped for capture (they still count toward `variant_coverage`). **`meaning_capture` is the primary metric (higher is better).** A micro-averaged `sentence_coverage` (gold-equivalent meaning captured / total gold sentences) is printed for information only and does not drive keep/discard.
+Aggregation is **macro** — each variant counts equally regardless of how many sentences it has, and each paper counts equally. Variants with no gold sentences are skipped for capture (they still count toward `variant_coverage`). **`meaning_capture` is the primary metric (higher is better).** A micro-averaged `sentence_coverage` (gold-equivalent meaning captured / total gold sentences) is printed for information only.
 
 The judge prompt (lives in `eval.py`, not editable):
 
@@ -164,22 +164,26 @@ When an experiment is done, log it to `results.tsv` (tab-separated, NOT comma �
 Header and 5 columns:
 
 ```
-commit	meaning_capture	variant_coverage	status	description
+commit	meaning_capture	variant_coverage	effect	description
 ```
 
 1. git commit hash (short, 7 chars)
 2. `meaning_capture` on val (e.g. `0.612`) — use `0.000` for crashes
 3. `variant_coverage` on val (e.g. `0.810`) — use `0.0` for crashes
-4. status: `keep`, `discard`, or `crash`
-5. short text description of what this experiment tried
+4. effect: a **non-actionable** record of how `meaning_capture` moved vs the
+   best-so-far — `better`, `worse`, `similar` (within noise), or `crash`. This is
+   just a label for later reading; it does **not** trigger a revert. Every
+   experiment is kept regardless (see the loop below).
+5. short text description of what this experiment tried — and, since regressions
+   are kept too, *why it didn't work* when you can tell.
 
 Example:
 
 ```
-commit	meaning_capture	variant_coverage	status	description
-a1b2c3d	0.385	0.539	keep	baseline: single-shot gpt-4o-mini pipeline, gpt-5.4-mini judge
-b2c3d4e	0.480	0.710	keep	two-stage: extract variants, then draft sentences per variant
-c3d4e5f	0.470	0.720	discard	add few-shot examples from dev set (no gain)
+commit	meaning_capture	variant_coverage	effect	description
+a1b2c3d	0.385	0.539	better	baseline: single-shot gpt-4o-mini pipeline, gpt-5.4-mini judge
+b2c3d4e	0.480	0.710	better	two-stage: extract variants, then draft sentences per variant
+c3d4e5f	0.470	0.720	similar	add few-shot examples from dev set (no gain; within noise)
 d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 ```
 
@@ -187,7 +191,16 @@ d4e5f6g	0.000	0.0	crash	switch judge-side schema (broke predict output)
 
 The experiment runs on a dedicated branch (e.g. `autoresearch/jun1` or `autoresearch/jun1-a`).
 
-**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log → keep/discard). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `meaning_capture`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
+**Keep every experiment.** There is no keep/discard and no revert. Each iteration
+is committed and **kept on the branch**, whether it helped or not — the whole point
+is a durable record of what worked AND what didn't. Never `git reset` away a
+regression. To start the next idea you typically build on the best-performing
+commit so far: restore that version of `annotation_pipeline.py` (e.g.
+`git checkout <best-commit> -- annotation_pipeline.py`) and then apply the new
+idea on top, committing forward. The rejected attempts remain as ancestor commits
+and as rows in `results.tsv`; nothing is thrown away.
+
+**Exit policy**: run a maximum of **15 experiment iterations** (each iteration = one pass through the steps below: edit → generate → eval → log). The baseline run does not count toward the 15. The iteration counter is the number of non-baseline rows in `results.tsv`. After the 15th iteration completes, **stop** and write a short final summary (best `meaning_capture`, what worked, what didn't). Until then, do not pause to ask the human whether to continue.
 
 LOOP until 15 iterations are done:
 
@@ -201,19 +214,18 @@ LOOP until 15 iterations are done:
    ```
 5. Read out the results: `grep "^meaning_capture:\|^variant_coverage:" logs/$TS.log`.
 6. If the grep output is empty, the run crashed. Run `tail -n 50 logs/$TS.log` to read the stack trace and attempt a fix. If you can't get it working after a few attempts, give up on that idea.
-7. Record the results in `results.tsv` (do NOT commit `results.tsv`; leave it untracked).
-8. If `meaning_capture` improved (higher), you "advance" the branch, keeping the git commit.
-9. If `meaning_capture` is equal or worse, `git reset` back to where you started.
+7. Record the results in `results.tsv` (do NOT commit `results.tsv`; leave it untracked). Tag the `effect` (`better`/`worse`/`similar`/`crash`) vs the best so far — informational only.
+8. Keep the commit no matter the outcome. For the next idea, build on whichever commit is best so far (restore its `annotation_pipeline.py`, then apply the new change) — but do **not** delete or reset the others; they stay in the history.
 
-You are a completely autonomous researcher trying things out. If they work, keep. If they don't, discard. You advance the branch so you can iterate. If you feel stuck, you can rewind, but do this very sparingly (if ever).
+You are a completely autonomous researcher trying things out. Keep every experiment — the failures are evidence too. Track which commit is currently best (it's the one the final summary and the branch's end state should reflect), and build forward from it, but leave the rejected attempts committed so the record shows what didn't work and why.
 
 **Logs**: every run writes a timestamped log to `logs/<run-id>.log` and its generations to `results/<run-id>/`. Both `logs/` and `results/` are untracked by git.
 
-**The first run**: Your very first run should always establish the baseline — a minimal, honest `predict()` (e.g. one straightforward litellm call) — run as-is and recorded as `keep` / `baseline`.
+**The first run**: Your very first run should always establish the baseline — a minimal, honest `predict()` (e.g. one straightforward litellm call) — run as-is and recorded as the `baseline` row (effect column left as `baseline`).
 
 **Simplicity criterion**: All else equal, simpler is better. A small F1 gain that adds ugly complexity may not be worth it; a change that removes code while holding or improving F1 is a clear win. Weigh complexity cost against the improvement magnitude.
 
-**Cost/time awareness**: Each run makes model calls for all val papers plus one judge call per paper. Keep runs reasonable; if a run hangs or exceeds ~15 minutes, kill it and treat it as a failure (discard and revert). Avoid changes that explode token cost for negligible F1.
+**Cost/time awareness**: Each run makes model calls for all val papers plus one judge call per paper. Keep runs reasonable; if a run hangs or exceeds ~15 minutes, kill it and log it as a `crash` (the commit still stays — nothing is reverted). Avoid changes that explode token cost for negligible F1.
 
 **Crashes**: If a run crashes (bad output schema, API error, a bug), use judgment: if it's something dumb and easy (a typo, a missing key in the returned dict, a transient API error), fix it and re-run. If the idea itself is fundamentally broken, skip it, log `crash`, and move on.
 

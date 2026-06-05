@@ -1,12 +1,12 @@
-commit	meaning_capture	variant_coverage	status	description
-0cfeeb6	0.448	0.685	keep	baseline: minimal single-shot gpt-5.4 predict()
-3877bbb	0.392	0.865	discard	iter1: exhaustive recall prompt — coverage +0.18 but capture -0.056 (reciprocal/enum flooding confuses batch judge)
-f12b509	0.401	0.865	discard	iter2: exhaustive keys + terse faithful sentences (terseness drops qualifiers judge rewards; capture still < baseline)
-72194d0	0.432	0.820	discard	iter3: baseline + cross-filing (coverage +0.135 but cross-filed sentences dilute well-captured variants; net -0.016)
-a1252d3	0.403	0.820	discard	iter4: PharmGKB-convention prompt + cross-filing (sentence_coverage +0.09 but macro -0.045: extra sentences dilute 1-sentence variants that dominate macro)
-c330eda	0.423	0.697	discard	iter5: fill-missing-only cross-filing (coverage flat +0.012, macro -0.025 — likely within generation noise; no clear gain)
-b292119	0.414	0.674	discard	iter6: framing-quality prompt (within noise band [0.412,0.448]; framing tweaks alone do not move macro)
-d5528b7	0.467	0.899	keep	iter7: PharmGKB prompt w/ MODEL-SIDE cross-filing (file under every allele incl *1) — best macro 0.467, coverage 0.899; no regex post-proc so rsIDs/single alleles not diluted
-b62a60d	0.444	0.888	discard	iter8: iter7 + fill-missing regex cross-file (0.444 < iter7 band [0.455,0.467]; no gain, adds complexity)
-4434788	0.439	0.899	discard	iter9: two-pass recall union + cap=5 (0.439 < iter7 band; 2nd pass dilutes per-variant judge, 2x cost — confirms adding content hurts macro)
-4cd0ff3	0.407	0.888	discard	iter10: iter7 + per-variant cap=3 (too aggressive — drops gold-matching sentences not in first 3; 0.407 < iter7 band)
+commit	meaning_capture	variant_coverage	effect	description
+0cfeeb6	0.448	0.685	baseline	baseline: minimal single-shot gpt-5.4 predict()
+3877bbb	0.392	0.865	worse	iter1: exhaustive recall prompt — coverage +0.18 but capture -0.056 (reciprocal/enum flooding confuses batch judge)
+f12b509	0.401	0.865	worse	iter2: exhaustive keys + terse faithful sentences (terseness drops qualifiers judge rewards; capture still < baseline)
+72194d0	0.432	0.820	similar	iter3: baseline + cross-filing (coverage +0.135 but cross-filed sentences dilute well-captured variants; net within noise)
+a1252d3	0.403	0.820	worse	iter4: PharmGKB-convention prompt + cross-filing (sentence_coverage +0.09 but macro -0.045: extra sentences dilute 1-sentence variants that dominate macro)
+c330eda	0.423	0.697	similar	iter5: fill-missing-only cross-filing (coverage flat +0.012, macro within generation noise; no clear gain)
+b292119	0.414	0.674	similar	iter6: framing-quality prompt (within noise band [0.412,0.448]; framing tweaks alone do not move macro)
+d5528b7	0.467	0.899	better	iter7: PharmGKB prompt w/ MODEL-SIDE cross-filing (file under every allele incl *1) — best macro 0.467 (re-run 0.455), coverage 0.899; no regex post-proc so rsIDs/single alleles not diluted
+b62a60d	0.444	0.888	worse	iter8: iter7 + fill-missing regex cross-file (0.444 < iter7 band [0.455,0.467]; no gain, adds complexity)
+4434788	0.439	0.899	worse	iter9: two-pass recall union + cap=5 (0.439 < iter7 band; 2nd pass dilutes per-variant judge, 2x cost — confirms adding content hurts macro)
+4cd0ff3	0.407	0.888	worse	iter10: iter7 + per-variant cap=3 (too aggressive — drops gold-matching sentences not in first 3; 0.407 < iter7 band)

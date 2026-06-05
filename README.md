@@ -2,7 +2,7 @@
 
 An autonomous-research pipeline that reads the **markdown of a pharmacogenomics paper** and produces its **PharmGKB-style sentence-bench output**: the list of **variants** discussed and the list of **standardized association sentences**.
 
-Modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): an agent repeatedly hacks one file (`annotation_pipeline.py`), runs a fixed evaluation, and keeps changes that improve the score. The full operating manual for that loop is in [`program.md`](program.md).
+Modeled on [karpathy/autoresearch](https://github.com/karpathy/autoresearch): an agent repeatedly hacks one file (`annotation_pipeline.py`), runs a fixed evaluation, and records the result. Every experiment is committed and kept — successes and regressions alike — so the branch and `results.tsv` are a durable record of what worked and what didn't. The full operating manual for that loop is in [`program.md`](program.md).
 
 ## Task
 

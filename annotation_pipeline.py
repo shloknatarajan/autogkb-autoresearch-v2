@@ -39,6 +39,20 @@ VALUES -- follow PharmGKB conventions EXACTLY (this is how the gold is written):
     genotypes ("AA"/"GA") and NOT metabolizer labels ("PM/IM", "poor
     metabolizer"); translate to the underlying alleles/diplotypes when the paper
     reports by genotype letters or metabolizer status.
+  - rsID / SNP FRAMING -- for an rsID variant the gold frames by the REPORTED
+    NUCLEOTIDE genotypes or alleles, NOT by star alleles. Write e.g. "Genotypes
+    CT + TT is associated with decreased activity of DPYD as compared to genotype
+    CC." or "Allele C is associated with increased risk of X as compared to allele
+    T." Group the genotypes that share a finding ("CT + TT", "AG + GG") into ONE
+    sentence, use the singular "is associated", and ALWAYS state the comparison
+    genotype/allele ("as compared to genotype CC" / "as compared to allele T").
+    Common rsID phenotypes are dose ("decreased dose of warfarin"), enzyme activity,
+    and toxicity/efficacy outcomes.
+  - HLA ALLELES -- enumerate EVERY HLA allele the paper associates with an outcome
+    (HLA-A/B/C/DRB1 *NN:NN), each as its own key, and combine the co-reported
+    outcomes for that allele into one sentence (e.g. "Stevens-Johnson Syndrome,
+    Epidermal Necrolysis, Toxic or Drug Reaction with Eosinophilia and Systemic
+    Symptoms").
   - FILE UNDER EVERY CONSTITUENT ALLELE. An association about a diplotype or an
     allele comparison is filed under EACH star allele it names AND under the
     comparison allele, including the "<GENE>*1" reference -- the identical

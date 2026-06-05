@@ -83,15 +83,18 @@ def _extract_json_object(text):
 
 
 def predict(markdown_content):
-    resp = litellm.completion(
+    kwargs = dict(
         model=MODEL,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": markdown_content},
         ],
-        temperature=0,
         response_format={"type": "json_object"},
     )
+    # claude-opus-4-8 deprecates the `temperature` param; only send it where supported.
+    if "opus-4-8" not in MODEL:
+        kwargs["temperature"] = 0
+    resp = litellm.completion(**kwargs)
     data = _extract_json_object(resp.choices[0].message.content or "")
     vs = data.get("variant_sentences", {})
     if not isinstance(vs, dict):

@@ -19,6 +19,7 @@ import litellm
 litellm.drop_params = True
 
 MODEL = "anthropic/claude-opus-4-8"
+FILL_MODEL = "gemini/gemini-2.5-pro"  # ensemble: fills variants the primary missed
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.
@@ -82,9 +83,14 @@ def _extract_json_object(text):
     return {}
 
 
-def predict(markdown_content):
+def _norm_key(k):
+    """Loose canonical key for cross-model dedup (not the harness normalizer)."""
+    return "".join(str(k).split()).upper().replace("HLA-", "")
+
+
+def _call(model, markdown_content):
     kwargs = dict(
-        model=MODEL,
+        model=model,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": markdown_content},
@@ -92,12 +98,24 @@ def predict(markdown_content):
         response_format={"type": "json_object"},
     )
     # claude-opus-4-8 deprecates the `temperature` param; only send it where supported.
-    if "opus-4-8" not in MODEL:
+    if "opus-4-8" not in model:
         kwargs["temperature"] = 0
     resp = litellm.completion(**kwargs)
     data = _extract_json_object(resp.choices[0].message.content or "")
     vs = data.get("variant_sentences", {})
     if not isinstance(vs, dict):
         vs = {}
-    variant_sentences = {str(k): (v or []) for k, v in vs.items()}
-    return {"variant_sentences": variant_sentences}
+    return {str(k): (v or []) for k, v in vs.items()}
+
+
+def predict(markdown_content):
+    primary = _call(MODEL, markdown_content)
+    # Ensemble: only ADD variants the primary missed entirely (fill coverage gap);
+    # never touch the primary's per-variant lists, to avoid diluting good variants.
+    have = {_norm_key(k) for k in primary}
+    fill = _call(FILL_MODEL, markdown_content)
+    for k, v in fill.items():
+        if _norm_key(k) not in have:
+            primary[k] = v
+            have.add(_norm_key(k))
+    return {"variant_sentences": primary}

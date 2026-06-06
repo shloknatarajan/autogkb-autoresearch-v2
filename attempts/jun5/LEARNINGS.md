@@ -17,4 +17,12 @@ Format: `<label> <meaning_capture>/<variant_coverage> <effect> — lesson`
 - **iter7_b086029** 0.495/0.876 worse — few-shot worked output mapping on opus. −0.041; concrete exemplar narrows opus output vs the abstract conventions. Champion stays iter2. (Theme: opus + abstract rich prompt = sweet spot; extra constraints/content all ≤ it.)
 - **iter8_1f1d7ee** 0.519/0.888 similar — ensemble opus + gemini fill-missing variants. ZERO coverage gain (gemini recovers no gold variant opus missed → the missing ~11% are hard for BOTH frontier models, not a blind spot) + 2x cost. Rejected. 4th confirmation that adding content doesn't raise this macro (after 2-pass, thinking, regex cross-file). Champion stays iter2.
 - **iter9_4601d16** 0.598/0.910 re-run — champion VALIDATION (identical config to iter2). 0.536→0.598 = **+0.062 swing on the SAME code** → opus noise band ~±0.05, WIDER than the gpt-5.4-era ±0.03. So iter5/7/8 were all within the champion's noise (not real regressions). Clear losers only: gpt-5.4 any-prompt, opus+minimal, opus+thinking, (gemini borderline). Champion family (opus+rich) mean ≈ 0.55–0.57.
+- **iter10_33937ee** 0.540/0.899 re-run — champion VALIDATION #2. Three identical-config runs: **0.536/0.598/0.540 → mean 0.558 ±0.03**. CHAMPION = opus-4-8 + rich PharmGKB prompt, **+0.14 over baseline (0.414)**. End of jun5 loop (10 iterations).
+
+## Cross-cutting lessons (jun5)
+1. **Model choice is the dominant lever.** gpt-5.4 → claude-opus-4-8 (same prompt) was +0.12, dwarfing every prompt/structure tweak (±0.03–0.05). Both frontier models (opus 0.536, gemini 0.503) ≫ gpt-5.4 (0.418).
+2. **It's an INTERACTION, not model-alone.** The rich PharmGKB prompt buys opus +0.13 (0.409→0.536) but bought gpt-5.4 ~0 (iter1). Need BOTH a capable model AND the rich prompt — opus can execute conventions (list every variant incl *1, model-side cross-filing, allele framing) gpt-5.4 couldn't.
+3. **Adding content/compute does NOT raise the per-variant macro** — confirmed 4×: extended thinking (−0.08), rsID/HLA rules (flat), few-shot (−0.04), opus+gemini ensemble (flat, zero coverage gain). The judge rewards a tight, faithful single-pass list.
+4. **Noise is wider than thought (~±0.03–0.05).** Identical champion code spanned 0.536–0.598. Treat single-run deltas < ~0.06 as noise; validate with multiple generations.
+5. **The missing ~11% coverage is hard for BOTH frontier models** (ensemble added zero gold variants) — not a model-specific blind spot; likely genuinely ambiguous variants.
 

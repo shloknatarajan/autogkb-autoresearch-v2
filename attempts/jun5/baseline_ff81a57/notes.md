@@ -14,12 +14,13 @@ decomposition, no cross-filing, no post-processing.
 
 **Effect:** baseline.
 
-**Notes / harness check:** Current `eval.py` is byte-identical to
-`attempts/jun4/eval.py` (same batch-judge harness). This baseline's 0.414 matches
-jun4's baseline re-run (0.412) almost exactly — confirms the harness and the
-~±0.03 generation-noise floor are unchanged. jun1/jun2 used a *different* eval
-(per-sentence judge) so their numbers are NOT comparable; jun4's ARE, but every
-candidate will still be re-validated on jun5's own runs given the noise.
+**Notes / harness check:** The committed `eval.py` is byte-identical to the
+`attempts/jun4/eval.py` snapshot, BUT per the project owner the jun4 (and jun1/jun2)
+experiments were actually run against a different `eval.py` that was edited before
+being committed — so their recorded numbers came from a different harness and are
+NOT comparable to jun5 (the 0.414≈jun4's 0.412 match is coincidence). jun5 stands on
+its own fresh baseline; every candidate is judged only against jun5 runs on the
+current `eval.py`.
 
 **Lesson:** floor ≈ 0.41–0.45 for single-shot gpt-5.4. The model finds variants
 it mentions but misses ~31% of gold variant keys (notably `<GENE>*1` reference

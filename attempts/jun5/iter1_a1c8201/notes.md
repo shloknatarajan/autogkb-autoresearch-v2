@@ -17,11 +17,12 @@ iter7 PharmGKB-convention prompt. No code/post-processing change.
 **Effect:** similar (macro within noise; coverage much better).
 
 **Lesson:** The coverage/micro half of jun4 iter7 reproduces exactly, but the macro
-gain does NOT — 0.418 sits right on the baseline. So jun4's headline 0.467 was
-largely generation noise; the *mechanism* buys variant coverage + micro recall, not
-macro meaning_capture. This re-confirms jun4 cross-cutting lesson #1 (adding content
-moves micro/coverage but not the macro, which is dominated by the ~74/90 single-
-sentence variants). **The real lever for macro is per-variant capture QUALITY, not
+gain does NOT — 0.418 sits right on the baseline. So on this harness the mechanism
+buys variant coverage + micro recall, not macro meaning_capture. (jun4's headline
+0.467 ran on a different eval.py and is not a comparable reference.) The pattern
+matches jun4's qualitative lesson #1 anyway — adding content moves micro/coverage but
+not the macro, which is dominated by the single-sentence variants. **The real lever
+for macro is per-variant capture QUALITY, not
 coverage.** Build forward on iter1 anyway: same macro as baseline but +0.20 coverage
 for free is a strictly better base. Next: improve how faithfully each variant's
 sentences match gold meaning (direction/polarity/comparison/qualifiers), not volume.

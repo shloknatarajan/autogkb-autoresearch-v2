@@ -2,8 +2,11 @@
 
 Branch: `autoresearch/jun5` · judge: **gpt-5.4-mini** · val = 16 papers, 101 gold
 sentences. Primary metric: **`meaning_capture`** (macro per-variant batch LLM judge).
-Harness `eval.py` byte-identical to jun4's, so jun4 numbers are comparable (jun1/jun2
-used a different judge and are not).
+**Prior runs are NOT directly comparable.** The committed `eval.py` is byte-identical
+to jun4's snapshot, but per the project owner the jun4 (and jun1/jun2) experiments were
+actually run against a *different* `eval.py` that was edited before being committed —
+so their recorded numbers came from a different harness. jun5 therefore stands entirely
+on its own: a fresh baseline and all comparisons computed on the current `eval.py`.
 
 ## Result
 
@@ -13,8 +16,8 @@ used a different judge and are not).
 | **CHAMPION — iter2 (opus-4-8 + rich PharmGKB prompt)** | **0.558 mean** (0.536 / 0.598 / 0.540 over 3 runs) | ~0.90 |
 
 **Best: iter2 (`8abb30e`)** — net **+0.14 macro** over baseline, validated across three
-generations (every champion run beat every non-champion config). This also exceeds
-jun4's best (0.467, which in hindsight was an upward noise excursion).
+generations (every champion run beat every non-champion config). (jun4's 0.467 ran on a
+different harness and is not comparable.)
 
 ## The winning pipeline
 

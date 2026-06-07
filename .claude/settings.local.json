@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m json.tool annotations/PMC12035587.json)",
+      "Bash(python3 -c \"import json,sys; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('TOP KEYS:', list\\(d.keys\\(\\)\\)\\); print\\(json.dumps\\({k:\\(v if not isinstance\\(v,\\(list,dict\\)\\) or \\(isinstance\\(v,str\\)\\) else \\(f'<{type\\(v\\).__name__} len={len\\(v\\)}>'\\)\\) for k,v in d.items\\(\\)}, indent=2\\)[:2500]\\)\")",
+      "Bash(python3 -c \"import json,sys; d=json.loads\\(sys.stdin.read\\(\\)\\); print\\('TOP KEYS:', list\\(d.keys\\(\\)\\)\\); print\\(json.dumps\\({k:\\(v if isinstance\\(v,\\(str,int,float,type\\(None\\)\\)\\) else f'<{type\\(v\\).__name__} len={len\\(v\\)}>'\\) for k,v in d.items\\(\\)}, indent=2\\)[:2000]\\)\")",
+      "Bash(python3 -c ' *)",
+      "Bash(uv add *)",
+      "Bash(uv run *)",
+      "Bash(echo \"EXIT=$?\")",
+      "Bash(sed -n '/^---$/,$p' run.log)",
+      "Bash(git add *)",
+      "Bash(git commit -q -m 'docs: bounded autoresearch loop \\(15-iteration cap\\) *)",
+      "Bash(git checkout *)",
+      "Bash(awk -F'\\\\t' 'NR>1 && $9!=\"\" {print $9} ' var_drug_ann.tsv)",
+      "Bash(awk -F'\\\\t' 'NR>1 && $9!=\"\" {print $9}' var_pheno_ann.tsv)",
+      "Bash(awk -F'\\\\t' 'NR>1 && $9!=\"\" {print $9}' var_fa_ann.tsv)",
+      "Bash(cd *)",
+      "Bash(python3 -m py_compile eval.py generate.py annotation_pipeline.py build_variant_bench.py)",
+      "Bash(.venv/bin/python *)",
+      "Bash(uniq -c -w32)",
+      "Bash(python3 -c \"import sys,json; r=json.loads\\(sys.stdin.read\\(\\)\\); print\\('keys:', list\\(r.keys\\(\\)\\)\\); print\\('variant_sentences type:', type\\(r.get\\('variant_sentences'\\)\\).__name__\\)\")",
+      "Bash(git ls-tree *)",
+      "Bash(xargs -I {} sh -c 'echo \"{}\"; du -sh {} ')"
+    ]
+  }
+}

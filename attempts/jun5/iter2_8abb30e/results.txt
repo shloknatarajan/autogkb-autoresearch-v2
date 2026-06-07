@@ -1,0 +1,9 @@
+---
+meaning_capture:    0.536
+variant_coverage:   0.888
+sentence_coverage:  0.513
+num_papers:         16
+num_gold_sentences: 101
+generations:        results/20260605-224751
+judge_model:        gpt-5.4-mini
+total_seconds:      50.8

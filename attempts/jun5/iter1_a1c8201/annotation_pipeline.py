@@ -14,11 +14,7 @@ import json
 
 import litellm
 
-# Anthropic doesn't take OpenAI's response_format=json_object verbatim; drop unsupported
-# params so the same predict() body works across providers (we parse JSON from the text).
-litellm.drop_params = True
-
-MODEL = "anthropic/claude-opus-4-8"
+MODEL = "gpt-5.4"
 
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.
@@ -83,18 +79,15 @@ def _extract_json_object(text):
 
 
 def predict(markdown_content):
-    kwargs = dict(
+    resp = litellm.completion(
         model=MODEL,
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": markdown_content},
         ],
+        temperature=0,
         response_format={"type": "json_object"},
     )
-    # claude-opus-4-8 deprecates the `temperature` param; only send it where supported.
-    if "opus-4-8" not in MODEL:
-        kwargs["temperature"] = 0
-    resp = litellm.completion(**kwargs)
     data = _extract_json_object(resp.choices[0].message.content or "")
     vs = data.get("variant_sentences", {})
     if not isinstance(vs, dict):

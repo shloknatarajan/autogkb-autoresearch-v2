@@ -6,7 +6,7 @@ LLM judge. The benchmark is organized BY VARIANT: each paper's gold is a mapping
 `{variant -> [standardized association sentences about that variant]}`.
 
 PRIMARY metrics (revised to measure extraction skill, not PharmGKB house style --
-see ANNOTATION_AMBIGUITY.md):
+see docs/ANNOTATION_AMBIGUITY.md):
   - `meaning_capture`  -- PAPER-LEVEL, representation-invariant. All of a paper's
     distinct gold sentences are pooled and scored against the pipeline's full
     predicted-sentence pool (keys ignored), so a correct association filed under a

@@ -48,7 +48,7 @@ All model calls go through **litellm**, so any provider works by changing the mo
 
 ### Scoring (both metrics are RECALL — extra predicted items are never penalized)
 
-`eval.py` was revised (2026-06-23) to measure *extraction skill* rather than PharmGKB filing convention — see `ANNOTATION_AMBIGUITY.md`. It now prints **primary** and **secondary** blocks; primary metric values are **NOT comparable to pre-revision runs (jun1..jun5)**.
+`eval.py` was revised (2026-06-23) to measure *extraction skill* rather than PharmGKB filing convention — see `docs/ANNOTATION_AMBIGUITY.md`. It now prints **primary** and **secondary** blocks; primary metric values are **NOT comparable to pre-revision runs (jun1..jun5)**.
 
 **Primary:**
 - **`meaning_capture` — the PRIMARY metric, now PAPER-LEVEL and representation-invariant.** All of a paper's *distinct* gold sentences are pooled and scored against the pipeline's *full* predicted-sentence pool (variant keys ignored), macro-averaged across papers. A correct association filed under a different-but-valid key (granularity, cross-filing, `*1` reference, rsID-vs-star) is no longer a miss. The judge stays **strict on direction/polarity/phenotype** (*increased* ≠ *decreased*, *is* ≠ *is not associated*).

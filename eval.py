@@ -1,14 +1,24 @@
 """
 Evaluation harness for the autogkb sentence-bench autoresearch loop.
 
-This file is the ground truth: it owns the dev/val split, the scoring (variant
-coverage + per-variant meaning capture), and the LLM judge.
+This file is the ground truth: it owns the dev/val split, the scoring, and the
+LLM judge. The benchmark is organized BY VARIANT: each paper's gold is a mapping
+`{variant -> [standardized association sentences about that variant]}`.
 
-The benchmark is organized BY VARIANT: each paper's gold is a mapping
-`{variant -> [standardized association sentences about that variant]}`. The
-primary metric is `meaning_capture` -- for each gold variant we ask whether the
-pipeline's predicted sentences for that variant capture the gold meanings, then
-macro-average across variants (each variant counts equally) and across papers.
+PRIMARY metrics (revised to measure extraction skill, not PharmGKB house style --
+see docs/ANNOTATION_AMBIGUITY.md):
+  - `meaning_capture`  -- PAPER-LEVEL, representation-invariant. All of a paper's
+    distinct gold sentences are pooled and scored against the pipeline's full
+    predicted-sentence pool (keys ignored), so a correct association filed under a
+    different-but-valid variant key is no longer a miss. Macro-averaged over papers.
+  - `variant_coverage` -- recall over gold variant keys, accepting rsID<->star-allele
+    equivalence (a star allele matches its defining rsID and vice versa).
+
+SECONDARY metrics (PharmGKB-convention adherence, kept for comparison):
+  - `meaning_capture_perkey` -- the old per-variant macro (one judge call per gold
+    variant, sentences matched only under the same key).
+  - `variant_coverage_strict` -- old exact-representation key match.
+  - `sentence_coverage` -- micro, informational.
 
 It scores a folder of GENERATIONS produced by `generate.py` (which runs
 `annotation_pipeline.predict`). Each generation file is
@@ -16,9 +26,13 @@ It scores a folder of GENERATIONS produced by `generate.py` (which runs
 Generation and scoring are decoupled, so the same generations can be re-scored
 without regenerating.
 
+NOTE: this revision changes what `meaning_capture` measures, so its values are NOT
+comparable to pre-revision runs (jun1..jun5). Re-baseline before trusting deltas.
+
 Usage:
     uv run eval.py results/baseline                 # score that generation folder
     uv run eval.py results/baseline --judge-model gpt-4o
+    uv run eval.py results/baseline --no-perkey     # primary metrics only (cheaper)
 """
 
 import argparse
@@ -132,12 +146,111 @@ def normalize_variant(v):
 
 
 def variant_coverage_counts(pred_variants, gold_variants):
-    """Return (matched, total_gold) for one paper. Coverage = matched / total_gold."""
+    """Return (matched, total_gold) for one paper. Coverage = matched / total_gold.
+
+    STRICT representation match (kept as the secondary `variant_coverage_strict`);
+    the primary coverage uses `variant_coverage_match`, which accepts rsID<->star
+    equivalence.
+    """
     gold = {normalize_variant(v) for v in gold_variants}
     pred = {normalize_variant(v) for v in pred_variants}
     if not gold:
         return 0, 0
     return len(gold & pred), len(gold)
+
+
+# --------------------------------------------------------------------------- #
+# rsID <-> star-allele identity (Recommendation 2)
+# --------------------------------------------------------------------------- #
+# A star allele and its single defining/tag SNP are the SAME biological variant,
+# but a paper (and an agent reading it) may report either form, and the gold picks
+# only one representation per annotation -- so an agent that emits the other form is
+# wrongly scored as a miss. This table lets coverage accept either form.
+#
+# CURATED, CONSERVATIVE, AUDITABLE. Only star alleles whose identity is fixed by a
+# SINGLE canonical defining SNP are listed (verified against PharmVar / CPIC).
+# Deliberately OMITTED -- because a wrong equivalence silently INFLATES the score,
+# while a missing one merely falls back to strict matching:
+#   - multi-SNP haplotypes (e.g. CYP2B6*6 = rs3745274 + rs2279343),
+#   - structural alleles (CYP2D6*5 gene deletion, *1xN/*2xN/*4xN duplications,
+#     UGT1A1*28 TA-repeat),
+#   - rsIDs that are only a shared *constituent* of several haplotypes.
+# Note: an rsID may occur inside several haplotypes (e.g. rs1065852 is in both
+# CYP2D6*4 and *10); we map it ONLY to the allele it is the sole DEFINING SNP of
+# (*10), so equivalence never crosses into a different haplotype.
+# Edit with the same bar: one allele <-> its sole defining rsID.
+STAR_ALLELE_DEFINING_RSID = {
+    "CYP2C19*2": "rs4244285",
+    "CYP2C19*3": "rs4986893",
+    "CYP2C19*17": "rs12248560",
+    "CYP2C9*2": "rs1799853",
+    "CYP2C9*3": "rs1057910",
+    "CYP2C9*8": "rs7900194",
+    "CYP2D6*3": "rs35742686",
+    "CYP2D6*4": "rs3892097",
+    "CYP2D6*6": "rs5030655",
+    "CYP2D6*9": "rs5030656",
+    "CYP2D6*10": "rs1065852",
+    "CYP2D6*17": "rs28371706",
+    "CYP2D6*41": "rs28371725",
+    "CYP4F2*3": "rs2108622",
+    "NUDT15*3": "rs116855232",
+    "UGT1A1*6": "rs4148323",
+    "CYP2B6*9": "rs3745274",
+}
+
+# reverse map: defining rsID -> {star alleles it defines}
+_RSID_TO_STAR = {}
+for _star, _rs in STAR_ALLELE_DEFINING_RSID.items():
+    _RSID_TO_STAR.setdefault(_rs, set()).add(_star)
+
+
+def variant_identity_set(key):
+    """All normalized ids that denote the SAME variant as `key`.
+
+    A star allele expands to include its defining rsID; an rsID expands to include
+    the star allele(s) it defines. Two keys denote the same variant iff their
+    identity sets intersect.
+    """
+    n = normalize_variant(key)
+    ids = {n}
+    if n in STAR_ALLELE_DEFINING_RSID:
+        ids.add(STAR_ALLELE_DEFINING_RSID[n])
+    if n in _RSID_TO_STAR:
+        ids |= _RSID_TO_STAR[n]
+    return ids
+
+
+def variant_coverage_match(pred_variants, gold_variants):
+    """(matched, total_gold) allowing rsID<->star equivalence.
+
+    Uses max bipartite matching so a single predicted key satisfies AT MOST ONE
+    gold key -- otherwise one prediction (e.g. `rs3745274`) could cover two distinct
+    gold keys that happen to share a defining SNP (e.g. both `rs3745274` and
+    `CYP2B6*9` appear as separate gold keys in PMC4916189).
+    """
+    gold = list({normalize_variant(v) for v in gold_variants})
+    pred = list({normalize_variant(v) for v in pred_variants})
+    if not gold:
+        return 0, 0
+    pred_ids = [variant_identity_set(p) for p in pred]
+    adj = [
+        [j for j, pid in enumerate(pred_ids) if variant_identity_set(g) & pid]
+        for g in gold
+    ]
+    match_pred = [-1] * len(pred)
+
+    def augment(g, seen):
+        for j in adj[g]:
+            if not seen[j]:
+                seen[j] = True
+                if match_pred[j] == -1 or augment(match_pred[j], seen):
+                    match_pred[j] = g
+                    return True
+        return False
+
+    matched = sum(augment(g, [False] * len(pred)) for g in range(len(gold)))
+    return matched, len(gold)
 
 
 def normalize_groups(groups):
@@ -273,6 +386,46 @@ def judge_per_gold(gold, pred, model):
 
 
 # --------------------------------------------------------------------------- #
+# Paper-level meaning capture (Recommendation 1) -- representation-invariant
+# --------------------------------------------------------------------------- #
+def _distinct_sentences(groups):
+    """Pool every sentence across a paper's variant keys, deduped, order preserved.
+
+    Collapses gold cross-filing (the same sentence filed under several allele keys)
+    back to one distinct meaning, and merges all predicted keys into one pool.
+    """
+    seen, out = set(), []
+    for sents in (groups or {}).values():
+        for s in sents or []:
+            s = str(s).strip()
+            if s and s not in seen:
+                seen.add(s)
+                out.append(s)
+    return out
+
+
+def paper_meaning_capture(gold_groups, pred_groups, model):
+    """Per-paper recall of gold MEANING, independent of how either side is keyed.
+
+    Pools the paper's distinct gold sentences and its full predicted-sentence set
+    (keys ignored), then scores each gold sentence against the whole predicted pool
+    with the existing per-gold judge rubric. This removes the penalty for filing a
+    correct association under a different-but-valid variant key (granularity,
+    cross-filing, *1 reference, rsID-vs-star), while keeping the judge's strictness
+    on direction / polarity / phenotype.
+
+    Returns (paper_mean_capture, n_distinct_gold) or (None, 0) when the paper has no
+    gold sentences (those papers count only toward coverage).
+    """
+    gold_sents = _distinct_sentences(gold_groups)
+    if not gold_sents:
+        return None, 0
+    pred_sents = _distinct_sentences(pred_groups)
+    per_gold = judge_per_gold(gold_sents, pred_sents, model)
+    return (sum(per_gold) / len(per_gold) if per_gold else 0.0), len(gold_sents)
+
+
+# --------------------------------------------------------------------------- #
 # Main loop
 # --------------------------------------------------------------------------- #
 def coerce_prediction(out):
@@ -309,16 +462,21 @@ def load_generations(generations_dir):
     return gens
 
 
-def evaluate(generations_dir, judge_model):
+def evaluate(generations_dir, judge_model, perkey=True):
     bench = load_bench()
     gold_by_pmcid = {r["pmcid"]: r for r in bench}
     dev, val = split_bench(bench)
     dev_ids = {r["pmcid"] for r in dev}
     gens = load_generations(generations_dir)
 
-    matched_var = total_var = 0
+    # PRIMARY: paper-level meaning + rsID<->star-aware coverage.
+    paper_capture_scores = []
+    matched_lenient = total_lenient = 0
+    distinct_gold_total = 0
+    # SECONDARY (PharmGKB-convention adherence): old strict coverage + per-key macro.
+    matched_strict = total_strict = 0
+    perkey_macros = []
     captured_gold_equiv = total_gold = 0
-    paper_macros = []
     scored = on_dev = 0
 
     t0 = time.time()
@@ -335,41 +493,58 @@ def evaluate(generations_dir, judge_model):
         gold_groups = gold["variant_sentences"]
         pred_norm = normalize_groups(pred_groups)
 
-        # Variant coverage (recall over variant keys; extra predicted variants free).
-        mv, tv = variant_coverage_counts(pred_norm.keys(), gold_groups.keys())
-        matched_var += mv
-        total_var += tv
+        # --- PRIMARY coverage: rsID<->star equivalence via bipartite matching. ---
+        lmv, ltv = variant_coverage_match(pred_norm.keys(), gold_groups.keys())
+        matched_lenient += lmv
+        total_lenient += ltv
+        # --- SECONDARY coverage: strict representation match. ---
+        smv, stv = variant_coverage_counts(pred_norm.keys(), gold_groups.keys())
+        matched_strict += smv
+        total_strict += stv
 
-        # Meaning capture per variant: for each gold variant, how many of its gold
-        # association sentences are captured by the pipeline's sentences for that
-        # variant? Macro-average across the paper's variants (each equal weight).
-        captures = []
-        paper_matched = paper_gold = 0
-        for v, gold_sents in gold_groups.items():
-            if (
-                not gold_sents
-            ):  # declared-but-sentence-less variant: only counts for coverage
-                continue
-            pred_sents = pred_norm.get(normalize_variant(v), [])
-            capture = judge_sentences(gold_sents, pred_sents, judge_model)
-            captures.append(capture)
-            captured_gold_equiv += capture * len(gold_sents)
-            total_gold += len(gold_sents)
-            paper_matched += capture * len(gold_sents)
-            paper_gold += len(gold_sents)
-        paper_macro = sum(captures) / len(captures) if captures else 0.0
-        paper_macros.append(paper_macro)
+        # --- PRIMARY meaning: paper-level, representation-invariant. ---
+        paper_capture, n_gold = paper_meaning_capture(
+            gold_groups, pred_groups, judge_model
+        )
+        if paper_capture is not None:
+            paper_capture_scores.append(paper_capture)
+            distinct_gold_total += n_gold
 
+        # --- SECONDARY meaning: old per-variant macro (convention adherence). ---
+        paper_macro = None
+        if perkey:
+            captures = []
+            for v, gold_sents in gold_groups.items():
+                if not gold_sents:
+                    continue
+                pred_sents = pred_norm.get(normalize_variant(v), [])
+                capture = judge_sentences(gold_sents, pred_sents, judge_model)
+                captures.append(capture)
+                captured_gold_equiv += capture * len(gold_sents)
+                total_gold += len(gold_sents)
+            paper_macro = sum(captures) / len(captures) if captures else 0.0
+            perkey_macros.append(paper_macro)
+
+        pc = f"{paper_capture:.3f}" if paper_capture is not None else "n/a"
+        pk = f", perkey {paper_macro:.3f}" if paper_macro is not None else ""
         print(
-            f"  {pmcid}: variants {mv}/{tv}, meaning_capture {paper_macro:.3f} "
-            f"(gold-equivalent captured {paper_matched:.1f}/{paper_gold} over {len(captures)} variants)",
+            f"  {pmcid}: coverage {lmv}/{ltv} (strict {smv}/{stv}), "
+            f"meaning_capture {pc} over {n_gold} distinct gold sents{pk}",
             file=sys.stderr,
         )
 
-    # Primary metric: macro per-variant meaning capture, averaged across papers.
-    meaning_capture = sum(paper_macros) / len(paper_macros) if paper_macros else 0.0
-    variant_coverage = matched_var / total_var if total_var else 0.0
-    # Micro coverage (per gold variant-sentence, not per variant) -- informational.
+    # PRIMARY metrics.
+    meaning_capture = (
+        sum(paper_capture_scores) / len(paper_capture_scores)
+        if paper_capture_scores
+        else 0.0
+    )
+    variant_coverage = matched_lenient / total_lenient if total_lenient else 0.0
+    # SECONDARY metrics.
+    variant_coverage_strict = matched_strict / total_strict if total_strict else 0.0
+    meaning_capture_perkey = (
+        sum(perkey_macros) / len(perkey_macros) if perkey_macros else 0.0
+    )
     sentence_coverage = captured_gold_equiv / total_gold if total_gold else 0.0
 
     if on_dev:
@@ -379,14 +554,20 @@ def evaluate(generations_dir, judge_model):
         )
 
     print("---")
-    print(f"meaning_capture:    {meaning_capture:.3f}")  # PRIMARY (macro per variant)
-    print(f"variant_coverage:   {variant_coverage:.3f}")
-    print(f"sentence_coverage:  {sentence_coverage:.3f}")  # micro, informational
-    print(f"num_papers:         {scored}")
-    print(f"num_gold_sentences: {total_gold}")
-    print(f"generations:        {generations_dir}")
-    print(f"judge_model:        {judge_model}")
-    print(f"total_seconds:      {time.time() - t0:.1f}")
+    # PRIMARY: representation-invariant meaning + rsID<->star-aware coverage.
+    print(f"meaning_capture:         {meaning_capture:.3f}")  # PRIMARY (paper-level)
+    print(f"variant_coverage:        {variant_coverage:.3f}")  # PRIMARY (rsID<->star)
+    print("--- secondary (PharmGKB-convention adherence) ---")
+    if perkey:
+        print(f"meaning_capture_perkey:  {meaning_capture_perkey:.3f}")
+        print(f"sentence_coverage:       {sentence_coverage:.3f}")  # micro
+    print(f"variant_coverage_strict: {variant_coverage_strict:.3f}")
+    print("---")
+    print(f"num_papers:              {scored}")
+    print(f"num_gold_sentences:      {distinct_gold_total}")  # distinct, pooled
+    print(f"generations:             {generations_dir}")
+    print(f"judge_model:             {judge_model}")
+    print(f"total_seconds:           {time.time() - t0:.1f}")
 
 
 def main():
@@ -402,8 +583,14 @@ def main():
         default=JUDGE_MODEL_DEFAULT,
         help=f"litellm model string for the judge (default: {JUDGE_MODEL_DEFAULT})",
     )
+    parser.add_argument(
+        "--no-perkey",
+        action="store_true",
+        help="skip the secondary per-variant (convention-adherence) judge calls to "
+        "halve judge cost; only the primary paper-level metric is computed",
+    )
     args = parser.parse_args()
-    evaluate(args.generations, args.judge_model)
+    evaluate(args.generations, args.judge_model, perkey=not args.no_perkey)
 
 
 if __name__ == "__main__":

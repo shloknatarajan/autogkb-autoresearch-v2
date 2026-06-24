@@ -68,18 +68,27 @@ num_gold_sentences:      52      # DISTINCT, pooled (was ~101 cross-filed under 
 
 ## Validation results (champion, val=16)
 
-Re-baselined by re-scoring three clean champion-era opus generations (regeneration was
-blocked at the time by an exhausted Anthropic credit balance; the decoupled
-generation/scoring design made re-scoring possible):
+Baselined two ways: a **fresh 3-run regeneration** of the opus champion (2026-06-24,
+after the Anthropic key was restored) and three **re-scored** champion-era generations
+(done earlier when regeneration was blocked by an exhausted credit balance; possible only
+because generation and scoring are decoupled).
 
-| | meaning_capture (NEW) | per-key (OLD) | coverage (NEW) | strict (OLD) |
+| baseline | meaning_capture (NEW) | per-key (OLD) | coverage (NEW) | strict (OLD) |
 |---|---|---|---|---|
-| clean champion, mean of 3 | **0.548** | 0.536 | 0.906 | 0.899 |
+| fresh regeneration, mean of 3 | 0.485 | 0.549 | 0.891 | 0.891 |
+| re-scored champions, mean of 3 | 0.548 | 0.536 | 0.906 | 0.899 |
+| **all 6 champion runs, mean** | **0.517** | **0.542** | ~0.90 | ~0.90 |
 
-**Verdict: a genuine improvement.** On a system that already follows PharmGKB conventions
-the new and old scores agree in level (and the new metric was no noisier), so it's a safe
-drop-in — while it correctly credits biology the old metric wrongly zeroed (PMC6435416:
-0.09 → 1.00) and the synthetic misfiled-key test scores 1.000 (new) vs 0.000 (old).
+**Verdict: a genuine improvement — for fairness, not precision.** Across all 6 champion
+runs the new and old metrics **agree in level** (0.517 vs 0.542, gap inside the noise
+band), so switching the loop's target loses nothing — while the new metric correctly
+credits biology the old one wrongly zeroed (PMC6435416: one meaning cross-filed under 15
+keys, old 0.09 → new 1.00; synthetic misfiled-key test 1.000 vs 0.000).
+
+**Noise caveat (revised).** The new metric is *not* a stability improvement. Its per-gold
+judge swung the champion across **0.44–0.59** between fresh regenerations (fresh-run range
+0.115 vs the old metric's 0.038; the re-scored set showed the reverse). Both metrics are
+noisy at ~±0.05–0.06 — **always baseline a champion over ≥3 generations.**
 
 ## Caveats to keep in mind
 

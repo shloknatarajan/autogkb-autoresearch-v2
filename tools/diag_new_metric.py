@@ -45,7 +45,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import eval as E  # noqa: E402
 
-CATEGORIES = ["polarity_direction", "phenotype_mismatch", "qualifier_missing", "not_predicted"]
+CATEGORIES = [
+    "polarity_direction",
+    "phenotype_mismatch",
+    "qualifier_missing",
+    "not_predicted",
+]
 
 STAGE1_PROMPT = """You are auditing a pharmacogenomics information-extraction system on ONE paper.
 
@@ -125,8 +130,16 @@ def stage1(gold_sents, pred_sents, model):
             cap = max(0.0, min(1.0, float(m.get("capture", 0.0))))
         except (TypeError, ValueError):
             cap = 0.0
-        cat = m.get("category") if m.get("category") in (["captured"] + CATEGORIES) else None
-        out[gi] = {"capture": cap, "category": cat, "note": str(m.get("note", ""))[:120]}
+        cat = (
+            m.get("category")
+            if m.get("category") in (["captured"] + CATEGORIES)
+            else None
+        )
+        out[gi] = {
+            "capture": cap,
+            "category": cat,
+            "note": str(m.get("note", ""))[:120],
+        }
     return out
 
 
@@ -137,16 +150,31 @@ def stage2(markdown, gold_sentence, model):
     verdict = data.get("verdict") if isinstance(data, dict) else None
     if verdict not in ("recoverable", "unrecoverable"):
         verdict = "recoverable"  # conservative: assume the model could have got it
-    return verdict, str(data.get("evidence", ""))[:160] if isinstance(data, dict) else ""
+    return verdict, str(data.get("evidence", ""))[:160] if isinstance(
+        data, dict
+    ) else ""
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("generations", help="a DEV generations folder (e.g. results/dev-champion-<ts>)")
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
+    ap.add_argument(
+        "generations", help="a DEV generations folder (e.g. results/dev-champion-<ts>)"
+    )
     ap.add_argument("--judge-model", default=E.JUDGE_MODEL_DEFAULT)
-    ap.add_argument("--pass", dest="pass_thr", type=float, default=0.9,
-                    help="capture >= this counts as captured (default 0.9)")
-    ap.add_argument("--out", default=None, help="write per-miss JSONL here (default: scratch next to generations)")
+    ap.add_argument(
+        "--pass",
+        dest="pass_thr",
+        type=float,
+        default=0.9,
+        help="capture >= this counts as captured (default 0.9)",
+    )
+    ap.add_argument(
+        "--out",
+        default=None,
+        help="write per-miss JSONL here (default: scratch next to generations)",
+    )
     args = ap.parse_args()
 
     bench = E.load_bench()
@@ -155,7 +183,9 @@ def main():
     dev_ids = {r["pmcid"] for r in dev}
     gens = E.load_generations(args.generations)
 
-    out_path = Path(args.out) if args.out else Path(args.generations) / "_diag_misses.jsonl"
+    out_path = (
+        Path(args.out) if args.out else Path(args.generations) / "_diag_misses.jsonl"
+    )
     miss_rows = []
 
     cat_counts = Counter()
@@ -182,16 +212,31 @@ def main():
 
         caps = []
         for gi, gs in enumerate(gold_sents):
-            r = res.get(gi, {"capture": 0.0, "category": "not_predicted", "note": "judge gave no entry"})
+            r = res.get(
+                gi,
+                {
+                    "capture": 0.0,
+                    "category": "not_predicted",
+                    "note": "judge gave no entry",
+                },
+            )
             cap = r["capture"]
             caps.append(cap)
             n_gold_total += 1
             if cap >= args.pass_thr:
                 n_captured += 1
                 continue
-            cat = r["category"] or ("not_predicted" if cap == 0.0 else "qualifier_missing")
-            row = {"pmcid": pmcid, "gold_index": gi, "gold": gs, "capture": round(cap, 3),
-                   "category": cat, "note": r["note"]}
+            cat = r["category"] or (
+                "not_predicted" if cap == 0.0 else "qualifier_missing"
+            )
+            row = {
+                "pmcid": pmcid,
+                "gold_index": gi,
+                "gold": gs,
+                "capture": round(cap, 3),
+                "category": cat,
+                "note": r["note"],
+            }
             # Stage 2: only for not_predicted -- is it even in the text?
             if cat == "not_predicted":
                 verdict, ev = stage2(gold["markdown_content"], gs, args.judge_model)
@@ -203,35 +248,61 @@ def main():
             miss_rows.append(row)
         pc = sum(caps) / len(caps) if caps else 0.0
         paper_caps.append(pc)
-        print(f"  {pmcid}: paper_capture {pc:.3f} over {len(gold_sents)} distinct gold "
-              f"({sum(1 for c in caps if c >= args.pass_thr)} captured)", file=sys.stderr)
+        print(
+            f"  {pmcid}: paper_capture {pc:.3f} over {len(gold_sents)} distinct gold "
+            f"({sum(1 for c in caps if c >= args.pass_thr)} captured)",
+            file=sys.stderr,
+        )
 
-    out_path.write_text("\n".join(json.dumps(r) for r in miss_rows) + ("\n" if miss_rows else ""))
+    out_path.write_text(
+        "\n".join(json.dumps(r) for r in miss_rows) + ("\n" if miss_rows else "")
+    )
 
     meaning_capture = sum(paper_caps) / len(paper_caps) if paper_caps else 0.0
     n_miss = n_gold_total - n_captured
     print("\n" + "=" * 64)
     print(f"DEV diagnostic on {args.generations}")
-    print(f"  dev papers scored:        {n_dev_scored}" + (f"  (skipped {skipped_val} non-dev)" if skipped_val else ""))
-    print(f"  meaning_capture (dev):    {meaning_capture:.3f}   [diag judge, pass>={args.pass_thr}]")
+    print(
+        f"  dev papers scored:        {n_dev_scored}"
+        + (f"  (skipped {skipped_val} non-dev)" if skipped_val else "")
+    )
+    print(
+        f"  meaning_capture (dev):    {meaning_capture:.3f}   [diag judge, pass>={args.pass_thr}]"
+    )
     print(f"  distinct gold sentences:  {n_gold_total}")
-    print(f"  captured (>= {args.pass_thr}):        {n_captured}  ({n_captured / n_gold_total:.1%})")
+    print(
+        f"  captured (>= {args.pass_thr}):        {n_captured}  ({n_captured / n_gold_total:.1%})"
+    )
     print(f"  MISSED:                   {n_miss}  ({n_miss / n_gold_total:.1%})")
     print("\n  Miss buckets (of the missed gold meanings):")
     fixable = {"polarity_direction", "qualifier_missing", "not_predicted/recoverable"}
     vocab = {"phenotype_mismatch"}
     unfixable = {"not_predicted/unrecoverable"}
     for cat, n in cat_counts.most_common():
-        tag = "FIXABLE (prompt/model)" if cat in fixable else "VOCAB (term norm)" if cat in vocab else "UNRECOVERABLE (not in markdown)" if cat in unfixable else ""
+        tag = (
+            "FIXABLE (prompt/model)"
+            if cat in fixable
+            else "VOCAB (term norm)"
+            if cat in vocab
+            else "UNRECOVERABLE (not in markdown)"
+            if cat in unfixable
+            else ""
+        )
         print(f"    {cat:34s} {n:3d}  ({n / n_miss:.0%} of misses)  {tag}")
     sum_fix = sum(n for c, n in cat_counts.items() if c in fixable)
     sum_vocab = sum(n for c, n in cat_counts.items() if c in vocab)
     sum_unfix = sum(n for c, n in cat_counts.items() if c in unfixable)
     print("\n  Rollup:")
     if n_miss:
-        print(f"    fixable (extraction/recall):   {sum_fix:3d}  ({sum_fix / n_miss:.0%} of misses)")
-        print(f"    vocab (phenotype renaming):    {sum_vocab:3d}  ({sum_vocab / n_miss:.0%} of misses)")
-        print(f"    unrecoverable (markdown gap):  {sum_unfix:3d}  ({sum_unfix / n_miss:.0%} of misses)")
+        print(
+            f"    fixable (extraction/recall):   {sum_fix:3d}  ({sum_fix / n_miss:.0%} of misses)"
+        )
+        print(
+            f"    vocab (phenotype renaming):    {sum_vocab:3d}  ({sum_vocab / n_miss:.0%} of misses)"
+        )
+        print(
+            f"    unrecoverable (markdown gap):  {sum_unfix:3d}  ({sum_unfix / n_miss:.0%} of misses)"
+        )
     print(f"\n  per-miss detail -> {out_path}")
     print("=" * 64)
 

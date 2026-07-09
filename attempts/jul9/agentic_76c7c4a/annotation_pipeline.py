@@ -163,8 +163,10 @@ def predict(markdown_content):
     if submitted is None:
         # Agent hit the turn cap or errored before calling submit_annotations.
         submitted = _extract_json_object(fallback_text).get("variant_sentences", {})
-        print(f"    WARN: no submit_annotations call; fell back to parsing prose "
-              f"({len(submitted)} variants recovered)")
+        print(
+            f"    WARN: no submit_annotations call; fell back to parsing prose "
+            f"({len(submitted)} variants recovered)"
+        )
 
     if not isinstance(submitted, dict):
         submitted = {}

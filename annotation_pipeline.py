@@ -3,29 +3,42 @@ Edit ONLY this file (see program.md).
 
 It must expose `predict(markdown_content) -> {"variant_sentences": {variant: [...]}}`
 for one paper: a mapping from each variant to the standardized association
-sentences asserting an association about that variant. All model calls go through
-litellm so any provider works -- swap models by changing `MODEL`.
+sentences asserting an association about that variant.
 
-BASELINE: a single straightforward litellm call asking for the variant -> sentence
-mapping as JSON. The autoresearch loop hacks this file to raise meaning_capture.
+AGENTIC (jul9): instead of one single-shot model call, run a Claude Agent SDK
+loop that can search the paper, pull a deterministic regex candidate list,
+confirm terms against the ClinPGx vocabulary, and revise its own draft before
+committing. The model's system prompt is the jun5 champion's rich PharmGKB
+prompt (opus-4-8 + that prompt = 0.558 mean meaning_capture) plus a workflow
+section. Tools live in `agent_tools.py`.
+
+Deviation from program.md's litellm-only convention: this file calls Anthropic
+via claude-agent-sdk. eval.py's judge is untouched and still runs on litellm.
 """
 
+import asyncio
 import json
 
-import litellm
+import agent_tools
+from claude_agent_sdk import (
+    AssistantMessage,
+    ClaudeAgentOptions,
+    ResultMessage,
+    ThinkingConfigDisabled,
+    ToolUseBlock,
+    query,
+)
 
-# Anthropic doesn't take OpenAI's response_format=json_object verbatim; drop unsupported
-# params so the same predict() body works across providers (we parse JSON from the text).
-litellm.drop_params = True
+MODEL = "claude-opus-4-8"
+MAX_TURNS = 10
 
-MODEL = "anthropic/claude-opus-4-8"
-
+# Champion (jun5 iter2) prompt, unchanged through the "Example style" block.
 SYSTEM_PROMPT = """You are a PharmGKB curator. You read the full text of a \
 pharmacogenomics paper (in markdown) and extract its variant annotations.
 
-Produce a JSON object "variant_sentences" mapping each genetic variant discussed
-in the paper to the list of standardized PharmGKB association sentences that
-assert an association about that variant.
+Produce a mapping from each genetic variant discussed in the paper to the list
+of standardized PharmGKB association sentences that assert an association about
+that variant.
 
 KEYS -- list EVERY variant the paper studies or mentions (even ones only in a
 table or in passing), in canonical form: rsIDs (e.g. "rs9923231") or star/HLA
@@ -61,7 +74,31 @@ Example style:
     Diarrhea when treated with irinotecan in people with Stomach Neoplasms as
     compared to UGT1A1 *1."
 
-Return JSON only: { "variant_sentences": { "<variant>": ["<sentence>", ...], ... } }"""
+WORKFLOW -- you have tools. Use them in this order:
+
+1. Read the paper text in the user message.
+2. Call `extract_variants` to get a deterministic regex candidate list. Reconcile
+   it against your reading: it finds variants buried in tables that are easy to
+   miss, but it cannot tell which the paper actually studies, and it misses
+   variants written in prose or by genotype letters. Add what it found and you
+   missed; ignore what it found that the paper does not really discuss.
+3. Call `search_paper` on any variant, drug, or outcome you are unsure about --
+   especially to read data and supplementary tables closely before deciding a
+   variant has no reported association.
+4. Call `lookup_term` when a variant or drug name might be misspelled, might be a
+   brand name, or might not be a real term. Use the canonical name it returns to
+   fix SPELLING ONLY. Never put a PharmGKB accession ID (e.g. "PA166153554") in a
+   key -- keys are always the variant as written above.
+5. REVISE, DO NOT INFLATE. Before submitting, re-check each sentence you drafted
+   against the paper. You may DELETE a sentence you cannot point to a passage
+   for, and you may CORRECT a wrong direction, polarity, drug, phenotype, or
+   comparison group. Do NOT add sentences to be thorough, do not restate an
+   association from the reciprocal allele's point of view, and do not split one
+   finding into near-duplicates. A tight, faithful list scores better than a long
+   one: each variant is scored on how much of its gold meaning you recovered, and
+   extra sentences obscure it.
+6. Call `submit_annotations` exactly once with the final mapping. This is the
+   only way to return your answer -- prose in your final message is discarded."""
 
 
 def _extract_json_object(text):
@@ -82,22 +119,60 @@ def _extract_json_object(text):
     return {}
 
 
-def predict(markdown_content):
-    kwargs = dict(
+def _options():
+    return ClaudeAgentOptions(
         model=MODEL,
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": markdown_content},
-        ],
-        response_format={"type": "json_object"},
+        system_prompt=SYSTEM_PROMPT,  # plain str => replaces the claude_code preset
+        mcp_servers={"pgkb": agent_tools.build_server()},
+        tools=[],  # no built-ins: no filesystem, no bash, no reading the gold
+        allowed_tools=agent_tools.ALLOWED_TOOLS,
+        permission_mode="dontAsk",  # headless: deny anything unlisted, never prompt
+        setting_sources=[],  # do not load this repo's CLAUDE.md / .claude/ or program.md
+        max_turns=MAX_TURNS,
+        # Match the champion, which ran opus-4-8 with no extended thinking.
+        # jun5 iter4 (reasoning_effort=high) scored 0.458, -0.08 vs champion.
+        thinking=ThinkingConfigDisabled(type="disabled"),
     )
-    # claude-opus-4-8 deprecates the `temperature` param; only send it where supported.
-    if "opus-4-8" not in MODEL:
-        kwargs["temperature"] = 0
-    resp = litellm.completion(**kwargs)
-    data = _extract_json_object(resp.choices[0].message.content or "")
-    vs = data.get("variant_sentences", {})
-    if not isinstance(vs, dict):
-        vs = {}
-    variant_sentences = {str(k): (v or []) for k, v in vs.items()}
-    return {"variant_sentences": variant_sentences}
+
+
+async def _run_agent(markdown_content):
+    agent_tools.reset(markdown_content)
+    fallback_text = ""
+    stats = {"turns": 0, "cost_usd": 0.0, "tool_calls": []}
+
+    async for msg in query(prompt=markdown_content, options=_options()):
+        if isinstance(msg, AssistantMessage):
+            for block in msg.content:
+                if isinstance(block, ToolUseBlock):
+                    stats["tool_calls"].append(block.name.replace("mcp__pgkb__", ""))
+        elif isinstance(msg, ResultMessage):
+            fallback_text = msg.result or ""
+            stats["turns"] = msg.num_turns
+            stats["cost_usd"] = msg.total_cost_usd or 0.0
+
+    return agent_tools.take_submission(), fallback_text, stats
+
+
+def predict(markdown_content):
+    try:
+        submitted, fallback_text, stats = asyncio.run(_run_agent(markdown_content))
+    except Exception as e:
+        print(f"    agent run failed: {type(e).__name__}: {e}")
+        return {"variant_sentences": {}}
+
+    if submitted is None:
+        # Agent hit the turn cap or errored before calling submit_annotations.
+        submitted = _extract_json_object(fallback_text).get("variant_sentences", {})
+        print(
+            f"    WARN: no submit_annotations call; fell back to parsing prose "
+            f"({len(submitted)} variants recovered)"
+        )
+
+    if not isinstance(submitted, dict):
+        submitted = {}
+
+    calls = stats["tool_calls"]
+    summary = ", ".join(f"{c}×{calls.count(c)}" for c in sorted(set(calls))) or "none"
+    print(f"    turns={stats['turns']} cost=${stats['cost_usd']:.4f} tools: {summary}")
+
+    return {"variant_sentences": {str(k): (v or []) for k, v in submitted.items()}}

@@ -71,23 +71,39 @@ def main():
                 psents = pred.get(gv)
                 if psents is None:
                     for i, gs in enumerate(gsents):
-                        rows.append({
-                            "pmcid": pmcid, "variant": gv, "vclass": variant_class(gv),
-                            "gold": gs, "pred": [], "capture": 0.0,
-                            "bucket": "lost", "mode": "MISSING_VARIANT",
-                        })
+                        rows.append(
+                            {
+                                "pmcid": pmcid,
+                                "variant": gv,
+                                "vclass": variant_class(gv),
+                                "gold": gs,
+                                "pred": [],
+                                "capture": 0.0,
+                                "bucket": "lost",
+                                "mode": "MISSING_VARIANT",
+                            }
+                        )
                     continue
                 caps = judge_per_gold(gsents, psents, JUDGE_MODEL_DEFAULT)
                 for i, gs in enumerate(gsents):
                     c = float(caps[i]) if i < len(caps) else 0.0
                     b = bucket(c)
-                    rows.append({
-                        "pmcid": pmcid, "variant": gv, "vclass": variant_class(gv),
-                        "gold": gs, "pred": psents, "capture": round(c, 3),
-                        "bucket": b,
-                        "mode": "OK" if b == "captured" else (
-                            "SENTENCE_LOST" if b == "lost" else "QUALIFIER_DROPPED"),
-                    })
+                    rows.append(
+                        {
+                            "pmcid": pmcid,
+                            "variant": gv,
+                            "vclass": variant_class(gv),
+                            "gold": gs,
+                            "pred": psents,
+                            "capture": round(c, 3),
+                            "bucket": b,
+                            "mode": "OK"
+                            if b == "captured"
+                            else (
+                                "SENTENCE_LOST" if b == "lost" else "QUALIFIER_DROPPED"
+                            ),
+                        }
+                    )
             print(f"  {label} {pmcid} done", file=sys.stderr)
 
         # coverage: gold variant keys matched (all gold variants, incl. empty-sentence ones)
@@ -99,12 +115,12 @@ def main():
             cov_m += len(gold_all & pred_all)
             cov_t += len(gold_all)
             for k in sorted(gold_all - pred_all):
-                missing_keys.append({"pmcid": pmcid, "variant": k, "vclass": variant_class(k)})
+                missing_keys.append(
+                    {"pmcid": pmcid, "variant": k, "vclass": variant_class(k)}
+                )
 
         n_pred_keys = sum(len(g) for g in gens.values())
-        n_pred_sents = sum(
-            sum(len(v) for v in g.values()) for g in gens.values()
-        )
+        n_pred_sents = sum(sum(len(v) for v in g.values()) for g in gens.values())
 
         out["pipelines"][label] = {
             "gendir": gendir,

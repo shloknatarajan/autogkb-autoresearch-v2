@@ -125,7 +125,9 @@ async def lookup_term(args) -> dict:
         # Sync + network-bound; keep it off the event loop.
         hit = await asyncio.to_thread(fn, term)
     except Exception as e:  # network flake shouldn't kill the run
-        return _text(f"Lookup of {term!r} failed: {type(e).__name__}: {e}", is_error=True)
+        return _text(
+            f"Lookup of {term!r} failed: {type(e).__name__}: {e}", is_error=True
+        )
 
     if not hit:
         return _text(

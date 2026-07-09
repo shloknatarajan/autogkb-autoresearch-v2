@@ -54,24 +54,41 @@ noise band. The agentic loop does not beat the champion.
 
 ## LESSON
 
-**1. The recall tools were built to fix a problem regex structurally cannot fix.**
-`variant_coverage` came back as **0.888 on all three runs, and 0.888 for the champion** —
-identical to three decimals. A zero-API-cost check explains why: run
-`extract_all_variants()` directly over the dev papers and intersect with dev gold, and its
-**ceiling is 80/90 = 0.889**. The extractor tops out exactly where the model already was,
-so it could never contribute coverage. What it misses is not noise, it's two structural
-classes:
+**1. [CORRECTED — see below] The agent was handed 6 of its 10 missed variants and
+discarded them.**
 
-- **Wild-type reference alleles** (`UGT1A1*1`, `CYP2D6*1`). The gold requires `<GENE>*1`
-  as a key, but the paper never writes that token. No regex can extract a string that
-  isn't there — only the prompt can invent it, which the champion prompt already does.
-- **Under-enumerated HLA alleles** (`HLA-B*35:10`, `HLA-DRB1*08:01`, … — 6 missed on
-  PMC5561238 alone), plus rsIDs split across table cells (`rs9923231` on PMC4706412).
+Original claim, written before the val failure analysis: *"the recall tools were built to
+fix a problem regex structurally cannot fix,"* on the basis that `extract_all_variants()`
+has a **dev** ceiling of 80/90 = 0.889 against dev gold — apparently exactly where the
+pipeline sat.
 
-This reproduces jun5's ensemble result (zero coverage gain) by a different route, and
-confirms its diagnosis: the residual ~11% is genuinely hard, not a retrieval failure.
-**Before building a tool to raise recall, compute the tool's offline ceiling against gold.
-It costs nothing and would have pre-empted this entire experiment.**
+**That inference was wrong.** The dev ceiling is not the binding constraint, and I
+generalized a dev number onto val. A per-gold-sentence failure analysis on val
+(`analysis/failure_analysis.html`, owner waived the val-gold rule for it) shows:
+
+| | |
+|---|---|
+| regex-alone ceiling, **val** | 83/89 = **0.933** (not 0.889) |
+| agentic pipeline, as shipped | 79/89 = 0.888 |
+| agentic **∪ regex candidates** | 85/89 = **0.955** |
+
+The agent called `extract_variants` on all 16 papers, and on two of them the tool
+**returned gold variants that the model then dropped from its answer**: `CYP2D6*1xN`,
+`*2xN`, `*4xN` (PMC6435416) and `HLA-B*35:01`, `HLA-C*04:01`, `HLA-DRB1*01:01`
+(PMC3387531). Unioning the tool's candidates into the output keys is free, deterministic,
+and worth **+0.067 coverage**.
+
+The cause is a line in the WORKFLOW section of the system prompt in this very attempt:
+*"ignore what it found that the paper does not really discuss."* The model obeyed it. The
+tool was not the bottleneck; **trust in the tool** was.
+
+What *is* structurally unreachable by regex is narrower than claimed: wild-type
+`<GENE>*1` keys the paper never writes (`CYP2B6*1`), and the metabolizer-phenotype keys
+in finding 5 below.
+
+**Real lesson:** compute a recall tool's offline ceiling *on the split you will report on*,
+then compare it to `prediction ∪ tool` — not to the tool alone. And never tell an agent to
+second-guess a deterministic tool you trust more than the model.
 
 **2. The metric cannot see what the agent actually improved.** The agent produced 201
 variant keys vs the champion's 225 (dropped 34, added 10) and 246 sentences vs 278
@@ -96,11 +113,54 @@ are needed to resolve a real delta.
 on the smoke run. Anyone wiring `tools/term_lookup.py` into the output path must keep this
 guard.
 
+**5. The prompt forbids the gold answer on one paper (n=3 sentences, capture 0.000).**
+PMC10880264's gold keys include `CYP2C19 intermediate metabolizer` and `CYP2D6 poor
+metabolizer` — metabolizer *phenotypes* used as variant keys. The champion prompt (and
+therefore this one) says: *"NOT metabolizer labels ('PM/IM', 'poor metabolizer');
+translate to the underlying alleles/diplotypes."* Both pipelines obey and both score
+**0.000** on all three of that paper's gold sentences. The rule is correct for most
+papers and catastrophically wrong for this one. This is a prompt bug with a guaranteed
+fix, and it is the only such failure class on the bench.
+
+**6. Where the score actually goes (val, 101 gold sentences, per-sentence judge).**
+
+| failure mode | champion | agentic |
+|---|---|---|
+| OK (capture ≥ 0.75) | 42 | 39 |
+| QUALIFIER_DROPPED (0.25–0.75) | 30 | 32 |
+| SENTENCE_LOST (< 0.25, variant found) | 18 | 19 |
+| MISSING_VARIANT | 11 | 11 |
+
+The dominant failure is **not extraction** — it is writing the sentence correctly once the
+variant is already in hand. Every tool built in jul9 targets the smallest bucket (11).
+Mean capture by variant class shows star alleles as the bottleneck: **0.509 champion /
+0.486 agentic across n=49 gold sentences**, half the bench.
+
+**7. `tools/regex_variants.py` has a live trap.** `extract_all_variants()` correctly
+returns `CYP2D6*4xN`, but its sibling `normalize_star_allele()` *strips* the copy-number
+suffix (`CYP2D6*4xN → CYP2D6*4`). Wiring the normalizer into the output path would
+silently destroy exactly the keys finding 1 says to recover.
+
 ## If picking this up again
 
-Don't chase coverage with better extraction — the ceiling analysis says the headroom
-isn't there. The unrecovered ~46% of per-variant *meaning* is the real target, and none of
-the levers tried across jun4/jun5/jul9 (framing rules, few-shot, ensembling, extended
-thinking, agentic tools) have touched it. The `<GENE>*1` wild-type miss class is a pure
-prompt/post-processing problem, not a retrieval one — `tools/cross_file.py` already exists
-to synthesize those keys and was never wired into the champion.
+Ranked by expected value per dollar, from the val failure analysis:
+
+1. **Union the regex candidates into the output keys.** +0.067 coverage (0.888 → 0.955),
+   zero API cost, deterministic. Delete the "ignore what it found" line from the prompt.
+2. **Carve out the metabolizer-phenotype exception** in the prompt. 3 gold sentences at
+   0.000 today; a bounded, guaranteed fix.
+3. **Wire in `tools/cross_file.py`** for the `<GENE>*1` wild-type keys regex cannot see.
+   Free, already written, never used by the champion.
+4. **Then, and only then, attack qualifier loss** — the ~30-sentence QUALIFIER_DROPPED
+   bucket is the largest and the least understood. No lever tried across jun4/jun5/jul9
+   has moved it. Note the tooling here targets *finding* variants; nothing yet helps the
+   model *write the sentence*.
+
+Do **not** spend more on extraction tooling or on "more compute" (more turns, planning,
+subagents) — that intervention has now been falsified five separate times on this bench.
+
+One methodological gain worth keeping regardless of the above: the schema-enforced
+`submit_annotations` tool collapsed run-to-run variance to sd 0.008 (from jun5's 0.062
+spread), which means ±0.02 effects are now resolvable with three runs. Several of jun5's
+"flat" and "regressed" verdicts were measured against noise nearly as large as the effect
+and are not actually established.
